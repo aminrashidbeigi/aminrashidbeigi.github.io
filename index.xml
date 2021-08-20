@@ -4,17 +4,7 @@
     <title>Amin Rashidbeigi</title>
     <link>https://aminrashidbeigi.github.io/</link>
     <description>Recent content on Amin Rashidbeigi</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 20 Aug 2021 22:39:18 +0430</lastBuildDate><atom:link href="https://aminrashidbeigi.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>My First Post</title>
-      <link>https://aminrashidbeigi.github.io/posts/my-first-post/</link>
-      <pubDate>Fri, 20 Aug 2021 22:39:18 +0430</pubDate>
-      
-      <guid>https://aminrashidbeigi.github.io/posts/my-first-post/</guid>
-      <description></description>
-    </item>
-    
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://aminrashidbeigi.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>https://aminrashidbeigi.github.io/about/</link>
