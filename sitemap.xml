@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://examplesite.com/</loc>
+    <loc>https://aminrashidbeigi.github.io/</loc>
+    <lastmod>2021-08-20T22:39:18+04:30</lastmod>
   </url><url>
-    <loc>https://examplesite.com/categories/</loc>
+    <loc>https://aminrashidbeigi.github.io/posts/my-first-post/</loc>
+    <lastmod>2021-08-20T22:39:18+04:30</lastmod>
   </url><url>
-    <loc>https://examplesite.com/</loc>
+    <loc>https://aminrashidbeigi.github.io/posts/</loc>
+    <lastmod>2021-08-20T22:39:18+04:30</lastmod>
   </url><url>
-    <loc>https://examplesite.com/tags/</loc>
+    <loc>https://aminrashidbeigi.github.io/about/</loc>
+    <lastmod>2021-08-20T22:21:21+04:30</lastmod>
+  </url><url>
+    <loc>https://aminrashidbeigi.github.io/404/</loc>
+  </url><url>
+    <loc>https://aminrashidbeigi.github.io/categories/</loc>
+  </url><url>
+    <loc>https://aminrashidbeigi.github.io/tags/</loc>
   </url>
 </urlset>
