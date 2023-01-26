@@ -5,8 +5,8 @@ theme: "PaperMod"
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
-    author: Theme PaperMod
+    description: "Amin Rashidbeigi's personal website"
+    author: Amin Rashidbeigi
 
     defaultTheme: auto
     # disableThemeToggle: true
