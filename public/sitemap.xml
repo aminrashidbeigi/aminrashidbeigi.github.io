@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://aminrashidbeigi.github.io/</loc>
-  </url><url>
-    <loc>https://aminrashidbeigi.github.io/categories/</loc>
-  </url><url>
-    <loc>https://aminrashidbeigi.github.io/tags/</loc>
-  </url>
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <sitemap>
+    <loc>https://aminrashidbeigi.github.io/en/sitemap.xml</loc>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>https://aminrashidbeigi.github.io/fa/sitemap.xml</loc>
+    
+  </sitemap>
+  
+</sitemapindex>

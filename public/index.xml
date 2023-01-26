@@ -4,6 +4,10 @@
     <title>Amin Rashidbeigi</title>
     <link>https://aminrashidbeigi.github.io/</link>
     <description>Recent content on Amin Rashidbeigi</description>
+    <image>
+      <url>https://aminrashidbeigi.github.io/papermod-cover.png</url>
+      <link>https://aminrashidbeigi.github.io/papermod-cover.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://aminrashidbeigi.github.io/index.xml" rel="self" type="application/rss+xml" />
   </channel>

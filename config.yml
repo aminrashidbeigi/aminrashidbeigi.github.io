@@ -1,0 +1,94 @@
+baseURL: "https://aminrashidbeigi.github.io/"
+languageCode: "en-us"
+title: "Amin Rashidbeigi"
+theme: "PaperMod"
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
+    author: Theme PaperMod
+
+    defaultTheme: auto
+    # disableThemeToggle: true
+    ShowShareButtons: true
+    ShowReadingTime: true
+    # disableSpecial1stPost: true
+    displayFullLangName: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    ShowRssButtonInSectionTermList: true
+    ShowToc: true
+    # comments: false
+    images: ["papermod-cover.png"]
+    cover:
+        linkFullImages: true
+
+    profileMode:
+        enabled: true
+        title: A software engineer!
+        imageUrl: "avatar.png"
+        imageTitle: my image
+        imageWidth: 120
+        imageHeight: 120
+        buttons:
+            - name: CSV
+              url: amin-rashidbeigi-cv-feb2023.pdf
+            - name: Blog
+              url: posts
+
+    homeInfoParams:
+        Title: "PaperMod"
+        Content: >
+            Welcome to demo of hugo's theme PaperMod.
+            - **PaperMod** is a simple but fast and responsive theme with useful feature-set that enhances UX.
+            - Do give a 🌟 on Github !
+            - PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper).
+    socialIcons:
+        - name: github
+          url: "https://github.com/aminrashidbeigi"
+        - name: medium
+          url: "https://medium.com/@amin.rashidbeigi"
+        - name: linkedin
+          url: "https://www.linkedin.com/in/amin-rashidbeigi"
+        - name: twitter
+          url: "https://twitter.com/AminRashidbeigi"
+        - name: stackoverflow
+          url: "https://stackoverflow.com/users/5714900/amin-rashidbeigi"
+        - name: goodreads
+          url: "https://www.goodreads.com/user/show/47262588-amin-rashidbeigi"
+
+
+languages:
+    en:
+        languageName: "English"
+        weight: 1
+        taxonomies:
+          category: categories
+          tag: tags
+          series: series
+    fa:
+        languageName: "فارسی"
+        languagedirection: rtl
+        weight: 2
+        title: امین رشیدبیگی
+        profileMode:
+            enabled: true
+            title: یک مهندس نرم‌افزار!
+            imageUrl: "avatar.png"
+            imageTitle: my image
+            imageWidth: 120
+            imageHeight: 120
+            buttons:
+                - name: CSV
+                  url: archives
+                - name: Blog
+                  url: archives
+
+        homeInfoParams:
+            Title: "سلام خوش آومدید \U0001F44B"
+            Content: به وبسایت من خوش آمدید
+        taxonomies:
+          category: FAcategories
+          tag: FAtags
+          series: FAseries
