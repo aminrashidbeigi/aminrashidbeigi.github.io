@@ -32,11 +32,10 @@ params:
         imageWidth: 120
         imageHeight: 120
         buttons:
-            - name: CSV
-              url: amin-rashidbeigi-cv-feb2023.pdf
             - name: Blog
               url: posts
-
+            - name: CSV
+              url: amin-rashidbeigi-cv-feb2023.pdf
     homeInfoParams:
         Title: "PaperMod"
         Content: >
@@ -80,11 +79,10 @@ languages:
             imageWidth: 120
             imageHeight: 120
             buttons:
-                - name: CSV
-                  url: archives
-                - name: Blog
-                  url: archives
-
+            - name: وبلاگ
+              url: posts
+            - name: رزومه
+              url: amin-rashidbeigi-cv-feb2023.pdf
         homeInfoParams:
             Title: "سلام خوش آومدید \U0001F44B"
             Content: به وبسایت من خوش آمدید
