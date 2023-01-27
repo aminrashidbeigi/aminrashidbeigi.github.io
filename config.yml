@@ -15,10 +15,10 @@ params:
     # disableSpecial1stPost: true
     displayFullLangName: true
     ShowPostNavLinks: true
-    ShowBreadCrumbs: true
+    ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowRssButtonInSectionTermList: true
-    ShowToc: true
+    ShowToc: false
     # comments: false
     images: ["papermod-cover.png"]
     cover:
@@ -33,7 +33,7 @@ params:
         imageHeight: 120
         buttons:
             - name: Blog
-              url: posts
+              url: https://medium.com/@amin.rashidbeigi
             - name: CSV
               url: amin-rashidbeigi-cv-feb2023.pdf
     homeInfoParams:
@@ -57,6 +57,14 @@ params:
         - name: goodreads
           url: "https://www.goodreads.com/user/show/47262588-amin-rashidbeigi"
 
+menu:
+  main:
+  - identifier: about
+    name: About
+    url: /about/
+  - identifier: side-projects 
+    name: Side Projects 
+    url: /side-projects/
 
 languages:
     en:

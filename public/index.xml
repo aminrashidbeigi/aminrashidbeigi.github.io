@@ -10,5 +10,25 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://aminrashidbeigi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Side Projects</title>
+      <link>https://aminrashidbeigi.github.io/side-projects/</link>
+      <pubDate>Fri, 27 Jan 2023 10:53:05 +0330</pubDate>
+      
+      <guid>https://aminrashidbeigi.github.io/side-projects/</guid>
+      <description>🌎 Expedition Diaries I love traveling, particularly when it comes to learning about new cultures. Additionally, I have always been curious about the cultures of nations throughout history.
+Expedition Diaries aggregates all of this curiosity in one place, as it documents the journeys of explorers who have passed through lands throughout history.
+🔗 URL - Github 🗓️ Born: 2022 💡 Status: Live 🔤 Language: English 🐦 MalPodcast The idea of Expedition Diaries started with Mal Podcast.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://aminrashidbeigi.github.io/about/</link>
+      <pubDate>Fri, 27 Jan 2023 10:52:53 +0330</pubDate>
+      
+      <guid>https://aminrashidbeigi.github.io/about/</guid>
+      <description>I will be here soon!</description>
+    </item>
+    
   </channel>
 </rss>
