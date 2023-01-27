@@ -2,13 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://aminrashidbeigi.github.io/side-projects/</loc>
-    <lastmod>2023-01-27T10:53:05+03:30</lastmod>
-  </url><url>
-    <loc>https://aminrashidbeigi.github.io/about/</loc>
-    <lastmod>2023-01-27T10:52:53+03:30</lastmod>
-  </url><url>
     <loc>https://aminrashidbeigi.github.io/</loc>
+    <lastmod>2023-01-27T19:48:11+03:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fa"
@@ -19,6 +14,18 @@
                 hreflang="en"
                 href="https://aminrashidbeigi.github.io/"
                 />
+  </url><url>
+    <loc>https://aminrashidbeigi.github.io/posts/engineering-managers-avoid-technical-decay/</loc>
+    <lastmod>2023-01-27T19:48:11+03:30</lastmod>
+  </url><url>
+    <loc>https://aminrashidbeigi.github.io/posts/</loc>
+    <lastmod>2023-01-27T19:48:11+03:30</lastmod>
+  </url><url>
+    <loc>https://aminrashidbeigi.github.io/side-projects/</loc>
+    <lastmod>2023-01-27T10:53:05+03:30</lastmod>
+  </url><url>
+    <loc>https://aminrashidbeigi.github.io/about/</loc>
+    <lastmod>2023-01-27T10:52:53+03:30</lastmod>
   </url><url>
     <loc>https://aminrashidbeigi.github.io/categories/</loc>
   </url><url>

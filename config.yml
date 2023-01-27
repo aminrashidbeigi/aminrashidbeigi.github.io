@@ -33,16 +33,14 @@ params:
         imageHeight: 120
         buttons:
             - name: Blog
-              url: https://medium.com/@amin.rashidbeigi
+              url: posts
             - name: CSV
               url: amin-rashidbeigi-cv-feb2023.pdf
     homeInfoParams:
-        Title: "PaperMod"
+        Title: "Hi!"
         Content: >
-            Welcome to demo of hugo's theme PaperMod.
-            - **PaperMod** is a simple but fast and responsive theme with useful feature-set that enhances UX.
-            - Do give a 🌟 on Github !
-            - PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper).
+          Hi! I am Amin and hold a B.S. in Computer Engineering and an M.S. in Artificial Intelligence.
+          Currently I lead a team of 10 engineers, designers, and data analysts at [Divar]("https://divar.ir/") Tech Company.
     socialIcons:
         - name: github
           url: "https://github.com/aminrashidbeigi"
@@ -62,6 +60,9 @@ menu:
   - identifier: about
     name: About
     url: /about/
+  - identifier: blog
+    name: Blog
+    url: /posts/
   - identifier: side-projects 
     name: Side Projects 
     url: /side-projects/
