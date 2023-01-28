@@ -100,3 +100,14 @@ languages:
           category: FAcategories
           tag: FAtags
           series: FAseries
+        menu:
+          main:
+          - identifier: about
+            name: درباره من
+            url: /about/
+          - identifier: blog
+            name: وبلاگ
+            url: /posts/
+          - identifier: side-projects 
+            name: پروژه‌های جانبی 
+            url: /side-projects/
