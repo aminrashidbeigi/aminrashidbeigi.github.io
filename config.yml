@@ -2,6 +2,7 @@ baseURL: "https://aminrashidbeigi.github.io/"
 languageCode: "en-us"
 title: "Amin Rashidbeigi"
 theme: "PaperMod"
+googleAnalytics: G-S18R7YECZP
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
