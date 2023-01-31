@@ -3,12 +3,14 @@ languageCode: "en-us"
 title: "Amin Rashidbeigi"
 theme: "PaperMod"
 googleAnalytics: G-S18R7YECZP
+disqusShortname: aminrbg
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
     description: "Amin Rashidbeigi's personal website"
     author: Amin Rashidbeigi
 
+    comments: true
     defaultTheme: auto
     # disableThemeToggle: true
     ShowShareButtons: true
