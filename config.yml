@@ -83,6 +83,7 @@ languages:
         languagedirection: rtl
         weight: 2
         title: امین رشیدبیگی
+        author: امین رشیدبیگی
         profileMode:
             enabled: true
             title: یک مهندس نرم‌افزار!
