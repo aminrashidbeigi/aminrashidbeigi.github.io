@@ -10,6 +10,6 @@ As an engineering manager, it can be easy to feel a sense of distance from the t
 
 Reading a lot (mostly on how things work and why they were created), re-doing (for yourself) technical design reviews, and having side projects can help.
 
-I published this blog post in [BetterProgramming]("https://betterprogramming.pub/") publication. So click the link below to read the full article.
+I published this blog post in [BetterProgramming](https://betterprogramming.pub) publication. So click the link below to read the full article.
 
-[Leading With Confidence: How Engineering Managers Can Avoid Technical Decay]("https://betterprogramming.pub/leading-with-confidence-how-engineering-managers-can-avoid-technical-decay-17653d115938")
+[Leading With Confidence: How Engineering Managers Can Avoid Technical Decay](https://betterprogramming.pub/leading-with-confidence-how-engineering-managers-can-avoid-technical-decay-17653d115938)

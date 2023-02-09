@@ -12,7 +12,6 @@ params:
 
     comments: true
     defaultTheme: auto
-    # disableThemeToggle: true
     ShowShareButtons: true
     ShowReadingTime: true
     # disableSpecial1stPost: true
@@ -22,7 +21,6 @@ params:
     ShowCodeCopyButtons: true
     ShowRssButtonInSectionTermList: true
     ShowToc: false
-    # comments: false
     images: ["papermod-cover.png"]
     cover:
         linkFullImages: true
@@ -112,5 +110,5 @@ languages:
             name: وبلاگ
             url: /posts/
           - identifier: side-projects 
-            name: پروژه‌های جانبی 
+            name: پروژه‌ها
             url: /side-projects/
