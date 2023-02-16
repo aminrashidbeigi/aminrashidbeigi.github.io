@@ -2,6 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://aminrashidbeigi.github.io/fa/posts/</loc>
+    <lastmod>2023-02-16T10:58:11+03:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://aminrashidbeigi.github.io/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fa"
+                href="https://aminrashidbeigi.github.io/fa/posts/"
+                />
+  </url><url>
+    <loc>https://aminrashidbeigi.github.io/fa/</loc>
+    <lastmod>2023-02-16T10:58:11+03:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://aminrashidbeigi.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fa"
+                href="https://aminrashidbeigi.github.io/fa/"
+                />
+  </url><url>
+    <loc>https://aminrashidbeigi.github.io/fa/posts/start-programming/intro/</loc>
+    <lastmod>2023-02-16T10:58:11+03:30</lastmod>
+  </url><url>
     <loc>https://aminrashidbeigi.github.io/fa/side-projects/</loc>
     <lastmod>2023-01-27T10:53:05+03:30</lastmod>
     <xhtml:link
@@ -33,17 +62,5 @@
     <loc>https://aminrashidbeigi.github.io/fa/faseries/</loc>
   </url><url>
     <loc>https://aminrashidbeigi.github.io/fa/fatags/</loc>
-  </url><url>
-    <loc>https://aminrashidbeigi.github.io/fa/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://aminrashidbeigi.github.io/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fa"
-                href="https://aminrashidbeigi.github.io/fa/"
-                />
   </url>
 </urlset>

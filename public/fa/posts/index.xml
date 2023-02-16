@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>امین رشیدبیگی</title>
-    <link>https://aminrashidbeigi.github.io/fa/</link>
-    <description>Recent content on امین رشیدبیگی</description>
+    <title>Posts on امین رشیدبیگی</title>
+    <link>https://aminrashidbeigi.github.io/fa/posts/</link>
+    <description>Recent content in Posts on امین رشیدبیگی</description>
     <image>
       <url>https://aminrashidbeigi.github.io/papermod-cover.png</url>
       <link>https://aminrashidbeigi.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Feb 2023 10:58:11 +0330</lastBuildDate><atom:link href="https://aminrashidbeigi.github.io/fa/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Feb 2023 10:58:11 +0330</lastBuildDate><atom:link href="https://aminrashidbeigi.github.io/fa/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>شروع برنامه‌نویسی: مقدمه</title>
       <link>https://aminrashidbeigi.github.io/fa/posts/start-programming/intro/</link>
@@ -19,24 +19,6 @@
       <guid>https://aminrashidbeigi.github.io/fa/posts/start-programming/intro/</guid>
       <description>هر از چندگاهی پیش میاد وسط صحبت با یک دوستی، موقعی که متوجه میشه کار من به کامپیوتر و برنامه‌نویسی مربوطه، ازم سوالایی مثل سوالای زیر پرسیده می‌شه:
 برنامه‌نویسی شغل خیلی سختیه نه؟ چطوری می‌تونم برنامه‌نویسی یاد بگیرم؟ الان ۳۰ سالم شده. با توجه به سنم دیر نیست شروع کنم؟ درآمد برنامه‌نویسی خوبه؟ از کجا می‌تونم یاد بگیرم؟ بعد از ۶ ماه می‌تونم باهاش درآمد داشته باشم؟ مطالب خیلی خوبی در مورد همین سوالا توی اینترنت به زبان انگلیسی وجود داره.</description>
-    </item>
-    
-    <item>
-      <title>پروژه‌ها</title>
-      <link>https://aminrashidbeigi.github.io/fa/side-projects/</link>
-      <pubDate>Fri, 27 Jan 2023 10:53:05 +0330</pubDate>
-      
-      <guid>https://aminrashidbeigi.github.io/fa/side-projects/</guid>
-      <description>🌎 وبسایت Expedition Diaries 🔗 لینک وبسایت - گیتهاب 🗓️ شروع: ۱۴۰۱ 💡 وضعیت: زنده 🔤 زبان: انگلیسی 🐦 پادکست MalPodcast 🔗 لینک وبسایت 🗓️ شروع: ۱۳۹۸ 🪦 وضعیت: آرشیو شده (۱۳۹۸) 🔤 زبان: فارسی 🥕 سامانه VahedPlus 🔗 لینک آرشیو 🗓️ شروع: ۱۳۹۶ 🪦 وضعیت: آرشیو شده (۱۳۹۷) 🔤 زبان: فارسی 🕸️ وبسایت TarMaster 🔗 لینک آرشیو 🗓️ شروع: ۱۳۹۰ 🪦 وضعیت: آرشیو شده (۱۳۹۳) 🔤 زبان: فارسی </description>
-    </item>
-    
-    <item>
-      <title>درباره من</title>
-      <link>https://aminrashidbeigi.github.io/fa/about/</link>
-      <pubDate>Fri, 27 Jan 2023 10:52:53 +0330</pubDate>
-      
-      <guid>https://aminrashidbeigi.github.io/fa/about/</guid>
-      <description>بعدا می‌نویسم.</description>
     </item>
     
   </channel>

@@ -5,7 +5,6 @@ theme: "PaperMod"
 disqusShortname: aminrbg
 
 params:
-    env: production # to enable google analytics, opengraph, twitter-cards and schema.
     description: "Amin Rashidbeigi's personal website"
     author: Amin Rashidbeigi
 
@@ -25,7 +24,7 @@ params:
         linkFullImages: true
 
     profileMode:
-        enabled: true
+        enabled: false
         title: A software engineer!
         imageUrl: "avatar.png"
         imageTitle: my image
@@ -54,6 +53,8 @@ params:
           url: "https://stackoverflow.com/users/5714900/amin-rashidbeigi"
         - name: goodreads
           url: "https://www.goodreads.com/user/show/47262588-amin-rashidbeigi"
+        - name: cv
+          url: "https://aminrashidbeigi.github.io/amin-rashidbeigi-cv-feb2023.pdf"
 
 menu:
   main:
@@ -82,7 +83,7 @@ languages:
         title: امین رشیدبیگی
         author: امین رشیدبیگی
         profileMode:
-            enabled: true
+            enabled: false
             title: یک مهندس نرم‌افزار!
             imageUrl: "avatar.png"
             imageTitle: my image
@@ -94,8 +95,8 @@ languages:
             - name: رزومه
               url: amin-rashidbeigi-cv-feb2023.pdf
         homeInfoParams:
-            Title: "سلام خوش آومدید \U0001F44B"
-            Content: به وبسایت من خوش آمدید
+            Title: "سلام \U0001F44B"
+            Content: من امین رشیدبیگی هستم. مهندسی کامپیوتر و هوش مصنوعی خوندم و در حال حاضر تیم لیدر یکی از تیم‌های دیوار هستم.
         taxonomies:
           category: FAcategories
           tag: FAtags

@@ -32,6 +32,16 @@
   </url><url>
     <loc>https://aminrashidbeigi.github.io/posts/</loc>
     <lastmod>2023-01-27T19:48:11+03:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fa"
+                href="https://aminrashidbeigi.github.io/fa/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://aminrashidbeigi.github.io/posts/"
+                />
   </url><url>
     <loc>https://aminrashidbeigi.github.io/tags/</loc>
     <lastmod>2023-01-27T19:48:11+03:30</lastmod>
