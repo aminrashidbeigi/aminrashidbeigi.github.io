@@ -98,9 +98,9 @@ languages:
             Title: "سلام \U0001F44B"
             Content: من امین رشیدبیگی هستم. مهندسی کامپیوتر و هوش مصنوعی خوندم و در حوزه نرم‌افزار کار می‌کنم.
         taxonomies:
-          category: FAcategories
-          tag: FAtags
-          series: FAseries
+          category: categories
+          tag: tags
+          series: series
         menu:
           main:
           - identifier: blog

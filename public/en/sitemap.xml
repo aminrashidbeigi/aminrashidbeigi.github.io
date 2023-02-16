@@ -17,6 +17,16 @@
   </url><url>
     <loc>https://aminrashidbeigi.github.io/categories/</loc>
     <lastmod>2023-01-27T19:48:11+03:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fa"
+                href="https://aminrashidbeigi.github.io/fa/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://aminrashidbeigi.github.io/categories/"
+                />
   </url><url>
     <loc>https://aminrashidbeigi.github.io/tags/engineering-management/</loc>
     <lastmod>2023-01-27T19:48:11+03:30</lastmod>
@@ -45,6 +55,16 @@
   </url><url>
     <loc>https://aminrashidbeigi.github.io/tags/</loc>
     <lastmod>2023-01-27T19:48:11+03:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fa"
+                href="https://aminrashidbeigi.github.io/fa/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://aminrashidbeigi.github.io/tags/"
+                />
   </url><url>
     <loc>https://aminrashidbeigi.github.io/side-projects/</loc>
     <lastmod>2023-01-27T10:53:05+03:30</lastmod>
@@ -73,5 +93,15 @@
                 />
   </url><url>
     <loc>https://aminrashidbeigi.github.io/series/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fa"
+                href="https://aminrashidbeigi.github.io/fa/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://aminrashidbeigi.github.io/series/"
+                />
   </url>
 </urlset>

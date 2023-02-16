@@ -2,8 +2,8 @@
 title: "شروع برنامه‌نویسی: مقدمه"
 date: 2023-02-16T10:58:11+03:30
 draft: false
-tags: [برنامه‌نویسی]
-categories: [برنامه‌نویسی]
+tags: ["برنامه نویسی"]
+categories: [برنامه نویسی]
 cover:
   image: "programmer-desk.jpg"
   alt: "a programmer desk with some monitors"
