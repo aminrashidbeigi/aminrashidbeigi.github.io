@@ -58,12 +58,12 @@ params:
 
 menu:
   main:
-  - identifier: about
-    name: About
-    url: /about/
   - identifier: blog
     name: Blog
     url: /posts/
+  - identifier: about
+    name: About
+    url: /about/
   - identifier: side-projects 
     name: Side Projects 
     url: /side-projects/
@@ -103,12 +103,17 @@ languages:
           series: FAseries
         menu:
           main:
-          - identifier: about
-            name: درباره من
-            url: /about/
           - identifier: blog
             name: وبلاگ
             url: /posts/
+          - identifier: about
+            name: درباره من
+            url: /about/
           - identifier: side-projects 
             name: پروژه‌ها
             url: /side-projects/
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
