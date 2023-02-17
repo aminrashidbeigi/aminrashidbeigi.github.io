@@ -1,7 +1,7 @@
 ---
 title: "شروع برنامه‌نویسی: مقدمه"
 date: 2023-02-16T10:58:11+03:30
-draft: true
+draft: false
 tags: 
  - برنامه نویسی
 categories:
