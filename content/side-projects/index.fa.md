@@ -2,6 +2,7 @@
 title: "پروژه‌ها"
 date: 2023-01-27T10:53:05+03:30
 draft: false
+ShowToc: false
 ---
 
 ### 🌎 وبسایت Expedition Diaries

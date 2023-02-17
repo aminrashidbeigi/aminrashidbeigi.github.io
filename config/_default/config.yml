@@ -9,6 +9,7 @@ params:
     author: Amin Rashidbeigi
 
     comments: true
+    ShowToc: true
     defaultTheme: auto
     ShowShareButtons: true
     ShowReadingTime: true
@@ -18,7 +19,6 @@ params:
     ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowRssButtonInSectionTermList: true
-    ShowToc: false
     images: ["papermod-cover.png"]
     cover:
         linkFullImages: true
@@ -61,12 +61,15 @@ menu:
   - identifier: blog
     name: Blog
     url: /posts/
+    weight: 1
   - identifier: about
     name: About
     url: /about/
+    weight: 2
   - identifier: side-projects 
     name: Side Projects 
     url: /side-projects/
+    weight: 3
 
 languages:
     en:
@@ -106,12 +109,15 @@ languages:
           - identifier: blog
             name: وبلاگ
             url: /posts/
+            weight: 1
           - identifier: about
             name: درباره من
             url: /about/
+            weight: 2
           - identifier: side-projects 
             name: پروژه‌ها
             url: /side-projects/
+            weight: 3
 
 markup:
   goldmark:
