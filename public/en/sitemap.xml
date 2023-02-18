@@ -15,6 +15,19 @@
                 href="https://aminrashidbeigi.github.io/"
                 />
   </url><url>
+    <loc>https://aminrashidbeigi.github.io/blog/</loc>
+    <lastmod>2023-01-27T19:48:11+03:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fa"
+                href="https://aminrashidbeigi.github.io/fa/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://aminrashidbeigi.github.io/blog/"
+                />
+  </url><url>
     <loc>https://aminrashidbeigi.github.io/categories/</loc>
     <lastmod>2023-01-27T19:48:11+03:30</lastmod>
     <xhtml:link
@@ -31,7 +44,7 @@
     <loc>https://aminrashidbeigi.github.io/tags/engineering-management/</loc>
     <lastmod>2023-01-27T19:48:11+03:30</lastmod>
   </url><url>
-    <loc>https://aminrashidbeigi.github.io/posts/engineering-managers-avoid-technical-decay/</loc>
+    <loc>https://aminrashidbeigi.github.io/blog/engineering-managers-avoid-technical-decay/</loc>
     <lastmod>2023-01-27T19:48:11+03:30</lastmod>
   </url><url>
     <loc>https://aminrashidbeigi.github.io/tags/leadership/</loc>
@@ -39,19 +52,6 @@
   </url><url>
     <loc>https://aminrashidbeigi.github.io/categories/leadership/</loc>
     <lastmod>2023-01-27T19:48:11+03:30</lastmod>
-  </url><url>
-    <loc>https://aminrashidbeigi.github.io/posts/</loc>
-    <lastmod>2023-01-27T19:48:11+03:30</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fa"
-                href="https://aminrashidbeigi.github.io/fa/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://aminrashidbeigi.github.io/posts/"
-                />
   </url><url>
     <loc>https://aminrashidbeigi.github.io/tags/</loc>
     <lastmod>2023-01-27T19:48:11+03:30</lastmod>

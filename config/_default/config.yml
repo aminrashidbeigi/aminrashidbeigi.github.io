@@ -38,8 +38,8 @@ params:
     homeInfoParams:
         Title: "Hi!"
         Content: >
-          Hi! I am Amin and hold a B.S. in Computer Engineering and an M.S. in Artificial Intelligence.
-          Currently I lead a team of 10 engineers, designers, and data analysts at [Divar]("https://divar.ir/") Tech Company.
+         Hello there! My name is Amin, and I have a Bachelor's degree in Computer Engineering and a Master's degree in Artificial Intelligence.
+         I have a strong interest in both the software industry and leadership.
     socialIcons:
         - name: github
           url: "https://github.com/aminrashidbeigi"
@@ -60,7 +60,7 @@ menu:
   main:
   - identifier: blog
     name: Blog
-    url: /posts/
+    url: /blog/
     weight: 1
   - identifier: about
     name: About
@@ -99,7 +99,7 @@ languages:
               url: amin-rashidbeigi-cv-feb2023.pdf
         homeInfoParams:
             Title: "سلام \U0001F44B"
-            Content: من امین رشیدبیگی هستم. مهندسی کامپیوتر و هوش مصنوعی خوندم و در حوزه نرم‌افزار کار می‌کنم.
+            Content: من امین هستم. مهندسی کامپیوتر و هوش مصنوعی خوندم و به حوزه‌های نرم‌افزار و راهبری تیم‌های نرم‌افزاری علاقه‌مندم.
         taxonomies:
           category: categories
           tag: tags
@@ -107,8 +107,8 @@ languages:
         menu:
           main:
           - identifier: blog
-            name: وبلاگ
-            url: /posts/
+            name: بلاگ
+            url: /blog/
             weight: 1
           - identifier: about
             name: درباره من

@@ -2,8 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://aminrashidbeigi.github.io/fa/blog/</loc>
+    <lastmod>2023-02-18T10:58:11+03:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://aminrashidbeigi.github.io/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fa"
+                href="https://aminrashidbeigi.github.io/fa/blog/"
+                />
+  </url><url>
     <loc>https://aminrashidbeigi.github.io/fa/categories/</loc>
-    <lastmod>2023-02-16T10:58:11+03:30</lastmod>
+    <lastmod>2023-02-18T10:58:11+03:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -15,21 +28,8 @@
                 href="https://aminrashidbeigi.github.io/fa/categories/"
                 />
   </url><url>
-    <loc>https://aminrashidbeigi.github.io/fa/posts/</loc>
-    <lastmod>2023-02-16T10:58:11+03:30</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://aminrashidbeigi.github.io/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fa"
-                href="https://aminrashidbeigi.github.io/fa/posts/"
-                />
-  </url><url>
     <loc>https://aminrashidbeigi.github.io/fa/series/</loc>
-    <lastmod>2023-02-16T10:58:11+03:30</lastmod>
+    <lastmod>2023-02-18T10:58:11+03:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -42,7 +42,7 @@
                 />
   </url><url>
     <loc>https://aminrashidbeigi.github.io/fa/tags/</loc>
-    <lastmod>2023-02-16T10:58:11+03:30</lastmod>
+    <lastmod>2023-02-18T10:58:11+03:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -55,7 +55,7 @@
                 />
   </url><url>
     <loc>https://aminrashidbeigi.github.io/fa/</loc>
-    <lastmod>2023-02-16T10:58:11+03:30</lastmod>
+    <lastmod>2023-02-18T10:58:11+03:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -68,15 +68,24 @@
                 />
   </url><url>
     <loc>https://aminrashidbeigi.github.io/fa/tags/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/</loc>
-    <lastmod>2023-02-16T10:58:11+03:30</lastmod>
+    <lastmod>2023-02-18T10:58:11+03:30</lastmod>
   </url><url>
     <loc>https://aminrashidbeigi.github.io/fa/categories/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/</loc>
-    <lastmod>2023-02-16T10:58:11+03:30</lastmod>
+    <lastmod>2023-02-18T10:58:11+03:30</lastmod>
+  </url><url>
+    <loc>https://aminrashidbeigi.github.io/fa/tags/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%D9%86%D9%88%DB%8C%D8%B3%DB%8C-%DA%86%DB%8C%D8%B3%D8%AA/</loc>
+    <lastmod>2023-02-18T10:58:11+03:30</lastmod>
   </url><url>
     <loc>https://aminrashidbeigi.github.io/fa/series/%D8%B4%D8%B1%D9%88%D8%B9-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/</loc>
-    <lastmod>2023-02-16T10:58:11+03:30</lastmod>
+    <lastmod>2023-02-18T10:58:11+03:30</lastmod>
   </url><url>
-    <loc>https://aminrashidbeigi.github.io/fa/posts/%D8%B4%D8%B1%D9%88%D8%B9-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/%D9%85%D9%82%D8%AF%D9%85%D9%87/</loc>
+    <loc>https://aminrashidbeigi.github.io/fa/blog/%D8%B4%D8%B1%D9%88%D8%B9-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/%D8%AA%D8%B9%D8%B1%DB%8C%D9%81-%D9%88-%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%D8%AF%D9%87%D8%A7/</loc>
+    <lastmod>2023-02-18T10:58:11+03:30</lastmod>
+  </url><url>
+    <loc>https://aminrashidbeigi.github.io/fa/tags/%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%D8%AF%D9%87%D8%A7%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%D9%86%D9%88%DB%8C%D8%B3%DB%8C/</loc>
+    <lastmod>2023-02-18T10:58:11+03:30</lastmod>
+  </url><url>
+    <loc>https://aminrashidbeigi.github.io/fa/blog/%D8%B4%D8%B1%D9%88%D8%B9-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/%D9%85%D9%82%D8%AF%D9%85%D9%87/</loc>
     <lastmod>2023-02-16T10:58:11+03:30</lastmod>
   </url><url>
     <loc>https://aminrashidbeigi.github.io/fa/side-projects/</loc>
