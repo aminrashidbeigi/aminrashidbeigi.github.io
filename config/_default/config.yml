@@ -2,7 +2,6 @@ baseURL: "https://aminrashidbeigi.github.io/"
 languageCode: "en-us"
 title: "Amin Rashidbeigi"
 theme: "PaperMod"
-disqusShortname: aminrbg
 
 params:
     description: "Amin Rashidbeigi's personal website"
