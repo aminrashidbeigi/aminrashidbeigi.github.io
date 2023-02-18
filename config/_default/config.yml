@@ -7,7 +7,7 @@ params:
     description: "Amin Rashidbeigi's personal website"
     author: Amin Rashidbeigi
 
-    comments: true
+    comments: false
     ShowToc: true
     defaultTheme: auto
     ShowShareButtons: true
