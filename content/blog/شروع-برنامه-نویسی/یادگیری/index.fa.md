@@ -1,13 +1,12 @@
 ---
 title: "شروع برنامه‌نویسی: مراحل یادگیری"
-date: 2023-03-03T10:58:12+03:30
+date: 2023-03-07T10:58:12+03:30
 draft: true
 tags:
 - برنامه نویسی
 - یادگیری برنامه‌نویسی
 - انتخاب زبان برنامه‌ نویسی
 - الگوریتم چیست
-- اوپن سورس
 - تقویت برنامه نویسی
 - تمرین برنامه نویسی 
 categories:
@@ -16,7 +15,7 @@ series:
 - شروع برنامه نویسی
 cover:
     image: "learning-process.jpeg"
-    alt: "a desk with laptop on it"
+    alt: "a desk with a laptop on it"
     relative: true
 ---
 
