@@ -1,4 +1,4 @@
-baseURL: "https://aminrashidbeigi.github.io/"
+baseURL: "https://aminrb.me/"
 languageCode: "en-us"
 title: "Amin Rashidbeigi"
 theme: "PaperMod"
@@ -53,7 +53,7 @@ params:
         - name: goodreads
           url: "https://www.goodreads.com/user/show/47262588-amin-rashidbeigi"
         - name: cv
-          url: "https://aminrashidbeigi.github.io/amin-rashidbeigi-cv-feb2023.pdf"
+          url: "https://aminrb.me/amin-rashidbeigi-cv-feb2023.pdf"
 
 menu:
   main:

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on Amin Rashidbeigi</title>
-    <link>https://aminrashidbeigi.github.io/categories/</link>
+    <link>https://aminrb.me/categories/</link>
     <description>Recent content in Categories on Amin Rashidbeigi</description>
     <image>
-      <url>https://aminrashidbeigi.github.io/papermod-cover.png</url>
-      <link>https://aminrashidbeigi.github.io/papermod-cover.png</link>
+      <url>https://aminrb.me/papermod-cover.png</url>
+      <link>https://aminrb.me/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Jan 2023 19:48:11 +0330</lastBuildDate><atom:link href="https://aminrashidbeigi.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Jan 2023 19:48:11 +0330</lastBuildDate><atom:link href="https://aminrb.me/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>leadership</title>
-      <link>https://aminrashidbeigi.github.io/categories/leadership/</link>
+      <link>https://aminrb.me/categories/leadership/</link>
       <pubDate>Fri, 27 Jan 2023 19:48:11 +0330</pubDate>
       
-      <guid>https://aminrashidbeigi.github.io/categories/leadership/</guid>
+      <guid>https://aminrb.me/categories/leadership/</guid>
       <description></description>
     </item>
     
