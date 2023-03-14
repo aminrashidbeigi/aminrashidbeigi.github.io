@@ -2,6 +2,7 @@ baseURL: "https://aminrb.me/"
 languageCode: "en-us"
 title: "Amin Rashidbeigi"
 theme: "PaperMod"
+enableRobotsTXT: true
 
 params:
     description: "Amin Rashidbeigi's personal website"
