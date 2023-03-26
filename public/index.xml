@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Jan 2023 19:48:11 +0330</lastBuildDate><atom:link href="https://aminrb.me/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Mar 2023 01:44:04 +0330</lastBuildDate><atom:link href="https://aminrb.me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Improve Onboarding through the Magic of Storytelling</title>
+      <link>https://aminrb.me/blog/onboarding-storytelling/</link>
+      <pubDate>Mon, 27 Mar 2023 01:44:04 +0330</pubDate>
+      
+      <guid>https://aminrb.me/blog/onboarding-storytelling/</guid>
+      <description>When you join a new team, you are usually bombarded with a lot of information. You need to familiarize yourself with the company&amp;rsquo;s culture, facilities, and colleagues. Initially, the onboarding process tends to be welcoming and hospitable. However, after a few days, you are expected to quickly learn about the products, services, and data in order to contribute effectively. It can be overwhelming to try to absorb and utilize all of this information, and eventually, the honeymoon phase ends, leaving you feeling stressed and concerned about your credibility.</description>
+    </item>
+    
     <item>
       <title>How Engineering Managers Can Avoid Technical Decay</title>
       <link>https://aminrb.me/blog/engineering-managers-avoid-technical-decay/</link>
