@@ -111,7 +111,7 @@ languages:
             url: /blog/
             weight: 1
           - identifier: about
-            name: درباره من
+            name: دربارهٔ من
             url: /about/
             weight: 2
           - identifier: side-projects 
