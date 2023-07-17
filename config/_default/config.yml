@@ -38,8 +38,8 @@ params:
     homeInfoParams:
         Title: "Hi!"
         Content: >
-         Hello there! My name is Amin, and I have a Bachelor's degree in Computer Engineering and a Master's degree in Artificial Intelligence.
-         I have a strong interest in both the software industry and leadership.
+            Hello there! My name is Amin, and I have a Bachelor's degree in Computer Engineering and a Master's degree in Artificial Intelligence.
+            I have a strong interest in both the software industry and leadership.
     socialIcons:
         - name: github
           url: "https://github.com/aminrashidbeigi"
@@ -85,21 +85,22 @@ languages:
         weight: 2
         title: امین رشیدبیگی
         author: امین رشیدبیگی
-        profileMode:
-            enabled: false
-            title: یک مهندس نرم‌افزار!
-            imageUrl: "avatar.png"
-            imageTitle: my image
-            imageWidth: 120
-            imageHeight: 120
-            buttons:
-            - name: وبلاگ
-              url: posts
-            - name: رزومه
-              url: amin-rashidbeigi-cv-feb2023.pdf
-        homeInfoParams:
-            Title: "سلام \U0001F44B"
-            Content: من امین هستم. مهندسی کامپیوتر و هوش مصنوعی خوندم و به حوزه‌های نرم‌افزار و راهبری تیم‌های نرم‌افزاری علاقه‌مندم.
+        params:
+            profileMode:
+                enabled: false
+                title: یک مهندس نرم‌افزار!
+                imageUrl: "avatar.png"
+                imageTitle: my image
+                imageWidth: 120
+                imageHeight: 120
+                buttons:
+                - name: وبلاگ
+                  url: posts
+                - name: رزومه
+                  url: amin-rashidbeigi-cv-feb2023.pdf
+            homeInfoParams:
+                Title: "سلام \U0001F44B"
+                Content: من امین هستم. مهندسی کامپیوتر و هوش مصنوعی خوندم و به حوزه‌های نرم‌افزار و راهبری تیم‌های نرم‌افزاری علاقه‌مندم.
         taxonomies:
           category: categories
           tag: tags

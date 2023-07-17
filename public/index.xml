@@ -9,8 +9,17 @@
       <link>https://aminrb.me/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 27 Mar 2023 01:44:04 +0330</lastBuildDate><atom:link href="https://aminrb.me/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Mon, 17 Jul 2023 10:32:09 +0330</lastBuildDate><atom:link href="https://aminrb.me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Thoughts on Doing Extra Work</title>
+      <link>https://aminrb.me/blog/extra-work/</link>
+      <pubDate>Mon, 17 Jul 2023 10:32:09 +0330</pubDate>
+      
+      <guid>https://aminrb.me/blog/extra-work/</guid>
+      <description>Recently, I read an interesting article by Ben Northrop that can be found here. In the article, Ben talks about the concept of &amp;lsquo;doing extra,&amp;rsquo; which is not the same as doing more. For example, if you&amp;rsquo;re asked to implement two APIs and finish early, you can use the extra time to think about how to make the implementation more efficient, secure, or reduce the code length. That&amp;rsquo;s &amp;lsquo;doing extra.&amp;rsquo;</description>
+    </item>
+    
     <item>
       <title>Improve Onboarding through the Magic of Storytelling</title>
       <link>https://aminrb.me/blog/onboarding-storytelling/</link>
