@@ -5,7 +5,7 @@ draft: false
 tags: [leadership,engineering-management]
 categories: [leadership]
 cover:
-  image: "pencils.jpg"
+  image: blog/engineering-managers-avoid-technical-decay/pencils.jpg
   alt: "some pencils image"
   caption: "Photo by Markus Spiske on Unsplash"
   relative: true

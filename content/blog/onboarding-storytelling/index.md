@@ -8,7 +8,7 @@ tags:
 categories:
 - onboarding
 cover:
-    image: "onboarding-storytelling.jpg"
+    image: blog/onboarding-storytelling/onboarding-storytelling.jpg
     caption: "Photo by charlesdeluvio on Unsplash"
     alt: "Two people are in the metting"
 ---

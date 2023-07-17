@@ -6,8 +6,9 @@ tags:
 - extra work
 categories:
 - engineering
+feature: extra-work.jpg
 cover:
-    image: "extra-work.jpg"
+    image: blog/extra-work/yellow-chair.jpg
     caption: "Photo by [Ries Bosch](https://unsplash.com/@ries_bosch) on [Unsplash](https://unsplash.com)"
     alt: "A yellow chair sitting on top of a cement wall"
 ---
