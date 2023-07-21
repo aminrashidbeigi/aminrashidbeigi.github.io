@@ -53,8 +53,8 @@ params:
           url: "https://stackoverflow.com/users/5714900/amin-rashidbeigi"
         - name: goodreads
           url: "https://www.goodreads.com/user/show/47262588-amin-rashidbeigi"
-        - name: cv
-          url: "https://aminrb.me/amin-rashidbeigi-cv-feb2023.pdf"
+        # - name: cv
+        #   url: "https://aminrb.me/amin-rashidbeigi-cv-feb2023.pdf"
 
 menu:
   main:
