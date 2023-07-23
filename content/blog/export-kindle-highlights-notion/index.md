@@ -1,7 +1,7 @@
 ---
-title: "Transferring Highlights from Kindle to Notion"
-date: 2023-07-21T18:41:46+03:30
-draft: true
+title: "Export Kindle Highlights to Notion"
+date: 2023-07-23T11:33:47+03:30
+draft: false
 tags:
 - Kinde Highlight
 - Notion
@@ -12,6 +12,7 @@ cover:
   image: "kindle-to-notion.jpg"
   alt: "Transferring highlights from kindle to notion"
 translationKey: kindle-to-notion
+description: "This blog post explores efficient methods, including a Google Chrome extension and an open-source Python tool, to convert raw Kindle highlights into readable and searchable Notion documents."
 ---
 
 Highlighting non-fiction and technical books is very important to me. Both because I can review the books I've previously highlighted in a few minutes, and because I concentrate more on the section of the text when highlighting. One of the prominent advantages of reading books with e-readers is the better experience of highlighting. Without the need for a side tool, you can highlight and then quickly and with suitable classification go back to them. But when the number of these highlights increases, searching for them becomes harder, and finding the desired highlight among books and chapters is not an easy task.
@@ -26,10 +27,13 @@ All Kindle highlights are physically stored on the device's hard drive in a file
 
 This raw file is usable and can be viewed with simple tools like Windows Notepad or any other text editor.
 
+![My Clippings.txt file](raw-my-clippings-txt.png)
+
 ## Transferring My Clippings.txt to Notion
 
 Here, I'll write a few methods to convert this raw `My Clippings.txt` file into a more understandable and readable Notion document.
 
+![ My Clippings.txt file in a Notion document ](export-clippings-notion.png)
 ### Easy Way: Export Kindle Highlights to Notion Extension
 
 I used this Google Chrome extension for a while and it was responsive. The usage guide is written in pictures in [this link](https://www.notion.so/KindleToNotion-How-To-Guide-Easy-bce19dae7fae4cde93440ece213ba5ed). You can download the extension from [here](https://chrome.google.com/webstore/detail/export-kindle-highlights/nmgbhgbkbenpfjkdfladebgcdihbekne).

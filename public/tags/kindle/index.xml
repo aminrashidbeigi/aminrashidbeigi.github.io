@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Kindle on Amin Rashidbeigi</title>
+    <link>https://aminrb.me/tags/kindle/</link>
+    <description>Recent content in Kindle on Amin Rashidbeigi</description>
+    <image>
+      <url>https://aminrb.me/papermod-cover.png</url>
+      <link>https://aminrb.me/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 23 Jul 2023 11:33:47 +0330</lastBuildDate><atom:link href="https://aminrb.me/tags/kindle/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Export Kindle Highlights to Notion</title>
+      <link>https://aminrb.me/blog/export-kindle-highlights-notion/</link>
+      <pubDate>Sun, 23 Jul 2023 11:33:47 +0330</pubDate>
+      
+      <guid>https://aminrb.me/blog/export-kindle-highlights-notion/</guid>
+      <description>This blog post explores efficient methods, including a Google Chrome extension and an open-source Python tool, to convert raw Kindle highlights into readable and searchable Notion documents.</description>
+    </item>
+    
+  </channel>
+</rss>

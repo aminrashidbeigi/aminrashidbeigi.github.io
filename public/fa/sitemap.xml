@@ -30,9 +30,29 @@
   </url><url>
     <loc>https://aminrb.me/fa/tags/kindle/</loc>
     <lastmod>2023-04-15T10:44:32+03:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://aminrb.me/tags/kindle/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fa"
+                href="https://aminrb.me/fa/tags/kindle/"
+                />
   </url><url>
     <loc>https://aminrb.me/fa/tags/notion/</loc>
     <lastmod>2023-04-15T10:44:32+03:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://aminrb.me/tags/notion/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fa"
+                href="https://aminrb.me/fa/tags/notion/"
+                />
   </url><url>
     <loc>https://aminrb.me/fa/tags/</loc>
     <lastmod>2023-04-15T10:44:32+03:30</lastmod>
@@ -65,6 +85,16 @@
   </url><url>
     <loc>https://aminrb.me/fa/blog/%D8%A7%D9%86%D8%AA%D9%82%D8%A7%D9%84-%D9%87%D8%A7%DB%8C%D9%84%D8%A7%DB%8C%D8%AA-kindle-notion/</loc>
     <lastmod>2023-04-15T10:44:32+03:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://aminrb.me/blog/export-kindle-highlights-notion/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fa"
+                href="https://aminrb.me/fa/blog/%D8%A7%D9%86%D8%AA%D9%82%D8%A7%D9%84-%D9%87%D8%A7%DB%8C%D9%84%D8%A7%DB%8C%D8%AA-kindle-notion/"
+                />
   </url><url>
     <loc>https://aminrb.me/fa/tags/%DA%A9%DB%8C%D9%86%D8%AF%D9%84/</loc>
     <lastmod>2023-04-15T10:44:32+03:30</lastmod>
