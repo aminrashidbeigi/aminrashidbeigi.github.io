@@ -108,7 +108,7 @@ languages:
         menu:
           main:
           - identifier: blog
-            name: بلاگ
+            name: نوشته‌ها
             url: /blog/
             weight: 1
           - identifier: about
