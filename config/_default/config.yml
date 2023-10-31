@@ -119,6 +119,10 @@ languages:
             name: پروژه‌ها
             url: /side-projects/
             weight: 3
+          - identifier: telegram
+            name: کانال تلگرام
+            url: https://t.me/aminrbg
+            weight: 4
 
 markup:
   goldmark:
