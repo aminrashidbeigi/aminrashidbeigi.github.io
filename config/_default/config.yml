@@ -117,10 +117,10 @@ languages:
             name: دربارهٔ من
             url: /about/
             weight: 2
-          - identifier: ways-i-help
-            name: خدمات
-            url: /ways-i-help/
-            weight: 3
+          # - identifier: ways-i-help
+          #   name: خدمات
+          #   url: /ways-i-help/
+          #   weight: 3
           # - identifier: side-projects 
           #   name: پروژه‌ها
           #   url: /side-projects/
@@ -128,7 +128,7 @@ languages:
           - identifier: telegram
             name: کانال تلگرام
             url: https://t.me/aminrbg
-            weight: 4
+            weight: 3
 
 markup:
   goldmark:
