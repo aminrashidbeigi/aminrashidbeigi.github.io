@@ -1,7 +1,7 @@
 ---
 title: "Export Kindle Highlights to Notion"
 date: 2023-07-23T11:33:47+03:30
-draft: false
+draft: true
 tags:
 - Kinde Highlight
 - Notion

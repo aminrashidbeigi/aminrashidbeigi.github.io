@@ -10,16 +10,7 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 23 Jul 2023 11:33:47 +0330</lastBuildDate><atom:link href="https://aminrb.me/blog/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Export Kindle Highlights to Notion</title>
-      <link>https://aminrb.me/blog/export-kindle-highlights-notion/</link>
-      <pubDate>Sun, 23 Jul 2023 11:33:47 +0330</pubDate>
-      
-      <guid>https://aminrb.me/blog/export-kindle-highlights-notion/</guid>
-      <description>This blog post explores efficient methods, including a Google Chrome extension and an open-source Python tool, to convert raw Kindle highlights into readable and searchable Notion documents.</description>
-    </item>
-    
+    <lastBuildDate>Mon, 17 Jul 2023 10:32:09 +0330</lastBuildDate><atom:link href="https://aminrb.me/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Navigating Extra Work in Programming Teams</title>
       <link>https://aminrb.me/blog/extra-work/</link>
