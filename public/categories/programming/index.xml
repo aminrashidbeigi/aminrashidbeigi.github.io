@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>programming on Amin Rashidbeigi</title>
+    <link>https://aminrb.me/categories/programming/</link>
+    <description>Recent content in programming on Amin Rashidbeigi</description>
+    <image>
+      <url>https://aminrb.me/papermod-cover.png</url>
+      <link>https://aminrb.me/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 31 Dec 2023 14:37:31 +0330</lastBuildDate><atom:link href="https://aminrb.me/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go Test Doubles by Example</title>
+      <link>https://aminrb.me/blog/go-test-double/</link>
+      <pubDate>Sun, 31 Dec 2023 14:37:31 +0330</pubDate>
+      
+      <guid>https://aminrb.me/blog/go-test-double/</guid>
+      <description>Test doubles serve as an alternative to real dependencies in testing. In this post, we&amp;#39;ll review all test doubles using a real-world Go example.</description>
+    </item>
+    
+  </channel>
+</rss>
