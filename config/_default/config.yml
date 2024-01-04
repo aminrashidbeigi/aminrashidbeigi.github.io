@@ -57,6 +57,11 @@ params:
           url: "https://t.me/aminrbg"
         # - name: cv
         #   url: "https://aminrb.me/amin-rashidbeigi-cv-feb2023.pdf"
+    newsletter_groups:
+        - id: "61323516417410084"
+          name: "Fintech & finance"
+        - id: "61323595657250046"
+          name: "Web dev"
 
 menu:
   main:

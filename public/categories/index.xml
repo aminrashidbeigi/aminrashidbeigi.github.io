@@ -1,51 +1,45 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Amin Rashidbeigi</title>
     <link>https://aminrb.me/categories/</link>
     <description>Recent content in Categories on Amin Rashidbeigi</description>
     <image>
+      <title>Amin Rashidbeigi</title>
       <url>https://aminrb.me/papermod-cover.png</url>
       <link>https://aminrb.me/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 31 Dec 2023 14:37:31 +0330</lastBuildDate><atom:link href="https://aminrb.me/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 31 Dec 2023 14:37:31 +0330</lastBuildDate>
+    <atom:link href="https://aminrb.me/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>programming</title>
       <link>https://aminrb.me/categories/programming/</link>
       <pubDate>Sun, 31 Dec 2023 14:37:31 +0330</pubDate>
-      
       <guid>https://aminrb.me/categories/programming/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>engineering</title>
       <link>https://aminrb.me/categories/engineering/</link>
       <pubDate>Mon, 17 Jul 2023 10:32:09 +0330</pubDate>
-      
       <guid>https://aminrb.me/categories/engineering/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>onboarding</title>
       <link>https://aminrb.me/categories/onboarding/</link>
       <pubDate>Mon, 27 Mar 2023 01:44:04 +0330</pubDate>
-      
       <guid>https://aminrb.me/categories/onboarding/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>leadership</title>
       <link>https://aminrb.me/categories/leadership/</link>
       <pubDate>Fri, 27 Jan 2023 19:48:11 +0330</pubDate>
-      
       <guid>https://aminrb.me/categories/leadership/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

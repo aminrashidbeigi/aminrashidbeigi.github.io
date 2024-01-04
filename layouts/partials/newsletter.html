@@ -1,0 +1,48 @@
+<form class="newsletter">
+    <p class="description">Subscribe to receive an email when I publish an article</p>
+    <ul class="groups">
+    {{- $groups := .Params.newsletter_groups -}}
+    {{ range $.Site.Params.newsletter_groups }}
+        <li><input type="checkbox" id="group_{{ .id }}" value="{{ .id }}" {{- if in $groups .name }} checked{{- end -}} /> <label for="group_{{ .id }}">{{ .name | humanize }}</label></li>
+    {{ end }}
+    </ul>
+    <div class="inputs">
+        <div class="input">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="john.doe@gmail.com" />
+        </div>
+        <button class="black" type="submit">Subscribe</button>
+    </div>
+    <p class="result"></p>
+</form>
+
+<script>
+    const formElement = document.querySelector("form.newsletter");
+    const formCheckboxElements = formElement.querySelectorAll(`input[type="checkbox"]`);
+    const emailElement = formElement.querySelector("input#email");
+    const responseElement = formElement.querySelector("p.result");
+    formElement.addEventListener("submit", async event => {
+        event.preventDefault();
+        const email = emailElement.value;
+        const groupIds = [];
+        formCheckboxElements.forEach(checkboxElement => {
+            groupIds.push(checkboxElement.value);
+        });
+        const response = await fetch("/newsletter", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                email,
+                groups_ids: groupIds,
+            }),
+        });
+        if(response.status === 200 || response.status === 201) {
+            responseElement.innerHTML = "Thanks for subscribing, please check your inbox for a confirmation email.";
+        } else {
+            console.error(`Could not subscribe to newsletter: ${response.status} ${await response.text()}`)
+            responseElement.innerHTML = "Could not subscribe";
+        }
+    });
+</script>

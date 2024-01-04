@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>storytelling on Amin Rashidbeigi</title>
     <link>https://aminrb.me/tags/storytelling/</link>
     <description>Recent content in storytelling on Amin Rashidbeigi</description>
     <image>
+      <title>Amin Rashidbeigi</title>
       <url>https://aminrb.me/papermod-cover.png</url>
       <link>https://aminrb.me/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 27 Mar 2023 01:44:04 +0330</lastBuildDate><atom:link href="https://aminrb.me/tags/storytelling/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Mar 2023 01:44:04 +0330</lastBuildDate>
+    <atom:link href="https://aminrb.me/tags/storytelling/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Improve Onboarding through the Magic of Storytelling</title>
       <link>https://aminrb.me/blog/onboarding-storytelling/</link>
       <pubDate>Mon, 27 Mar 2023 01:44:04 +0330</pubDate>
-      
       <guid>https://aminrb.me/blog/onboarding-storytelling/</guid>
       <description>When you join a new team, you are usually bombarded with a lot of information. You need to familiarize yourself with the company&amp;rsquo;s culture, facilities, and colleagues. Initially, the onboarding process tends to be welcoming and hospitable. However, after a few days, you are expected to quickly learn about the products, services, and data in order to contribute effectively. It can be overwhelming to try to absorb and utilize all of this information, and eventually, the honeymoon phase ends, leaving you feeling stressed and concerned about your credibility.</description>
     </item>
-    
   </channel>
 </rss>
