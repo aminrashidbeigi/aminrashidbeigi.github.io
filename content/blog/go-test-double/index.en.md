@@ -303,8 +303,6 @@ Each type of test double—dummies, stubs, spies, mocks, and fakes—has its uni
 
 I've placed all this code in a GitHub repository. You can check it here: [Go Test Double](https://github.com/aminrashidbeigi/go-test-double).
 
-Additionally, you can follow [my Twitter](https://twitter.com/AminRashidbeigi) for future posts.
-
 ## Further Reading
 
 - [TestDouble](https://martinfowler.com/bliki/TestDouble.html) - Martin Fowler

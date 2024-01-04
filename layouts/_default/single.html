@@ -39,11 +39,18 @@
     {{- if not (.Param "disableAnchoredHeadings") }}
     {{- partial "anchored_headings.html" .Content -}}
     {{- else }}{{ .Content }}{{ end }}
+
+    {{- if (eq .Language.Lang "en") }}
+      {{- partial "followup-en.html" . -}}
+    {{- end }}
+    {{- if (eq .Language.Lang "fa") }}
+      {{- partial "followup-fa.html" . -}}
+    {{- end }}
   </div>
   {{- end }}
 
   <footer class="post-footer">
-    {{- partial "newsletter.html" . -}}
+
 
     {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
     <ul class="post-tags">
