@@ -49,7 +49,7 @@ Imagine we have a Payment service that depends on a payment gateway and contains
 
 First of all, let's define a simple implementation of an example gateway:
 
-```
+```go {linenos=true}
 package gateway
 
 import "errors"
@@ -57,10 +57,10 @@ import "errors"
 type RealPaymentGateway struct{}
 
 func (r *RealPaymentGateway) ProcessPayment(amount float64) error {
-	if amount <= 0 {
-		return errors.New("invalid payment amount")
-	}
-	return nil
+    if amount <= 0 {
+        return errors.New("invalid payment amount")
+    }
+    return nil
 }
 ```
 
@@ -68,7 +68,7 @@ func (r *RealPaymentGateway) ProcessPayment(amount float64) error {
 
 Now, let's create a simple implementation of the `PaymentProcessor`. A `gateway` is as an input for this processor, and it includes a `Process` function that calls the `ProcessPayment` method of the gateway.
 
-```
+```go {linenos=true}
 package payment
 
 type PaymentGateway interface {
@@ -92,7 +92,7 @@ func (p *PaymentProcessor) Process(amount float64) error {
 
 Now, let's initialize our program with the `main` function:
 
-```
+```go {linenos=true}
 package main
 
 import (
@@ -120,7 +120,7 @@ func main() {
 
 When we run this program we get this output:
 
-```
+```txt
 Payment processed successfully!
 ```
 
@@ -132,7 +132,7 @@ So, our program works well. Now, we've reached the fun part – writing tests!
 
 As I said, dummy just pass parameters to initialize a dependency and we don’t expect anything from them. In this example, the `PaymentGatewayDummy` satisfies the `PaymentGateway` interface by implementing the `ProcessPayment` method but does nothing inside the method. It's simply there to fulfill the requirement of a `PaymentGateway` object for the tests that rely on this interface.
 
-```
+```go {linenos=true}
 type PaymentGatewayDummy struct{}
 
 func (d *PaymentGatewayDummy) ProcessPayment(amount float64) error {
@@ -154,7 +154,7 @@ func TestPaymentProcessor_WithDummy(t *testing.T) {
 
 In the payment system example, the `PaymentGatewayFake` provides an alternative implementation with simpler logic. Here's the fake implementation:
 
-```
+```go {linenos=true}
 type PaymentGatewayFake struct{}
 
 func (f *PaymentGatewayFake) ProcessPayment(amount float64) error {
@@ -185,8 +185,7 @@ func TestPaymentProcessor_WithFake(t *testing.T) {
 
 Mocks are used to define and enforce expectations on interactions with an object. They specify certain method calls with specific parameters and help verify that these interactions occur as expected during tests. In this example, the mock records each call made to `ProcessPayment`, allowing later verification to ensure that the expected method calls happened in the specified order and with the correct parameters.
 
-```
-// Mock implementation
+```go {linenos=true}
 type PaymentGatewayMock struct {
 	calls      []string
 	callAmount float64
@@ -232,7 +231,7 @@ func TestPaymentProcessor_WithMock(t *testing.T) {
 
 The stub here represents a simplified version of the `PaymentGateway`. It has a `success` boolean field that determines whether the payment should be successful or fail. The `ProcessPayment` method of the stub checks the `success` field and returns an error if `success` is set to `false`, simulating a failed payment.
 
-```
+```go {linenos=true}
 type PaymentGatewayStub struct {
 	success bool
 }
@@ -269,7 +268,7 @@ func TestPaymentProcessor_WithStub_FailedPayment(t *testing.T) {
 
 The spy here is used to track and record information about interactions with the `PaymentGateway`. It has `called` and `amount` fields to record whether the `ProcessPayment` method has been called and the amount passed to it. During testing, the spy captures and records this information, allowing tests to assert whether certain interactions have occurred.
 
-```
+```go {linenos=true}
 type PaymentGatewaySpy struct {
 	called bool
 	amount float64
