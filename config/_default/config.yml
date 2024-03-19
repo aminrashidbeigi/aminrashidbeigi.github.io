@@ -7,7 +7,6 @@ enableRobotsTXT: true
 params:
     description: "Amin Rashidbeigi's personal website"
     author: Amin Rashidbeigi
-
     comments: false
     ShowToc: true
     defaultTheme: auto
