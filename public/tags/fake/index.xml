@@ -15,9 +15,9 @@
     <atom:link href="https://aminrb.me/tags/fake/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Go Test Doubles by Example</title>
-      <link>https://aminrb.me/blog/go-test-double/</link>
+      <link>https://aminrb.me/go-test-double/</link>
       <pubDate>Sun, 31 Dec 2023 14:37:31 +0330</pubDate>
-      <guid>https://aminrb.me/blog/go-test-double/</guid>
+      <guid>https://aminrb.me/go-test-double/</guid>
       <description>Test doubles serve as an alternative to real dependencies in testing. In this post, we&amp;#39;ll review all test doubles using a real-world Go example.</description>
     </item>
   </channel>

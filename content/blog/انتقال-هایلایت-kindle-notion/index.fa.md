@@ -10,9 +10,12 @@ tags:
 categories:
 - ابزار
 cover:
-  image: "kindle-to-notion.jpg"
+  image: "/fa/انتقال-هایلایت-kindle-notion/kindle-to-notion.jpg"
   alt: "انتقال از کیندل به نوشن"
 translationKey: kindle-to-notion
+slug: "انتقال-هایلایت-kindle-notion"
+aliases:
+- /fa/blog/انتقال-هایلایت-kindle-notion
 ---
 
 هایلایت‌ کردن کتاب‌های ناداستان و کتاب‌های فنی برای من خیلی مهمه. هم از این جهت که می‌تونم کتاب‌هایی که قبلاً هایلایت کردم رو  در چند دقیقه مرور کنم، و هم این که موقع هایلایت کردن بخشی از متن، تمرکز بیشتری روی اون قسمت دارم.

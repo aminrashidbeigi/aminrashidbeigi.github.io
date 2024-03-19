@@ -14,9 +14,12 @@ categories:
 series:
 - شروع برنامه نویسی
 cover:
-    image: an-old-man-teaching-programming.jpg
+    image: /fa/چه-سنی-برای-شروع-برنامه-نویسی-دیر-است/an-old-man-teaching-programming.jpg
     caption: "تصویر ساخته شده توسط [DALL.E 3](https://openai.com/dall-e-3)"
     alt: "یک مرد مسن در حال یاد دادن برنامه‌نویسی به یک دختر جوان است."
+slug: "چه-سنی-برای-شروع-برنامه-نویسی-دیر-است"
+aliases:
+- /fa/blog/شروع-برنامه-نویسی/چه-سنی-دیر-است
 ---
 
 ## مقدمه

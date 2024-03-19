@@ -4,6 +4,9 @@ title: "Amin Rashidbeigi"
 theme: "PaperMod"
 enableRobotsTXT: true
 
+permalinks:
+  blog: /:slug/
+
 params:
     description: "Amin Rashidbeigi's personal website"
     author: Amin Rashidbeigi

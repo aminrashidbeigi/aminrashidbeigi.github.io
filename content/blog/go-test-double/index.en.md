@@ -15,9 +15,12 @@ tags:
 categories:
 - programming
 cover:
-    image: /blog/go-test-double/go-test-double.jpg
+    image: /go-test-double/go-test-double.jpg
     caption: "Image Generated with [DALL.E 3](https://openai.com/dall-e-3)"
     alt: "test double in go."
+slug: "go-test-double"
+aliases:
+- /blog/go-test-double
 ---
 
 

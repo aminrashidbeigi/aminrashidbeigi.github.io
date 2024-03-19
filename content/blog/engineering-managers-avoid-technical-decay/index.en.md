@@ -5,10 +5,13 @@ draft: false
 tags: [leadership,engineering-management]
 categories: [leadership]
 cover:
-  image: blog/engineering-managers-avoid-technical-decay/pencils.jpg
+  image: engineering-managers-avoid-technical-decay/pencils.jpg
   alt: "some pencils image"
   caption: "Photo by Markus Spiske on Unsplash"
   relative: true
+slug: "engineering-managers-avoid-technical-decay"
+aliases:
+- /blog/engineering-managers-avoid-technical-decay
 ---
 
 As an engineering manager, it can be easy to feel a sense of distance from the team and concerns about technical decay over time. But there are solutions to this problem! In this article, I explore ways to improve low-level engineering skills, in order to reduce the gap between you and your team members and maintain effectiveness in leading a technical team.

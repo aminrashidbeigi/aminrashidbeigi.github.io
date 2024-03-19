@@ -8,10 +8,13 @@ categories:
 - engineering
 feature: extra-work.jpg
 cover:
-    image: blog/extra-work/yellow-chair.jpg
+    image: extra-work/yellow-chair.jpg
     caption: "Photo by [Ries Bosch](https://unsplash.com/@ries_bosch) on [Unsplash](https://unsplash.com)"
     alt: "A yellow chair sitting on top of a cement wall"
 # description: "Take a closer look at different aspects of doing extra work in programming teams and putting it into practice."
+slug: "extra-work"
+aliases:
+- /blog/extra-work
 ---
 Recently, I read an interesting article by Ben Northrop that can be found **[here](https://www.bennorthrop.com/Essays/2021/always-do-extra.php)**. In the article, Ben talks about the concept of 'doing extra,' which is not the same as doing more. For example, if you're asked to implement two APIs and finish early, you can use the extra time to think about how to make the implementation more efficient, secure, or reduce the code length. That's 'doing extra.'
 

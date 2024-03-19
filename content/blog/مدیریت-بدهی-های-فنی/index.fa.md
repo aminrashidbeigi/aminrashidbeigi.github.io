@@ -13,6 +13,9 @@ cover:
     image: pile-of-wires-and-pickling.jpeg
     caption: "تصویر ساخته شده توسط [DALL.E 3](https://openai.com/dall-e-3)"
     alt: "مقداری سیم و آچار و قطعات مربوط به کامپیوتر بر روی یک میز"
+slug: "مدیریت-بدهی-های-فنی"
+aliases:
+- /fa/blog/مدیریت-بدهی-های-فنی
 ---
 
 ## مقدمه
