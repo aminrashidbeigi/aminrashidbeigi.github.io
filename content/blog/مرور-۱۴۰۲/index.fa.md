@@ -3,14 +3,13 @@ title: "مرور سال ۱۴۰۲"
 date: 2024-03-19T15:16:38+03:30
 draft: false
 description: "در این نوشته سال ۱۴۰۲ رو مرور کردم و از چالش‌هایی که داشتم و اتفاقاتی که افتاد نوشتم."
-slug: "مرور-۱۴۰۲"
 tags:
 - مرور سال
 - سال ۱۴۰۲
 categories:
 - مرور سال
 cover:
-    image: /fa/مرور-۱۴۰۲/1402-year.jpg
+    image: /fa/مرور-سال-۱۴۰۲/1402-year.jpg
     caption: "تصویر ساخته شده توسط [DALL.E 3](https://openai.com/dall-e-3)"
     alt: "سال ۱۴۰۲"
 slug: "مرور-سال-۱۴۰۲"
