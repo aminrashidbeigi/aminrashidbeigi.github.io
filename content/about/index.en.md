@@ -8,6 +8,8 @@ draft: false
   <img src="avatar.png" alt="Amin Rashidbeigi's avatar" />
 </p>
 
-Hi! I am Amin and hold a B.S. in Computer Engineering and an M.S. in Artificial Intelligence.
+Hi! I am Amin and I hold a B.S. in Computer Engineering and an M.S. in Artificial Intelligence.
 
-Currently I lead a team of 10 engineers, designers, and data analysts at [Divar]("https://divar.ir/") Tech Company. 
+Currently, I am a software engineer at [Divar](https://divar.ir) Tech Company.
+
+You can contact me via email at a.rashidbeigi at gmail.com.
