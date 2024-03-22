@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 31 Dec 2023 14:37:31 +0330</lastBuildDate>
+    <lastBuildDate>Fri, 22 Mar 2024 09:31:56 +0330</lastBuildDate>
     <atom:link href="https://aminrb.me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Managing Overdue Tasks</title>
+      <link>https://aminrb.me/managing-overdue-tasks/</link>
+      <pubDate>Fri, 22 Mar 2024 09:31:56 +0330</pubDate>
+      <guid>https://aminrb.me/managing-overdue-tasks/</guid>
+      <description>This post provides insights into managing overdue tasks, exploring various strategies for effectively handling such situations.</description>
+    </item>
     <item>
       <title>Go Test Doubles by Example</title>
       <link>https://aminrb.me/go-test-double/</link>

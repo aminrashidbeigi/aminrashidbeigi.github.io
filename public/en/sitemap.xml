@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://aminrb.me/</loc>
-    <lastmod>2023-12-31T14:37:31+03:30</lastmod>
+    <lastmod>2024-03-22T09:31:56+03:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fa"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://aminrb.me/blog/</loc>
-    <lastmod>2023-12-31T14:37:31+03:30</lastmod>
+    <lastmod>2024-03-22T09:31:56+03:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fa"
@@ -29,7 +29,7 @@
                 />
   </url><url>
     <loc>https://aminrb.me/categories/</loc>
-    <lastmod>2023-12-31T14:37:31+03:30</lastmod>
+    <lastmod>2024-03-22T09:31:56+03:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fa"
@@ -39,6 +39,34 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://aminrb.me/categories/"
+                />
+  </url><url>
+    <loc>https://aminrb.me/tags/communication/</loc>
+    <lastmod>2024-03-22T09:31:56+03:30</lastmod>
+  </url><url>
+    <loc>https://aminrb.me/managing-overdue-tasks/</loc>
+    <lastmod>2024-03-22T09:31:56+03:30</lastmod>
+  </url><url>
+    <loc>https://aminrb.me/tags/missed-deadlines/</loc>
+    <lastmod>2024-03-22T09:31:56+03:30</lastmod>
+  </url><url>
+    <loc>https://aminrb.me/tags/over-work/</loc>
+    <lastmod>2024-03-22T09:31:56+03:30</lastmod>
+  </url><url>
+    <loc>https://aminrb.me/categories/soft-skill/</loc>
+    <lastmod>2024-03-22T09:31:56+03:30</lastmod>
+  </url><url>
+    <loc>https://aminrb.me/tags/</loc>
+    <lastmod>2024-03-22T09:31:56+03:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fa"
+                href="https://aminrb.me/fa/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://aminrb.me/tags/"
                 />
   </url><url>
     <loc>https://aminrb.me/tags/dummy/</loc>
@@ -64,19 +92,6 @@
   </url><url>
     <loc>https://aminrb.me/tags/stub/</loc>
     <lastmod>2023-12-31T14:37:31+03:30</lastmod>
-  </url><url>
-    <loc>https://aminrb.me/tags/</loc>
-    <lastmod>2023-12-31T14:37:31+03:30</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fa"
-                href="https://aminrb.me/fa/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://aminrb.me/tags/"
-                />
   </url><url>
     <loc>https://aminrb.me/tags/test-double/</loc>
     <lastmod>2023-12-31T14:37:31+03:30</lastmod>

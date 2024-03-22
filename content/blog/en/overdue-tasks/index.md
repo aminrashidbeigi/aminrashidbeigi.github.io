@@ -1,11 +1,12 @@
 ---
 title: "Managing Overdue Tasks"
-date: 2024-03-19T15:16:38+03:30
-draft: true
+date: 2024-03-22T09:31:56+03:30
+draft: false
 description: "This post provides insights into managing overdue tasks, exploring various strategies for effectively handling such situations."
 tags:
-- missed deadline
+- missed deadlines
 - communication
+- over work
 categories:
 - soft skill
 cover:
