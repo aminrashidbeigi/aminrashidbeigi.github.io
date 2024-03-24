@@ -108,10 +108,10 @@ languages:
         languageName: "فارسی"
         languagedirection: rtl
         weight: 2
-        title: امین رشیدبیگی
-        author: امین رشیدبیگی
-        description: "صفحهٔ شخصی امین رشیدبیگی"
         params:
+            title: امین رشیدبیگی
+            author: امین رشیدبیگی
+            description: "صفحهٔ شخصی امین رشیدبیگی"
             profileMode:
                 enabled: false
                 title: یک مهندس نرم‌افزار!
