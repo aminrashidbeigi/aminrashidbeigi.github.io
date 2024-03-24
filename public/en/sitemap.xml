@@ -15,19 +15,6 @@
                 href="https://aminrb.me/"
                 />
   </url><url>
-    <loc>https://aminrb.me/blog/</loc>
-    <lastmod>2024-03-22T09:31:56+03:30</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fa"
-                href="https://aminrb.me/fa/blog/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://aminrb.me/blog/"
-                />
-  </url><url>
     <loc>https://aminrb.me/categories/</loc>
     <lastmod>2024-03-22T09:31:56+03:30</lastmod>
     <xhtml:link
@@ -52,6 +39,19 @@
   </url><url>
     <loc>https://aminrb.me/tags/over-work/</loc>
     <lastmod>2024-03-22T09:31:56+03:30</lastmod>
+  </url><url>
+    <loc>https://aminrb.me/posts/</loc>
+    <lastmod>2024-03-22T09:31:56+03:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fa"
+                href="https://aminrb.me/fa/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://aminrb.me/posts/"
+                />
   </url><url>
     <loc>https://aminrb.me/categories/soft-skill/</loc>
     <lastmod>2024-03-22T09:31:56+03:30</lastmod>

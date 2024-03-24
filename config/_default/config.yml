@@ -5,7 +5,7 @@ theme: "PaperMod"
 enableRobotsTXT: true
 
 permalinks:
-  blog: /:slug/
+  posts: /:slug/
 
 params:
     description: "Amin Rashidbeigi's personal website"
@@ -33,7 +33,7 @@ params:
         imageWidth: 120
         imageHeight: 120
         buttons:
-            - name: Blog
+            - name: Posts
               url: posts
             - name: CSV
               url: amin-rashidbeigi-cv-feb2023.pdf
@@ -83,9 +83,9 @@ markup:
 
 menu:
   main:
-  - identifier: blog
-    name: Blog
-    url: /blog/
+  - identifier: posts
+    name: Posts
+    url: /posts/
     weight: 1
   - identifier: about
     name: About
@@ -108,8 +108,8 @@ languages:
         languageName: "فارسی"
         languagedirection: rtl
         weight: 2
+        title: امین رشیدبیگی
         params:
-            title: امین رشیدبیگی
             author: امین رشیدبیگی
             description: "صفحهٔ شخصی امین رشیدبیگی"
             profileMode:
@@ -120,7 +120,7 @@ languages:
                 imageWidth: 120
                 imageHeight: 120
                 buttons:
-                - name: وبلاگ
+                - name: نوشته‌ها
                   url: posts
                 - name: رزومه
                   url: amin-rashidbeigi-cv-feb2023.pdf
@@ -133,9 +133,9 @@ languages:
           series: series
         menu:
           main:
-          - identifier: blog
+          - identifier: posts
             name: نوشته‌ها
-            url: /blog/
+            url: /posts/
             weight: 1
           - identifier: about
             name: دربارهٔ من

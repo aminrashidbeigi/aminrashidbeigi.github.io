@@ -2,32 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://aminrb.me/fa/</loc>
-    <lastmod>2024-03-19T15:16:38+03:30</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://aminrb.me/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fa"
-                href="https://aminrb.me/fa/"
-                />
-  </url><url>
-    <loc>https://aminrb.me/fa/blog/</loc>
-    <lastmod>2024-03-19T15:16:38+03:30</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://aminrb.me/blog/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fa"
-                href="https://aminrb.me/fa/blog/"
-                />
-  </url><url>
     <loc>https://aminrb.me/fa/categories/</loc>
     <lastmod>2024-03-19T15:16:38+03:30</lastmod>
     <xhtml:link
@@ -41,6 +15,19 @@
                 href="https://aminrb.me/fa/categories/"
                 />
   </url><url>
+    <loc>https://aminrb.me/fa/posts/</loc>
+    <lastmod>2024-03-19T15:16:38+03:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://aminrb.me/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fa"
+                href="https://aminrb.me/fa/posts/"
+                />
+  </url><url>
     <loc>https://aminrb.me/fa/tags/</loc>
     <lastmod>2024-03-19T15:16:38+03:30</lastmod>
     <xhtml:link
@@ -52,6 +39,19 @@
                 rel="alternate"
                 hreflang="fa"
                 href="https://aminrb.me/fa/tags/"
+                />
+  </url><url>
+    <loc>https://aminrb.me/fa/</loc>
+    <lastmod>2024-03-19T15:16:38+03:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://aminrb.me/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fa"
+                href="https://aminrb.me/fa/"
                 />
   </url><url>
     <loc>https://aminrb.me/fa/tags/%D8%B3%D8%A7%D9%84-%DB%B1%DB%B4%DB%B0%DB%B2/</loc>
