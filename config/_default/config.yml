@@ -110,6 +110,7 @@ languages:
         weight: 2
         title: امین رشیدبیگی
         author: امین رشیدبیگی
+        description: "صفحهٔ شخصی امین رشیدبیگی"
         params:
             profileMode:
                 enabled: false
