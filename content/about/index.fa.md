@@ -2,6 +2,7 @@
 title: "دربارهٔ من"
 date: 2023-01-27T10:52:53+03:30
 draft: false
+comments: false
 ---
 
 <p align="center">
