@@ -18,7 +18,7 @@ slug: "managing-overdue-tasks"
 
 ## Introduction
 
-Getting better at estimating how long tasks will takeis a skill that develops as you gain more experience in your career, especially when working with a team or company for a long time. However, even with careful planning, unexpected challenges can pop up, causing delays and potentially missing deadlines.
+Getting better at estimating how long tasks will take is a skill that develops as you gain more experience in your career, especially when working with a team or company for a long time. However, even with careful planning, unexpected challenges can pop up, causing delays and potentially missing deadlines.
 
 ## A Common Approach: Finish It at All Costs
 
