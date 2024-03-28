@@ -9,7 +9,7 @@ tags:
 categories:
 - engineering
 cover:
-    image: /vector-search-introduction/vector-search-introduction.jpg
+    image: /vector-search-introduction/vector-search-introduction.webp
     caption: "Image Generated with [DALL.E 3](https://openai.com/dall-e-3)"
     alt: "A magnifier and some numeric values."
 slug: "vector-search-introduction"
@@ -35,7 +35,7 @@ To implement vector search, you need some key components, which I'll explain her
 
 First, you need a component that turns your input into a multidimensional vector. This is usually a machine learning model trained to pull out information from the input and assign numeric values to it based on this information. The required dimensionality varies with the precision you want and the specific model you use for embedding.
 
-![](embedding-component.png)
+![](embedding-component.webp)
 
 As an example for embedding component, you can look into **word2vec**.
 
@@ -53,7 +53,7 @@ Then, when users make a search, their queries are transformed into embeddings, a
 
 After conducting a similarity search, you'll have a list of candidates that are closest to the user's query, which you then present as the search results.
 
-![](vector-search-design.png)
+![](vector-search-design.webp)
 
 ## Conclusion
 

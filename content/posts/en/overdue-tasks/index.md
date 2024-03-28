@@ -10,7 +10,7 @@ tags:
 categories:
 - soft skill
 cover:
-    image: /managing-overdue-tasks/overdue-tasks.jpg
+    image: /managing-overdue-tasks/overdue-tasks.webp
     caption: "Image Generated with [DALL.E 3](https://openai.com/dall-e-3)"
     alt: "A desk with a laptop on it emphasizes an overdue task."
 slug: "managing-overdue-tasks"
