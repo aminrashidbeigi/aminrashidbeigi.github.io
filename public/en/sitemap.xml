@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://aminrb.me/</loc>
-    <lastmod>2024-03-22T09:31:56+03:30</lastmod>
+    <lastmod>2024-04-14T11:39:47+03:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fa"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://aminrb.me/categories/</loc>
-    <lastmod>2024-03-22T09:31:56+03:30</lastmod>
+    <lastmod>2024-04-14T11:39:47+03:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fa"
@@ -27,6 +27,44 @@
                 hreflang="en"
                 href="https://aminrb.me/categories/"
                 />
+  </url><url>
+    <loc>https://aminrb.me/categories/engineering/</loc>
+    <lastmod>2024-04-14T11:39:47+03:30</lastmod>
+  </url><url>
+    <loc>https://aminrb.me/posts/</loc>
+    <lastmod>2024-04-14T11:39:47+03:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fa"
+                href="https://aminrb.me/fa/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://aminrb.me/posts/"
+                />
+  </url><url>
+    <loc>https://aminrb.me/tags/similarity-search/</loc>
+    <lastmod>2024-04-14T11:39:47+03:30</lastmod>
+  </url><url>
+    <loc>https://aminrb.me/tags/</loc>
+    <lastmod>2024-04-14T11:39:47+03:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fa"
+                href="https://aminrb.me/fa/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://aminrb.me/tags/"
+                />
+  </url><url>
+    <loc>https://aminrb.me/tags/vector-search/</loc>
+    <lastmod>2024-04-14T11:39:47+03:30</lastmod>
+  </url><url>
+    <loc>https://aminrb.me/vector-search-introduction/</loc>
+    <lastmod>2024-04-14T11:39:47+03:30</lastmod>
   </url><url>
     <loc>https://aminrb.me/tags/communication/</loc>
     <lastmod>2024-03-22T09:31:56+03:30</lastmod>
@@ -40,34 +78,8 @@
     <loc>https://aminrb.me/tags/over-work/</loc>
     <lastmod>2024-03-22T09:31:56+03:30</lastmod>
   </url><url>
-    <loc>https://aminrb.me/posts/</loc>
-    <lastmod>2024-03-22T09:31:56+03:30</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fa"
-                href="https://aminrb.me/fa/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://aminrb.me/posts/"
-                />
-  </url><url>
     <loc>https://aminrb.me/categories/soft-skill/</loc>
     <lastmod>2024-03-22T09:31:56+03:30</lastmod>
-  </url><url>
-    <loc>https://aminrb.me/tags/</loc>
-    <lastmod>2024-03-22T09:31:56+03:30</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fa"
-                href="https://aminrb.me/fa/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://aminrb.me/tags/"
-                />
   </url><url>
     <loc>https://aminrb.me/tags/dummy/</loc>
     <lastmod>2023-12-31T14:37:31+03:30</lastmod>
@@ -98,9 +110,6 @@
   </url><url>
     <loc>https://aminrb.me/tags/testing/</loc>
     <lastmod>2023-12-31T14:37:31+03:30</lastmod>
-  </url><url>
-    <loc>https://aminrb.me/categories/engineering/</loc>
-    <lastmod>2023-07-17T10:32:09+03:30</lastmod>
   </url><url>
     <loc>https://aminrb.me/tags/extra-work/</loc>
     <lastmod>2023-07-17T10:32:09+03:30</lastmod>

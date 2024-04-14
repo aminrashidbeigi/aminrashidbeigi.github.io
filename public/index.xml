@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 22 Mar 2024 09:31:56 +0330</lastBuildDate>
+    <lastBuildDate>Sun, 14 Apr 2024 11:39:47 +0330</lastBuildDate>
     <atom:link href="https://aminrb.me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vector Search: An Introduction</title>
+      <link>https://aminrb.me/vector-search-introduction/</link>
+      <pubDate>Sun, 14 Apr 2024 11:39:47 +0330</pubDate>
+      <guid>https://aminrb.me/vector-search-introduction/</guid>
+      <description>In this post, we explore the fundamentals of vector search, discussing how it operates and its applications across different data formats. You&amp;#39;ll discover the key components required to implement vector search and its potential to enhance search functionalities.</description>
+    </item>
     <item>
       <title>Managing Overdue Tasks</title>
       <link>https://aminrb.me/managing-overdue-tasks/</link>
