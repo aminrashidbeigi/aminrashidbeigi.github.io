@@ -56,16 +56,25 @@
 
     </style>
 </noscript>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-S18R7YECZP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-S18R7YECZP', { 'anonymize_ip': false });
-}
-</script>
+  
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-S18R7YECZP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-S18R7YECZP');
+        }
+      </script>
+    
+  
+
 <meta property="og:title" content="Vector Search: An Introduction" />
 <meta property="og:description" content="In this post, we explore the fundamentals of vector search, discussing how it operates and its applications across different data formats. You&#39;ll discover the key components required to implement vector search and its potential to enhance search functionalities." />
 <meta property="og:type" content="article" />
@@ -280,15 +289,20 @@ if (!doNotTrack) {
 <p>Although vector search offers many benefits, it also has its drawbacks. The most significant of these is the challenge of interpretability and understanding how the model perceives objects as similar to each other.</p>
 
 <hr>
-If you found this post helpful, I recommend following <a href="https://twitter.com/AminRashidbeigi" target="_blank">my Twitter</a> account or subscribing to the <a href="https://aminrbme.beehiiv.com/subscribe" target="_blank">email newsletter</a> to stay updated on future writings.
+<i>If you liked this post and want to see more, follow me at <a href="https://twitter.com/AminRashidbeigi" target="_blank">@AminRashidbeigi</a> or <a href="https://aminrbme.beehiiv.com/subscribe" target="_blank">subscribe</a>.</i>
   </div>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://aminrb.me/tags/vector-search/">vector search</a></li>
-      <li><a href="https://aminrb.me/tags/similarity-search/">similarity search</a></li>
+      <li><a href="https://aminrb.me/tags/vector-search/">Vector Search</a></li>
+      <li><a href="https://aminrb.me/tags/similarity-search/">Similarity Search</a></li>
     </ul>
 <nav class="paginav">
+  <a class="prev" href="https://aminrb.me/the-clean-coder/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>My Thoughts on The Clean Coder Book</span>
+  </a>
   <a class="next" href="https://aminrb.me/managing-overdue-tasks/">
     <span class="title">Next »</span>
     <br>
