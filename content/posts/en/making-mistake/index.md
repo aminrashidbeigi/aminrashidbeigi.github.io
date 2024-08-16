@@ -30,7 +30,7 @@ The second group doesn't shy away from admitting they made a mistake. They apolo
 
 ### Acceptance with a Plan
 
-The third group takes full responsibility after making a mistake, or even when dealing with someone else’s mistake. They strive for what is often called "extreme ownership." They don't shift the blame onto others; instead, they do everything they can to improve the situation. If the decision can be reversed, they work to change the current state. If it can’t be undone, they focus on minimizing the impact. At the very least, they work to prevent the mistake from happening again. Working with these individuals is highly rewarding because they grow, help others grow, and contribute to a positive team environment and psychological safety.
+The third group takes full responsibility after making a mistake, or even when dealing with someone else’s mistake. They strive for what is often called [extreme ownership](https://x.com/AminRashidbeigi/status/1600611802961829889). They don't shift the blame onto others; instead, they do everything they can to improve the situation. If the decision can be reversed, they work to change the current state. If it can’t be undone, they focus on minimizing the impact. At the very least, they work to prevent the mistake from happening again. Working with these individuals is highly rewarding because they grow, help others grow, and contribute to a positive team environment and psychological safety.
 
 ## Conclusion
 
