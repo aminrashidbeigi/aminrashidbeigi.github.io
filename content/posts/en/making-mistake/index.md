@@ -26,7 +26,7 @@ Some experts, even when they see the mistake and its negative results, refuse to
 
 ### Acceptance Without a Plan
 
-The second group doesn't shy away from admitting they made a mistake. They apologize to those affected and try to move on with as little cost as possible, but they don’t make much effort to fix the problem at its root. They don’t blame others, which makes them easier to work with than those in the first category, but they also don’t focus on fully resolving the issue.
+The second group doesn't shy away from admitting their mistake. They apologize to those affected and try to move on with as little cost as possible, but they don’t make much effort to fix the problem at its root. They don’t blame others, which makes them easier to work with than those in the first category, but they also don’t focus on fully resolving the issue.
 
 ### Acceptance with a Plan
 
@@ -37,3 +37,4 @@ The third group takes full responsibility after making a mistake, or even when d
 It's hard to say for sure which of these three categories we belong to because the issue isn’t always black and white. In some situations, we might easily fall into the third category, while in others, we might struggle to move past the first—especially in areas where we think we have expertise and experience.
 
 The best approach, in my opinion, is to constantly assess the situation and think about which category we’re in. This way, we can make the necessary changes when needed.
+
