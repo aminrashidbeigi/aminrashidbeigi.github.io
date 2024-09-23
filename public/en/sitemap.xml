@@ -2,11 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://aminrb.me/actions-after-mistakes/</loc>
-    <lastmod>2024-08-16T14:17:17+02:00</lastmod>
-  </url><url>
     <loc>https://aminrb.me/</loc>
-    <lastmod>2024-08-16T14:17:17+02:00</lastmod>
+    <lastmod>2024-09-23T22:48:20+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fa"
@@ -19,7 +16,7 @@
                 />
   </url><url>
     <loc>https://aminrb.me/categories/</loc>
-    <lastmod>2024-08-16T14:17:17+02:00</lastmod>
+    <lastmod>2024-09-23T22:48:20+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fa"
@@ -31,8 +28,11 @@
                 href="https://aminrb.me/categories/"
                 />
   </url><url>
+    <loc>https://aminrb.me/expedition-diaries/</loc>
+    <lastmod>2024-09-23T22:48:20+02:00</lastmod>
+  </url><url>
     <loc>https://aminrb.me/posts/</loc>
-    <lastmod>2024-08-16T14:17:17+02:00</lastmod>
+    <lastmod>2024-09-23T22:48:20+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fa"
@@ -43,6 +43,12 @@
                 hreflang="en"
                 href="https://aminrb.me/posts/"
                 />
+  </url><url>
+    <loc>https://aminrb.me/categories/side-projects/</loc>
+    <lastmod>2024-09-23T22:48:20+02:00</lastmod>
+  </url><url>
+    <loc>https://aminrb.me/actions-after-mistakes/</loc>
+    <lastmod>2024-08-16T14:17:17+02:00</lastmod>
   </url><url>
     <loc>https://aminrb.me/categories/soft-skills/</loc>
     <lastmod>2024-08-16T14:17:17+02:00</lastmod>

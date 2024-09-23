@@ -87,9 +87,13 @@ menu:
     name: Posts
     url: /posts/
     weight: 1
-  - identifier: about
-    name: About
-    url: /about/
+  # - identifier: about
+  #   name: About
+  #   url: /about/
+  #   weight: 2
+  - identifier: subscribe
+    name: Subscribe
+    url: https://aminrbme.beehiiv.com/subscribe/
     weight: 2
   - identifier: side-projects 
     name: Side Projects 

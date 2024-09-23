@@ -37,4 +37,3 @@ The third group takes full responsibility after making a mistake, or even when d
 It's hard to say for sure which of these three categories we belong to because the issue isn’t always black and white. In some situations, we might easily fall into the third category, while in others, we might struggle to move past the first—especially in areas where we think we have expertise and experience.
 
 The best approach, in my opinion, is to constantly assess the situation and think about which category we’re in. This way, we can make the necessary changes when needed.
-

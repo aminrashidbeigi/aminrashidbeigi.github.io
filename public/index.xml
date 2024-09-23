@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 16 Aug 2024 14:17:17 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 23 Sep 2024 22:48:20 +0200</lastBuildDate>
     <atom:link href="https://aminrb.me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Expedition Diaries: A Project to Learn</title>
+      <link>https://aminrb.me/expedition-diaries/</link>
+      <pubDate>Mon, 23 Sep 2024 22:48:20 +0200</pubDate>
+      <guid>https://aminrb.me/expedition-diaries/</guid>
+      <description>A few years ago, I started Expedition Diaries, a personal project to explore old travelogues while learning full-stack development. This post reflects on the journey, the challenges faced, and the lessons learned in backend, frontend, and infrastructure.</description>
+    </item>
     <item>
       <title>&#34;Sorry&#34;, Is That Enough?</title>
       <link>https://aminrb.me/actions-after-mistakes/</link>
