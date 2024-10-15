@@ -8,59 +8,59 @@ permalinks:
   posts: /:slug/
 
 params:
-    description: "Amin Rashidbeigi's personal website"
-    author: Amin Rashidbeigi
-    comments: false
-    ShowToc: true
-    defaultTheme: auto
-    ShowShareButtons: true
-    ShowReadingTime: true
-    # disableSpecial1stPost: true
-    displayFullLangName: true
-    ShowPostNavLinks: true
-    ShowBreadCrumbs: false
-    ShowCodeCopyButtons: true
-    ShowRssButtonInSectionTermList: true
-    images: ["papermod-cover.png"]
-    cover:
-        linkFullImages: true
+  description: "Amin Rashidbeigi's personal website"
+  author: Amin Rashidbeigi
+  comments: false
+  ShowToc: true
+  defaultTheme: auto
+  ShowShareButtons: true
+  ShowReadingTime: true
+  # disableSpecial1stPost: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  images: ["papermod-cover.png"]
+  cover:
+    linkFullImages: true
 
-    profileMode:
-        enabled: false
-        title: A software engineer!
-        imageUrl: "avatar.png"
-        imageTitle: my image
-        imageWidth: 120
-        imageHeight: 120
-        buttons:
-            - name: Posts
-              url: posts
-            - name: CSV
-              url: amin-rashidbeigi-cv-feb2023.pdf
-    homeInfoParams:
-        Title: "Hi!"
-        Content: >
-            Hello there! My name is Amin, and I have a Bachelor's degree in Computer Engineering and a Master's degree in Artificial Intelligence.
-            I have a strong interest in both the software industry and leadership.
-    socialIcons:
-        - name: github
-          url: "https://github.com/aminrashidbeigi"
-        - name: medium
-          url: "https://medium.com/@amin.rashidbeigi"
-        - name: linkedin
-          url: "https://www.linkedin.com/in/amin-rashidbeigi"
-        - name: twitter
-          url: "https://twitter.com/AminRashidbeigi"
-        - name: stackoverflow
-          url: "https://stackoverflow.com/users/5714900/amin-rashidbeigi"
-        - name: goodreads
-          url: "https://www.goodreads.com/user/show/47262588-amin-rashidbeigi"
-        - name: telegram
-          url: "https://t.me/aminrbg"
-        # - name: cv
-        #   url: "https://aminrb.me/amin-rashidbeigi-cv-feb2023.pdf"
-    assets:
-        disableHLJS: true
+  profileMode:
+    enabled: false
+    title: A software engineer!
+    imageUrl: "avatar.png"
+    imageTitle: my image
+    imageWidth: 120
+    imageHeight: 120
+    buttons:
+      - name: Posts
+        url: posts
+      - name: CSV
+        url: amin-rashidbeigi-cv-feb2023.pdf
+  homeInfoParams:
+    Title: "Hi!"
+    Content: >
+      Hello there! My name is Amin, and I have a Bachelor's degree in Computer Engineering and a Master's degree in Artificial Intelligence.
+      I have a strong interest in both the software industry and leadership.
+  socialIcons:
+    - name: github
+      url: "https://github.com/aminrashidbeigi"
+    - name: medium
+      url: "https://medium.com/@amin.rashidbeigi"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/amin-rashidbeigi"
+    - name: twitter
+      url: "https://twitter.com/AminRashidbeigi"
+    - name: stackoverflow
+      url: "https://stackoverflow.com/users/5714900/amin-rashidbeigi"
+    - name: goodreads
+      url: "https://www.goodreads.com/user/show/47262588-amin-rashidbeigi"
+    - name: telegram
+      url: "https://t.me/aminrbg"
+    # - name: cv
+    #   url: "https://aminrb.me/amin-rashidbeigi-cv-feb2023.pdf"
+  assets:
+    disableHLJS: true
 
 markup:
   highlight:
@@ -83,77 +83,81 @@ markup:
 
 menu:
   main:
-  - identifier: posts
-    name: Posts
-    url: /posts/
-    weight: 1
-  # - identifier: about
-  #   name: About
-  #   url: /about/
-  #   weight: 2
-  - identifier: subscribe
-    name: Subscribe
-    url: https://aminrbme.beehiiv.com/subscribe/
-    weight: 2
-  - identifier: side-projects 
-    name: Side Projects 
-    url: /side-projects/
-    weight: 3
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 1
+    # - identifier: about
+    #   name: About
+    #   url: /about/
+    #   weight: 2
+    # - identifier: subscribe
+    #   name: Subscribe
+    #   url: https://aminrbme.beehiiv.com/subscribe/
+    #   weight: 2
+    - identifier: X
+      name: X
+      url: https://x.com/AminRashidbeigi
+      weight: 2
+    - identifier: side-projects
+      name: Side Projects
+      url: /side-projects/
+      weight: 3
 
 languages:
-    en:
-        languageName: "English"
-        weight: 1
-        taxonomies:
-          category: categories
-          tag: tags
-          series: series
-    fa:
-        languageName: "فارسی"
-        languagedirection: rtl
-        weight: 2
-        title: امین رشیدبیگی
-        params:
-            author: امین رشیدبیگی
-            description: "صفحهٔ شخصی امین رشیدبیگی"
-            profileMode:
-                enabled: false
-                title: یک مهندس نرم‌افزار!
-                imageUrl: "avatar.png"
-                imageTitle: my image
-                imageWidth: 120
-                imageHeight: 120
-                buttons:
-                - name: نوشته‌ها
-                  url: posts
-                - name: رزومه
-                  url: amin-rashidbeigi-cv-feb2023.pdf
-            homeInfoParams:
-                Title: "سلام \U0001F44B"
-                Content: من امین هستم. مهندسی کامپیوتر و هوش مصنوعی خوندم و به حوزه‌های نرم‌افزار و راهبری تیم‌های نرم‌افزاری علاقه‌مندم.
-        taxonomies:
-          category: categories
-          tag: tags
-          series: series
-        menu:
-          main:
-          - identifier: posts
-            name: نوشته‌ها
-            url: /posts/
-            weight: 1
-          - identifier: about
-            name: دربارهٔ من
-            url: /about/
-            weight: 2
-          # - identifier: ways-i-help
-          #   name: خدمات
-          #   url: /ways-i-help/
-          #   weight: 3
-          # - identifier: side-projects 
-          #   name: پروژه‌ها
-          #   url: /side-projects/
-          #   weight: 3
-          - identifier: telegram
-            name: کانال تلگرام
-            url: https://t.me/aminrbg
-            weight: 3
+  en:
+    languageName: "English"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+  fa:
+    languageName: "فارسی"
+    languagedirection: rtl
+    weight: 2
+    title: امین رشیدبیگی
+    params:
+      author: امین رشیدبیگی
+      description: "صفحهٔ شخصی امین رشیدبیگی"
+      profileMode:
+        enabled: false
+        title: یک مهندس نرم‌افزار!
+        imageUrl: "avatar.png"
+        imageTitle: my image
+        imageWidth: 120
+        imageHeight: 120
+        buttons:
+          - name: نوشته‌ها
+            url: posts
+          - name: رزومه
+            url: amin-rashidbeigi-cv-feb2023.pdf
+      homeInfoParams:
+        Title: "سلام \U0001F44B"
+        Content: من امین هستم. مهندسی کامپیوتر و هوش مصنوعی خوندم و به حوزه‌های نرم‌افزار و راهبری تیم‌های نرم‌افزاری علاقه‌مندم.
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - identifier: posts
+          name: نوشته‌ها
+          url: /posts/
+          weight: 1
+        - identifier: about
+          name: دربارهٔ من
+          url: /about/
+          weight: 2
+        # - identifier: ways-i-help
+        #   name: خدمات
+        #   url: /ways-i-help/
+        #   weight: 3
+        # - identifier: side-projects
+        #   name: پروژه‌ها
+        #   url: /side-projects/
+        #   weight: 3
+        - identifier: telegram
+          name: کانال تلگرام
+          url: https://t.me/aminrbg
+          weight: 3

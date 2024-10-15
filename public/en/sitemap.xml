@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://aminrb.me/</loc>
-    <lastmod>2024-09-23T22:48:20+02:00</lastmod>
+    <lastmod>2024-10-01T22:48:20+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fa"
@@ -13,6 +13,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://aminrb.me/"
+                />
+  </url><url>
+    <loc>https://aminrb.me/posts/</loc>
+    <lastmod>2024-10-01T22:48:20+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fa"
+                href="https://aminrb.me/fa/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://aminrb.me/posts/"
                 />
   </url><url>
     <loc>https://aminrb.me/categories/</loc>
@@ -30,19 +43,6 @@
   </url><url>
     <loc>https://aminrb.me/expedition-diaries/</loc>
     <lastmod>2024-09-23T22:48:20+02:00</lastmod>
-  </url><url>
-    <loc>https://aminrb.me/posts/</loc>
-    <lastmod>2024-09-23T22:48:20+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fa"
-                href="https://aminrb.me/fa/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://aminrb.me/posts/"
-                />
   </url><url>
     <loc>https://aminrb.me/categories/side-projects/</loc>
     <lastmod>2024-09-23T22:48:20+02:00</lastmod>

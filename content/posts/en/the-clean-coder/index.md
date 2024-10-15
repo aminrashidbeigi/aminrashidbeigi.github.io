@@ -16,7 +16,7 @@ slug: "the-clean-coder"
 
 Some time ago, I was searching for a book related to software but not purely technical, making it easier for me to read. I was looking for something I could enjoy even with a busy mind after work.
 
-After checking my Goodreads to-read list, I decided to read [The Clean Coder](https://www.goodreads.com/book/show/10284614-the-clean-coder) and started right away. The book's introduction hooked me, and I ended up reading it to the end.
+After checking my Goodreads to-read list, I decided to read [The Clean Coder](https://amzn.to/3BDCiVJ) and started right away. The book's introduction hooked me, and I ended up reading it to the end.
 
 To clarify, this post is not a review. There are already plenty of reviews for this book. This post is simply some of my thoughts on topics that were particularly interesting or debatable for me.
 
