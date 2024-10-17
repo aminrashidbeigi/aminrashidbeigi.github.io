@@ -10,6 +10,8 @@ cover:
     caption: "Expedition Diaries' First Page"
     alt: "The cover image of Expedition Diaries: A Project to Learn."
 slug: "protobuf-large-messages"
+audio:
+- audio.wav
 ---
 
 no idea yet
@@ -20,4 +22,3 @@ Secret rotation is the process of periodically updating or replacing sensitive c
 
 
 ### When should we start secret rotation
-

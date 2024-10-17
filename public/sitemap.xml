@@ -2,14 +2,14 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <sitemap>
-    <loc>https://aminrb.me/en/sitemap.xml</loc>
+    <loc>http://localhost:1313/en/sitemap.xml</loc>
     
-      <lastmod>2024-10-01T22:48:20+02:00</lastmod>
+      <lastmod>2024-10-17T19:11:32+02:00</lastmod>
     
   </sitemap>
   
   <sitemap>
-    <loc>https://aminrb.me/fa/sitemap.xml</loc>
+    <loc>http://localhost:1313/fa/sitemap.xml</loc>
     
       <lastmod>2024-03-19T15:16:38+03:30</lastmod>
     
