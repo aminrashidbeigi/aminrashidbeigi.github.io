@@ -14,7 +14,7 @@ cover:
 slug: "secret-rotation"
 ---
 
-Have you ever accidentally pushed a sensitive password and realized how difficult it is to ensure no one gains access to it? Or you've mistakenly logged an API token, and now it's scattered across your logging system.
+Have you ever accidentally pushed a sensitive password and realized how difficult it is to ensure no one gains access to it? Or have you mistakenly logged an API token, and now it's scattered across your logging system?
 
 In these cases, the first thing you'd do is change the secret. But what if you never caught the log in the first place? Or how can you be sure no one else has pushed sensitive data? This is where **Secret Rotation** comes in.
 
