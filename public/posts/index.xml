@@ -2,85 +2,85 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Amin Rashidbeigi</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://aminrb.me/posts/</link>
     <description>Recent content in Posts on Amin Rashidbeigi</description>
     <image>
       <title>Amin Rashidbeigi</title>
-      <url>http://localhost:1313/papermod-cover.png</url>
-      <link>http://localhost:1313/papermod-cover.png</link>
+      <url>https://aminrb.me/papermod-cover.png</url>
+      <link>https://aminrb.me/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 17 Oct 2024 19:11:32 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aminrb.me/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>When to Start Secret Rotation</title>
-      <link>http://localhost:1313/secret-rotation/</link>
+      <link>https://aminrb.me/secret-rotation/</link>
       <pubDate>Thu, 17 Oct 2024 19:11:32 +0200</pubDate>
-      <guid>http://localhost:1313/secret-rotation/</guid>
+      <guid>https://aminrb.me/secret-rotation/</guid>
       <description>An overview of secret rotation, discussing when to implement it to reduce the risk of data leaks.</description>
     </item>
     <item>
       <title>Expedition Diaries: A Project to Learn</title>
-      <link>http://localhost:1313/expedition-diaries/</link>
+      <link>https://aminrb.me/expedition-diaries/</link>
       <pubDate>Mon, 23 Sep 2024 22:48:20 +0200</pubDate>
-      <guid>http://localhost:1313/expedition-diaries/</guid>
+      <guid>https://aminrb.me/expedition-diaries/</guid>
       <description>A few years ago, I started Expedition Diaries, a personal project to explore old travelogues while learning full-stack development. This post reflects on the journey, the challenges faced, and the lessons learned in backend, frontend, and infrastructure.</description>
     </item>
     <item>
       <title>&#34;Sorry&#34;, Is That Enough?</title>
-      <link>http://localhost:1313/actions-after-mistakes/</link>
+      <link>https://aminrb.me/actions-after-mistakes/</link>
       <pubDate>Fri, 16 Aug 2024 14:17:17 +0200</pubDate>
-      <guid>http://localhost:1313/actions-after-mistakes/</guid>
+      <guid>https://aminrb.me/actions-after-mistakes/</guid>
       <description>Making mistakes at work is inevitable. How we respond defines our personal growth and impacts others. This post explores different ways to act after mistakes.</description>
     </item>
     <item>
       <title>My Thoughts on The Clean Coder Book</title>
-      <link>http://localhost:1313/the-clean-coder/</link>
+      <link>https://aminrb.me/the-clean-coder/</link>
       <pubDate>Thu, 20 Jun 2024 17:31:56 +0200</pubDate>
-      <guid>http://localhost:1313/the-clean-coder/</guid>
+      <guid>https://aminrb.me/the-clean-coder/</guid>
       <description>This post shares my thoughts on &amp;#39;The Clean Coder&amp;#39; by Uncle Bob, focusing on topics that I found particularly interesting or debatable.</description>
     </item>
     <item>
       <title>Vector Search: An Introduction</title>
-      <link>http://localhost:1313/vector-search-introduction/</link>
+      <link>https://aminrb.me/vector-search-introduction/</link>
       <pubDate>Sun, 14 Apr 2024 11:39:47 +0330</pubDate>
-      <guid>http://localhost:1313/vector-search-introduction/</guid>
+      <guid>https://aminrb.me/vector-search-introduction/</guid>
       <description>In this post, we explore the fundamentals of vector search, discussing how it operates and its applications across different data formats. You&amp;#39;ll discover the key components required to implement vector search and its potential to enhance search functionalities.</description>
     </item>
     <item>
       <title>Managing Overdue Tasks</title>
-      <link>http://localhost:1313/managing-overdue-tasks/</link>
+      <link>https://aminrb.me/managing-overdue-tasks/</link>
       <pubDate>Fri, 22 Mar 2024 09:31:56 +0330</pubDate>
-      <guid>http://localhost:1313/managing-overdue-tasks/</guid>
+      <guid>https://aminrb.me/managing-overdue-tasks/</guid>
       <description>This post provides insights into managing overdue tasks, exploring various strategies for effectively handling such situations.</description>
     </item>
     <item>
       <title>Go Test Doubles by Example</title>
-      <link>http://localhost:1313/go-test-double/</link>
+      <link>https://aminrb.me/go-test-double/</link>
       <pubDate>Sun, 31 Dec 2023 14:37:31 +0330</pubDate>
-      <guid>http://localhost:1313/go-test-double/</guid>
+      <guid>https://aminrb.me/go-test-double/</guid>
       <description>Test doubles serve as an alternative to real dependencies in testing. In this post, we&amp;#39;ll review all test doubles using a real-world Go example.</description>
     </item>
     <item>
       <title>Navigating Extra Work in Programming Teams</title>
-      <link>http://localhost:1313/extra-work/</link>
+      <link>https://aminrb.me/extra-work/</link>
       <pubDate>Mon, 17 Jul 2023 10:32:09 +0330</pubDate>
-      <guid>http://localhost:1313/extra-work/</guid>
+      <guid>https://aminrb.me/extra-work/</guid>
       <description>Recently, I read an interesting article by Ben Northrop that can be found here . In the article, Ben talks about the concept of &amp;lsquo;doing extra,&amp;rsquo; which is not the same as doing more. For example, if you&amp;rsquo;re asked to implement two APIs and finish early, you can use the extra time to think about how to make the implementation more efficient, secure, or reduce the code length. That&amp;rsquo;s &amp;lsquo;doing extra.</description>
     </item>
     <item>
       <title>Improve Onboarding through the Magic of Storytelling</title>
-      <link>http://localhost:1313/onboarding-storytelling/</link>
+      <link>https://aminrb.me/onboarding-storytelling/</link>
       <pubDate>Mon, 27 Mar 2023 01:44:04 +0330</pubDate>
-      <guid>http://localhost:1313/onboarding-storytelling/</guid>
+      <guid>https://aminrb.me/onboarding-storytelling/</guid>
       <description>When you join a new team, you are usually bombarded with a lot of information. You need to familiarize yourself with the company&amp;rsquo;s culture, facilities, and colleagues. Initially, the onboarding process tends to be welcoming and hospitable. However, after a few days, you are expected to quickly learn about the products, services, and data in order to contribute effectively. It can be overwhelming to try to absorb and utilize all of this information, and eventually, the honeymoon phase ends, leaving you feeling stressed and concerned about your credibility.</description>
     </item>
     <item>
       <title>How Engineering Managers Can Avoid Technical Decay</title>
-      <link>http://localhost:1313/engineering-managers-avoid-technical-decay/</link>
+      <link>https://aminrb.me/engineering-managers-avoid-technical-decay/</link>
       <pubDate>Fri, 27 Jan 2023 19:48:11 +0330</pubDate>
-      <guid>http://localhost:1313/engineering-managers-avoid-technical-decay/</guid>
+      <guid>https://aminrb.me/engineering-managers-avoid-technical-decay/</guid>
       <description>As an engineering manager, it can be easy to feel a sense of distance from the team and concerns about technical decay over time. But there are solutions to this problem! In this article, I explore ways to improve low-level engineering skills, in order to reduce the gap between you and your team members and maintain effectiveness in leading a technical team.
 Reading a lot (mostly on how things work and why they were created), re-doing (for yourself) technical design reviews, and having side projects can help.</description>
     </item>

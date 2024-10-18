@@ -2,208 +2,208 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://aminrb.me/</loc>
     <lastmod>2024-10-17T19:11:32+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fa"
-                href="http://localhost:1313/fa/"
+                href="https://aminrb.me/fa/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/"
+                href="https://aminrb.me/"
                 />
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://aminrb.me/categories/</loc>
     <lastmod>2024-10-17T19:11:32+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fa"
-                href="http://localhost:1313/fa/categories/"
+                href="https://aminrb.me/fa/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/categories/"
+                href="https://aminrb.me/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://aminrb.me/posts/</loc>
     <lastmod>2024-10-17T19:11:32+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fa"
-                href="http://localhost:1313/fa/posts/"
+                href="https://aminrb.me/fa/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/posts/"
+                href="https://aminrb.me/posts/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/secret-rotation/</loc>
+    <loc>https://aminrb.me/tags/secret-rotation/</loc>
     <lastmod>2024-10-17T19:11:32+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/security/</loc>
+    <loc>https://aminrb.me/categories/security/</loc>
     <lastmod>2024-10-17T19:11:32+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://aminrb.me/tags/</loc>
     <lastmod>2024-10-17T19:11:32+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fa"
-                href="http://localhost:1313/fa/tags/"
+                href="https://aminrb.me/fa/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/"
+                href="https://aminrb.me/tags/"
                 />
   </url><url>
-    <loc>http://localhost:1313/secret-rotation/</loc>
+    <loc>https://aminrb.me/secret-rotation/</loc>
     <lastmod>2024-10-17T19:11:32+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/expedition-diaries/</loc>
+    <loc>https://aminrb.me/expedition-diaries/</loc>
     <lastmod>2024-09-23T22:48:20+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/side-projects/</loc>
+    <loc>https://aminrb.me/categories/side-projects/</loc>
     <lastmod>2024-09-23T22:48:20+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/actions-after-mistakes/</loc>
+    <loc>https://aminrb.me/actions-after-mistakes/</loc>
     <lastmod>2024-08-16T14:17:17+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/soft-skills/</loc>
+    <loc>https://aminrb.me/categories/soft-skills/</loc>
     <lastmod>2024-08-16T14:17:17+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/books/</loc>
+    <loc>https://aminrb.me/categories/books/</loc>
     <lastmod>2024-06-20T17:31:56+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/the-clean-coder/</loc>
+    <loc>https://aminrb.me/the-clean-coder/</loc>
     <lastmod>2024-06-20T17:31:56+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/engineering/</loc>
+    <loc>https://aminrb.me/categories/engineering/</loc>
     <lastmod>2024-04-14T11:39:47+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/similarity-search/</loc>
+    <loc>https://aminrb.me/tags/similarity-search/</loc>
     <lastmod>2024-04-14T11:39:47+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/vector-search/</loc>
+    <loc>https://aminrb.me/tags/vector-search/</loc>
     <lastmod>2024-04-14T11:39:47+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/vector-search-introduction/</loc>
+    <loc>https://aminrb.me/vector-search-introduction/</loc>
     <lastmod>2024-04-14T11:39:47+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/communication/</loc>
+    <loc>https://aminrb.me/tags/communication/</loc>
     <lastmod>2024-03-22T09:31:56+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/managing-overdue-tasks/</loc>
+    <loc>https://aminrb.me/managing-overdue-tasks/</loc>
     <lastmod>2024-03-22T09:31:56+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/missed-deadlines/</loc>
+    <loc>https://aminrb.me/tags/missed-deadlines/</loc>
     <lastmod>2024-03-22T09:31:56+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/over-work/</loc>
+    <loc>https://aminrb.me/tags/over-work/</loc>
     <lastmod>2024-03-22T09:31:56+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/soft-skill/</loc>
+    <loc>https://aminrb.me/categories/soft-skill/</loc>
     <lastmod>2024-03-22T09:31:56+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/dummy/</loc>
+    <loc>https://aminrb.me/tags/dummy/</loc>
     <lastmod>2023-12-31T14:37:31+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/fake/</loc>
+    <loc>https://aminrb.me/tags/fake/</loc>
     <lastmod>2023-12-31T14:37:31+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/go/</loc>
+    <loc>https://aminrb.me/tags/go/</loc>
     <lastmod>2023-12-31T14:37:31+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/go-test-double/</loc>
+    <loc>https://aminrb.me/go-test-double/</loc>
     <lastmod>2023-12-31T14:37:31+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/mock/</loc>
+    <loc>https://aminrb.me/tags/mock/</loc>
     <lastmod>2023-12-31T14:37:31+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/programming/</loc>
+    <loc>https://aminrb.me/categories/programming/</loc>
     <lastmod>2023-12-31T14:37:31+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/spy/</loc>
+    <loc>https://aminrb.me/tags/spy/</loc>
     <lastmod>2023-12-31T14:37:31+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/stub/</loc>
+    <loc>https://aminrb.me/tags/stub/</loc>
     <lastmod>2023-12-31T14:37:31+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/test-double/</loc>
+    <loc>https://aminrb.me/tags/test-double/</loc>
     <lastmod>2023-12-31T14:37:31+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/testing/</loc>
+    <loc>https://aminrb.me/tags/testing/</loc>
     <lastmod>2023-12-31T14:37:31+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/extra-work/</loc>
+    <loc>https://aminrb.me/tags/extra-work/</loc>
     <lastmod>2023-07-17T10:32:09+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/extra-work/</loc>
+    <loc>https://aminrb.me/extra-work/</loc>
     <lastmod>2023-07-17T10:32:09+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/onboarding-storytelling/</loc>
+    <loc>https://aminrb.me/onboarding-storytelling/</loc>
     <lastmod>2023-03-27T01:44:04+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/onboarding/</loc>
+    <loc>https://aminrb.me/tags/onboarding/</loc>
     <lastmod>2023-03-27T01:44:04+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/onboarding/</loc>
+    <loc>https://aminrb.me/categories/onboarding/</loc>
     <lastmod>2023-03-27T01:44:04+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/storytelling/</loc>
+    <loc>https://aminrb.me/tags/storytelling/</loc>
     <lastmod>2023-03-27T01:44:04+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/engineering-management/</loc>
+    <loc>https://aminrb.me/tags/engineering-management/</loc>
     <lastmod>2023-01-27T19:48:11+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/engineering-managers-avoid-technical-decay/</loc>
+    <loc>https://aminrb.me/engineering-managers-avoid-technical-decay/</loc>
     <lastmod>2023-01-27T19:48:11+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/leadership/</loc>
+    <loc>https://aminrb.me/tags/leadership/</loc>
     <lastmod>2023-01-27T19:48:11+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/leadership/</loc>
+    <loc>https://aminrb.me/categories/leadership/</loc>
     <lastmod>2023-01-27T19:48:11+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/side-projects/</loc>
+    <loc>https://aminrb.me/side-projects/</loc>
     <lastmod>2023-01-27T10:53:05+03:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fa"
-                href="http://localhost:1313/fa/side-projects/"
+                href="https://aminrb.me/fa/side-projects/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/side-projects/"
+                href="https://aminrb.me/side-projects/"
                 />
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://aminrb.me/about/</loc>
     <lastmod>2023-01-27T10:52:53+03:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fa"
-                href="http://localhost:1313/fa/about/"
+                href="https://aminrb.me/fa/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/about/"
+                href="https://aminrb.me/about/"
                 />
   </url><url>
-    <loc>http://localhost:1313/series/</loc>
+    <loc>https://aminrb.me/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fa"
-                href="http://localhost:1313/fa/series/"
+                href="https://aminrb.me/fa/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/series/"
+                href="https://aminrb.me/series/"
                 />
   </url>
 </urlset>

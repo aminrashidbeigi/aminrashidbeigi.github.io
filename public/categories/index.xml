@@ -2,78 +2,78 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Amin Rashidbeigi</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>https://aminrb.me/categories/</link>
     <description>Recent content in Categories on Amin Rashidbeigi</description>
     <image>
       <title>Amin Rashidbeigi</title>
-      <url>http://localhost:1313/papermod-cover.png</url>
-      <link>http://localhost:1313/papermod-cover.png</link>
+      <url>https://aminrb.me/papermod-cover.png</url>
+      <link>https://aminrb.me/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 17 Oct 2024 19:11:32 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aminrb.me/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Security</title>
-      <link>http://localhost:1313/categories/security/</link>
+      <link>https://aminrb.me/categories/security/</link>
       <pubDate>Thu, 17 Oct 2024 19:11:32 +0200</pubDate>
-      <guid>http://localhost:1313/categories/security/</guid>
+      <guid>https://aminrb.me/categories/security/</guid>
       <description></description>
     </item>
     <item>
       <title>Side-Projects</title>
-      <link>http://localhost:1313/categories/side-projects/</link>
+      <link>https://aminrb.me/categories/side-projects/</link>
       <pubDate>Mon, 23 Sep 2024 22:48:20 +0200</pubDate>
-      <guid>http://localhost:1313/categories/side-projects/</guid>
+      <guid>https://aminrb.me/categories/side-projects/</guid>
       <description></description>
     </item>
     <item>
       <title>Soft-Skills</title>
-      <link>http://localhost:1313/categories/soft-skills/</link>
+      <link>https://aminrb.me/categories/soft-skills/</link>
       <pubDate>Fri, 16 Aug 2024 14:17:17 +0200</pubDate>
-      <guid>http://localhost:1313/categories/soft-skills/</guid>
+      <guid>https://aminrb.me/categories/soft-skills/</guid>
       <description></description>
     </item>
     <item>
       <title>Books</title>
-      <link>http://localhost:1313/categories/books/</link>
+      <link>https://aminrb.me/categories/books/</link>
       <pubDate>Thu, 20 Jun 2024 17:31:56 +0200</pubDate>
-      <guid>http://localhost:1313/categories/books/</guid>
+      <guid>https://aminrb.me/categories/books/</guid>
       <description></description>
     </item>
     <item>
       <title>Engineering</title>
-      <link>http://localhost:1313/categories/engineering/</link>
+      <link>https://aminrb.me/categories/engineering/</link>
       <pubDate>Sun, 14 Apr 2024 11:39:47 +0330</pubDate>
-      <guid>http://localhost:1313/categories/engineering/</guid>
+      <guid>https://aminrb.me/categories/engineering/</guid>
       <description></description>
     </item>
     <item>
       <title>Soft Skill</title>
-      <link>http://localhost:1313/categories/soft-skill/</link>
+      <link>https://aminrb.me/categories/soft-skill/</link>
       <pubDate>Fri, 22 Mar 2024 09:31:56 +0330</pubDate>
-      <guid>http://localhost:1313/categories/soft-skill/</guid>
+      <guid>https://aminrb.me/categories/soft-skill/</guid>
       <description></description>
     </item>
     <item>
       <title>Programming</title>
-      <link>http://localhost:1313/categories/programming/</link>
+      <link>https://aminrb.me/categories/programming/</link>
       <pubDate>Sun, 31 Dec 2023 14:37:31 +0330</pubDate>
-      <guid>http://localhost:1313/categories/programming/</guid>
+      <guid>https://aminrb.me/categories/programming/</guid>
       <description></description>
     </item>
     <item>
       <title>Onboarding</title>
-      <link>http://localhost:1313/categories/onboarding/</link>
+      <link>https://aminrb.me/categories/onboarding/</link>
       <pubDate>Mon, 27 Mar 2023 01:44:04 +0330</pubDate>
-      <guid>http://localhost:1313/categories/onboarding/</guid>
+      <guid>https://aminrb.me/categories/onboarding/</guid>
       <description></description>
     </item>
     <item>
       <title>Leadership</title>
-      <link>http://localhost:1313/categories/leadership/</link>
+      <link>https://aminrb.me/categories/leadership/</link>
       <pubDate>Fri, 27 Jan 2023 19:48:11 +0330</pubDate>
-      <guid>http://localhost:1313/categories/leadership/</guid>
+      <guid>https://aminrb.me/categories/leadership/</guid>
       <description></description>
     </item>
   </channel>

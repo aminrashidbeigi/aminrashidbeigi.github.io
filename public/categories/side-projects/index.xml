@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Side-Projects on Amin Rashidbeigi</title>
-    <link>http://localhost:1313/categories/side-projects/</link>
+    <link>https://aminrb.me/categories/side-projects/</link>
     <description>Recent content in Side-Projects on Amin Rashidbeigi</description>
     <image>
       <title>Amin Rashidbeigi</title>
-      <url>http://localhost:1313/papermod-cover.png</url>
-      <link>http://localhost:1313/papermod-cover.png</link>
+      <url>https://aminrb.me/papermod-cover.png</url>
+      <link>https://aminrb.me/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 23 Sep 2024 22:48:20 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/side-projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aminrb.me/categories/side-projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Expedition Diaries: A Project to Learn</title>
-      <link>http://localhost:1313/expedition-diaries/</link>
+      <link>https://aminrb.me/expedition-diaries/</link>
       <pubDate>Mon, 23 Sep 2024 22:48:20 +0200</pubDate>
-      <guid>http://localhost:1313/expedition-diaries/</guid>
+      <guid>https://aminrb.me/expedition-diaries/</guid>
       <description>A few years ago, I started Expedition Diaries, a personal project to explore old travelogues while learning full-stack development. This post reflects on the journey, the challenges faced, and the lessons learned in backend, frontend, and infrastructure.</description>
     </item>
   </channel>

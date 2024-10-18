@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Engineering-Management on Amin Rashidbeigi</title>
-    <link>http://localhost:1313/tags/engineering-management/</link>
+    <link>https://aminrb.me/tags/engineering-management/</link>
     <description>Recent content in Engineering-Management on Amin Rashidbeigi</description>
     <image>
       <title>Amin Rashidbeigi</title>
-      <url>http://localhost:1313/papermod-cover.png</url>
-      <link>http://localhost:1313/papermod-cover.png</link>
+      <url>https://aminrb.me/papermod-cover.png</url>
+      <link>https://aminrb.me/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 27 Jan 2023 19:48:11 +0330</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/engineering-management/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aminrb.me/tags/engineering-management/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How Engineering Managers Can Avoid Technical Decay</title>
-      <link>http://localhost:1313/engineering-managers-avoid-technical-decay/</link>
+      <link>https://aminrb.me/engineering-managers-avoid-technical-decay/</link>
       <pubDate>Fri, 27 Jan 2023 19:48:11 +0330</pubDate>
-      <guid>http://localhost:1313/engineering-managers-avoid-technical-decay/</guid>
+      <guid>https://aminrb.me/engineering-managers-avoid-technical-decay/</guid>
       <description>As an engineering manager, it can be easy to feel a sense of distance from the team and concerns about technical decay over time. But there are solutions to this problem! In this article, I explore ways to improve low-level engineering skills, in order to reduce the gap between you and your team members and maintain effectiveness in leading a technical team.
 Reading a lot (mostly on how things work and why they were created), re-doing (for yourself) technical design reviews, and having side projects can help.</description>
     </item>

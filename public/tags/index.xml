@@ -2,148 +2,148 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Amin Rashidbeigi</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://aminrb.me/tags/</link>
     <description>Recent content in Tags on Amin Rashidbeigi</description>
     <image>
       <title>Amin Rashidbeigi</title>
-      <url>http://localhost:1313/papermod-cover.png</url>
-      <link>http://localhost:1313/papermod-cover.png</link>
+      <url>https://aminrb.me/papermod-cover.png</url>
+      <link>https://aminrb.me/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 17 Oct 2024 19:11:32 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aminrb.me/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Secret-Rotation</title>
-      <link>http://localhost:1313/tags/secret-rotation/</link>
+      <link>https://aminrb.me/tags/secret-rotation/</link>
       <pubDate>Thu, 17 Oct 2024 19:11:32 +0200</pubDate>
-      <guid>http://localhost:1313/tags/secret-rotation/</guid>
+      <guid>https://aminrb.me/tags/secret-rotation/</guid>
       <description></description>
     </item>
     <item>
       <title>Similarity Search</title>
-      <link>http://localhost:1313/tags/similarity-search/</link>
+      <link>https://aminrb.me/tags/similarity-search/</link>
       <pubDate>Sun, 14 Apr 2024 11:39:47 +0330</pubDate>
-      <guid>http://localhost:1313/tags/similarity-search/</guid>
+      <guid>https://aminrb.me/tags/similarity-search/</guid>
       <description></description>
     </item>
     <item>
       <title>Vector Search</title>
-      <link>http://localhost:1313/tags/vector-search/</link>
+      <link>https://aminrb.me/tags/vector-search/</link>
       <pubDate>Sun, 14 Apr 2024 11:39:47 +0330</pubDate>
-      <guid>http://localhost:1313/tags/vector-search/</guid>
+      <guid>https://aminrb.me/tags/vector-search/</guid>
       <description></description>
     </item>
     <item>
       <title>Communication</title>
-      <link>http://localhost:1313/tags/communication/</link>
+      <link>https://aminrb.me/tags/communication/</link>
       <pubDate>Fri, 22 Mar 2024 09:31:56 +0330</pubDate>
-      <guid>http://localhost:1313/tags/communication/</guid>
+      <guid>https://aminrb.me/tags/communication/</guid>
       <description></description>
     </item>
     <item>
       <title>Missed Deadlines</title>
-      <link>http://localhost:1313/tags/missed-deadlines/</link>
+      <link>https://aminrb.me/tags/missed-deadlines/</link>
       <pubDate>Fri, 22 Mar 2024 09:31:56 +0330</pubDate>
-      <guid>http://localhost:1313/tags/missed-deadlines/</guid>
+      <guid>https://aminrb.me/tags/missed-deadlines/</guid>
       <description></description>
     </item>
     <item>
       <title>Over Work</title>
-      <link>http://localhost:1313/tags/over-work/</link>
+      <link>https://aminrb.me/tags/over-work/</link>
       <pubDate>Fri, 22 Mar 2024 09:31:56 +0330</pubDate>
-      <guid>http://localhost:1313/tags/over-work/</guid>
+      <guid>https://aminrb.me/tags/over-work/</guid>
       <description></description>
     </item>
     <item>
       <title>Dummy</title>
-      <link>http://localhost:1313/tags/dummy/</link>
+      <link>https://aminrb.me/tags/dummy/</link>
       <pubDate>Sun, 31 Dec 2023 14:37:31 +0330</pubDate>
-      <guid>http://localhost:1313/tags/dummy/</guid>
+      <guid>https://aminrb.me/tags/dummy/</guid>
       <description></description>
     </item>
     <item>
       <title>Fake</title>
-      <link>http://localhost:1313/tags/fake/</link>
+      <link>https://aminrb.me/tags/fake/</link>
       <pubDate>Sun, 31 Dec 2023 14:37:31 +0330</pubDate>
-      <guid>http://localhost:1313/tags/fake/</guid>
+      <guid>https://aminrb.me/tags/fake/</guid>
       <description></description>
     </item>
     <item>
       <title>Go</title>
-      <link>http://localhost:1313/tags/go/</link>
+      <link>https://aminrb.me/tags/go/</link>
       <pubDate>Sun, 31 Dec 2023 14:37:31 +0330</pubDate>
-      <guid>http://localhost:1313/tags/go/</guid>
+      <guid>https://aminrb.me/tags/go/</guid>
       <description></description>
     </item>
     <item>
       <title>Mock</title>
-      <link>http://localhost:1313/tags/mock/</link>
+      <link>https://aminrb.me/tags/mock/</link>
       <pubDate>Sun, 31 Dec 2023 14:37:31 +0330</pubDate>
-      <guid>http://localhost:1313/tags/mock/</guid>
+      <guid>https://aminrb.me/tags/mock/</guid>
       <description></description>
     </item>
     <item>
       <title>Spy</title>
-      <link>http://localhost:1313/tags/spy/</link>
+      <link>https://aminrb.me/tags/spy/</link>
       <pubDate>Sun, 31 Dec 2023 14:37:31 +0330</pubDate>
-      <guid>http://localhost:1313/tags/spy/</guid>
+      <guid>https://aminrb.me/tags/spy/</guid>
       <description></description>
     </item>
     <item>
       <title>Stub</title>
-      <link>http://localhost:1313/tags/stub/</link>
+      <link>https://aminrb.me/tags/stub/</link>
       <pubDate>Sun, 31 Dec 2023 14:37:31 +0330</pubDate>
-      <guid>http://localhost:1313/tags/stub/</guid>
+      <guid>https://aminrb.me/tags/stub/</guid>
       <description></description>
     </item>
     <item>
       <title>Test Double</title>
-      <link>http://localhost:1313/tags/test-double/</link>
+      <link>https://aminrb.me/tags/test-double/</link>
       <pubDate>Sun, 31 Dec 2023 14:37:31 +0330</pubDate>
-      <guid>http://localhost:1313/tags/test-double/</guid>
+      <guid>https://aminrb.me/tags/test-double/</guid>
       <description></description>
     </item>
     <item>
       <title>Testing</title>
-      <link>http://localhost:1313/tags/testing/</link>
+      <link>https://aminrb.me/tags/testing/</link>
       <pubDate>Sun, 31 Dec 2023 14:37:31 +0330</pubDate>
-      <guid>http://localhost:1313/tags/testing/</guid>
+      <guid>https://aminrb.me/tags/testing/</guid>
       <description></description>
     </item>
     <item>
       <title>Extra Work</title>
-      <link>http://localhost:1313/tags/extra-work/</link>
+      <link>https://aminrb.me/tags/extra-work/</link>
       <pubDate>Mon, 17 Jul 2023 10:32:09 +0330</pubDate>
-      <guid>http://localhost:1313/tags/extra-work/</guid>
+      <guid>https://aminrb.me/tags/extra-work/</guid>
       <description></description>
     </item>
     <item>
       <title>Onboarding</title>
-      <link>http://localhost:1313/tags/onboarding/</link>
+      <link>https://aminrb.me/tags/onboarding/</link>
       <pubDate>Mon, 27 Mar 2023 01:44:04 +0330</pubDate>
-      <guid>http://localhost:1313/tags/onboarding/</guid>
+      <guid>https://aminrb.me/tags/onboarding/</guid>
       <description></description>
     </item>
     <item>
       <title>Storytelling</title>
-      <link>http://localhost:1313/tags/storytelling/</link>
+      <link>https://aminrb.me/tags/storytelling/</link>
       <pubDate>Mon, 27 Mar 2023 01:44:04 +0330</pubDate>
-      <guid>http://localhost:1313/tags/storytelling/</guid>
+      <guid>https://aminrb.me/tags/storytelling/</guid>
       <description></description>
     </item>
     <item>
       <title>Engineering-Management</title>
-      <link>http://localhost:1313/tags/engineering-management/</link>
+      <link>https://aminrb.me/tags/engineering-management/</link>
       <pubDate>Fri, 27 Jan 2023 19:48:11 +0330</pubDate>
-      <guid>http://localhost:1313/tags/engineering-management/</guid>
+      <guid>https://aminrb.me/tags/engineering-management/</guid>
       <description></description>
     </item>
     <item>
       <title>Leadership</title>
-      <link>http://localhost:1313/tags/leadership/</link>
+      <link>https://aminrb.me/tags/leadership/</link>
       <pubDate>Fri, 27 Jan 2023 19:48:11 +0330</pubDate>
-      <guid>http://localhost:1313/tags/leadership/</guid>
+      <guid>https://aminrb.me/tags/leadership/</guid>
       <description></description>
     </item>
   </channel>

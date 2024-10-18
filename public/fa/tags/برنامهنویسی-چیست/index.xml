@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>برنامه‌نویسی چیست on امین رشیدبیگی</title>
-    <link>http://localhost:1313/fa/tags/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%D9%86%D9%88%DB%8C%D8%B3%DB%8C-%DA%86%DB%8C%D8%B3%D8%AA/</link>
+    <link>https://aminrb.me/fa/tags/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%D9%86%D9%88%DB%8C%D8%B3%DB%8C-%DA%86%DB%8C%D8%B3%D8%AA/</link>
     <description>Recent content in برنامه‌نویسی چیست on امین رشیدبیگی</description>
     <image>
       <title>امین رشیدبیگی</title>
-      <url>http://localhost:1313/papermod-cover.png</url>
-      <link>http://localhost:1313/papermod-cover.png</link>
+      <url>https://aminrb.me/papermod-cover.png</url>
+      <link>https://aminrb.me/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>fa</language>
     <lastBuildDate>Sat, 18 Feb 2023 10:58:11 +0330</lastBuildDate>
-    <atom:link href="http://localhost:1313/fa/tags/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%D9%86%D9%88%DB%8C%D8%B3%DB%8C-%DA%86%DB%8C%D8%B3%D8%AA/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aminrb.me/fa/tags/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%D9%86%D9%88%DB%8C%D8%B3%DB%8C-%DA%86%DB%8C%D8%B3%D8%AA/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>شروع برنامه‌نویسی: برنامه‌نویسی چیه و چه کاربردهایی داره؟</title>
-      <link>http://localhost:1313/fa/%D8%AA%D8%B9%D8%B1%DB%8C%D9%81-%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%D8%AF-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/</link>
+      <link>https://aminrb.me/fa/%D8%AA%D8%B9%D8%B1%DB%8C%D9%81-%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%D8%AF-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/</link>
       <pubDate>Sat, 18 Feb 2023 10:58:11 +0330</pubDate>
-      <guid>http://localhost:1313/fa/%D8%AA%D8%B9%D8%B1%DB%8C%D9%81-%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%D8%AF-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/</guid>
+      <guid>https://aminrb.me/fa/%D8%AA%D8%B9%D8%B1%DB%8C%D9%81-%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%D8%AF-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/</guid>
       <description>این پست، اولین پست از مجموعهٔ شروع برنامه‌نویسی است که قراره فضای برنامه‌نویسی و مسیرهایی که میشه به کمکش رفت رو برای افرادی که هیچ تجربه‌ای در این حوزه ندارن و یا تجربهٔ خیلی کمی دارن شفاف‌تر کنه. توی این مطلب، اول از همه تعریفمون رو از برنامه‌نویسی همسو می‌کنیم و در ادامه کاربردهای حال و آینده این حوزه رو بررسی می‌کنیم.
 همهٔ پست‌های این سری رو می‌تونین توی صفحه شروع برنامه‌نویسی ببینین.</description>
     </item>
