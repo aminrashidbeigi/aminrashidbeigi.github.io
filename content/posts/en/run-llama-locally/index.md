@@ -1,8 +1,8 @@
 ---
-title: Run Llama3 Locally
+title: Run Llama 3 Locally
 date: 2024-10-24T07:45:12+02:00
 draft: false
-description: "A step-by-step guide on how to run llama3 locally or on an external machine to have a free and self-hosted LLM."
+description: "A step-by-step guide on how to run llama 3 locally or on an external machine to have a free and self-hosted LLM."
 categories:
 - llm
 tags:
