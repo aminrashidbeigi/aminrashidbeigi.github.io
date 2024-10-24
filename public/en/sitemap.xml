@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://aminrb.me/</loc>
-    <lastmod>2024-10-17T19:11:32+02:00</lastmod>
+    <lastmod>2024-10-24T07:45:12+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fa"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://aminrb.me/categories/</loc>
-    <lastmod>2024-10-17T19:11:32+02:00</lastmod>
+    <lastmod>2024-10-24T07:45:12+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fa"
@@ -28,8 +28,14 @@
                 href="https://aminrb.me/categories/"
                 />
   </url><url>
+    <loc>https://aminrb.me/categories/llm/</loc>
+    <lastmod>2024-10-24T07:45:12+02:00</lastmod>
+  </url><url>
+    <loc>https://aminrb.me/tags/ollama/</loc>
+    <lastmod>2024-10-24T07:45:12+02:00</lastmod>
+  </url><url>
     <loc>https://aminrb.me/posts/</loc>
-    <lastmod>2024-10-17T19:11:32+02:00</lastmod>
+    <lastmod>2024-10-24T07:45:12+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fa"
@@ -41,14 +47,14 @@
                 href="https://aminrb.me/posts/"
                 />
   </url><url>
-    <loc>https://aminrb.me/tags/secret-rotation/</loc>
-    <lastmod>2024-10-17T19:11:32+02:00</lastmod>
+    <loc>https://aminrb.me/run-llama-locally/</loc>
+    <lastmod>2024-10-24T07:45:12+02:00</lastmod>
   </url><url>
-    <loc>https://aminrb.me/categories/security/</loc>
-    <lastmod>2024-10-17T19:11:32+02:00</lastmod>
+    <loc>https://aminrb.me/tags/self-hosted-llm/</loc>
+    <lastmod>2024-10-24T07:45:12+02:00</lastmod>
   </url><url>
     <loc>https://aminrb.me/tags/</loc>
-    <lastmod>2024-10-17T19:11:32+02:00</lastmod>
+    <lastmod>2024-10-24T07:45:12+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fa"
@@ -59,6 +65,12 @@
                 hreflang="en"
                 href="https://aminrb.me/tags/"
                 />
+  </url><url>
+    <loc>https://aminrb.me/tags/secret-rotation/</loc>
+    <lastmod>2024-10-17T19:11:32+02:00</lastmod>
+  </url><url>
+    <loc>https://aminrb.me/categories/security/</loc>
+    <lastmod>2024-10-17T19:11:32+02:00</lastmod>
   </url><url>
     <loc>https://aminrb.me/secret-rotation/</loc>
     <lastmod>2024-10-17T19:11:32+02:00</lastmod>

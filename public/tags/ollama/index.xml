@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ollama on Amin Rashidbeigi</title>
+    <link>https://aminrb.me/tags/ollama/</link>
+    <description>Recent content in Ollama on Amin Rashidbeigi</description>
+    <image>
+      <title>Amin Rashidbeigi</title>
+      <url>https://aminrb.me/papermod-cover.png</url>
+      <link>https://aminrb.me/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 24 Oct 2024 07:45:12 +0200</lastBuildDate>
+    <atom:link href="https://aminrb.me/tags/ollama/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Run Llama3 Locally</title>
+      <link>https://aminrb.me/run-llama-locally/</link>
+      <pubDate>Thu, 24 Oct 2024 07:45:12 +0200</pubDate>
+      <guid>https://aminrb.me/run-llama-locally/</guid>
+      <description>A step-by-step guide on how to run llama3 locally or on an external machine to have a free and self-hosted LLM.</description>
+    </item>
+  </channel>
+</rss>

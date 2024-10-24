@@ -18,17 +18,17 @@ Have you ever accidentally pushed a sensitive password and realized how difficul
 
 In these cases, the first thing you'd do is change the secret. But what if you never caught the log in the first place? Or how can you be sure no one else has pushed sensitive data? This is where **Secret Rotation** comes in.
 
-### What is Secret Rotation?
+## What is Secret Rotation?
 
 Secret rotation is the practice of regularly updating or replacing sensitive credentials used in applications and systems. These credentials could be anything from passwords and API keys to encryption keys, certificates, or other authentication tokens. The process can be either manual or automated using secret management tools like [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating-secrets.html).
 
-### When Should You Start Secret Rotation?
+## When Should You Start Secret Rotation?
 
 You might think secret rotation is something only big companies with many employees or years of experience need to worry about. However, waiting too long to implement it can make it too expensive to adopt. Secrets often spread across different projects and teams, making it costly and complicated to change a single secret.
 
 Once, while working on a project, I was given a key with high-level access to modify data I didn't need. When I communicated it with my manager, I discovered that many others used the same key across multiple projects. Changing it became a considerable challenge because not only did every user need to update their keys, but we also had to identify all the projects using this key. If we disabled it, many things could stop working. The complexity and risk made it challenging to take action, forcing the team to explore other out-of-the-box solutions.
 
-### Why Start Secret Rotation Early?
+## Why Start Secret Rotation Early?
 
 We've realized that starting secret rotation late can make it hard to change. But there are other benefits to starting early as well.
 
