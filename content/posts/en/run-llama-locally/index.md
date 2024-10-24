@@ -14,9 +14,11 @@ cover:
     alt: "An image of a llama in a watercolor style"
 slug: "run-llama-locally"
 ---
-In the generative AI era and with large language models, they say the only limitation is your imagination. So, as maybe you, I had some ideas to implement with LLMs, but I didn’t want to spend so much money testing my MVPs. So, I decided to run [Llama](https://www.llama.com/), the Meta open-source LLM, on my machine or a VM to implement my prototypes with a free and self-hosted LLM.
 
-I'm writing this post to guide you on how to run Llama locally step by step.
+
+In the generative AI era and with large language models, they say the only limitation is your imagination. So, as maybe you, I had some ideas to implement with LLMs, but I didn’t want to spend a lot on testing and validating my prototypes. So, I decided to run [Llama](https://www.llama.com/), the Meta open-source LLM, on my machine or a VM to implement my prototypes with a free and self-hosted LLM.
+
+This post is a guide on how to run Llama locally, step by step.
 
 ## What You Need to Get Started
 
