@@ -37,7 +37,7 @@ You can choose the version that is most convenient for you. As a general rule, t
 Once it is installed, you can run the `serve` command to ensure that it works and is ready to be served:
 
 ```bash
-llama serve
+ollama serve
 ```
 
 ### Step 2: Pull the Llama3 Model
