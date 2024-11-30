@@ -38,15 +38,23 @@ params:
       - name: CSV
         url: amin-rashidbeigi-cv-feb2023.pdf
   homeInfoParams:
-    Title: "Hi!"
+    Title: "Hi there! 👋"
     Content: >
-      Hello there! My name is Amin, and I have a Bachelor's degree in Computer Engineering and a Master's degree in Artificial Intelligence.
-      I have a strong interest in both the software industry and leadership.
+      I’m Amin, a software engineer navigating the joys and challenges of tech life. On this site, I share my thoughts on software engineering, team leadership, and everything in between.
+
+
+      Curious to know more about me? Head over to my [about page](/about/).
+
+
+      If you’re a Persian reader, you can follow my [Telegram channel](https://t.me/aminrbg) for updates on new posts.
+
+
+      And hey, I’d love to hear from you! Feel free to connect with me on [Twitter](https://twitter.com/AminRashidbeigi) or [LinkedIn](https://www.linkedin.com/in/amin-rashidbeigi)—whether you have questions, ideas to share, or just want to say hi.
   socialIcons:
     - name: github
       url: "https://github.com/aminrashidbeigi"
-    - name: medium
-      url: "https://medium.com/@amin.rashidbeigi"
+    # - name: medium
+    # url: "https://medium.com/@amin.rashidbeigi"
     - name: linkedin
       url: "https://www.linkedin.com/in/amin-rashidbeigi"
     - name: twitter
