@@ -51,14 +51,14 @@ params:
 
       And hey, I’d love to hear from you! Feel free to connect with me on [Twitter](https://twitter.com/AminRashidbeigi) or [LinkedIn](https://www.linkedin.com/in/amin-rashidbeigi)—whether you have questions, ideas to share, or just want to say hi.
   socialIcons:
+    - name: twitter
+      url: "https://twitter.com/AminRashidbeigi"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/amin-rashidbeigi"
     - name: github
       url: "https://github.com/aminrashidbeigi"
     # - name: medium
     # url: "https://medium.com/@amin.rashidbeigi"
-    - name: linkedin
-      url: "https://www.linkedin.com/in/amin-rashidbeigi"
-    - name: twitter
-      url: "https://twitter.com/AminRashidbeigi"
     - name: stackoverflow
       url: "https://stackoverflow.com/users/5714900/amin-rashidbeigi"
     - name: goodreads
