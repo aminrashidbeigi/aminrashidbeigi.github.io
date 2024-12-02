@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://aminrb.me/vector-search-introduction/</loc>
+    <lastmod>2024-04-14T11:39:47+03:30</lastmod>
+  </url><url>
+    <loc>https://aminrb.me/run-llama-locally/</loc>
+    <lastmod>2024-10-24T07:45:12+02:00</lastmod>
+  </url><url>
+    <loc>https://aminrb.me/go-test-double/</loc>
+    <lastmod>2023-12-31T14:37:31+03:30</lastmod>
+  </url><url>
     <loc>https://aminrb.me/</loc>
     <lastmod>2024-10-29T07:45:12+02:00</lastmod>
     <xhtml:link
@@ -45,9 +54,6 @@
     <lastmod>2024-10-24T07:45:12+02:00</lastmod>
   </url><url>
     <loc>https://aminrb.me/tags/ollama/</loc>
-    <lastmod>2024-10-24T07:45:12+02:00</lastmod>
-  </url><url>
-    <loc>https://aminrb.me/run-llama-locally/</loc>
     <lastmod>2024-10-24T07:45:12+02:00</lastmod>
   </url><url>
     <loc>https://aminrb.me/tags/self-hosted-llm/</loc>
@@ -102,9 +108,6 @@
     <loc>https://aminrb.me/tags/vector-search/</loc>
     <lastmod>2024-04-14T11:39:47+03:30</lastmod>
   </url><url>
-    <loc>https://aminrb.me/vector-search-introduction/</loc>
-    <lastmod>2024-04-14T11:39:47+03:30</lastmod>
-  </url><url>
     <loc>https://aminrb.me/tags/communication/</loc>
     <lastmod>2024-03-22T09:31:56+03:30</lastmod>
   </url><url>
@@ -127,9 +130,6 @@
     <lastmod>2023-12-31T14:37:31+03:30</lastmod>
   </url><url>
     <loc>https://aminrb.me/tags/go/</loc>
-    <lastmod>2023-12-31T14:37:31+03:30</lastmod>
-  </url><url>
-    <loc>https://aminrb.me/go-test-double/</loc>
     <lastmod>2023-12-31T14:37:31+03:30</lastmod>
   </url><url>
     <loc>https://aminrb.me/tags/mock/</loc>

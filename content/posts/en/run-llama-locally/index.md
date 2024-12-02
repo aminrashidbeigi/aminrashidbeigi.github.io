@@ -13,6 +13,7 @@ cover:
     caption: "Image Generated with [Microsoft Designer](https://designer.microsoft.com/)"
     alt: "An image of a llama in a watercolor style"
 slug: "run-llama-locally"
+weight: 2
 ---
 
 

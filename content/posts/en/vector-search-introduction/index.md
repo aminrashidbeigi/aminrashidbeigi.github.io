@@ -13,6 +13,7 @@ cover:
     caption: "Image Generated with [DALL.E 3](https://openai.com/dall-e-3)"
     alt: "A magnifier and some numeric values."
 slug: "vector-search-introduction"
+weight: 1
 ---
 
 ## What Is Vector Search?
