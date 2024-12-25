@@ -21,7 +21,6 @@ cover:
 slug: "go-test-double"
 aliases:
 - /blog/go-test-double
-weight: 3
 ---
 
 

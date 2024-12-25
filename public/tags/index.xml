@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 24 Oct 2024 07:45:12 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 25 Dec 2024 12:59:36 +0200</lastBuildDate>
     <atom:link href="https://aminrb.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Year-Review</title>
+      <link>https://aminrb.me/tags/year-review/</link>
+      <pubDate>Wed, 25 Dec 2024 12:59:36 +0200</pubDate>
+      <guid>https://aminrb.me/tags/year-review/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Ollama</title>
       <link>https://aminrb.me/tags/ollama/</link>

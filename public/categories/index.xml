@@ -11,8 +11,22 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 24 Oct 2024 07:45:12 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 25 Dec 2024 12:59:36 +0200</lastBuildDate>
     <atom:link href="https://aminrb.me/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Career</title>
+      <link>https://aminrb.me/categories/career/</link>
+      <pubDate>Wed, 25 Dec 2024 12:59:36 +0200</pubDate>
+      <guid>https://aminrb.me/categories/career/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Life</title>
+      <link>https://aminrb.me/categories/life/</link>
+      <pubDate>Wed, 25 Dec 2024 12:59:36 +0200</pubDate>
+      <guid>https://aminrb.me/categories/life/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Llm</title>
       <link>https://aminrb.me/categories/llm/</link>

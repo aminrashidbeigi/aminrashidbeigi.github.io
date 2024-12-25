@@ -11,14 +11,14 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 29 Oct 2024 07:45:12 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 25 Dec 2024 12:59:36 +0200</lastBuildDate>
     <atom:link href="https://aminrb.me/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Vector Search: An Introduction</title>
-      <link>https://aminrb.me/vector-search-introduction/</link>
-      <pubDate>Sun, 14 Apr 2024 11:39:47 +0330</pubDate>
-      <guid>https://aminrb.me/vector-search-introduction/</guid>
-      <description>In this post, we explore the fundamentals of vector search, discussing how it operates and its applications across different data formats. You&amp;#39;ll discover the key components required to implement vector search and its potential to enhance search functionalities.</description>
+      <title>2024 in Review</title>
+      <link>https://aminrb.me/2024-in-review/</link>
+      <pubDate>Wed, 25 Dec 2024 12:59:36 +0200</pubDate>
+      <guid>https://aminrb.me/2024-in-review/</guid>
+      <description>In this post, I will review 2024 and give some career and life updates.</description>
     </item>
     <item>
       <title>Run Llama 3 Locally</title>
@@ -26,13 +26,6 @@
       <pubDate>Thu, 24 Oct 2024 07:45:12 +0200</pubDate>
       <guid>https://aminrb.me/run-llama-locally/</guid>
       <description>A step-by-step guide on how to run llama 3 locally or on an external machine to have a free and self-hosted LLM.</description>
-    </item>
-    <item>
-      <title>Go Test Doubles by Example</title>
-      <link>https://aminrb.me/go-test-double/</link>
-      <pubDate>Sun, 31 Dec 2023 14:37:31 +0330</pubDate>
-      <guid>https://aminrb.me/go-test-double/</guid>
-      <description>Test doubles serve as an alternative to real dependencies in testing. In this post, we&amp;#39;ll review all test doubles using a real-world Go example.</description>
     </item>
     <item>
       <title>When to Start Secret Rotation</title>
@@ -63,11 +56,25 @@
       <description>This post shares my thoughts on &amp;#39;The Clean Coder&amp;#39; by Uncle Bob, focusing on topics that I found particularly interesting or debatable.</description>
     </item>
     <item>
+      <title>Vector Search: An Introduction</title>
+      <link>https://aminrb.me/vector-search-introduction/</link>
+      <pubDate>Sun, 14 Apr 2024 11:39:47 +0330</pubDate>
+      <guid>https://aminrb.me/vector-search-introduction/</guid>
+      <description>In this post, we explore the fundamentals of vector search, discussing how it operates and its applications across different data formats. You&amp;#39;ll discover the key components required to implement vector search and its potential to enhance search functionalities.</description>
+    </item>
+    <item>
       <title>Managing Overdue Tasks</title>
       <link>https://aminrb.me/managing-overdue-tasks/</link>
       <pubDate>Fri, 22 Mar 2024 09:31:56 +0330</pubDate>
       <guid>https://aminrb.me/managing-overdue-tasks/</guid>
       <description>This post provides insights into managing overdue tasks, exploring various strategies for effectively handling such situations.</description>
+    </item>
+    <item>
+      <title>Go Test Doubles by Example</title>
+      <link>https://aminrb.me/go-test-double/</link>
+      <pubDate>Sun, 31 Dec 2023 14:37:31 +0330</pubDate>
+      <guid>https://aminrb.me/go-test-double/</guid>
+      <description>Test doubles serve as an alternative to real dependencies in testing. In this post, we&amp;#39;ll review all test doubles using a real-world Go example.</description>
     </item>
     <item>
       <title>Navigating Extra Work in Programming Teams</title>
