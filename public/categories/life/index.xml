@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Life on Amin Rashidbeigi</title>
-    <link>http://localhost:1313/categories/life/</link>
+    <link>https://aminrb.me/categories/life/</link>
     <description>Recent content in Life on Amin Rashidbeigi</description>
     <image>
       <title>Amin Rashidbeigi</title>
-      <url>http://localhost:1313/papermod-cover.png</url>
-      <link>http://localhost:1313/papermod-cover.png</link>
+      <url>https://aminrb.me/papermod-cover.png</url>
+      <link>https://aminrb.me/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 25 Dec 2024 12:59:36 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/life/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aminrb.me/categories/life/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2024 in Review</title>
-      <link>http://localhost:1313/2024-in-review/</link>
+      <link>https://aminrb.me/2024-in-review/</link>
       <pubDate>Wed, 25 Dec 2024 12:59:36 +0200</pubDate>
-      <guid>http://localhost:1313/2024-in-review/</guid>
+      <guid>https://aminrb.me/2024-in-review/</guid>
       <description>In this post, I will review 2024 and give some career and life updates.</description>
     </item>
   </channel>

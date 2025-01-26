@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Secret-Rotation on Amin Rashidbeigi</title>
-    <link>http://localhost:1313/tags/secret-rotation/</link>
+    <link>https://aminrb.me/tags/secret-rotation/</link>
     <description>Recent content in Secret-Rotation on Amin Rashidbeigi</description>
     <image>
       <title>Amin Rashidbeigi</title>
-      <url>http://localhost:1313/papermod-cover.png</url>
-      <link>http://localhost:1313/papermod-cover.png</link>
+      <url>https://aminrb.me/papermod-cover.png</url>
+      <link>https://aminrb.me/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 17 Oct 2024 19:11:32 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/secret-rotation/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aminrb.me/tags/secret-rotation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>When to Start Secret Rotation</title>
-      <link>http://localhost:1313/secret-rotation/</link>
+      <link>https://aminrb.me/secret-rotation/</link>
       <pubDate>Thu, 17 Oct 2024 19:11:32 +0200</pubDate>
-      <guid>http://localhost:1313/secret-rotation/</guid>
+      <guid>https://aminrb.me/secret-rotation/</guid>
       <description>An overview of secret rotation, discussing when to implement it to reduce the risk of data leaks.</description>
     </item>
   </channel>
