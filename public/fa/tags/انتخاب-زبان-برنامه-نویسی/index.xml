@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>انتخاب زبان برنامه‌ نویسی on امین رشیدبیگی</title>
-    <link>https://aminrb.me/fa/tags/%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8-%D8%B2%D8%A8%D8%A7%D9%86-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/</link>
+    <link>http://localhost:1313/fa/tags/%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8-%D8%B2%D8%A8%D8%A7%D9%86-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/</link>
     <description>Recent content in انتخاب زبان برنامه‌ نویسی on امین رشیدبیگی</description>
     <image>
       <title>امین رشیدبیگی</title>
-      <url>https://aminrb.me/papermod-cover.png</url>
-      <link>https://aminrb.me/papermod-cover.png</link>
+      <url>http://localhost:1313/papermod-cover.png</url>
+      <link>http://localhost:1313/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>fa</language>
     <lastBuildDate>Tue, 07 Mar 2023 10:58:12 +0330</lastBuildDate>
-    <atom:link href="https://aminrb.me/fa/tags/%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8-%D8%B2%D8%A8%D8%A7%D9%86-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/fa/tags/%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8-%D8%B2%D8%A8%D8%A7%D9%86-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>شروع برنامه‌نویسی: مراحل یادگیری</title>
-      <link>https://aminrb.me/fa/%D9%85%D8%B1%D8%A7%D8%AD%D9%84-%DB%8C%D8%A7%D8%AF%DA%AF%DB%8C%D8%B1%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/</link>
+      <link>http://localhost:1313/fa/%D9%85%D8%B1%D8%A7%D8%AD%D9%84-%DB%8C%D8%A7%D8%AF%DA%AF%DB%8C%D8%B1%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/</link>
       <pubDate>Tue, 07 Mar 2023 10:58:12 +0330</pubDate>
-      <guid>https://aminrb.me/fa/%D9%85%D8%B1%D8%A7%D8%AD%D9%84-%DB%8C%D8%A7%D8%AF%DA%AF%DB%8C%D8%B1%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/</guid>
+      <guid>http://localhost:1313/fa/%D9%85%D8%B1%D8%A7%D8%AD%D9%84-%DB%8C%D8%A7%D8%AF%DA%AF%DB%8C%D8%B1%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/</guid>
       <description>این پست، دومین پست از مجموعهٔ شروع برنامه‌نویسی ه. این مجموعه قراره که فضای برنامه‌نویسی و مسیرهایی که به کمک این ابزار می‌شه طی کرد رو ترسیم کنه. هدف این مجموعه اینه که این مسیر رو برای افرادی که هیچ تجربه‌ای در این حوزه ندارن و یا تجربهٔ خیلی کمی دارن شفاف‌تر کنه. در مطلب سعی‌ می‌کنم نقشه راه شروع برنامه‌نویسی تا حرفه‌ای شدن رو از نگاه خودم مجسم کنم.</description>
     </item>
   </channel>

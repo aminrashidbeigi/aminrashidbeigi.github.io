@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Year-Review on امین رشیدبیگی</title>
+    <link>http://localhost:1313/fa/tags/year-review/</link>
+    <description>Recent content in Year-Review on امین رشیدبیگی</description>
+    <image>
+      <title>امین رشیدبیگی</title>
+      <url>http://localhost:1313/papermod-cover.png</url>
+      <link>http://localhost:1313/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fa</language>
+    <lastBuildDate>Wed, 25 Dec 2024 12:59:36 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/fa/tags/year-review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>من اولین کسی هستم که پول ریکوستم رو ریویو می‌کنم</title>
+      <link>http://localhost:1313/fa/%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%DA%A9%D9%86%D9%86%D8%AF%D9%87-%D9%BE%D9%88%D9%84-%D8%B1%DB%8C%DA%A9%D9%88%D8%B3%D8%AA/</link>
+      <pubDate>Wed, 25 Dec 2024 12:59:36 +0200</pubDate>
+      <guid>http://localhost:1313/fa/%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%DA%A9%D9%86%D9%86%D8%AF%D9%87-%D9%BE%D9%88%D9%84-%D8%B1%DB%8C%DA%A9%D9%88%D8%B3%D8%AA/</guid>
+      <description>In this post, I will review 2024 and give some career and life updates.</description>
+    </item>
+  </channel>
+</rss>

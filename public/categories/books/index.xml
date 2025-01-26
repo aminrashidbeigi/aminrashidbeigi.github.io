@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Books on Amin Rashidbeigi</title>
-    <link>https://aminrb.me/categories/books/</link>
+    <link>http://localhost:1313/categories/books/</link>
     <description>Recent content in Books on Amin Rashidbeigi</description>
     <image>
       <title>Amin Rashidbeigi</title>
-      <url>https://aminrb.me/papermod-cover.png</url>
-      <link>https://aminrb.me/papermod-cover.png</link>
+      <url>http://localhost:1313/papermod-cover.png</url>
+      <link>http://localhost:1313/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 20 Jun 2024 17:31:56 +0200</lastBuildDate>
-    <atom:link href="https://aminrb.me/categories/books/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/books/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Thoughts on The Clean Coder Book</title>
-      <link>https://aminrb.me/the-clean-coder/</link>
+      <link>http://localhost:1313/the-clean-coder/</link>
       <pubDate>Thu, 20 Jun 2024 17:31:56 +0200</pubDate>
-      <guid>https://aminrb.me/the-clean-coder/</guid>
+      <guid>http://localhost:1313/the-clean-coder/</guid>
       <description>This post shares my thoughts on &amp;#39;The Clean Coder&amp;#39; by Uncle Bob, focusing on topics that I found particularly interesting or debatable.</description>
     </item>
   </channel>

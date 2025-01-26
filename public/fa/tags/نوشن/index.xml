@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>نوشن on امین رشیدبیگی</title>
-    <link>https://aminrb.me/fa/tags/%D9%86%D9%88%D8%B4%D9%86/</link>
+    <link>http://localhost:1313/fa/tags/%D9%86%D9%88%D8%B4%D9%86/</link>
     <description>Recent content in نوشن on امین رشیدبیگی</description>
     <image>
       <title>امین رشیدبیگی</title>
-      <url>https://aminrb.me/papermod-cover.png</url>
-      <link>https://aminrb.me/papermod-cover.png</link>
+      <url>http://localhost:1313/papermod-cover.png</url>
+      <link>http://localhost:1313/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>fa</language>
     <lastBuildDate>Sat, 15 Apr 2023 10:44:32 +0330</lastBuildDate>
-    <atom:link href="https://aminrb.me/fa/tags/%D9%86%D9%88%D8%B4%D9%86/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/fa/tags/%D9%86%D9%88%D8%B4%D9%86/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>انتقال هایلایت‌ها از Kindle به Notion</title>
-      <link>https://aminrb.me/fa/%D8%A7%D9%86%D8%AA%D9%82%D8%A7%D9%84-%D9%87%D8%A7%DB%8C%D9%84%D8%A7%DB%8C%D8%AA-kindle-notion/</link>
+      <link>http://localhost:1313/fa/%D8%A7%D9%86%D8%AA%D9%82%D8%A7%D9%84-%D9%87%D8%A7%DB%8C%D9%84%D8%A7%DB%8C%D8%AA-kindle-notion/</link>
       <pubDate>Sat, 15 Apr 2023 10:44:32 +0330</pubDate>
-      <guid>https://aminrb.me/fa/%D8%A7%D9%86%D8%AA%D9%82%D8%A7%D9%84-%D9%87%D8%A7%DB%8C%D9%84%D8%A7%DB%8C%D8%AA-kindle-notion/</guid>
+      <guid>http://localhost:1313/fa/%D8%A7%D9%86%D8%AA%D9%82%D8%A7%D9%84-%D9%87%D8%A7%DB%8C%D9%84%D8%A7%DB%8C%D8%AA-kindle-notion/</guid>
       <description>هایلایت‌ کردن کتاب‌های ناداستان و کتاب‌های فنی برای من خیلی مهمه. هم از این جهت که می‌تونم کتاب‌هایی که قبلاً هایلایت کردم رو در چند دقیقه مرور کنم، و هم این که موقع هایلایت کردن بخشی از متن، تمرکز بیشتری روی اون قسمت دارم. یکی از مزیت‌های برجسته‌ٔ خوندن کتاب با کتابخوان‌ها، بهتر بودن تجربهٔ هایلایت کردنه. بدون نیاز به وسیلهٔ جانبی می‌تونی هایلایت‌کنی و بعداً هم خیلی سریع و با طبقه‌بندی مناسبی می‌تونی سراغشون بری.</description>
     </item>
   </channel>
