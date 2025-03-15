@@ -8,16 +8,16 @@ comments: false
 
 ### 🌎 وبسایت Expedition Diaries
 
-* 🔗 [لینک وبسایت](https://expedition-diaries.com/) - [گیتهاب](https://github.com/aminrashidbeigi/expedition-diaries)
+* 🔗 [لینک وبسایت](https://web.archive.org/web/20230811022538/https://expedition-diaries.com/) - [گیتهاب](https://github.com/aminrashidbeigi/expedition-diaries)
 * 🗓️ شروع: ۱۴۰۱
-* 💡 وضعیت: زنده
+* 🪦 وضعیت: آرشیو شده (۱۴۰۳)
 * 🔤 زبان: انگلیسی
 
 ---
 
 ### 🐦 پادکست MalPodcast
 
-* 🔗 [لینک وبسایت](https://malpodcast.ir/)
+* 🔗 [لینک وبسایت](ttps://web.archive.org/web/20221120011422/https://malpodcast.ir/)
 * 🗓️ شروع: ۱۳۹۸
 * 🪦 وضعیت: آرشیو شده (۱۳۹۸)
 * 🔤 زبان: فارسی

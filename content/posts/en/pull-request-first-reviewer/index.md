@@ -1,6 +1,6 @@
 ---
 title: 'I Am the First Reviewer of My Own Pull Requests'
-date: 2025-01-26T19:22:11+02:00
+date: 2025-02-15T18:23:18+02:00
 draft: false
 tags:
 - code review

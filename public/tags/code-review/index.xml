@@ -11,12 +11,12 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 26 Jan 2025 19:22:11 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 15 Feb 2025 18:23:18 +0200</lastBuildDate>
     <atom:link href="https://aminrb.me/tags/code-review/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>I Am the First Reviewer of My Own Pull Requests</title>
       <link>https://aminrb.me/first-pull-request-reviewer/</link>
-      <pubDate>Sun, 26 Jan 2025 19:22:11 +0200</pubDate>
+      <pubDate>Sat, 15 Feb 2025 18:23:18 +0200</pubDate>
       <guid>https://aminrb.me/first-pull-request-reviewer/</guid>
       <description>About ten years ago, I started my career as a backend intern at a small company. Back then, the main product our team was working on was a multilingual hotel management software. After spending some time watching tutorials and practicing, the tech lead decided I was ready to contribute to the main project, so I officially joined the team.
 When I completed my first task, I nervously sent my pull request to my manager.</description>

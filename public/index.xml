@@ -11,12 +11,12 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 26 Jan 2025 19:22:11 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 15 Feb 2025 18:23:18 +0200</lastBuildDate>
     <atom:link href="https://aminrb.me/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>I Am the First Reviewer of My Own Pull Requests</title>
       <link>https://aminrb.me/first-pull-request-reviewer/</link>
-      <pubDate>Sun, 26 Jan 2025 19:22:11 +0200</pubDate>
+      <pubDate>Sat, 15 Feb 2025 18:23:18 +0200</pubDate>
       <guid>https://aminrb.me/first-pull-request-reviewer/</guid>
       <description>About ten years ago, I started my career as a backend intern at a small company. Back then, the main product our team was working on was a multilingual hotel management software. After spending some time watching tutorials and practicing, the tech lead decided I was ready to contribute to the main project, so I officially joined the team.
 When I completed my first task, I nervously sent my pull request to my manager.</description>
@@ -111,9 +111,9 @@ Reading a lot (mostly on how things work and why they were created), re-doing (f
       <link>https://aminrb.me/side-projects/</link>
       <pubDate>Fri, 27 Jan 2023 10:53:05 +0330</pubDate>
       <guid>https://aminrb.me/side-projects/</guid>
-      <description>🌎 Expedition Diaries I love traveling, particularly when it comes to learning about new cultures. Additionally, I have always been curious about the cultures of nations throughout history.
-Expedition Diaries aggregates all of this curiosity in one place, as it documents the journeys of explorers who have passed through lands throughout history.
-🔗 URL - Github 🗓️ Born: 2022 💡 Status: Live 🔤 Language: English 🐦 MalPodcast The idea of Expedition Diaries started with Mal Podcast.</description>
+      <description>Here, you can find some of my side projects, which I had a great time building. Even though most of them are no longer alive, they greatly impacted my career, and I am really proud of them.
+🌎 Expedition Diaries I love traveling, particularly when it comes to learning about new cultures. Additionally, I have always been curious about the cultures of nations throughout history.
+Expedition Diaries aggregates all of this curiosity in one place, as it documents the journeys of explorers who have passed through lands throughout history.</description>
     </item>
     <item>
       <title>About</title>
