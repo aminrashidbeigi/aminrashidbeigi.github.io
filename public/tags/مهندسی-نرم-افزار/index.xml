@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>مهندسی نرم افزار on Amin Rashidbeigi</title>
+    <link>http://localhost:1313/tags/%D9%85%D9%87%D9%86%D8%AF%D8%B3%DB%8C-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/</link>
+    <description>Recent content in مهندسی نرم افزار on Amin Rashidbeigi</description>
+    <image>
+      <title>Amin Rashidbeigi</title>
+      <url>http://localhost:1313/papermod-cover.png</url>
+      <link>http://localhost:1313/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 26 Jan 2025 19:22:11 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%D9%85%D9%87%D9%86%D8%AF%D8%B3%DB%8C-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>من اولین کسی هستم که پول ریکوستم رو ریویو می‌کنم</title>
+      <link>http://localhost:1313/%D8%A7%D9%88%D9%84%DB%8C%D9%86-%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%DA%A9%D9%86%D9%86%D8%AF%D9%87-%D9%BE%D9%88%D9%84-%D8%B1%DB%8C%DA%A9%D9%88%D8%B3%D8%AA/</link>
+      <pubDate>Sun, 26 Jan 2025 19:22:11 +0200</pubDate>
+      <guid>http://localhost:1313/%D8%A7%D9%88%D9%84%DB%8C%D9%86-%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%DA%A9%D9%86%D9%86%D8%AF%D9%87-%D9%BE%D9%88%D9%84-%D8%B1%DB%8C%DA%A9%D9%88%D8%B3%D8%AA/</guid>
+      <description>About ten years ago, I started my career as a backend intern at a company. Back then, the main product our team was working on was a multilingual hotel management software. After spending some time watching tutorials and practicing, the tech lead decided I was ready to contribute to the main project, so I officially joined the team.
+When I completed my first task, I nervously sent my pull request to my manager.</description>
+    </item>
+  </channel>
+</rss>

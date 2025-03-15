@@ -2,11 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://aminrb.me/2024-in-review/</loc>
-    <lastmod>2024-12-25T12:59:36+02:00</lastmod>
-  </url><url>
     <loc>https://aminrb.me/</loc>
-    <lastmod>2024-12-25T12:59:36+02:00</lastmod>
+    <lastmod>2025-01-26T19:22:11+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fa"
@@ -17,6 +14,47 @@
                 hreflang="en"
                 href="https://aminrb.me/"
                 />
+  </url><url>
+    <loc>https://aminrb.me/tags/code-review/</loc>
+    <lastmod>2025-01-26T19:22:11+02:00</lastmod>
+  </url><url>
+    <loc>https://aminrb.me/tags/git-diff/</loc>
+    <lastmod>2025-01-26T19:22:11+02:00</lastmod>
+  </url><url>
+    <loc>https://aminrb.me/first-pull-request-reviewer/</loc>
+    <lastmod>2025-01-26T19:22:11+02:00</lastmod>
+  </url><url>
+    <loc>https://aminrb.me/posts/</loc>
+    <lastmod>2025-01-26T19:22:11+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fa"
+                href="https://aminrb.me/fa/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://aminrb.me/posts/"
+                />
+  </url><url>
+    <loc>https://aminrb.me/tags/pull-request-review/</loc>
+    <lastmod>2025-01-26T19:22:11+02:00</lastmod>
+  </url><url>
+    <loc>https://aminrb.me/tags/</loc>
+    <lastmod>2025-01-26T19:22:11+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fa"
+                href="https://aminrb.me/fa/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://aminrb.me/tags/"
+                />
+  </url><url>
+    <loc>https://aminrb.me/2024-in-review/</loc>
+    <lastmod>2024-12-25T12:59:36+02:00</lastmod>
   </url><url>
     <loc>https://aminrb.me/categories/career/</loc>
     <lastmod>2024-12-25T12:59:36+02:00</lastmod>
@@ -36,32 +74,6 @@
   </url><url>
     <loc>https://aminrb.me/categories/life/</loc>
     <lastmod>2024-12-25T12:59:36+02:00</lastmod>
-  </url><url>
-    <loc>https://aminrb.me/posts/</loc>
-    <lastmod>2024-12-25T12:59:36+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fa"
-                href="https://aminrb.me/fa/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://aminrb.me/posts/"
-                />
-  </url><url>
-    <loc>https://aminrb.me/tags/</loc>
-    <lastmod>2024-12-25T12:59:36+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fa"
-                href="https://aminrb.me/fa/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://aminrb.me/tags/"
-                />
   </url><url>
     <loc>https://aminrb.me/tags/year-review/</loc>
     <lastmod>2024-12-25T12:59:36+02:00</lastmod>
