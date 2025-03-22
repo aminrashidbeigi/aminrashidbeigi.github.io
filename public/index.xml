@@ -11,8 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 15 Feb 2025 18:23:18 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 22 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://aminrb.me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ways I Can Help</title>
+      <link>https://aminrb.me/consulting/</link>
+      <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://aminrb.me/consulting/</guid>
+      <description>Currently, I focus on consultation sessions covering the following topics. If your issue doesn’t fall under these categories, feel free to email me at a.rashidbeigi [at] gmail.com.
+Interviews &amp;amp; Hiring Over the years, I’ve worked with various companies, both Iranian and international, and have experience in candidate selection, interviewing, and hiring software engineers at junior, mid-level, and senior positions. If you&amp;rsquo;re looking to get hired by different companies in Iran or abroad, or if you&amp;rsquo;re recruiting for your team or company, you can book a session with me.</description>
+    </item>
     <item>
       <title>I Am the First Reviewer of My Own Pull Requests</title>
       <link>https://aminrb.me/first-pull-request-reviewer/</link>

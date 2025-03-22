@@ -2,6 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://aminrb.me/fa/</loc>
+    <lastmod>2025-03-22T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://aminrb.me/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fa"
+                href="https://aminrb.me/fa/"
+                />
+  </url><url>
+    <loc>https://aminrb.me/fa/consulting/</loc>
+    <lastmod>2025-03-22T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://aminrb.me/consulting/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fa"
+                href="https://aminrb.me/fa/consulting/"
+                />
+  </url><url>
     <loc>https://aminrb.me/fa/categories/</loc>
     <lastmod>2024-03-19T15:16:38+03:30</lastmod>
     <xhtml:link
@@ -39,19 +65,6 @@
                 rel="alternate"
                 hreflang="fa"
                 href="https://aminrb.me/fa/tags/"
-                />
-  </url><url>
-    <loc>https://aminrb.me/fa/</loc>
-    <lastmod>2024-03-19T15:16:38+03:30</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://aminrb.me/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fa"
-                href="https://aminrb.me/fa/"
                 />
   </url><url>
     <loc>https://aminrb.me/fa/tags/%D8%B3%D8%A7%D9%84-%DB%B1%DB%B4%DB%B0%DB%B2/</loc>

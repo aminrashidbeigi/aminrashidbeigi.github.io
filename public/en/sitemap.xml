@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://aminrb.me/</loc>
-    <lastmod>2025-02-15T18:23:18+02:00</lastmod>
+    <lastmod>2025-03-22T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fa"
@@ -13,6 +13,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://aminrb.me/"
+                />
+  </url><url>
+    <loc>https://aminrb.me/consulting/</loc>
+    <lastmod>2025-03-22T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fa"
+                href="https://aminrb.me/fa/consulting/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://aminrb.me/consulting/"
                 />
   </url><url>
     <loc>https://aminrb.me/tags/code-review/</loc>
