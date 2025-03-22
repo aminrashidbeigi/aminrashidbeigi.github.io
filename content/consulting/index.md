@@ -5,6 +5,7 @@ draft: false
 menu: main
 disable_followup: true
 comments: false
+slug: "ways-i-can-help"
 ---
 Currently, I focus on consultation sessions covering the following topics. If your issue doesn’t fall under these categories, feel free to email me at a.rashidbeigi [at] gmail.com.
 
