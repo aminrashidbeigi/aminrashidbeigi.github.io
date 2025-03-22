@@ -4,6 +4,7 @@ date: 2025-03-22
 draft: false
 menu: main
 disable_followup: true
+comments: false
 ---
 Currently, I focus on consultation sessions covering the following topics. If your issue doesn’t fall under these categories, feel free to email me at a.rashidbeigi [at] gmail.com.
 
