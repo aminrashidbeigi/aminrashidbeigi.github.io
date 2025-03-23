@@ -7,18 +7,33 @@ disable_followup: true
 comments: false
 slug: "ways-i-can-help"
 ---
-Currently, I focus on consultation sessions covering the following topics. If your issue doesn’t fall under these categories, feel free to email me at a.rashidbeigi [at] gmail.com.
+I regularly hold **consultation sessions** (mentorship, one-on-one coaching, or whatever you prefer to call it) with individuals and companies in two main areas: **topic-focused consulting** and **career growth guidance**.
 
-### Interviews & Hiring
+**Topic-focused consulting** covers areas that I’m currently focused on and actively studying. You can check the list of these topics [here](https://chatgpt.com/c/67dfcc3d-48e0-8002-8850-12ead3114cfc#topic-focused-consulting).
 
-Over the years, I’ve worked with various companies, both Iranian and international, and have experience in candidate selection, interviewing, and hiring software engineers at junior, mid-level, and senior positions. If you're looking to get hired by different companies in Iran or abroad, or if you're recruiting for your team or company, you can book a session with me. Specifically, I can help with:
+Apart from that, if you need guidance on topics not listed, we can schedule **career growth** sessions instead.
 
-- **Increasing your chances of getting interviews:** Feedback on your resume, cover letter, and target company selection
-- **Mock interviews and feedback:** Recruiter, technical (coding), system design, and behavioral mock interviews
-- **Hiring new team members for software companies and teams**
+### How It Works
 
-### Book a Session
+You can book a **free 15-minute initial session** to discuss your needs and challenges. If I can provide value and guidance in your case, we’ll discuss the next steps, including the structure, number of sessions, scheduling, and potential costs.
 
-To book a free initial session, click the button below. Please include details about yourself, your situation, and your goals for this session. In this short 15-minute session, we’ll discuss how I can assist you, the number and timing of the suggested sessions, and the costs.
+To request a free initial session, click the button below. Please include details about yourself, your background, and your goal for this session.
+
 
 <div style="text-align: center; margin: 2em 0;"> <a href="https://calendar.app.google/ptdKyDee1FZfkBds5" style="background: #007acc; color: #fff; padding: 0.75em 1.5em; text-decoration: none; border-radius: 4px; font-weight: bold;">Book a Consultation Session</a> </div>
+
+---
+## **Topic-Focused Consulting**
+
+I’m currently focusing on consultations related to the topics below. If your concern doesn’t fall under these categories, feel free to email me at **a.rashidbeigi [at] gmail.com**.
+
+### **Job Interviews & Hiring**
+
+Over the years, I’ve worked with various companies and have experience in candidate selection, conducting interviews, and making hiring decisions for **junior, mid-level, and senior software engineers**.
+
+If you’re looking to get hired by companies, you can book a session with me.
+
+More specifically, I can help with:
+- **Improving your chances of landing interviews** – Resume and cover letter feedback, choosing the right target companies.
+- **Mock interviews with feedback** – Recruiter screenings, technical interviews, system design, and behavioral (soft skills) interviews.
+- **Hiring for software teams and companies** – Guidance on finding and selecting the right candidates.
