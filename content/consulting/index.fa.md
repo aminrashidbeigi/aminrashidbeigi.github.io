@@ -5,7 +5,7 @@ draft: false
 menu: main
 disable_followup: true
 comments: false
-slug: درخواست-جلسه-مشاوره
+slug: "ways-i-can-help"
 ---
 
 
