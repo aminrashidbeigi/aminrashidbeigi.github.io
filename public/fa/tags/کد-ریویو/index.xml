@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>پول ریکوست on امین رشیدبیگی</title>
-    <link>https://aminrb.me/fa/tags/%D9%BE%D9%88%D9%84-%D8%B1%DB%8C%DA%A9%D9%88%D8%B3%D8%AA/</link>
-    <description>Recent content in پول ریکوست on امین رشیدبیگی</description>
+    <title>کد ریویو on امین رشیدبیگی</title>
+    <link>https://aminrb.me/fa/tags/%DA%A9%D8%AF-%D8%B1%DB%8C%D9%88%DB%8C%D9%88/</link>
+    <description>Recent content in کد ریویو on امین رشیدبیگی</description>
     <image>
       <title>امین رشیدبیگی</title>
       <url>https://aminrb.me/papermod-cover.png</url>
@@ -12,7 +12,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>fa</language>
     <lastBuildDate>Sat, 15 Mar 2025 18:23:18 +0200</lastBuildDate>
-    <atom:link href="https://aminrb.me/fa/tags/%D9%BE%D9%88%D9%84-%D8%B1%DB%8C%DA%A9%D9%88%D8%B3%D8%AA/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aminrb.me/fa/tags/%DA%A9%D8%AF-%D8%B1%DB%8C%D9%88%DB%8C%D9%88/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>من اولین کسی هستم که پول ریکوستم رو ریویو می‌کنم</title>
       <link>https://aminrb.me/fa/first-pull-request-reviewer/</link>
