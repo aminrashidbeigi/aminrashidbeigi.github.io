@@ -13,7 +13,7 @@ params:
   comments: false
   ShowToc: true
   defaultTheme: auto
-  ShowShareButtons: true
+  ShowShareButtons: false
   ShowReadingTime: true
   # disableSpecial1stPost: true
   displayFullLangName: true
