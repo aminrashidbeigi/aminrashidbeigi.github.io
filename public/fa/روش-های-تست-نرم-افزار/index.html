@@ -5,8 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>انواع روش‌های تست نرم‌افزار: Test Duobleها | امین رشیدبیگی</title>
-<meta name="keywords" content="تست نرم افزار, یونیت تست, ماک تست, اتومیت تست, تست اتوماتیک">
+<title>انواع روش‌های تست نرم‌افزار: Test Doubles | امین رشیدبیگی</title>
+<meta name="keywords" content="تست نرم افزار, یونیت تست, ماک تست, اتومیت تست, تست اتوماتیک, تست خودکار">
 <meta name="description" content="در هنگام نوشتن Automation Test برای یک نرم‌افزار، با دیپندنسی‌ها و APIهایی مواجه می‌شیم که ترجیح می‌دیم در هر بار اجرای تست‌ها اون‌ها رو فراخوانی نکنیم. در چنین مواقعی، از Test Double ها استفاده می‌کنیم که انواع متفاوتی دارند و اغلب به اشتباه به همه‌ اون‌ها Mock می‌گیم. اینجا سه نوع رایج Test Double و تفاوت‌هاشون رو توضیح می‌دم.
 فیک Fake این نوع Test Double به عنوان یک جایگزین ساده‌تر، کم‌هزینه‌تر و قابل آزمایش‌تر برای دیپندنسی مورد نظر استفاده می‌شه.">
 <meta name="author" content="امین رشیدبیگی">
@@ -76,19 +76,19 @@
     
   
 
-<meta property="og:title" content="انواع روش‌های تست نرم‌افزار: Test Duobleها" />
+<meta property="og:title" content="انواع روش‌های تست نرم‌افزار: Test Doubles" />
 <meta property="og:description" content="در هنگام نوشتن Automation Test برای یک نرم‌افزار، با دیپندنسی‌ها و APIهایی مواجه می‌شیم که ترجیح می‌دیم در هر بار اجرای تست‌ها اون‌ها رو فراخوانی نکنیم. در چنین مواقعی، از Test Double ها استفاده می‌کنیم که انواع متفاوتی دارند و اغلب به اشتباه به همه‌ اون‌ها Mock می‌گیم. اینجا سه نوع رایج Test Double و تفاوت‌هاشون رو توضیح می‌دم.
 فیک Fake این نوع Test Double به عنوان یک جایگزین ساده‌تر، کم‌هزینه‌تر و قابل آزمایش‌تر برای دیپندنسی مورد نظر استفاده می‌شه." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://aminrb.me/fa/%D8%B1%D9%88%D8%B4-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B3%D8%AA-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/" />
-<meta property="og:image" content="https://aminrb.me/%D8%B1%D9%88%D8%B4-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B3%D8%AA-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/test-double.webp" /><meta property="article:section" content="posts" />
+<meta property="og:image" content="https://aminrb.me/fa/%D8%B1%D9%88%D8%B4-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B3%D8%AA-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/test-double.webp" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2025-03-24T21:15:33+01:00" />
 <meta property="article:modified_time" content="2025-03-24T21:15:33+01:00" />
 
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://aminrb.me/%D8%B1%D9%88%D8%B4-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B3%D8%AA-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/test-double.webp" />
-<meta name="twitter:title" content="انواع روش‌های تست نرم‌افزار: Test Duobleها"/>
+<meta name="twitter:image" content="https://aminrb.me/fa/%D8%B1%D9%88%D8%B4-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B3%D8%AA-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/test-double.webp" />
+<meta name="twitter:title" content="انواع روش‌های تست نرم‌افزار: Test Doubles"/>
 <meta name="twitter:description" content="در هنگام نوشتن Automation Test برای یک نرم‌افزار، با دیپندنسی‌ها و APIهایی مواجه می‌شیم که ترجیح می‌دیم در هر بار اجرای تست‌ها اون‌ها رو فراخوانی نکنیم. در چنین مواقعی، از Test Double ها استفاده می‌کنیم که انواع متفاوتی دارند و اغلب به اشتباه به همه‌ اون‌ها Mock می‌گیم. اینجا سه نوع رایج Test Double و تفاوت‌هاشون رو توضیح می‌دم.
 فیک Fake این نوع Test Double به عنوان یک جایگزین ساده‌تر، کم‌هزینه‌تر و قابل آزمایش‌تر برای دیپندنسی مورد نظر استفاده می‌شه."/>
 
@@ -107,7 +107,7 @@
     {
       "@type": "ListItem",
       "position":  2 ,
-      "name": "انواع روش‌های تست نرم‌افزار: Test Duobleها",
+      "name": "انواع روش‌های تست نرم‌افزار: Test Doubles",
       "item": "https://aminrb.me/fa/%D8%B1%D9%88%D8%B4-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B3%D8%AA-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/"
     }
   ]
@@ -117,16 +117,16 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "انواع روش‌های تست نرم‌افزار: Test Duobleها",
-  "name": "انواع روش‌های تست نرم‌افزار: Test Duobleها",
+  "headline": "انواع روش‌های تست نرم‌افزار: Test Doubles",
+  "name": "انواع روش‌های تست نرم‌افزار: Test Doubles",
   "description": "در هنگام نوشتن Automation Test برای یک نرم‌افزار، با دیپندنسی‌ها و APIهایی مواجه می‌شیم که ترجیح می‌دیم در هر بار اجرای تست‌ها اون‌ها رو فراخوانی نکنیم. در چنین مواقعی، از Test Double ها استفاده می‌کنیم که انواع متفاوتی دارند و اغلب به اشتباه به همه‌ اون‌ها Mock می‌گیم. اینجا سه نوع رایج Test Double و تفاوت‌هاشون رو توضیح می‌دم.\nفیک Fake این نوع Test Double به عنوان یک جایگزین ساده‌تر، کم‌هزینه‌تر و قابل آزمایش‌تر برای دیپندنسی مورد نظر استفاده می‌شه.",
   "keywords": [
-    "تست نرم افزار", "یونیت تست", "ماک تست", "اتومیت تست", "تست اتوماتیک"
+    "تست نرم افزار", "یونیت تست", "ماک تست", "اتومیت تست", "تست اتوماتیک", "تست خودکار"
   ],
-  "articleBody": "در هنگام نوشتن Automation Test برای یک نرم‌افزار، با دیپندنسی‌ها و APIهایی مواجه می‌شیم که ترجیح می‌دیم در هر بار اجرای تست‌ها اون‌ها رو فراخوانی نکنیم. در چنین مواقعی، از Test Double ها استفاده می‌کنیم که انواع متفاوتی دارند و اغلب به اشتباه به همه‌ اون‌ها Mock می‌گیم. اینجا سه نوع رایج Test Double و تفاوت‌هاشون رو توضیح می‌دم.\nفیک Fake این نوع Test Double به عنوان یک جایگزین ساده‌تر، کم‌هزینه‌تر و قابل آزمایش‌تر برای دیپندنسی مورد نظر استفاده می‌شه. Fakeها از همون interfaceهای دیپندنسی اصلی استفاده می‌کنه و اون‌ها رو پیاده‌سازی می‌کنه. مثلاً، فرض کنید می‌خوایم یک شیء رو در دیتابیس بنویسیم و بخونیم. به جای راه‌اندازی یک دیتابیس واقعی برای اجرای هربارهٔ تست‌ها، از یک دیکشنری in memory استفاده می‌کنیم تا وظیفه خوندن و نوشتن داده‌ها رو برامون انجام بده. توی این حالت این دیکشنری وظیفهٔ Fake کردن دیتابیس اصلی رو بر عهده داره.\nاستاب Stub بعضاً برای نوشتن یک تست به داده‌های خاصی نیاز داریم. مثلاً فرض کنید که کامپوننتی داریم که مجموع درآمد روزانه رو برای ما حساب می‌کنه. برای این کار به داده‌های درآمدی یک روز نیاز داریم اما می‌تونیم به جای استفاده از داده‌های واقعی، یک Stub داشته باشیم که داده‌هایی که شبیه به داده‌های واقعیه رو تولید کنه تا منطقمون رو بر روی این داده‌ها پیاده‌سازی کنیم. پس به Test Doubleای که وظیفهٔ تولید داده‌ها رو داره Stub می‌گیم.\nماک Mock گاهی اوقات می‌خوایم رفتار یک دیپندنسی رو بررسی کنیم و نه خروجی و یا پیاده‌سازی اون رو. به طور مثال، ممکنه در یک تست بخوایم تأیید کنیم که یک API خاص فقط یک بار فراخوانی می‌شه و نه بیشتر و نه کمتر. در این مواقع از Mock استفاده می‌کنیم.\nمثال عملی در پست Go Test Doubles by Example به صورت مفصل در مورد تفاوت این موارد در سطح کد نوشتم و به کمک زبان Golang به صورت ساده این موارد رو پیاده‌سازی کردم:\n",
-  "wordCount" : "311",
+  "articleBody": "در هنگام نوشتن Automation Test برای یک نرم‌افزار، با دیپندنسی‌ها و APIهایی مواجه می‌شیم که ترجیح می‌دیم در هر بار اجرای تست‌ها اون‌ها رو فراخوانی نکنیم. در چنین مواقعی، از Test Double ها استفاده می‌کنیم که انواع متفاوتی دارند و اغلب به اشتباه به همه‌ اون‌ها Mock می‌گیم. اینجا سه نوع رایج Test Double و تفاوت‌هاشون رو توضیح می‌دم.\nفیک Fake این نوع Test Double به عنوان یک جایگزین ساده‌تر، کم‌هزینه‌تر و قابل آزمایش‌تر برای دیپندنسی مورد نظر استفاده می‌شه. Fakeها از همون interfaceهای دیپندنسی اصلی استفاده می‌کنه و اون‌ها رو پیاده‌سازی می‌کنه. مثلاً، فرض کنید می‌خوایم یک شیء رو در دیتابیس بنویسیم و بخونیم. به جای راه‌اندازی یک دیتابیس واقعی برای اجرای هربارهٔ تست‌ها، از یک دیکشنری in memory استفاده می‌کنیم تا وظیفه خوندن و نوشتن داده‌ها رو برامون انجام بده. توی این حالت این دیکشنری وظیفهٔ Fake کردن دیتابیس اصلی رو بر عهده داره.\nاستاب Stub بعضاً برای نوشتن یک تست به داده‌های خاصی نیاز داریم. مثلاً فرض کنید که کامپوننتی داریم که مجموع درآمد روزانه رو برای ما حساب می‌کنه. برای این کار به داده‌های درآمدی یک روز نیاز داریم اما می‌تونیم به جای استفاده از داده‌های واقعی، یک Stub داشته باشیم که داده‌هایی که شبیه به داده‌های واقعیه رو تولید کنه تا منطقمون رو بر روی این داده‌ها پیاده‌سازی کنیم. پس به Test Doubleای که وظیفهٔ تولید داده‌ها رو داره Stub می‌گیم.\nماک Mock گاهی اوقات می‌خوایم رفتار یک دیپندنسی رو بررسی کنیم و نه خروجی و یا پیاده‌سازی اون رو. به طور مثال، ممکنه در یک تست بخوایم تأیید کنیم که یک API خاص فقط یک بار فراخوانی می‌شه و نه بیشتر و نه کمتر. در این مواقع از Mock استفاده می‌کنیم.\nمثال عملی در نوشتهٔ Go Test Doubles by Example به تفصیل در مورد این روش‌ها و تفاوتشون در سطح کد نوشتم و به کمک زبان Golang هر کدوم از این موارد رو پیاده‌سازی کردم و پیشنهاد می‌کنم اون پست رو هم مطالعه کنید.\n",
+  "wordCount" : "320",
   "inLanguage": "fa",
-  "image":"https://aminrb.me/%D8%B1%D9%88%D8%B4-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B3%D8%AA-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/test-double.webp","datePublished": "2025-03-24T21:15:33+01:00",
+  "image":"https://aminrb.me/fa/%D8%B1%D9%88%D8%B4-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B3%D8%AA-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/test-double.webp","datePublished": "2025-03-24T21:15:33+01:00",
   "dateModified": "2025-03-24T21:15:33+01:00",
   "author":{
     "@type": "Person",
@@ -229,14 +229,14 @@
   <header class="post-header">
     
     <h1 class="post-title entry-hint-parent">
-      انواع روش‌های تست نرم‌افزار: Test Duobleها
+      انواع روش‌های تست نرم‌افزار: Test Doubles
     </h1>
     <div class="post-meta"><span title='2025-03-24 21:15:33 +0100 CET'>مارس 24, 2025</span>&nbsp;·&nbsp;2 دقیقه&nbsp;·&nbsp;امین رشیدبیگی
 
 </div>
   </header> 
-<figure class="entry-cover"><a href="https://aminrb.me/%D8%B1%D9%88%D8%B4-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B3%D8%AA-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/test-double.webp" target="_blank"
-            rel="noopener noreferrer"><img loading="eager" src="https://aminrb.me/%D8%B1%D9%88%D8%B4-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B3%D8%AA-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/test-double.webp" alt="تست دابل‌ها"></a>
+<figure class="entry-cover"><a href="https://aminrb.me/fa/%D8%B1%D9%88%D8%B4-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B3%D8%AA-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/test-double.webp" target="_blank"
+            rel="noopener noreferrer"><img loading="eager" src="https://aminrb.me/fa/%D8%B1%D9%88%D8%B4-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B3%D8%AA-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/test-double.webp" alt="تست دابل‌ها"></a>
         <p>تصویر ساخته شده توسط <a href="https://x.com/i/grok" target="_blank" rel="nofollow noopener noreferrer">grok</a></p>
 </figure><div class="toc">
     <details >
@@ -268,8 +268,8 @@
 <h2 id="ماک-mock">ماک Mock<a hidden class="anchor" aria-hidden="true" href="#ماک-mock">#</a></h2>
 <p>گاهی اوقات می‌خوایم رفتار یک دیپندنسی رو بررسی کنیم و نه خروجی و یا پیاده‌سازی اون رو. به طور مثال، ممکنه در یک تست بخوایم تأیید کنیم که یک API خاص فقط یک بار فراخوانی می‌شه و نه بیشتر و نه کمتر. در این مواقع از Mock استفاده می‌کنیم.</p>
 <h2 id="مثال-عملی">مثال عملی<a hidden class="anchor" aria-hidden="true" href="#مثال-عملی">#</a></h2>
-<p>در پست <a href="https://aminrb.me/go-test-double/">Go Test Doubles by Example</a>
- به صورت مفصل در مورد تفاوت این موارد در سطح کد نوشتم و به کمک زبان Golang به صورت ساده این موارد رو پیاده‌سازی کردم:</p>
+<p>در نوشتهٔ <a href="https://aminrb.me/go-test-double/">Go Test Doubles by Example</a>
+ به تفصیل در مورد این روش‌ها و تفاوتشون در سطح کد نوشتم و به کمک زبان Golang هر کدوم از این موارد رو پیاده‌سازی کردم و پیشنهاد می‌کنم اون پست رو هم مطالعه کنید.</p>
 
 
 <hr>
@@ -287,6 +287,7 @@
       <li><a href="https://aminrb.me/fa/tags/%D9%85%D8%A7%DA%A9-%D8%AA%D8%B3%D8%AA/">ماک تست</a></li>
       <li><a href="https://aminrb.me/fa/tags/%D8%A7%D8%AA%D9%88%D9%85%DB%8C%D8%AA-%D8%AA%D8%B3%D8%AA/">اتومیت تست</a></li>
       <li><a href="https://aminrb.me/fa/tags/%D8%AA%D8%B3%D8%AA-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA%DB%8C%DA%A9/">تست اتوماتیک</a></li>
+      <li><a href="https://aminrb.me/fa/tags/%D8%AA%D8%B3%D8%AA-%D8%AE%D9%88%D8%AF%DA%A9%D8%A7%D8%B1/">تست خودکار</a></li>
     </ul>
 <nav class="paginav">
   <a class="next" href="https://aminrb.me/fa/%D8%A7%D9%88%D9%84%DB%8C%D9%86-%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%DA%A9%D9%86%D9%86%D8%AF%D9%87-%D9%BE%D9%88%D9%84-%D8%B1%DB%8C%DA%A9%D9%88%D8%B3%D8%AA/">
