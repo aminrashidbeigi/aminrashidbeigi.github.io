@@ -2,34 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://aminrb.me/fa/</loc>
-    <lastmod>2025-03-22T00:00:00+00:00</lastmod>
+    <loc>https://aminrb.me/fa/categories/</loc>
+    <lastmod>2025-03-24T21:15:33+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://aminrb.me/"
+                href="https://aminrb.me/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fa"
-                href="https://aminrb.me/fa/"
-                />
-  </url><url>
-    <loc>https://aminrb.me/fa/ways-i-can-help/</loc>
-    <lastmod>2025-03-22T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://aminrb.me/ways-i-can-help/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fa"
-                href="https://aminrb.me/fa/ways-i-can-help/"
+                href="https://aminrb.me/fa/categories/"
                 />
   </url><url>
     <loc>https://aminrb.me/fa/posts/</loc>
-    <lastmod>2025-03-15T18:23:18+02:00</lastmod>
+    <lastmod>2025-03-24T21:15:33+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -42,7 +29,7 @@
                 />
   </url><url>
     <loc>https://aminrb.me/fa/tags/</loc>
-    <lastmod>2025-03-15T18:23:18+02:00</lastmod>
+    <lastmod>2025-03-24T21:15:33+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -52,6 +39,53 @@
                 rel="alternate"
                 hreflang="fa"
                 href="https://aminrb.me/fa/tags/"
+                />
+  </url><url>
+    <loc>https://aminrb.me/fa/tags/%D8%A7%D8%AA%D9%88%D9%85%DB%8C%D8%AA-%D8%AA%D8%B3%D8%AA/</loc>
+    <lastmod>2025-03-24T21:15:33+01:00</lastmod>
+  </url><url>
+    <loc>https://aminrb.me/fa/</loc>
+    <lastmod>2025-03-24T21:15:33+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://aminrb.me/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fa"
+                href="https://aminrb.me/fa/"
+                />
+  </url><url>
+    <loc>https://aminrb.me/fa/%D8%B1%D9%88%D8%B4-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B3%D8%AA-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/</loc>
+    <lastmod>2025-03-24T21:15:33+01:00</lastmod>
+  </url><url>
+    <loc>https://aminrb.me/fa/tags/%D8%AA%D8%B3%D8%AA-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA%DB%8C%DA%A9/</loc>
+    <lastmod>2025-03-24T21:15:33+01:00</lastmod>
+  </url><url>
+    <loc>https://aminrb.me/fa/tags/%D8%AA%D8%B3%D8%AA-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/</loc>
+    <lastmod>2025-03-24T21:15:33+01:00</lastmod>
+  </url><url>
+    <loc>https://aminrb.me/fa/tags/%D9%85%D8%A7%DA%A9-%D8%AA%D8%B3%D8%AA/</loc>
+    <lastmod>2025-03-24T21:15:33+01:00</lastmod>
+  </url><url>
+    <loc>https://aminrb.me/fa/categories/%D9%85%D9%87%D9%86%D8%AF%D8%B3%DB%8C-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/</loc>
+    <lastmod>2025-03-24T21:15:33+01:00</lastmod>
+  </url><url>
+    <loc>https://aminrb.me/fa/tags/%DB%8C%D9%88%D9%86%DB%8C%D8%AA-%D8%AA%D8%B3%D8%AA/</loc>
+    <lastmod>2025-03-24T21:15:33+01:00</lastmod>
+  </url><url>
+    <loc>https://aminrb.me/fa/ways-i-can-help/</loc>
+    <lastmod>2025-03-22T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://aminrb.me/ways-i-can-help/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fa"
+                href="https://aminrb.me/fa/ways-i-can-help/"
                 />
   </url><url>
     <loc>https://aminrb.me/fa/tags/%D9%BE%D9%88%D9%84-%D8%B1%DB%8C%DA%A9%D9%88%D8%B3%D8%AA/</loc>
@@ -74,19 +108,6 @@
                 rel="alternate"
                 hreflang="fa"
                 href="https://aminrb.me/fa/%D8%A7%D9%88%D9%84%DB%8C%D9%86-%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%DA%A9%D9%86%D9%86%D8%AF%D9%87-%D9%BE%D9%88%D9%84-%D8%B1%DB%8C%DA%A9%D9%88%D8%B3%D8%AA/"
-                />
-  </url><url>
-    <loc>https://aminrb.me/fa/categories/</loc>
-    <lastmod>2024-03-19T15:16:38+03:30</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://aminrb.me/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fa"
-                href="https://aminrb.me/fa/categories/"
                 />
   </url><url>
     <loc>https://aminrb.me/fa/tags/%D8%B3%D8%A7%D9%84-%DB%B1%DB%B4%DB%B0%DB%B2/</loc>

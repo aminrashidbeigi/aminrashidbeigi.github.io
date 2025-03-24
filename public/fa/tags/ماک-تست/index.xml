@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ماک تست on امین رشیدبیگی</title>
+    <link>https://aminrb.me/fa/tags/%D9%85%D8%A7%DA%A9-%D8%AA%D8%B3%D8%AA/</link>
+    <description>Recent content in ماک تست on امین رشیدبیگی</description>
+    <image>
+      <title>امین رشیدبیگی</title>
+      <url>https://aminrb.me/papermod-cover.png</url>
+      <link>https://aminrb.me/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fa</language>
+    <lastBuildDate>Mon, 24 Mar 2025 21:15:33 +0100</lastBuildDate>
+    <atom:link href="https://aminrb.me/fa/tags/%D9%85%D8%A7%DA%A9-%D8%AA%D8%B3%D8%AA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>انواع روش‌های تست نرم‌افزار: Test Duobleها</title>
+      <link>https://aminrb.me/fa/%D8%B1%D9%88%D8%B4-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B3%D8%AA-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/</link>
+      <pubDate>Mon, 24 Mar 2025 21:15:33 +0100</pubDate>
+      <guid>https://aminrb.me/fa/%D8%B1%D9%88%D8%B4-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B3%D8%AA-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/</guid>
+      <description>در هنگام نوشتن Automation Test برای یک نرم‌افزار، با دیپندنسی‌ها و APIهایی مواجه می‌شیم که ترجیح می‌دیم در هر بار اجرای تست‌ها اون‌ها رو فراخوانی نکنیم. در چنین مواقعی، از Test Double ها استفاده می‌کنیم که انواع متفاوتی دارند و اغلب به اشتباه به همه‌ اون‌ها Mock می‌گیم. اینجا سه نوع رایج Test Double و تفاوت‌هاشون رو توضیح می‌دم.
+فیک Fake این نوع Test Double به عنوان یک جایگزین ساده‌تر، کم‌هزینه‌تر و قابل آزمایش‌تر برای دیپندنسی مورد نظر استفاده می‌شه.</description>
+    </item>
+  </channel>
+</rss>
