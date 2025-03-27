@@ -20,7 +20,7 @@ slug: جایگزینی-برنامه-نویس-هوش-مصنوعی
 ## اخبار و تحولات اخیر هوش مصنوعی
 
 مستقل از نظرهای شخصی، واقعاً در دنیا داره چه اتفاقی میفته؟
-یکی دو ماه پیش زاکربرگ اعلام کرد که دارن تلاششون رو می‌کنن که تا آخر همین امسال نیروهای Mid-level (و پایین‌تر) رو با هوش مصنوعی جایگزین کنن [منبع](https://www.forbes.com/sites/quickerbettertech/2025/01/26/business-tech-news-zuckerberg-says-ai-will-replace-mid-level-engineers-soon/). مدیرعامل Salesforce هم گفته که در سال ۲۰۲۵ استخدام مهندس نرم‌افزار نخواهیم داشت چون کارمندهای فعلی با ابزارهای جدید ۳۰ درصد بهره‌وری بیشتری دارن [منبع](https://www.salesforceben.com/salesforce-will-hire-no-more-software-engineers-in-2025-says-marc-benioff/).
+یکی دو ماه پیش [زاکربرگ اعلام کرد](https://www.forbes.com/sites/quickerbettertech/2025/01/26/business-tech-news-zuckerberg-says-ai-will-replace-mid-level-engineers-soon/) که دارن تلاششون رو می‌کنن که تا آخر همین امسال نیروهای Mid-level (و پایین‌تر) رو با هوش مصنوعی جایگزین کنن. [مدیرعامل Salesforce هم گفته](https://www.salesforceben.com/salesforce-will-hire-no-more-software-engineers-in-2025-says-marc-benioff/) که در سال ۲۰۲۵ استخدام مهندس نرم‌افزار نخواهیم داشت چون کارمندهای فعلی با ابزارهای جدید ۳۰ درصد بهره‌وری بیشتری دارن.
 از اون طرف هم شرکت‌های استارت‌آپی کوچکتری هم با هدف ارائهٔ ابزارهایی برای توسعهٔ محصول با دخالت حداقلی کد شروع به کار کردن و سرمایه‌های زیادی هم گرفتن. شاید جالب‌ترینشون شرکت سوئدی [Lovable](https://lovable.dev/) باشه که فقط با گذشت چند ماه از شروع کارشون، ۵۰۰ هزار کاربر جذب کردن و به بیشترین سرعت رشد در کل تاریخ استارت‌آپ‌های اروپا رسیدن.
 
 ## اهمیت جایگزینی برنامه‌نویس ها با هوش مصنوعی برای سرمایه‌گذارها
