@@ -2,6 +2,60 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://aminrb.me/fa/posts/</loc>
+    <lastmod>2025-03-27T08:09:49+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://aminrb.me/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fa"
+                href="https://aminrb.me/fa/posts/"
+                />
+  </url><url>
+    <loc>https://aminrb.me/fa/tags/</loc>
+    <lastmod>2025-03-27T08:09:49+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://aminrb.me/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fa"
+                href="https://aminrb.me/fa/tags/"
+                />
+  </url><url>
+    <loc>https://aminrb.me/fa/%D8%AC%D8%A7%DB%8C%DA%AF%D8%B2%DB%8C%D9%86%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3-%D9%87%D9%88%D8%B4-%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C/</loc>
+    <lastmod>2025-03-27T08:09:49+01:00</lastmod>
+  </url><url>
+    <loc>https://aminrb.me/fa/</loc>
+    <lastmod>2025-03-27T08:09:49+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://aminrb.me/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fa"
+                href="https://aminrb.me/fa/"
+                />
+  </url><url>
+    <loc>https://aminrb.me/fa/tags/%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1-%DA%A9%D8%A7%D8%B1-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3-%D9%87%D8%A7/</loc>
+    <lastmod>2025-03-27T08:09:49+01:00</lastmod>
+  </url><url>
+    <loc>https://aminrb.me/fa/tags/%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1-%DA%A9%D8%A7%D8%B1-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C-%D8%AF%D8%B1-%DB%B1%DB%B4%DB%B0%DB%B4/</loc>
+    <lastmod>2025-03-27T08:09:49+01:00</lastmod>
+  </url><url>
+    <loc>https://aminrb.me/fa/tags/%D9%87%D9%88%D8%B4-%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C/</loc>
+    <lastmod>2025-03-27T08:09:49+01:00</lastmod>
+  </url><url>
+    <loc>https://aminrb.me/fa/tags/%D9%87%D9%88%D8%B4-%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C-%D8%AC%D8%A7%DB%8C%DA%AF%D8%B2%DB%8C%D9%86-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3-%D9%87%D8%A7/</loc>
+    <lastmod>2025-03-27T08:09:49+01:00</lastmod>
+  </url><url>
     <loc>https://aminrb.me/fa/categories/</loc>
     <lastmod>2025-03-24T21:15:33+01:00</lastmod>
     <xhtml:link
@@ -15,47 +69,8 @@
                 href="https://aminrb.me/fa/categories/"
                 />
   </url><url>
-    <loc>https://aminrb.me/fa/posts/</loc>
-    <lastmod>2025-03-24T21:15:33+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://aminrb.me/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fa"
-                href="https://aminrb.me/fa/posts/"
-                />
-  </url><url>
-    <loc>https://aminrb.me/fa/tags/</loc>
-    <lastmod>2025-03-24T21:15:33+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://aminrb.me/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fa"
-                href="https://aminrb.me/fa/tags/"
-                />
-  </url><url>
     <loc>https://aminrb.me/fa/tags/%D8%A7%D8%AA%D9%88%D9%85%DB%8C%D8%AA-%D8%AA%D8%B3%D8%AA/</loc>
     <lastmod>2025-03-24T21:15:33+01:00</lastmod>
-  </url><url>
-    <loc>https://aminrb.me/fa/</loc>
-    <lastmod>2025-03-24T21:15:33+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://aminrb.me/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fa"
-                href="https://aminrb.me/fa/"
-                />
   </url><url>
     <loc>https://aminrb.me/fa/%D8%B1%D9%88%D8%B4-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B3%D8%AA-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/</loc>
     <lastmod>2025-03-24T21:15:33+01:00</lastmod>
