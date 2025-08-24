@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Amin Rashidbeigi</title>
     <link>https://aminrb.me/posts/</link>
@@ -9,7 +9,7 @@
       <url>https://aminrb.me/papermod-cover.png</url>
       <link>https://aminrb.me/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.148.2</generator>
     <language>en</language>
     <lastBuildDate>Sat, 15 Feb 2025 18:23:18 +0200</lastBuildDate>
     <atom:link href="https://aminrb.me/posts/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +18,9 @@
       <link>https://aminrb.me/first-pull-request-reviewer/</link>
       <pubDate>Sat, 15 Feb 2025 18:23:18 +0200</pubDate>
       <guid>https://aminrb.me/first-pull-request-reviewer/</guid>
-      <description>About ten years ago, I started my career as a backend intern at a small company. Back then, the main product our team was working on was a multilingual hotel management software. After spending some time watching tutorials and practicing, the tech lead decided I was ready to contribute to the main project, so I officially joined the team.
-When I completed my first task, I nervously sent my pull request to my manager.</description>
+      <description>&lt;p&gt;About ten years ago, I started my career as a backend intern at a small company. Back then, the main product our team was working on was a multilingual hotel management software. After spending some time watching tutorials and practicing, the tech lead decided I was ready to contribute to the main project, so I officially joined the team.&lt;/p&gt;
+&lt;p&gt;When I completed my first task, I nervously sent my pull request to my manager. Before even opening it, he asked, &amp;ldquo;Did you review it yourself?&amp;rdquo; I was a bit surprised and said no. He told me to go review my own code first, fix any issues that you found, and then send it back to me. He also suggested that I do these reviews before committing my code and introduced me to &lt;a href=&#34;https://git-scm.com/docs/git-diff&#34; target=&#34;_blank&#34; rel=&#34;nofollow noopener noreferrer&#34;&gt;git diff&lt;/a&gt;
+ for the first time.&lt;/p&gt;</description>
     </item>
     <item>
       <title>2024 in Review</title>
@@ -89,22 +90,23 @@ When I completed my first task, I nervously sent my pull request to my manager.<
       <link>https://aminrb.me/extra-work/</link>
       <pubDate>Mon, 17 Jul 2023 10:32:09 +0330</pubDate>
       <guid>https://aminrb.me/extra-work/</guid>
-      <description>Recently, I read an interesting article by Ben Northrop that can be found here . In the article, Ben talks about the concept of &amp;lsquo;doing extra,&amp;rsquo; which is not the same as doing more. For example, if you&amp;rsquo;re asked to implement two APIs and finish early, you can use the extra time to think about how to make the implementation more efficient, secure, or reduce the code length. That&amp;rsquo;s &amp;lsquo;doing extra.</description>
+      <description>&lt;p&gt;Recently, I read an interesting article by Ben Northrop that can be found &lt;strong&gt;&lt;a href=&#34;https://www.bennorthrop.com/Essays/2021/always-do-extra.php&#34; target=&#34;_blank&#34; rel=&#34;nofollow noopener noreferrer&#34;&gt;here&lt;/a&gt;
+&lt;/strong&gt;. In the article, Ben talks about the concept of &amp;lsquo;doing extra,&amp;rsquo; which is not the same as doing more. For example, if you&amp;rsquo;re asked to implement two APIs and finish early, you can use the extra time to think about how to make the implementation more efficient, secure, or reduce the code length. That&amp;rsquo;s &amp;lsquo;doing extra.&amp;rsquo;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Improve Onboarding through the Magic of Storytelling</title>
       <link>https://aminrb.me/onboarding-storytelling/</link>
       <pubDate>Mon, 27 Mar 2023 01:44:04 +0330</pubDate>
       <guid>https://aminrb.me/onboarding-storytelling/</guid>
-      <description>When you join a new team, you are usually bombarded with a lot of information. You need to familiarize yourself with the company&amp;rsquo;s culture, facilities, and colleagues. Initially, the onboarding process tends to be welcoming and hospitable. However, after a few days, you are expected to quickly learn about the products, services, and data in order to contribute effectively. It can be overwhelming to try to absorb and utilize all of this information, and eventually, the honeymoon phase ends, leaving you feeling stressed and concerned about your credibility.</description>
+      <description>&lt;p&gt;When you join a new team, you are usually bombarded with a lot of information. You need to familiarize yourself with the company&amp;rsquo;s culture, facilities, and colleagues. Initially, the onboarding process tends to be welcoming and hospitable. However, after a few days, you are expected to quickly learn about the products, services, and data in order to contribute effectively. It can be overwhelming to try to absorb and utilize all of this information, and eventually, the honeymoon phase ends, leaving you feeling stressed and concerned about your credibility.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How Engineering Managers Can Avoid Technical Decay</title>
       <link>https://aminrb.me/engineering-managers-avoid-technical-decay/</link>
       <pubDate>Fri, 27 Jan 2023 19:48:11 +0330</pubDate>
       <guid>https://aminrb.me/engineering-managers-avoid-technical-decay/</guid>
-      <description>As an engineering manager, it can be easy to feel a sense of distance from the team and concerns about technical decay over time. But there are solutions to this problem! In this article, I explore ways to improve low-level engineering skills, in order to reduce the gap between you and your team members and maintain effectiveness in leading a technical team.
-Reading a lot (mostly on how things work and why they were created), re-doing (for yourself) technical design reviews, and having side projects can help.</description>
+      <description>&lt;p&gt;As an engineering manager, it can be easy to feel a sense of distance from the team and concerns about technical decay over time. But there are solutions to this problem! In this article, I explore ways to improve low-level engineering skills, in order to reduce the gap between you and your team members and maintain effectiveness in leading a technical team.&lt;/p&gt;
+&lt;p&gt;Reading a lot (mostly on how things work and why they were created), re-doing (for yourself) technical design reviews, and having side projects can help.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
