@@ -11,8 +11,18 @@
     </image>
     <generator>Hugo -- 0.148.2</generator>
     <language>fa</language>
-    <lastBuildDate>Sun, 24 Aug 2025 13:06:32 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 24 Aug 2025 22:38:18 +0200</lastBuildDate>
     <atom:link href="https://aminrb.me/fa/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>آسیب‌پذیری IDOR</title>
+      <link>https://aminrb.me/fa/%D8%A2%D8%B3%DB%8C%D8%A8-%D9%BE%D8%B0%DB%8C%D8%B1%DB%8C-idor/</link>
+      <pubDate>Sun, 24 Aug 2025 22:38:18 +0200</pubDate>
+      <guid>https://aminrb.me/fa/%D8%A2%D8%B3%DB%8C%D8%A8-%D9%BE%D8%B0%DB%8C%D8%B1%DB%8C-idor/</guid>
+      <description>&lt;h2 id=&#34;آسیبپذیری-idor-چیه&#34;&gt;آسیب‌پذیری IDOR چیه؟&lt;/h2&gt;
+&lt;p&gt;آسیب‌پذیری IDOR یا Insecure Direct Object Reference که زیرمجموعه‌ای از آسیب‌پذیری‌های &lt;a href=&#34;https://fa.wikipedia.org/wiki/%DA%A9%D9%86%D8%AA%D8%B1%D9%84_%D8%AF%D8%B3%D8%AA%D8%B1%D8%B3%DB%8C&#34; target=&#34;_blank&#34; rel=&#34;nofollow noopener noreferrer&#34;&gt;کنترل دسترسیه&lt;/a&gt;
+، زمانی اتفاق می‌افته که یه API طوری طراحی شده باشه که با استفاده از شناسه‌های قابل حدس، مثل یوزرنیم یا عددهای افزایشی (مثلاً 123)، امکان دسترسی به اطلاعات رو بده.&lt;/p&gt;
+&lt;p&gt;یعنی اگر من یوزر 123 هستم و به اطلاعات خودم دسترسی دارم، بتونم با تغییر عدد به 124، اطلاعات یوزر بعدی رو هم ببینم.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>چطوری خودمون رو برای تغییرات هوش مصنوعی آماده کنیم؟</title>
       <link>https://aminrb.me/fa/%D8%A2%D9%85%D8%A7%D8%AF%DA%AF%DB%8C-%D8%A8%D8%B1%D8%A7%DB%8C-%D8%AA%D8%BA%DB%8C%DB%8C%D8%B1%D8%A7%D8%AA-%D9%87%D9%88%D8%B4-%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C/</link>
@@ -20,6 +30,13 @@
       <guid>https://aminrb.me/fa/%D8%A2%D9%85%D8%A7%D8%AF%DA%AF%DB%8C-%D8%A8%D8%B1%D8%A7%DB%8C-%D8%AA%D8%BA%DB%8C%DB%8C%D8%B1%D8%A7%D8%AA-%D9%87%D9%88%D8%B4-%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C/</guid>
       <description>&lt;p&gt;همونطور که در &lt;a href=&#34;https://aminrb.me/fa/%D8%AC%D8%A7%DB%8C%DA%AF%D8%B2%DB%8C%D9%86%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3-%D9%87%D9%88%D8%B4-%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C/&#34;&gt;این پست&lt;/a&gt;
  نوشتم، این روز‌ها شرکت‌ها در تلاشن که بیشینهٔ بهره‌وری رو از هوش مصنوعی داشته باشن. پیشبینی این که این روند آیندهٔ مهندس‌های نرم‌افزار رو به چه شکل تحت تاثیر قرار خواهد داد از این نقطهٔ زمانی کار دشواریه. اما میشه با قطعیت بیشتری گفت که در آینده‌ای نزدیک یک دورهٔ گذار خواهیم داشت که نحوهٔ کار، فرهنگ سازمانی و نیازهای شرکت‌ها رو تغییر خواهد داد. از دید من، برای این که در شرایط جدید انعطاف‌پذیری بیشتری داشته باشیم و از تغییرات ایجاد شده بهترین استفاده رو بکنیم،‌ خوبه که بر روی بهبود مهارت‌هایی که در ادامه توضیح دادم کار کنیم.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>آیا هوش مصنوعی داره جایگزین برنامه‌نویس‌ها می‌شه؟</title>
+      <link>https://aminrb.me/fa/%D8%AC%D8%A7%DB%8C%DA%AF%D8%B2%DB%8C%D9%86%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3-%D9%87%D9%88%D8%B4-%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C/</link>
+      <pubDate>Thu, 27 Mar 2025 08:09:49 +0100</pubDate>
+      <guid>https://aminrb.me/fa/%D8%AC%D8%A7%DB%8C%DA%AF%D8%B2%DB%8C%D9%86%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3-%D9%87%D9%88%D8%B4-%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C/</guid>
+      <description>آیا هوش مصنوعی جایگزین برنامه‌نویس‌ها می‌شود؟ در این پست آخرین اخبار و تحولات هوش مصنوعی، از جمله تلاش متا و Salesforce برای جایگزینی مهندسان با هوش مصنوعی و ظهور استارت‌آپ‌هایی مانند Lovable و همچنین اهمیت این تغییرات برای صاحبان کسب و کار بررسی می‌شه.</description>
     </item>
     <item>
       <title>آیا هوش مصنوعی داره جایگزین برنامه‌نویس‌ها می‌شه؟</title>
@@ -94,19 +111,6 @@
  پیدا کنی. اگر پست &lt;a href=&#34;https://aminrb.me/fa/%d9%85%d9%82%d8%af%d9%85%d9%87-%d8%b4%d8%b1%d9%88%d8%b9-%d8%a8%d8%b1%d9%86%d8%a7%d9%85%d9%87-%d9%86%d9%88%db%8c%d8%b3%db%8c/&#34;&gt;مقدمه&lt;/a&gt;
  رو نخوندی، پیشنهاد می‌کنم ابتدا نگاهی بهش بندازی. اگر هم با برنامه‌نویسی خیلی آشنا نیستی، خوبه که اولین پست این مجموعه که در مورد &lt;a href=&#34;https://aminrb.me/fa/%d8%aa%d8%b9%d8%b1%db%8c%d9%81-%da%a9%d8%a7%d8%b1%d8%a8%d8%b1%d8%af-%d8%a8%d8%b1%d9%86%d8%a7%d9%85%d9%87-%d9%86%d9%88%db%8c%d8%b3%db%8c/&#34;&gt;تعریف برنامه‌نویسی و کاربردهای آن&lt;/a&gt;
  نوشتم رو بخونی.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>شروع برنامه‌نویسی: برنامه‌نویسی چیه و چه کاربردهایی داره؟</title>
-      <link>https://aminrb.me/fa/%D8%AA%D8%B9%D8%B1%DB%8C%D9%81-%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%D8%AF-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/</link>
-      <pubDate>Sat, 18 Feb 2023 10:58:11 +0330</pubDate>
-      <guid>https://aminrb.me/fa/%D8%AA%D8%B9%D8%B1%DB%8C%D9%81-%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%D8%AF-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/</guid>
-      <description>&lt;p&gt;این پست، اولین پست از مجموعهٔ &lt;a href=&#34;https://aminrb.me/fa/series/%D8%B4%D8%B1%D9%88%D8%B9-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/&#34;&gt;شروع برنامه‌نویسی&lt;/a&gt;
- است که قراره فضای برنامه‌نویسی و مسیرهایی که میشه به کمکش رفت رو برای افرادی که هیچ تجربه‌ای در این حوزه ندارن و یا تجربهٔ خیلی کمی دارن شفاف‌تر کنه.
-توی این مطلب، اول از همه تعریفمون رو از برنامه‌نویسی همسو می‌کنیم و در ادامه کاربردهای حال و آینده این حوزه رو بررسی می‌کنیم.&lt;/p&gt;
-&lt;p&gt;همهٔ پست‌های این سری رو می‌تونین توی صفحه &lt;a href=&#34;https://aminrb.me/fa/series/%D8%B4%D8%B1%D9%88%D8%B9-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/&#34;&gt;شروع برنامه‌نویسی&lt;/a&gt;
- ببینین.
-اگر هم پست مقدمه رو نخوندین، پیشنهاد می‌کنم که اول &lt;a href=&#34;https://aminrb.me/fa/%d9%85%d9%82%d8%af%d9%85%d9%87-%d8%b4%d8%b1%d9%88%d8%b9-%d8%a8%d8%b1%d9%86%d8%a7%d9%85%d9%87-%d9%86%d9%88%db%8c%d8%b3%db%8c/&#34;&gt;مقدمه&lt;/a&gt;
- رو باز کنین و بخونین.&lt;/p&gt;</description>
     </item>
     <item>
       <title>شروع برنامه‌نویسی: مقدمه</title>
