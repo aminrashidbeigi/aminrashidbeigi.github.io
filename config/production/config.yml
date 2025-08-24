@@ -4,3 +4,7 @@ disqusShortname: aminrbg
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
     comments: true
+
+services:
+    googleAnalytics:
+        id: G-S18R7YECZP
