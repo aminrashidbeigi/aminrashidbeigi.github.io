@@ -10,7 +10,7 @@ tags:
 categories:
 - ابزار
 cover:
-  image: "/fa/انتقال-هایلایت-kindle-notion/kindle-to-notion.jpg"
+  image: "/posts/kindle-to-notion.jpg"
   alt: "انتقال از کیندل به نوشن"
 translationKey: kindle-to-notion
 slug: "انتقال-هایلایت-kindle-notion"
@@ -29,17 +29,19 @@ aliases:
 تمامی هایلایت‌های کیندل به صورت فیزیکی در هارد دستگاه و در یک فایل به اسم `My Clippings.txt` توی پوشه `documents` نگهداری می‌شه. بهتره که قبل از هرکاری، این فایل رو روی کامپیوتر خودتون `copy` کنید. حواستون باشه فایل رو `cut` یا `delete` نکنید چون هایلایت‌هاتون توی دستگاه پاک می‌شه.
 
 این فایل به صورت خام هم قابل استفاده است و با ابزارهای ساده‌ای مثل notepad ویندوز و یا هر ویرایشگر متن دیگه‌ای قابل مشاهده است.
-![فایل My Clippings.txt](raw-my-clippings-txt.png)
+![فایل My Clippings.txt](/posts/raw-my-clippings-txt.png)
 
 ## انتقال هایلایت‌ها به Notion
+
 در اینجا چند روش برای تبدیل این فایل خام `My Clippings.txt` به یک سند قابل فهم‌تر و خوانا‌تر نوشن رو می‌نویسم.
-![نسخه تبدیل شده فایل My Clippings.txt به سند Notion](export-clippings-notion.png)
+![نسخه تبدیل شده فایل My Clippings.txt به سند Notion](/posts/export-clippings-notion.png)
 
 ### راه آسان: افزونه Export Kindle Highlights to Notion
 من مدتی از این افزونه گوگل کروم استفاده می‌کردم و جوابگو بود. در [این لینک](https://www.notion.so/KindleToNotion-How-To-Guide-Easy-bce19dae7fae4cde93440ece213ba5ed) به صورت تصویری آموزش استفاده ازش نوشته شده. افزونه رو می‌تونید از [اینجا](https://chrome.google.com/webstore/detail/export-kindle-highlights/nmgbhgbkbenpfjkdfladebgcdihbekne) دانلود کنید.
 - نکته: این افزونه از یک زمانی به بعد برای من کار نکرد. البته پی دلیلش رو نگرفتم و ممکنه کماکان قابل استفاده باشه.
 
 ### راه سخت‌تر: نرم‌افزار متن‌باز kindle2notion
+
 برای این راه نیاز دارید که python3 بر روی سیستم‌عامل شما نصب باشه. می‌تونید توضیحات رو از [ریپازیتوری پروژه](https://github.com/paperboi/kindle2notion) ببینید. من مدتیه که از این روش استفاده می‌کنم.
 
 ---

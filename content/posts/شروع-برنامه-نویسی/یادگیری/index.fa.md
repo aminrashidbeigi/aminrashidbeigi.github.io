@@ -14,7 +14,7 @@ categories:
 series:
 - شروع برنامه نویسی
 cover:
-    image: /fa/مراحل-یادگیری-برنامه-نویسی/learning-process.jpeg
+    image: /posts/learning-process.jpeg
     alt: "a desk with a laptop on it"
     relative: true
 slug: "مراحل-یادگیری-برنامه-نویسی"

@@ -11,7 +11,7 @@ tags:
 categories:
 - مسیر شغلی
 cover:
-    image: /fa/چرا-به-منتور-نیاز-داریم/mentorship-meeting.jpeg
+    image: /posts/mentorship-meeting.jpeg
     caption: "تصویر ساخته شده توسط [DALL.E 3](https://openai.com/dall-e-3)"
     alt: "دو نفر در یک جلسه منتورشیپ با هم صحبت می‌کنند."
 slug : "چرا-به-منتور-نیاز-داریم"

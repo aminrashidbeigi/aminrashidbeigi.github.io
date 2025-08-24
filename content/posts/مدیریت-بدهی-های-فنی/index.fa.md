@@ -10,7 +10,7 @@ tags:
 categories:
 - بدهی فنی
 cover:
-    image: pile-of-wires-and-pickling.jpeg
+    image: /posts/pile-of-wires-and-pickling.jpeg
     caption: "تصویر ساخته شده توسط [DALL.E 3](https://openai.com/dall-e-3)"
     alt: "مقداری سیم و آچار و قطعات مربوط به کامپیوتر بر روی یک میز"
 slug: "مدیریت-بدهی-های-فنی"
@@ -57,7 +57,7 @@ aliases:
 من برای برای نگهداری این جدول و همچنین به اشتراک گذاشتنش با هم‌تیمی‌هام، از یک تمپلیت Notion استفاده می‌کنم که در [این لینک](https://dusty-comte-ce9.notion.site/1fade6bfa9684d86b6e80df3a7b115fb?v=e1c9bd0d7d614171a54d5ce053715093) می‌تونین ببینین و ازش استفاده کنین.
 
 <p align="center">
-  <img src="technical-debts-table.png" alt="Amin Rashidbeigi's avatar" />
+  <img src="/posts/technical-debts-table.png" alt="Amin Rashidbeigi's avatar" />
 </p>
 
 ### اختصاص دادن قسمتی از کارهای تیم به بدهی‌های فنی

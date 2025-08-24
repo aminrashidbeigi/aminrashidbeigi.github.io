@@ -9,7 +9,7 @@ categories:
 series:
  - شروع برنامه نویسی
 cover:
-  image: /fa/مقدمه-شروع-برنامه-نویسی/programmer-desk.jpg
+  image: /posts/programmer-desk.jpg
   alt: "a programmer desk with some monitors"
   caption: "تصویر از Max Duzij در Unsplash"
   relative: true

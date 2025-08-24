@@ -12,7 +12,7 @@ tags:
 categories: 
 - مهندسی نرم افزار
 cover:
-  image: /fa/روش-های-تست-نرم-افزار/test-double.webp
+  image: /posts/test-double.webp
   caption: تصویر ساخته شده توسط [grok](https://x.com/i/grok)
   alt: تست دابل‌ها
 slug: روش-های-تست-نرم-افزار

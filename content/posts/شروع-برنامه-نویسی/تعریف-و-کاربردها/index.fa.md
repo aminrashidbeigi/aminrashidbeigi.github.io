@@ -11,7 +11,7 @@ categories:
 series:
  - شروع برنامه نویسی
 cover:
-  image: /fa/تعریف-کاربرد-برنامه-نویسی/robot-keyboard.jpg
+  image: /posts/robot-keyboard.jpg
   alt: "a robot who playes keyboard"
   caption: "تصویر از Possessed Photography در Unsplash"
   relative: true
