@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.148.2</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 22 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Dec 2025 14:28:01 +0100</lastBuildDate>
     <atom:link href="https://aminrb.me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2025 in Review</title>
+      <link>https://aminrb.me/2025-in-review/</link>
+      <pubDate>Tue, 23 Dec 2025 14:28:01 +0100</pubDate>
+      <guid>https://aminrb.me/2025-in-review/</guid>
+      <description>In this post, I look back on 2025, sharing updates from my work, personal life, travel, projects, and plans for the year ahead.</description>
+    </item>
     <item>
       <title>Ways I Can Help</title>
       <link>https://aminrb.me/ways-i-can-help/</link>
@@ -142,6 +149,13 @@
 &lt;p&gt;Currently, I am a software engineer at &lt;a href=&#34;https://divar.ir&#34; target=&#34;_blank&#34; rel=&#34;nofollow noopener noreferrer&#34;&gt;Divar&lt;/a&gt;
  Tech Company.&lt;/p&gt;
 &lt;p&gt;You can contact me via email at a.rashidbeigi at gmail.com.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Countries I Have Visited</title>
+      <link>https://aminrb.me/visited-countries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aminrb.me/visited-countries/</guid>
+      <description>Interactive map of countries visited by Amin Rashidbeigi</description>
     </item>
   </channel>
 </rss>

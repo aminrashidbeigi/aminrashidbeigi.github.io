@@ -1,0 +1,131 @@
+/* Page-specific styles */
+
+/* Container for better layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Main map section */
+#map {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+}
+
+#stats {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+#stats a {
+  color: #666;
+  text-decoration: none;
+}
+
+#stats a:hover {
+  text-decoration: underline;
+}
+
+#country-name {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.3rem;
+  /* font-weight: 600; */
+  color: #2c5aa0;
+  text-align: center;
+  transition: all 0.3s ease;
+  z-index: 10;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+#svg.full-map {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  background: #e3f2fd;
+  padding: 20px;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+}
+
+#svg.full-map:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+#map .full-map svg {
+  width: 100%;
+  height: 600px;
+  max-height: 70vh;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Map interactions */
+#map path {
+  transition: fill 0.3s ease, stroke 0.3s ease;
+}
+
+#map path:hover {
+  fill: #ff6b6b !important;
+  stroke: #fff !important;
+  stroke-width: 1px !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  #map {
+    padding: 10px;
+  }
+
+  #map .full-map svg {
+    height: 400px;
+  }
+
+  #country-name {
+    font-size: 1.2rem;
+    top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  #map .full-map svg {
+    height: 300px;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  #stats {
+    color: #bdc3c7;
+  }
+
+  #stats a {
+    color: #bdc3c7;
+  }
+
+  #country-name {
+    color: #E6B566;
+  }
+
+  #svg.full-map {
+    background: #1E3A5F;
+  }
+}
+
+/* Legacy styles (keeping for compatibility) */
+#pie-chart {
+  display: none;
+  /* Not used in current design */
+}
+
+#pie-chart svg {
+  display: none;
+}
