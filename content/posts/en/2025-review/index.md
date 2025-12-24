@@ -42,7 +42,7 @@ I have also created a page containing the countries I have visited, coloring the
 
 ## Speaking and Writing
 
-As it was a goal in my 2024 yearly review, I started giving talks on topics I am more interested in. That’s why I had some [talks on different topics](https://github.com/aminrashidbeigi/talks), such as AI changes and their role in software development, as well as sustainability in software engineering.
+As it was a goal in my [2024 yearly review](https://aminrb.me/2024-in-review/), I started giving talks on topics I am more interested in. That’s why I had some [talks on different topics](https://github.com/aminrashidbeigi/talks), such as AI changes and their role in software development, as well as sustainability in software engineering.
 
 Regarding writing, my main focus was on my Telegram channel for my Persian readers. I posted more than 50 posts, including series on [how to increase the chance of getting interviews](https://t.me/aminrbg/78), [how AI is changing the industry](https://t.me/aminrbg/66) and also [how to increase ownership within the team](https://t.me/aminrbg/52).
 
@@ -50,7 +50,7 @@ Regarding writing, my main focus was on my Telegram channel for my Persian reade
 
 This year, I decided to make my side projects public so that not only I but also others could use them. With the wave of amazing new AI and non-AI tools, this became much easier.
 
-I am always reading new blog posts and listening to podcasts from people I follow. Previously, I used several feed readers, but all the tools I tried had limitations, and I couldn’t customize them as much as I wanted. So I created my own tool: [TechGrub](https://t.me/TechGrub). A Telegram channel that sends one post daily with some basic information and an AI-generated super short summary. You can also join it, and yes, it’s free.
+I am always reading new blog posts and listening to podcasts from tech people I follow. Previously, I used several feed readers, but all the tools I tried had limitations, and I couldn’t customize them as much as I wanted. So I created my own tool: [TechGrub](https://t.me/TechGrub). A Telegram channel that sends one post daily with some basic information and an AI-generated super short summary. You can also join it, and yes, it’s free.
 
 Then I vibe-coded [MatchaGift](https://matcha.gift/), a tool that helps people find meaningful and customized gifts for friends and family. It started as a fun experiment in fast prototyping. Even though I did not continue working on it, it helped me explore several ideas.
 
@@ -58,4 +58,4 @@ I also refocused on [mentorship](https://aminrb.me/ways-i-can-help/), conducting
 
 ## 2026 Plans
 
-Besides the usual work- and life-related yearly goals, one of my main focuses for the next year is to integrate more into German culture and the country. I want to focus on the language and also try to get my driving license, since my previous one is not convertible.
+Besides the usual work and life-related yearly goals, one of my main focuses for the next year is to integrate more into German culture and the country. I want to focus on the language and also try to get my driving license, since my previous one is not convertible.
