@@ -9,7 +9,7 @@ slug: "ways-i-can-help"
 ---
 I regularly hold **consultation sessions** (mentorship, one-on-one coaching, or whatever you prefer to call it) with individuals and companies in two main areas: **topic-focused consulting** and **career growth guidance**.
 
-**Topic-focused consulting** covers areas that I’m currently focused on and actively studying. You can check the list of these topics [here](https://chatgpt.com/c/67dfcc3d-48e0-8002-8850-12ead3114cfc#topic-focused-consulting).
+**Topic-focused consulting** covers areas that I’m currently focused on and actively studying. You can check the list of these topics [here](#topic-focused-consulting).
 
 Apart from that, if you need guidance on topics not listed, we can schedule **career growth** sessions instead.
 

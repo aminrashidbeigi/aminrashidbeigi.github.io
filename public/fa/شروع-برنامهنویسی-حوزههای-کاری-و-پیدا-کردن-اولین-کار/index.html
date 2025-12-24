@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>شروع برنامه‌نویسی: حوزه‌های کاری و پیدا کردن اولین کار | امین رشیدبیگی</title>
+<meta name="keywords" content="">
+<meta name="description" content="حوزه‌های کاری
+برنامه‌نویسی یک ابزاره برای ساختن. خط‌های کدی که می‌نویسیم، مثل قطعات لگو هستن که وقتی در کنار هم قرار می‌گیرن یک موجودیت بزرگ‌تر رو می‌سازن.
+برنامه‌نویسی توی حوزه‌های متخلفی استفاده میشه که من به صورت کلی بهشون اشاره می‌کنم.
+برنامه‌نویسی اپلیکیشن‌های تحت وب و موبایل
+موقعیت‌های کاری بک‌اند دولوپر، فرانت‌اند دولوپر، مهندس نرم‌افزار و .. توی این حوزه قرار می‌گیرن. خروجی کار این برنامه‌نویس‌ها عموما وبسایت‌ها و اپلیکیشن‌های تحت وبه. خود این حوزه به دو بخش تقسیم میشه.">
+<meta name="author" content="امین رشیدبیگی">
+<link rel="canonical" href="http://localhost:1313/fa/%D8%B4%D8%B1%D9%88%D8%B9-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%D9%86%D9%88%DB%8C%D8%B3%DB%8C-%D8%AD%D9%88%D8%B2%D9%87%D9%87%D8%A7%DB%8C-%DA%A9%D8%A7%D8%B1%DB%8C-%D9%88-%D9%BE%DB%8C%D8%AF%D8%A7-%DA%A9%D8%B1%D8%AF%D9%86-%D8%A7%D9%88%D9%84%DB%8C%D9%86-%DA%A9%D8%A7%D8%B1/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="fa" href="http://localhost:1313/fa/%D8%B4%D8%B1%D9%88%D8%B9-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%D9%86%D9%88%DB%8C%D8%B3%DB%8C-%D8%AD%D9%88%D8%B2%D9%87%D9%87%D8%A7%DB%8C-%DA%A9%D8%A7%D8%B1%DB%8C-%D9%88-%D9%BE%DB%8C%D8%AF%D8%A7-%DA%A9%D8%B1%D8%AF%D9%86-%D8%A7%D9%88%D9%84%DB%8C%D9%86-%DA%A9%D8%A7%D8%B1/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><link rel="stylesheet" href="/css/visited-countries.css">
+
+<script src="/js/d3.v4.min.js" defer></script>
+<script src="/js/countries.js" defer></script>
+<script src="/js/script.js" defer></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Countries I have visited",
+  "description": "Interactive map of countries visited by Amin Rashidbeigi",
+  "author": {
+    "@type": "Person",
+    "name": "Amin Rashidbeigi",
+    "url": "https://aminrb.me"
+  }
+}
+</script>
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/fa/" accesskey="h" title="امین رشیدبیگی (Alt + H)">امین رشیدبیگی</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                    <li>
+                        <a href="http://localhost:1313/" title="English"
+                            aria-label="English">English</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/fa/posts/" title="نوشته‌ها">
+                    <span>نوشته‌ها</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/fa/about/" title="دربارهٔ من">
+                    <span>دربارهٔ من</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://t.me/aminrbg" title="کانال تلگرام">
+                    <span>کانال تلگرام</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/fa/ways-i-can-help/" title="درخواست جلسهٔ مشاوره">
+                    <span>درخواست جلسهٔ مشاوره</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      شروع برنامه‌نویسی: حوزه‌های کاری و پیدا کردن اولین کار
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h1>
+    <div class="post-meta"><span title='2023-02-16 10:58:16 +0330 +0330'>فوریهٔ 16, 2023</span>&nbsp;·&nbsp;5 دقیقه&nbsp;·&nbsp;امین رشیدبیگی
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">فهرست مطالب</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%d8%ad%d9%88%d8%b2%d9%87%d9%87%d8%a7%db%8c-%da%a9%d8%a7%d8%b1%db%8c" aria-label="حوزه‌های کاری">حوزه‌های کاری</a><ul>
+                        
+                <li>
+                    <a href="#%d8%a8%d8%b1%d9%86%d8%a7%d9%85%d9%87%d9%86%d9%88%db%8c%d8%b3%db%8c-%d8%a7%d9%be%d9%84%db%8c%da%a9%db%8c%d8%b4%d9%86%d9%87%d8%a7%db%8c-%d8%aa%d8%ad%d8%aa-%d9%88%d8%a8-%d9%88-%d9%85%d9%88%d8%a8%d8%a7%db%8c%d9%84" aria-label="برنامه‌نویسی اپلیکیشن‌های تحت وب و موبایل">برنامه‌نویسی اپلیکیشن‌های تحت وب و موبایل</a><ul>
+                        
+                <li>
+                    <a href="#%d8%a8%d8%b1%d9%86%d8%a7%d9%85%d9%87%d9%86%d9%88%db%8c%d8%b3-%d8%b3%d9%85%d8%aa-%da%a9%d8%a7%d8%b1%d8%a8%d8%b1-%d9%88%d8%a8-%d9%88-%d9%85%d9%88%d8%a8%d8%a7%db%8c%d9%84" aria-label="برنامه‌نویس سمت کاربر (وب و موبایل)">برنامه‌نویس سمت کاربر (وب و موبایل)</a></li>
+                <li>
+                    <a href="#%d8%a8%d8%b1%d9%86%d8%a7%d9%85%d9%87%d9%86%d9%88%db%8c%d8%b3%db%8c-%d8%b3%d9%85%d8%aa-%d8%b3%d8%b1%d9%88%d8%b1-%d8%a8%da%a9%d9%86%d8%af" aria-label="برنامه‌نویسی سمت سرور (بکند)">برنامه‌نویسی سمت سرور (بکند)</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%d8%aa%d8%ad%d9%84%db%8c%d9%84-%d8%af%d8%a7%d8%af%d9%87" aria-label="تحلیل داده">تحلیل داده</a></li>
+                <li>
+                    <a href="#%d8%af%d8%a7%d9%86%d8%b4%d9%85%d9%86%d8%af-%d8%af%d8%a7%d8%af%d9%87" aria-label="دانشمند داده">دانشمند داده</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%da%86%d8%b7%d9%88%d8%b1%db%8c-%d9%88%d8%a7%d8%b1%d8%af-%d8%a8%d8%a7%d8%b2%d8%a7%d8%b1-%da%a9%d8%a7%d8%b1-%d8%a8%d8%b4%d9%85" aria-label="چطوری وارد بازار کار بشم؟">چطوری وارد بازار کار بشم؟</a><ul>
+                        
+                <li>
+                    <a href="#%d9%85%d8%b1%d8%ad%d9%84%d9%87-%db%b1-%d8%aa%d9%82%d9%88%db%8c%d8%aa-%d9%be%d8%a7%d9%87%d8%a7%db%8c-%d8%a8%d8%b1%d9%86%d8%a7%d9%85%d9%87%d9%86%d9%88%db%8c%d8%b3%db%8c-%d9%88-%d8%a7%d9%84%da%af%d9%88%d8%b1%db%8c%d8%aa%d9%85%db%8c" aria-label="مرحله ۱: تقویت‌ پا‌های برنامه‌نویسی و الگوریتمی">مرحله ۱: تقویت‌ پا‌های برنامه‌نویسی و الگوریتمی</a></li>
+                <li>
+                    <a href="#%d9%85%d8%b1%d8%ad%d9%84%d9%87-%db%b2-%d8%a7%d9%86%d8%ac%d8%a7%d9%85-%d9%be%d8%b1%d9%88%da%98%d9%87%d9%87%d8%a7%db%8c-%d8%b4%d8%ae%d8%b5%db%8c" aria-label="مرحله ۲: انجام پروژه‌های شخصی">مرحله ۲: انجام پروژه‌های شخصی</a></li>
+                <li>
+                    <a href="#%d9%85%d8%b1%d8%ad%d9%84%d9%87-%db%b3-%d9%be%db%8c%d8%af%d8%a7-%da%a9%d8%b1%d8%af%d9%86-%d8%a7%d9%88%d9%84%db%8c%d9%86-%da%a9%d8%a7%d8%b1" aria-label="مرحله ۳: پیدا کردن اولین کار">مرحله ۳: پیدا کردن اولین کار</a><ul>
+                        
+                <li>
+                    <a href="#%d8%a7%d8%b3%d8%aa%d8%ae%d8%af%d8%a7%d9%85-%d8%af%d8%b1-%d8%b4%d8%b1%da%a9%d8%aa" aria-label="استخدام در شرکت">استخدام در شرکت</a></li>
+                <li>
+                    <a href="#%d9%81%d8%b1%db%8c%d9%84%d9%86%d8%b3%d8%b1" aria-label="فریلنسر">فریلنسر</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h2 id="حوزههای-کاری">حوزه‌های کاری<a hidden class="anchor" aria-hidden="true" href="#حوزههای-کاری">#</a></h2>
+<p>برنامه‌نویسی یک ابزاره برای ساختن. خط‌های کدی که می‌نویسیم، مثل قطعات لگو هستن که وقتی در کنار هم قرار می‌گیرن یک موجودیت بزرگ‌تر رو می‌سازن.</p>
+<p>برنامه‌نویسی توی حوزه‌های متخلفی استفاده میشه که من به صورت کلی بهشون اشاره می‌کنم.</p>
+<h3 id="برنامهنویسی-اپلیکیشنهای-تحت-وب-و-موبایل">برنامه‌نویسی اپلیکیشن‌های تحت وب و موبایل<a hidden class="anchor" aria-hidden="true" href="#برنامهنویسی-اپلیکیشنهای-تحت-وب-و-موبایل">#</a></h3>
+<p>موقعیت‌های کاری بک‌اند دولوپر، فرانت‌اند دولوپر، مهندس نرم‌افزار و .. توی این حوزه قرار می‌گیرن. خروجی کار این برنامه‌نویس‌ها عموما وبسایت‌ها و اپلیکیشن‌های تحت وبه. خود این حوزه به دو بخش تقسیم میشه.</p>
+<h4 id="برنامهنویس-سمت-کاربر-وب-و-موبایل">برنامه‌نویس سمت کاربر (وب و موبایل)<a hidden class="anchor" aria-hidden="true" href="#برنامهنویس-سمت-کاربر-وب-و-موبایل">#</a></h4>
+<p>هر وبسایت یا اپلیکیشنی که باهاش کار می‌کنیم یک پوسته ظاهری داره که کاربرها با اون لایه در ارتباط هستن. صفحه رو می‌بینن یا روش تغییراتی انجام می‌دن. برنامه‌نویس‌های سمت کاربر وظیفه دارن که اون لایه رو درست کنن.عموما ورودی کار این برنامه‌نویس‌ها، دیزاین‌هاییه که از سمت طراحان تجربه کاربری و طراحان رابط کاربری بهشون داده میشه و خروجیش هم پیاده‌سازی اون طراحیه. این که المان‌های هر صفحه به چه شکل در کنار هم قرار گرفته باشن، چه رنگی باشن، از چه فونت‌هایی استفاده شده باشه و یا این که کاربر بر روی یک دکمه کلیک کنه چه اتفاقی بیفته.</p>
+<p>مثلا در صفحه محصول در یک فروشگاه آنلاین، این که عکس، قیمت، توضیحات و بقیه قسمت‌های محصول کجای صفحه باشن بر عهده برنامه‌نویس‌های سمت کاربره.</p>
+<h4 id="برنامهنویسی-سمت-سرور-بکند">برنامه‌نویسی سمت سرور (بکند)<a hidden class="anchor" aria-hidden="true" href="#برنامهنویسی-سمت-سرور-بکند">#</a></h4>
+<p>اپلیکیشن‌ها و وب‌سایت‌ها علاوه بر لایه ظاهری که در قسمت قبل نوشتم، یک لایه زیرین هم دارن که به لایه رویی ورودی می‌ده و ازش خروجی می‌گیره.</p>
+<p>مثلا در همون صفحه محصول، وظیفه نگهداری این که چه محصول‌هایی داریم، قیمتش چقدره و چه توضیحاتی داره به لایه رویی داده می‌شه. از طرفی هم کاربر وقتی سفارش ثبت می‌کنه، یک جایی باید ذخیره بشه و وضعیتش بروزرسانی بشه.</p>
+<h3 id="تحلیل-داده">تحلیل داده<a hidden class="anchor" aria-hidden="true" href="#تحلیل-داده">#</a></h3>
+<p>تحلیلگرهای داده وظیفه درک و استنباط داده‌ها و به تصویر کشیدن خروجی‌ها و نتایجی که میشه از این داده‌ها گرفت رو بر عهده دارن.
+برای مثال، داده سفارش تمامی کاربران رو داریم. این که بدونیم کاربران در چه فصل‌هایی چه کالاهایی رو بیشتر می‌خرن بر عهده تلیلگرهای داده است.
+جدای از برنامه‌نویسی، آمار و احتمالات جزو لا ینفک این حوزه شغلیه.</p>
+<h3 id="دانشمند-داده">دانشمند داده<a hidden class="anchor" aria-hidden="true" href="#دانشمند-داده">#</a></h3>
+<p>ترکیب برنامه‌نویسی + جبر خطی.
+کار این دسته از برنامه‌نویس‌ها شبیهه به تحلیلگرهای داده است. با این تفاوت که خروجی کار دانشمند‌های داده فقط تحلیل نیست و هدف اصلی ساختن یک ابزاره.
+در همون مثال فروشگاه، یکی از کارهای دانشمند‌های داده می‌تونه ساختن ابزاری باشه که به کاربرهای مختلف بر اساس علایق و سابقه خریدشون، اجناس بیشتری رو برای خرید پیشنهاد بده.</p>
+<h2 id="چطوری-وارد-بازار-کار-بشم">چطوری وارد بازار کار بشم؟<a hidden class="anchor" aria-hidden="true" href="#چطوری-وارد-بازار-کار-بشم">#</a></h2>
+<p>مثل شروع هر کار دیگه‌ای، پیدا کردن اولین شغل کار سختیه. احتمالا بیشترین تلاشی که برای پیدا کردن کار خواهید کرد، همون تجربه اولین کاره. شرکت‌ها برای مسائل بازی که درگیرش هستن برنامه‌نویس استخدام می‌کنن. از طرفی فردی که تجربه کار واقعی نداره،‌ ریسک استخدامش بالاتره و کارفرما سخت‌تر اعتماد می‌کنه که این فرد رو استخدام کنه. به همین دلیل این مرحله می‌تونه سخت باشه.</p>
+<p>راه‌های مختلفی میشه رفت که فرآیند پیدا کردن اولین کار رو سریع‌تر کرد (که توی قسمت سوالات بیشتر توضیح دادم).
+مراحلی که اینجا می‌نویسم احتمال پیدا کردن کار رو می‌بره بالا. مسلما با توجه به زمانی که دارین و یا شرایطی که دارین، می‌تونین همه این مراحل رو طی نکنید و کار هم پیدا کنید.</p>
+<h3 id="مرحله-۱-تقویت-پاهای-برنامهنویسی-و-الگوریتمی">مرحله ۱: تقویت‌ پا‌های برنامه‌نویسی و الگوریتمی<a hidden class="anchor" aria-hidden="true" href="#مرحله-۱-تقویت-پاهای-برنامهنویسی-و-الگوریتمی">#</a></h3>
+<p>اولین مرحله تقویت پایه‌های برنامه‌نویسی و الگوریتمی تا یه حد معقولیه. بعد از یادگیری المان‌های اولیه برنامه‌نویسی رو یاد گرفتی، پیشنهادم اینه که مشغول حل کردن مسائل ساده و متوسط الگوریتمی بشی. سایت‌های زیادی وجود دارن که به صورت رایگان مسائل رو با دسته‌بندی‌های مختلف و درجه‌های سختی متفاوت لیست می‌کنن که می‌شه توشون تمرین کرد. در لحظه‌ای که این پست رو می‌نویسم سایت leetcode خیلی گزینه خوبیه.</p>
+<p>این سایت‌ها علاوه بر بررسی درست یا غلط بودن کد، جواب و راه حل بقیه افرادی که این سوال رو حل کردن هم توی سایت قرار میدن. اینجا خیلی مهمه که علاوه بر فکر کردن به الگوریتم و حل کردن سوال‌ها، بعدش راه‌حل‌های مختلف که بقیه ارائه دادن رو خوند و با هم مقایسه کرد و ازشون یاد گرفت.</p>
+<h3 id="مرحله-۲-انجام-پروژههای-شخصی">مرحله ۲: انجام پروژه‌های شخصی<a hidden class="anchor" aria-hidden="true" href="#مرحله-۲-انجام-پروژههای-شخصی">#</a></h3>
+<p>کارفرما نیاز داره که براش واضح باشه که فردی که استخدا می‌کنه مشتاق یادگیریه و می‌تونه کاری که شروع کرده رو به سرانجام برسونه. یه کاری که میشه در این راستا کرد، انجام پروژه‌های شخصیه. مثلا بالا آوردن یک وبسایت، منتشر کردن یک اپلیکیشن (برای برنامه‌نویسان اپلیکیشن‌های وب و موبایل) یا انجام پروژه‌ها و مسابقات وبسایت‌هایی مثل <a href="https://www.kaggle.com/" target="_blank" rel="nofollow noopener noreferrer">Kaggle</a>
+ (برای تحلیلگران داده یا دانشمندان داده).</p>
+<p>خیلی خوبه که این پروژه‌ها رو در وبسایت‌های عمومی مثل <a href="https://github.com/" target="_blank" rel="nofollow noopener noreferrer">Github</a>
+ به صورت متن باز قرار بدی. این کار کمک می‌کنه که بقیه راحت بتونن کدت رو ببینن.</p>
+<h3 id="مرحله-۳-پیدا-کردن-اولین-کار">مرحله ۳: پیدا کردن اولین کار<a hidden class="anchor" aria-hidden="true" href="#مرحله-۳-پیدا-کردن-اولین-کار">#</a></h3>
+<p>برنامه‌نویس‌ها یا در یک شرکتی استخدام هستند و در راستای اهداف اون شرکت تلاش می‌کنن، یا این که به صورت پروژه‌ای با کارفرماهای مختلف قرارداد می‌بندن و کارها رو به صورت پروژه‌ای و یا به اصطلاح فریلنسی پیش می‌برن.</p>
+<h4 id="استخدام-در-شرکت">استخدام در شرکت<a hidden class="anchor" aria-hidden="true" href="#استخدام-در-شرکت">#</a></h4>
+<p>اینجا باید ارتباط بین شما و شرکتی که می‌خواین توش استخدام بشین برقرار بشه. مهمترین کار فرستادن رزومه به شرکت‌های مختلفه. خیلی از شرکت‌ها موقعیت‌ استخدام برنامه‌نویس تازه کار و یا کارآموز رو داره. سایت‌های کاریابی و صفحات استخدام شرکت‌ها می‌تونه منبع خوبی برای پیدا کردن این موقعیت‌ها باشه.</p>
+<p>یک روش دیگه اینه که با مسئول استخدام شرکتی که می‌خواین توش کار کنین ارتباط بگیرین. شرایطتون رو بهشون بگین و ازشون درخواست کنید که اگر موقعیت بازی برای جذب شما دارن، باهاشون پیش ببرین. خیلی مهمه که توی این پیام واضح و شفاف و دقیق خواسته‌اتون رو مطرح کنید و همچنین نشون بدین که چرا علاقه دارین توی اون شرکت کار کنین.</p>
+<h4 id="فریلنسر">فریلنسر<a hidden class="anchor" aria-hidden="true" href="#فریلنسر">#</a></h4>
+<p>توی وبسایت‌های فریلنسی دنبال پروژه باشین و یک پروژه رو انجام بدین. این کمک می‌کنه با ددلاین‌های کار واقعی مقداری آشنا بشین.</p>
+
+
+<hr>
+من بیشتر این یادداشت‌ها رو در <a href="https://t.me/aminrbg" target="_blank">کانال تلگرام</a> می‌نویسم و اگر این نوشته
+رو خوندین احتمالاً باقی نوشته‌های کانال هم به کارتون خواهد
+اومد و پیشنهاد می‌کنم عضو بشید.
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/fa/%D8%A7%D8%AB%D8%B1%D8%A8%D8%AE%D8%B4%DB%8C-%DB%8C%D8%A7-%D8%A8%D9%87%D8%B1%D9%87%D9%88%D8%B1%DB%8C/">
+    <span class="title">« صفحه قبلی</span>
+    <br>
+    <span>اثربخشی یا بهره‌وری؟</span>
+  </a>
+  <a class="next" href="http://localhost:1313/fa/%D9%85%D9%82%D8%AF%D9%85%D9%87-%D8%B4%D8%B1%D9%88%D8%B9-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/">
+    <span class="title">صفحه بعدی »</span>
+    <br>
+    <span>شروع برنامه‌نویسی: مقدمه</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/fa/">امین رشیدبیگی</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'کپی';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'کپی شد!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'کپی';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
