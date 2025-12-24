@@ -19,8 +19,7 @@
       <pubDate>Sun, 24 Aug 2025 22:38:18 +0200</pubDate>
       <guid>https://aminrb.me/fa/%D8%A2%D8%B3%DB%8C%D8%A8-%D9%BE%D8%B0%DB%8C%D8%B1%DB%8C-idor/</guid>
       <description>&lt;h2 id=&#34;آسیبپذیری-idor-چیه&#34;&gt;آسیب‌پذیری IDOR چیه؟&lt;/h2&gt;
-&lt;p&gt;آسیب‌پذیری IDOR یا Insecure Direct Object Reference که زیرمجموعه‌ای از آسیب‌پذیری‌های &lt;a href=&#34;https://fa.wikipedia.org/wiki/%DA%A9%D9%86%D8%AA%D8%B1%D9%84_%D8%AF%D8%B3%D8%AA%D8%B1%D8%B3%DB%8C&#34; target=&#34;_blank&#34; rel=&#34;nofollow noopener noreferrer&#34;&gt;کنترل دسترسیه&lt;/a&gt;
-، زمانی اتفاق می‌افته که یه API طوری طراحی شده باشه که با استفاده از شناسه‌های قابل حدس، مثل یوزرنیم یا عددهای افزایشی (مثلاً 123)، امکان دسترسی به اطلاعات رو بده.&lt;/p&gt;
+&lt;p&gt;آسیب‌پذیری IDOR یا Insecure Direct Object Reference که زیرمجموعه‌ای از آسیب‌پذیری‌های &lt;a href=&#34;https://fa.wikipedia.org/wiki/%DA%A9%D9%86%D8%AA%D8%B1%D9%84_%D8%AF%D8%B3%D8%AA%D8%B1%D8%B3%DB%8C&#34; target=&#34;_blank&#34; rel=&#34;nofollow noopener noreferrer&#34;&gt;کنترل دسترسیه&lt;/a&gt;، زمانی اتفاق می‌افته که یه API طوری طراحی شده باشه که با استفاده از شناسه‌های قابل حدس، مثل یوزرنیم یا عددهای افزایشی (مثلاً 123)، امکان دسترسی به اطلاعات رو بده.&lt;/p&gt;
 &lt;p&gt;یعنی اگر من یوزر 123 هستم و به اطلاعات خودم دسترسی دارم، بتونم با تغییر عدد به 124، اطلاعات یوزر بعدی رو هم ببینم.&lt;/p&gt;</description>
     </item>
   </channel>

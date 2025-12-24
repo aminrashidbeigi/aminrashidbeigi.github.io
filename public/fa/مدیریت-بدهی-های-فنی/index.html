@@ -287,18 +287,14 @@
 </div>
 
   <div class="post-content"><h2 id="مقدمه">مقدمه<a hidden class="anchor" aria-hidden="true" href="#مقدمه">#</a></h2>
-<p>بدهی‌های فنی عضو جدا ناپذیر توسعهٔ یک محصول هستن. با وجود این که عموماً بار معنایی منفی دارن، اما به وجود آوردنش لزوماً تصمیم معیوبی نیست؛ بلکه همونطور که از اسمش پیداست، یک چیزی رو قرض می‌گیریم که در آینده و در فرصت بهتری بهاش رو پرداخت کنیم. همونطور که <a href="https://cleancoder.com/" target="_blank" rel="nofollow noopener noreferrer">Uncle Bob</a>
- در <a href="https://sites.google.com/site/unclebobconsultingllc/a-mess-is-not-a-technical-debt" target="_blank" rel="nofollow noopener noreferrer">این مقاله</a>
- اشاره می‌کنه، بعضی مواقع برای سریع‌تر به نتیجه رسیدن و آزمایش کردن یک تغییر در محصول، خیلی مفید خواهد بود که کمی از استانداردهای فنی بکاهیم و به بهای گرفتن نتیجهٔ سریع‌تر، یک بدهی فنی به بار بیاریم. اما باید حواسمون باشه که هر نوع کاهش استاندارد رو به حساب بدهی فنی نذاریم. همونطور که در <a href="https://t.me/aminrbg/6" target="_blank" rel="nofollow noopener noreferrer">این پست</a>
- کانال تلگرامم اشاره کرده بودم، اگر بدهی فنی رو آگاهانه و با ملاحظه به وجود بیاریم، اتفاق مثبتیه و برای توسعهٔ محصول مفید خواهد بود.</p>
+<p>بدهی‌های فنی عضو جدا ناپذیر توسعهٔ یک محصول هستن. با وجود این که عموماً بار معنایی منفی دارن، اما به وجود آوردنش لزوماً تصمیم معیوبی نیست؛ بلکه همونطور که از اسمش پیداست، یک چیزی رو قرض می‌گیریم که در آینده و در فرصت بهتری بهاش رو پرداخت کنیم. همونطور که <a href="https://cleancoder.com/" target="_blank" rel="nofollow noopener noreferrer">Uncle Bob</a> در <a href="https://sites.google.com/site/unclebobconsultingllc/a-mess-is-not-a-technical-debt" target="_blank" rel="nofollow noopener noreferrer">این مقاله</a> اشاره می‌کنه، بعضی مواقع برای سریع‌تر به نتیجه رسیدن و آزمایش کردن یک تغییر در محصول، خیلی مفید خواهد بود که کمی از استانداردهای فنی بکاهیم و به بهای گرفتن نتیجهٔ سریع‌تر، یک بدهی فنی به بار بیاریم. اما باید حواسمون باشه که هر نوع کاهش استاندارد رو به حساب بدهی فنی نذاریم. همونطور که در <a href="https://t.me/aminrbg/6" target="_blank" rel="nofollow noopener noreferrer">این پست</a> کانال تلگرامم اشاره کرده بودم، اگر بدهی فنی رو آگاهانه و با ملاحظه به وجود بیاریم، اتفاق مثبتیه و برای توسعهٔ محصول مفید خواهد بود.</p>
 <p>در این نوشته ابتدا از اهمیت مدیریت بدهی‌های فنی می‌نویسم و در ادامه روشی که خودم برای مدیریت و کاهش بدهی‌های فنی یک پروژه و یا یک تیم استفاده می‌کنم رو مرور خواهم کرد.</p>
 <h2 id="اهمیت-مدیریت-و-کاهش-بدهیهای-فنی">اهمیت مدیریت و کاهش بدهی‌های فنی<a hidden class="anchor" aria-hidden="true" href="#اهمیت-مدیریت-و-کاهش-بدهیهای-فنی">#</a></h2>
 <p>بدهی‌های فنی بسته به نوعشون می‌تونن مشکلات مختلفی رو برای یک سیستم در بلند مدت به وجود بیارن. فرض کنیم پروژه‌ای داریم که کدی با طراحی و ساختار نامناسبی داره که شاید در ابتدای شکل‌گیری پروژه کاملاً متناسب با نیازهای سازمان بوده ولی الان با گذشت چند سال و بعد از این که افراد مختلف روی این پروژه توسعه انجام دادن و بدهی‌های فنی به خوبی مدیریت نشده، الان به یک کد پیچیده، ناخوانا و غیرقابل نگهداری تبدیل شده. توسعه بر روی این پروژه مشکلات زیر رو به همراه داره:</p>
 <ul>
 <li>پایین بودن سرعت توسعه</li>
 <li>پایین بودن سرعت آنبوردینگ افراد جدید بر روی پروژه</li>
-<li>کاهش <a href="https://fa.wikipedia.org/wiki/%D8%B6%D8%B1%DB%8C%D8%A8_%D8%A7%D8%AA%D9%88%D8%A8%D9%88%D8%B3" target="_blank" rel="nofollow noopener noreferrer">Bus Factor</a>
- پروژه</li>
+<li>کاهش <a href="https://fa.wikipedia.org/wiki/%D8%B6%D8%B1%DB%8C%D8%A8_%D8%A7%D8%AA%D9%88%D8%A8%D9%88%D8%B3" target="_blank" rel="nofollow noopener noreferrer">Bus Factor</a> پروژه</li>
 <li>افزایش احتمال باگ خوردن کدهای جدید</li>
 <li>سخت‌تر بودن دیباگ کد فعلی</li>
 <li>سخت‌تر بودن تست‌پذیری اجزای مختلف پروژه</li>
@@ -316,8 +312,7 @@
 <li><strong>اولویت</strong>: حل کردن این بدهی برای رشد محصول چقدر اولویت داره؟ قراره که فقط به حفظ استانداردهامون کمک کنه یا سرعت توسعه محصول رو به میزان قابل توجهی افزایش بده؟</li>
 </ul>
 <p>برای مشخصه‌های هزینه و اولویت می‌تونیم عدد بگذاریم و یا صرفا از عبارات کیفی مثل <strong>کم</strong>، <strong>متوسط</strong> و <strong>زیاد</strong> استفاده کنیم.</p>
-<p>من برای برای نگهداری این جدول و همچنین به اشتراک گذاشتنش با هم‌تیمی‌هام، از یک تمپلیت Notion استفاده می‌کنم که در <a href="https://dusty-comte-ce9.notion.site/1fade6bfa9684d86b6e80df3a7b115fb?v=e1c9bd0d7d614171a54d5ce053715093" target="_blank" rel="nofollow noopener noreferrer">این لینک</a>
- می‌تونین ببینین و ازش استفاده کنین.</p>
+<p>من برای برای نگهداری این جدول و همچنین به اشتراک گذاشتنش با هم‌تیمی‌هام، از یک تمپلیت Notion استفاده می‌کنم که در <a href="https://dusty-comte-ce9.notion.site/1fade6bfa9684d86b6e80df3a7b115fb?v=e1c9bd0d7d614171a54d5ce053715093" target="_blank" rel="nofollow noopener noreferrer">این لینک</a> می‌تونین ببینین و ازش استفاده کنین.</p>
 <p align="center">
   <img src="/posts/technical-debts-table.png" alt="Amin Rashidbeigi's avatar" />
 </p>
@@ -330,12 +325,9 @@
 <h2 id="منابع-بیشتر">منابع بیشتر<a hidden class="anchor" aria-hidden="true" href="#منابع-بیشتر">#</a></h2>
 <p>اگر علاقه‌مندید بیشتر در مورد بدهی‌های فنی بخونید من این مقاله‌ها رو پیشنهاد می‌کنم:</p>
 <ul>
-<li><a href="https://martinfowler.com/bliki/TechnicalDebtQuadrant.html" target="_blank" rel="nofollow noopener noreferrer">TechnicalDebtQuadrant</a>
-</li>
-<li><a href="https://martinfowler.com/articles/bottlenecks-of-scaleups/01-tech-debt.html" target="_blank" rel="nofollow noopener noreferrer">Bottlenecks of Scaleups: 01 Tech Debt</a>
-</li>
-<li><a href="https://sites.google.com/site/unclebobconsultingllc/a-mess-is-not-a-technical-debt" target="_blank" rel="nofollow noopener noreferrer">A Mess is not a Technical Debt</a>
-</li>
+<li><a href="https://martinfowler.com/bliki/TechnicalDebtQuadrant.html" target="_blank" rel="nofollow noopener noreferrer">TechnicalDebtQuadrant</a></li>
+<li><a href="https://martinfowler.com/articles/bottlenecks-of-scaleups/01-tech-debt.html" target="_blank" rel="nofollow noopener noreferrer">Bottlenecks of Scaleups: 01 Tech Debt</a></li>
+<li><a href="https://sites.google.com/site/unclebobconsultingllc/a-mess-is-not-a-technical-debt" target="_blank" rel="nofollow noopener noreferrer">A Mess is not a Technical Debt</a></li>
 </ul>
 
 
