@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Git Diff on Amin Rashidbeigi</title>
-    <link>http://localhost:1313/tags/git-diff/</link>
+    <link>https://aminrb.me/tags/git-diff/</link>
     <description>Recent content in Git Diff on Amin Rashidbeigi</description>
     <image>
       <title>Amin Rashidbeigi</title>
-      <url>http://localhost:1313/papermod-cover.png</url>
-      <link>http://localhost:1313/papermod-cover.png</link>
+      <url>https://aminrb.me/papermod-cover.png</url>
+      <link>https://aminrb.me/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.148.2</generator>
     <language>en</language>
     <lastBuildDate>Sat, 15 Feb 2025 18:23:18 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/git-diff/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aminrb.me/tags/git-diff/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>I Am the First Reviewer of My Own Pull Requests</title>
-      <link>http://localhost:1313/first-pull-request-reviewer/</link>
+      <link>https://aminrb.me/first-pull-request-reviewer/</link>
       <pubDate>Sat, 15 Feb 2025 18:23:18 +0200</pubDate>
-      <guid>http://localhost:1313/first-pull-request-reviewer/</guid>
+      <guid>https://aminrb.me/first-pull-request-reviewer/</guid>
       <description>&lt;p&gt;About ten years ago, I started my career as a backend intern at a small company. Back then, the main product our team was working on was a multilingual hotel management software. After spending some time watching tutorials and practicing, the tech lead decided I was ready to contribute to the main project, so I officially joined the team.&lt;/p&gt;
 &lt;p&gt;When I completed my first task, I nervously sent my pull request to my manager. Before even opening it, he asked, &amp;ldquo;Did you review it yourself?&amp;rdquo; I was a bit surprised and said no. He told me to go review my own code first, fix any issues that you found, and then send it back to me. He also suggested that I do these reviews before committing my code and introduced me to  for the first time.&lt;/p&gt;</description>
     </item>

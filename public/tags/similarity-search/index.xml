@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Similarity Search on Amin Rashidbeigi</title>
-    <link>http://localhost:1313/tags/similarity-search/</link>
+    <link>https://aminrb.me/tags/similarity-search/</link>
     <description>Recent content in Similarity Search on Amin Rashidbeigi</description>
     <image>
       <title>Amin Rashidbeigi</title>
-      <url>http://localhost:1313/papermod-cover.png</url>
-      <link>http://localhost:1313/papermod-cover.png</link>
+      <url>https://aminrb.me/papermod-cover.png</url>
+      <link>https://aminrb.me/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.148.2</generator>
     <language>en</language>
     <lastBuildDate>Sun, 14 Apr 2024 11:39:47 +0330</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/similarity-search/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aminrb.me/tags/similarity-search/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vector Search: An Introduction</title>
-      <link>http://localhost:1313/vector-search-introduction/</link>
+      <link>https://aminrb.me/vector-search-introduction/</link>
       <pubDate>Sun, 14 Apr 2024 11:39:47 +0330</pubDate>
-      <guid>http://localhost:1313/vector-search-introduction/</guid>
+      <guid>https://aminrb.me/vector-search-introduction/</guid>
       <description>In this post, we explore the fundamentals of vector search, discussing how it operates and its applications across different data formats. You&amp;#39;ll discover the key components required to implement vector search and its potential to enhance search functionalities.</description>
     </item>
   </channel>

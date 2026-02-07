@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>My Thoughts on The Clean Coder Book | Amin Rashidbeigi</title>
 <meta name="keywords" content="">
 <meta name="description" content="This post shares my thoughts on &#39;The Clean Coder&#39; by Uncle Bob, focusing on topics that I found particularly interesting or debatable.">
 <meta name="author" content="Amin Rashidbeigi">
-<link rel="canonical" href="http://localhost:1313/the-clean-coder/">
+<link rel="canonical" href="https://aminrb.me/the-clean-coder/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://aminrb.me/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://aminrb.me/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://aminrb.me/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://aminrb.me/apple-touch-icon.png">
+<link rel="mask-icon" href="https://aminrb.me/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/the-clean-coder/">
+<link rel="alternate" hreflang="en" href="https://aminrb.me/the-clean-coder/">
 <noscript>
     <style>
         #theme-toggle,
@@ -75,6 +75,88 @@
 }
 </script>
 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-S18R7YECZP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-S18R7YECZP');
+        }
+      </script><meta property="og:url" content="https://aminrb.me/the-clean-coder/">
+  <meta property="og:site_name" content="Amin Rashidbeigi">
+  <meta property="og:title" content="My Thoughts on The Clean Coder Book">
+  <meta property="og:description" content="This post shares my thoughts on &#39;The Clean Coder&#39; by Uncle Bob, focusing on topics that I found particularly interesting or debatable.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-06-20T17:31:56+02:00">
+    <meta property="article:modified_time" content="2024-06-20T17:31:56+02:00">
+    <meta property="og:image" content="https://aminrb.me/the-clean-coder/the-clean-coder.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://aminrb.me/the-clean-coder/the-clean-coder.webp">
+<meta name="twitter:title" content="My Thoughts on The Clean Coder Book">
+<meta name="twitter:description" content="This post shares my thoughts on &#39;The Clean Coder&#39; by Uncle Bob, focusing on topics that I found particularly interesting or debatable.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://aminrb.me/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "My Thoughts on The Clean Coder Book",
+      "item": "https://aminrb.me/the-clean-coder/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "My Thoughts on The Clean Coder Book",
+  "name": "My Thoughts on The Clean Coder Book",
+  "description": "This post shares my thoughts on 'The Clean Coder' by Uncle Bob, focusing on topics that I found particularly interesting or debatable.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Introduction Some time ago, I was searching for a book related to software but not purely technical, making it easier for me to read. I was looking for something I could enjoy even with a busy mind after work.\nAfter checking my Goodreads to-read list, I decided to read and started right away. The book’s introduction hooked me, and I ended up reading it to the end.\nTo clarify, this post is not a review. There are already plenty of reviews for this book. This post is simply some of my thoughts on topics that were particularly interesting or debatable for me.\nSaying No, at Any Cost For a software engineer or a manager, it’s common to face situations where a product manager or stakeholders ask to meet a deadline without enough time or resources. In these situations, many of us, including myself before reading this book, respond with “I will try.”\nBut this response creates an expectation that might not align with the reality that the task may not meet the deadline. By saying this, we often work overtime or on weekends, accepting significant risks, which I written in more details in the post .\nUncle Bob states in Chapter 2 that you have to say no at any cost. It is not reasonable to say, “Okay, I will try.” However, sometimes the decision is already made, and you cannot alter it. In this scenario, I believe it’s more pragmatic to communicate the situation to your manager or stakeholders as much as possible. They might have some incorrect assumptions about the technical details. After that, as engineers, we should try to find and offer alternatives to meet the deadline, even if it means cutting some corners. And to make it clear, by saying cutting corners I don’t mean reducing writing unit tests or deploying carelessly.\nKnow the Basics Over time, the abstraction in software engineering has increased. With higher abstraction, there’s much less need to know the basics of our field. If you have a computer science background, you’ve already studied most of them, but if you’re from another field, you’re likely to miss some.\nEven though I studied computer engineering, I’ve forgotten a lot and sometimes only remember the titles.\nBut it’s still important to read or review them. Despite hundreds of new ideas in our field each year, we can still improve our thinking and creativity by strengthening our computer knowledge muscles. Maybe there’s no need to implement a merge sort for the rest of your life (except in interviews) with new AI tools, but the idea behind merge sort is still valid.\nUncle Bob recommends a list of areas that every software professional should be familiar with:\nDesign patterns. You ought to be able to describe all 24 patterns in the GOF book and have a working knowledge of many of the patterns in the POSA books. Design principles. You should know the SOLID principles and have a good understanding of the component principles. Methods. You should understand XP, Scrum, Lean, Kanban, Waterfall, Structured Analysis, and Structured Design. Disciplines. You should practice TDD, Object-Oriented design, Structured Programming, Continuous Integration, and Pair Programming. Artifacts: You should know how to use: UML, DFDs, Structure Charts, Petri Nets, State Transition Diagrams and Tables, flow charts, and decision tables. By doing these kinds of exercises, our computer muscles become more powerful, and I believe that at some points in our careers, this will help us.\nPractice at Home, Perform at Your Job I remember periods in my career when I didn’t learn much at work. I got upset and thought it had to be a short-term issue, so I tried to learn on my own. I read books and did some side projects like the . Although I might not have been wrong, the idea of “Practice at Home, Perform at Your Job” changed my mindset.\nUncle Bob compares programmers to musicians. A musician always practices to learn new things during training and at home, and when performing in a concert, they use their knowledge and skills without expecting to learn new things. As programmers, we should use our knowledge at work and not expect our employer to provide learning opportunities. If they do, that’s great. But we shouldn’t expect it because they already pay us for doing our job, and it’s not their responsibility to teach us.\nThis changed my mind because now, if I find myself in a situation where I can’t learn from my current job, I know it’s not my employer’s responsibility. It’s mine. By accepting this, I can make better decisions without complaining. I can do side projects, read books, or even change my job.\nKnow the Domain of Your Product Another interesting topic the book discusses, and one that was a reminder for me, is knowing the domain of our team, project, and company. Developers write code for a product. By understanding the product domain and its metrics, it’s easier to collaborate with product people and stakeholders. It gives us the power to make better trade-offs and long-term decisions for the product.\nUncle Bob recommends that when joining a team, you should read some books, talk to experts, or talk to customers to get a better understanding of the domain.\nIn my experience, product owners and managers prefer to work with developers who understand the domain and help them make better decisions rather than those who just accept everything and act like coding machines. This is a huge benefit for every product team.\nConclusion “The Clean Coder” is a simple and easy-to-read book that I enjoyed a lot. Although there were some parts I didn’t fully agree with, it offered new and helpful content for me.\nIf you are a beginner in your career, reading this book can definitely help you. If you are an experienced coder, there are topics that may still interest you.\n",
+  "wordCount" : "981",
+  "inLanguage": "en",
+  "image":"https://aminrb.me/the-clean-coder/the-clean-coder.webp","datePublished": "2024-06-20T17:31:56+02:00",
+  "dateModified": "2024-06-20T17:31:56+02:00",
+  "author":{
+    "@type": "Person",
+    "name": "Amin Rashidbeigi"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://aminrb.me/the-clean-coder/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Amin Rashidbeigi",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://aminrb.me/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -92,7 +174,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Amin Rashidbeigi (Alt + H)">Amin Rashidbeigi</a>
+            <a href="https://aminrb.me/" accesskey="h" title="Amin Rashidbeigi (Alt + H)">Amin Rashidbeigi</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -116,7 +198,7 @@
                 </button>
                 <ul class="lang-switch"><li>|</li>
                     <li>
-                        <a href="http://localhost:1313/fa/" title="فارسی"
+                        <a href="https://aminrb.me/fa/" title="فارسی"
                             aria-label="فارسی">فارسی</a>
                     </li>
                 </ul>
@@ -124,7 +206,7 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/posts/" title="Posts">
+                <a href="https://aminrb.me/posts/" title="Posts">
                     <span>Posts</span>
                 </a>
             </li>
@@ -140,12 +222,12 @@
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/side-projects/" title="Side Projects">
+                <a href="https://aminrb.me/side-projects/" title="Side Projects">
                     <span>Side Projects</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/ways-i-can-help/" title="Ways I Can Help">
+                <a href="https://aminrb.me/ways-i-can-help/" title="Ways I Can Help">
                     <span>Ways I Can Help</span>
                 </a>
             </li>
@@ -168,8 +250,8 @@
 </div>
   </header> 
 <figure class="entry-cover">
-        <a href="http://localhost:1313/the-clean-coder/the-clean-coder.webp" target="_blank" rel="noopener noreferrer">
-        <img loading="eager" src="http://localhost:1313/the-clean-coder/the-clean-coder.webp" alt="The cover image of thoughts on The Clean Coder book.">
+        <a href="https://aminrb.me/the-clean-coder/the-clean-coder.webp" target="_blank" rel="noopener noreferrer">
+        <img loading="eager" src="https://aminrb.me/the-clean-coder/the-clean-coder.webp" alt="The cover image of thoughts on The Clean Coder book.">
         </a>
         <figcaption>Image generated by</figcaption>
 </figure><div class="toc">
@@ -246,12 +328,12 @@
     <ul class="post-tags">
     </ul>
 <nav class="paginav">
-  <a class="prev" href="http://localhost:1313/actions-after-mistakes/">
+  <a class="prev" href="https://aminrb.me/actions-after-mistakes/">
     <span class="title">« Prev</span>
     <br>
     <span>&#34;Sorry&#34;, Is That Enough?</span>
   </a>
-  <a class="next" href="http://localhost:1313/vector-search-introduction/">
+  <a class="next" href="https://aminrb.me/vector-search-introduction/">
     <span class="title">Next »</span>
     <br>
     <span>Vector Search: An Introduction</span>
@@ -259,11 +341,27 @@
 </nav>
 
   </footer>
+<script src="https://giscus.app/client.js"
+    data-repo="aminrashidbeigi/aminrashidbeigi.github.io"
+    data-repo-id="MDEwOlJlcG9zaXRvcnkxNDI3NjI0ODk="
+    data-category="Announcements"
+    data-category-id="DIC_kwDOCIJh-c4CeNpD"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light_protanopia"
+    data-lang="en"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async>
+</script>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:1313/">Amin Rashidbeigi</a></span> · 
+        <span>&copy; 2026 <a href="https://aminrb.me/">Amin Rashidbeigi</a></span> · 
 
     <span>
         Powered by
