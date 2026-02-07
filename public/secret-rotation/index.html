@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>When to Start Secret Rotation | Amin Rashidbeigi</title>
 <meta name="keywords" content="secret-rotation">
 <meta name="description" content="An overview of secret rotation, discussing when to implement it to reduce the risk of data leaks.">
 <meta name="author" content="Amin Rashidbeigi">
-<link rel="canonical" href="https://aminrb.me/secret-rotation/">
+<link rel="canonical" href="http://localhost:1313/secret-rotation/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://aminrb.me/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://aminrb.me/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://aminrb.me/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://aminrb.me/apple-touch-icon.png">
-<link rel="mask-icon" href="https://aminrb.me/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://aminrb.me/secret-rotation/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/secret-rotation/">
 <noscript>
     <style>
         #theme-toggle,
@@ -75,89 +75,6 @@
 }
 </script>
 
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-S18R7YECZP"></script>
-      <script>
-        var doNotTrack = false;
-        if ( false ) {
-          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
-          var doNotTrack = (dnt == "1" || dnt == "yes");
-        }
-        if (!doNotTrack) {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-S18R7YECZP');
-        }
-      </script><meta property="og:url" content="https://aminrb.me/secret-rotation/">
-  <meta property="og:site_name" content="Amin Rashidbeigi">
-  <meta property="og:title" content="When to Start Secret Rotation">
-  <meta property="og:description" content="An overview of secret rotation, discussing when to implement it to reduce the risk of data leaks.">
-  <meta property="og:locale" content="en">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2024-10-17T19:11:32+02:00">
-    <meta property="article:modified_time" content="2024-10-17T19:11:32+02:00">
-    <meta property="article:tag" content="Secret-Rotation">
-    <meta property="og:image" content="https://aminrb.me/secret-rotation/secret_rotation.webp">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://aminrb.me/secret-rotation/secret_rotation.webp">
-<meta name="twitter:title" content="When to Start Secret Rotation">
-<meta name="twitter:description" content="An overview of secret rotation, discussing when to implement it to reduce the risk of data leaks.">
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://aminrb.me/posts/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "When to Start Secret Rotation",
-      "item": "https://aminrb.me/secret-rotation/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "When to Start Secret Rotation",
-  "name": "When to Start Secret Rotation",
-  "description": "An overview of secret rotation, discussing when to implement it to reduce the risk of data leaks.",
-  "keywords": [
-    "secret-rotation"
-  ],
-  "articleBody": "Have you ever accidentally pushed a sensitive password and realized how difficult it is to ensure no one gains access to it? Or have you mistakenly logged an API token, and now it’s scattered across your logging system?\nIn these cases, the first thing you’d do is change the secret. But what if you never caught the log in the first place? Or how can you be sure no one else has pushed sensitive data? This is where Secret Rotation comes in.\nWhat is Secret Rotation? Secret rotation is the practice of regularly updating or replacing sensitive credentials used in applications and systems. These credentials could be anything from passwords and API keys to encryption keys, certificates, or other authentication tokens. The process can be either manual or automated using secret management tools like AWS Secrets Manager.\nWhen Should You Start Secret Rotation? You might think secret rotation is something only big companies with many employees or years of experience need to worry about. However, waiting too long to implement it can make it too expensive to adopt. Secrets often spread across different projects and teams, making it costly and complicated to change a single secret.\nOnce, while working on a project, I was given a key with high-level access to modify data I didn’t need. When I communicated it with my manager, I discovered that many others used the same key across multiple projects. Changing it became a considerable challenge because not only did every user need to update their keys, but we also had to identify all the projects using this key. If we disabled it, many things could stop working. The complexity and risk made it challenging to take action, forcing the team to explore other out-of-the-box solutions.\nWhy Start Secret Rotation Early? We’ve realized that starting secret rotation late can make it hard to change. But there are other benefits to starting early as well.\nIf a team starts using secret rotation early, it becomes part of the culture. The idea that secrets should be easy to change gets built into the development process. The team will always keep in mind that the product should allow for easy secret changes. This makes automation easier, and developers feel more comfortable admitting they accidentally committed sensitive data because it can be changed easily.\nWhile no system can ever be 100% secure, secret rotation helps reduce the risk of data leaks, especially when they go unnoticed.\n",
-  "wordCount" : "407",
-  "inLanguage": "en",
-  "image":"https://aminrb.me/secret-rotation/secret_rotation.webp","datePublished": "2024-10-17T19:11:32+02:00",
-  "dateModified": "2024-10-17T19:11:32+02:00",
-  "author":{
-    "@type": "Person",
-    "name": "Amin Rashidbeigi"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://aminrb.me/secret-rotation/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Amin Rashidbeigi",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://aminrb.me/favicon.ico"
-    }
-  }
-}
-</script>
 </head>
 
 <body class="" id="top">
@@ -175,7 +92,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://aminrb.me/" accesskey="h" title="Amin Rashidbeigi (Alt + H)">Amin Rashidbeigi</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Amin Rashidbeigi (Alt + H)">Amin Rashidbeigi</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -199,7 +116,7 @@
                 </button>
                 <ul class="lang-switch"><li>|</li>
                     <li>
-                        <a href="https://aminrb.me/fa/" title="فارسی"
+                        <a href="http://localhost:1313/fa/" title="فارسی"
                             aria-label="فارسی">فارسی</a>
                     </li>
                 </ul>
@@ -207,7 +124,7 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="https://aminrb.me/posts/" title="Posts">
+                <a href="http://localhost:1313/posts/" title="Posts">
                     <span>Posts</span>
                 </a>
             </li>
@@ -223,12 +140,12 @@
                 </a>
             </li>
             <li>
-                <a href="https://aminrb.me/side-projects/" title="Side Projects">
+                <a href="http://localhost:1313/side-projects/" title="Side Projects">
                     <span>Side Projects</span>
                 </a>
             </li>
             <li>
-                <a href="https://aminrb.me/ways-i-can-help/" title="Ways I Can Help">
+                <a href="http://localhost:1313/ways-i-can-help/" title="Ways I Can Help">
                     <span>Ways I Can Help</span>
                 </a>
             </li>
@@ -251,10 +168,10 @@
 </div>
   </header> 
 <figure class="entry-cover">
-        <a href="https://aminrb.me/secret-rotation/secret_rotation.webp" target="_blank" rel="noopener noreferrer">
-        <img loading="eager" src="https://aminrb.me/secret-rotation/secret_rotation.webp" alt="An image of a lock">
+        <a href="http://localhost:1313/secret-rotation/secret_rotation.webp" target="_blank" rel="noopener noreferrer">
+        <img loading="eager" src="http://localhost:1313/secret-rotation/secret_rotation.webp" alt="An image of a lock">
         </a>
-        <figcaption>Image generated by <a href="https://designer.microsoft.com/" target="_blank" rel="nofollow noopener noreferrer">Microsoft Designer</a></figcaption>
+        <figcaption>Image generated by</figcaption>
 </figure><div class="toc">
     <details >
         <summary accesskey="c" title="(Alt + C)">
@@ -277,7 +194,7 @@
   <div class="post-content"><p>Have you ever accidentally pushed a sensitive password and realized how difficult it is to ensure no one gains access to it? Or have you mistakenly logged an API token, and now it&rsquo;s scattered across your logging system?</p>
 <p>In these cases, the first thing you&rsquo;d do is change the secret. But what if you never caught the log in the first place? Or how can you be sure no one else has pushed sensitive data? This is where <strong>Secret Rotation</strong> comes in.</p>
 <h2 id="what-is-secret-rotation">What is Secret Rotation?<a hidden class="anchor" aria-hidden="true" href="#what-is-secret-rotation">#</a></h2>
-<p>Secret rotation is the practice of regularly updating or replacing sensitive credentials used in applications and systems. These credentials could be anything from passwords and API keys to encryption keys, certificates, or other authentication tokens. The process can be either manual or automated using secret management tools like <a href="https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating-secrets.html" target="_blank" rel="nofollow noopener noreferrer">AWS Secrets Manager</a>.</p>
+<p>Secret rotation is the practice of regularly updating or replacing sensitive credentials used in applications and systems. These credentials could be anything from passwords and API keys to encryption keys, certificates, or other authentication tokens. The process can be either manual or automated using secret management tools like .</p>
 <h2 id="when-should-you-start-secret-rotation">When Should You Start Secret Rotation?<a hidden class="anchor" aria-hidden="true" href="#when-should-you-start-secret-rotation">#</a></h2>
 <p>You might think secret rotation is something only big companies with many employees or years of experience need to worry about. However, waiting too long to implement it can make it too expensive to adopt. Secrets often spread across different projects and teams, making it costly and complicated to change a single secret.</p>
 <p>Once, while working on a project, I was given a key with high-level access to modify data I didn&rsquo;t need. When I communicated it with my manager, I discovered that many others used the same key across multiple projects. Changing it became a considerable challenge because not only did every user need to update their keys, but we also had to identify all the projects using this key. If we disabled it, many things could stop working. The complexity and risk made it challenging to take action, forcing the team to explore other out-of-the-box solutions.</p>
@@ -299,43 +216,27 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://aminrb.me/tags/secret-rotation/">Secret-Rotation</a></li>
+      <li><a href="http://localhost:1313/tags/secret-rotation/">Secret-Rotation</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="https://aminrb.me/run-llama-locally/">
+  <a class="prev" href="http://localhost:1313/run-llama-locally/">
     <span class="title">« Prev</span>
     <br>
     <span>Run Llama 3 Locally</span>
   </a>
-  <a class="next" href="https://aminrb.me/expedition-diaries/">
+  <a class="next" href="http://localhost:1313/protobuf-large-messages/">
     <span class="title">Next »</span>
     <br>
-    <span>Expedition Diaries: A Project to Learn</span>
+    <span>When to start secret rotation</span>
   </a>
 </nav>
 
   </footer>
-<script src="https://giscus.app/client.js"
-    data-repo="aminrashidbeigi/aminrashidbeigi.github.io"
-    data-repo-id="MDEwOlJlcG9zaXRvcnkxNDI3NjI0ODk="
-    data-category="Announcements"
-    data-category-id="DIC_kwDOCIJh-c4CeNpD"
-    data-mapping="pathname"
-    data-strict="0"
-    data-reactions-enabled="1"
-    data-emit-metadata="0"
-    data-input-position="top"
-    data-theme="light_protanopia"
-    data-lang="en"
-    data-loading="lazy"
-    crossorigin="anonymous"
-    async>
-</script>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://aminrb.me/">Amin Rashidbeigi</a></span> · 
+        <span>&copy; 2026 <a href="http://localhost:1313/">Amin Rashidbeigi</a></span> · 
 
     <span>
         Powered by

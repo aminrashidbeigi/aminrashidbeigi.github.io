@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Engineering on Amin Rashidbeigi</title>
-    <link>https://aminrb.me/categories/engineering/</link>
+    <link>http://localhost:1313/categories/engineering/</link>
     <description>Recent content in Engineering on Amin Rashidbeigi</description>
     <image>
       <title>Amin Rashidbeigi</title>
-      <url>https://aminrb.me/papermod-cover.png</url>
-      <link>https://aminrb.me/papermod-cover.png</link>
+      <url>http://localhost:1313/papermod-cover.png</url>
+      <link>http://localhost:1313/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.148.2</generator>
     <language>en</language>
     <lastBuildDate>Sun, 14 Apr 2024 11:39:47 +0330</lastBuildDate>
-    <atom:link href="https://aminrb.me/categories/engineering/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/engineering/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vector Search: An Introduction</title>
-      <link>https://aminrb.me/vector-search-introduction/</link>
+      <link>http://localhost:1313/vector-search-introduction/</link>
       <pubDate>Sun, 14 Apr 2024 11:39:47 +0330</pubDate>
-      <guid>https://aminrb.me/vector-search-introduction/</guid>
+      <guid>http://localhost:1313/vector-search-introduction/</guid>
       <description>In this post, we explore the fundamentals of vector search, discussing how it operates and its applications across different data formats. You&amp;#39;ll discover the key components required to implement vector search and its potential to enhance search functionalities.</description>
     </item>
     <item>
       <title>Navigating Extra Work in Programming Teams</title>
-      <link>https://aminrb.me/extra-work/</link>
+      <link>http://localhost:1313/extra-work/</link>
       <pubDate>Mon, 17 Jul 2023 10:32:09 +0330</pubDate>
-      <guid>https://aminrb.me/extra-work/</guid>
-      <description>&lt;p&gt;Recently, I read an interesting article by Ben Northrop that can be found &lt;strong&gt;&lt;a href=&#34;https://www.bennorthrop.com/Essays/2021/always-do-extra.php&#34; target=&#34;_blank&#34; rel=&#34;nofollow noopener noreferrer&#34;&gt;here&lt;/a&gt;&lt;/strong&gt;. In the article, Ben talks about the concept of &amp;lsquo;doing extra,&amp;rsquo; which is not the same as doing more. For example, if you&amp;rsquo;re asked to implement two APIs and finish early, you can use the extra time to think about how to make the implementation more efficient, secure, or reduce the code length. That&amp;rsquo;s &amp;lsquo;doing extra.&amp;rsquo;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/extra-work/</guid>
+      <description>&lt;p&gt;Recently, I read an interesting article by Ben Northrop that can be found &lt;strong&gt;&lt;/strong&gt;. In the article, Ben talks about the concept of &amp;lsquo;doing extra,&amp;rsquo; which is not the same as doing more. For example, if you&amp;rsquo;re asked to implement two APIs and finish early, you can use the extra time to think about how to make the implementation more efficient, secure, or reduce the code length. That&amp;rsquo;s &amp;lsquo;doing extra.&amp;rsquo;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

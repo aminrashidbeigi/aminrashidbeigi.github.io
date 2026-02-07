@@ -11,6 +11,6 @@ comments: false
 
 Hi! I am Amin and I hold a B.S. in Computer Engineering and an M.S. in Artificial Intelligence.
 
-Currently, I am a software engineer at [Divar](https://divar.ir) Tech Company.
+Currently, I am a software engineer at [Delivery Hero](https://www.deliveryhero.com/) in Berlin, Germany.
 
 You can contact me via email at a.rashidbeigi at gmail.com.

@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>انواع روش‌های تست نرم‌افزار: Test Doubles | امین رشیدبیگی</title>
 <meta name="keywords" content="تست نرم افزار, یونیت تست, ماک تست, اتومیت تست, تست اتوماتیک, تست خودکار">
-<meta name="description" content="در هنگام نوشتن Automation Test برای یک نرم‌افزار، با دیپندنسی‌ها و APIهایی مواجه می‌شیم که ترجیح می‌دیم در هر بار اجرای تست‌ها اون‌ها رو فراخوانی نکنیم. در چنین مواقعی، از Test Doubleها استفاده می‌کنیم که انواع متفاوتی دارند و اغلب به اشتباه به همه‌ اون‌ها Mock می‌گیم. اینجا سه نوع رایج Test Double و تفاوت‌هاشون رو توضیح می‌دم.
+<meta name="description" content="در هنگام نوشتن Automation Test برای یک نرم‌افزار، با دیپندنسی‌ها و APIهایی مواجه می‌شیم که ترجیح می‌دیم در هر بار اجرای تست‌ها اون‌ها رو فراخوانی نکنیم. در چنین مواقعی، از ها استفاده می‌کنیم که انواع متفاوتی دارند و اغلب به اشتباه به همه‌ اون‌ها Mock می‌گیم. اینجا سه نوع رایج Test Double و تفاوت‌هاشون رو توضیح می‌دم.
 فیک Fake
 این نوع Test Double به عنوان یک جایگزین ساده‌تر، کم‌هزینه‌تر و قابل آزمایش‌تر برای دیپندنسی مورد نظر استفاده می‌شه. Fakeها از همون interfaceهای دیپندنسی اصلی استفاده می‌کنه و اون‌ها رو پیاده‌سازی می‌کنه. مثلاً، فرض کنید می‌خوایم یک شیء رو در دیتابیس بنویسیم و بخونیم. به جای راه‌اندازی یک دیتابیس واقعی برای اجرای هربارهٔ تست‌ها، از یک دیکشنری in memory استفاده می‌کنیم تا وظیفه خوندن و نوشتن داده‌ها رو برامون انجام بده. توی این حالت این دیکشنری وظیفهٔ Fake کردن دیتابیس اصلی رو بر عهده داره.">
 <meta name="author" content="امین رشیدبیگی">
-<link rel="canonical" href="https://aminrb.me/fa/%D8%B1%D9%88%D8%B4-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B3%D8%AA-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/">
+<link rel="canonical" href="http://localhost:1313/fa/%D8%B1%D9%88%D8%B4-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B3%D8%AA-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://aminrb.me/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://aminrb.me/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://aminrb.me/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://aminrb.me/apple-touch-icon.png">
-<link rel="mask-icon" href="https://aminrb.me/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="fa" href="https://aminrb.me/fa/%D8%B1%D9%88%D8%B4-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B3%D8%AA-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/">
+<link rel="alternate" hreflang="fa" href="http://localhost:1313/fa/%D8%B1%D9%88%D8%B4-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B3%D8%AA-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/">
 <noscript>
     <style>
         #theme-toggle,
@@ -77,97 +77,6 @@
 }
 </script>
 
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-S18R7YECZP"></script>
-      <script>
-        var doNotTrack = false;
-        if ( false ) {
-          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
-          var doNotTrack = (dnt == "1" || dnt == "yes");
-        }
-        if (!doNotTrack) {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-S18R7YECZP');
-        }
-      </script><meta property="og:url" content="https://aminrb.me/fa/%D8%B1%D9%88%D8%B4-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B3%D8%AA-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/">
-  <meta property="og:site_name" content="امین رشیدبیگی">
-  <meta property="og:title" content="انواع روش‌های تست نرم‌افزار: Test Doubles">
-  <meta property="og:description" content="در هنگام نوشتن Automation Test برای یک نرم‌افزار، با دیپندنسی‌ها و APIهایی مواجه می‌شیم که ترجیح می‌دیم در هر بار اجرای تست‌ها اون‌ها رو فراخوانی نکنیم. در چنین مواقعی، از Test Doubleها استفاده می‌کنیم که انواع متفاوتی دارند و اغلب به اشتباه به همه‌ اون‌ها Mock می‌گیم. اینجا سه نوع رایج Test Double و تفاوت‌هاشون رو توضیح می‌دم.
-فیک Fake این نوع Test Double به عنوان یک جایگزین ساده‌تر، کم‌هزینه‌تر و قابل آزمایش‌تر برای دیپندنسی مورد نظر استفاده می‌شه. Fakeها از همون interfaceهای دیپندنسی اصلی استفاده می‌کنه و اون‌ها رو پیاده‌سازی می‌کنه. مثلاً، فرض کنید می‌خوایم یک شیء رو در دیتابیس بنویسیم و بخونیم. به جای راه‌اندازی یک دیتابیس واقعی برای اجرای هربارهٔ تست‌ها، از یک دیکشنری in memory استفاده می‌کنیم تا وظیفه خوندن و نوشتن داده‌ها رو برامون انجام بده. توی این حالت این دیکشنری وظیفهٔ Fake کردن دیتابیس اصلی رو بر عهده داره.">
-  <meta property="og:locale" content="fa">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-03-24T21:15:33+01:00">
-    <meta property="article:modified_time" content="2025-03-24T21:15:33+01:00">
-    <meta property="article:tag" content="تست نرم افزار">
-    <meta property="article:tag" content="یونیت تست">
-    <meta property="article:tag" content="ماک تست">
-    <meta property="article:tag" content="اتومیت تست">
-    <meta property="article:tag" content="تست اتوماتیک">
-    <meta property="article:tag" content="تست خودکار">
-    <meta property="og:image" content="https://aminrb.me/posts/test-double.webp">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://aminrb.me/posts/test-double.webp">
-<meta name="twitter:title" content="انواع روش‌های تست نرم‌افزار: Test Doubles">
-<meta name="twitter:description" content="در هنگام نوشتن Automation Test برای یک نرم‌افزار، با دیپندنسی‌ها و APIهایی مواجه می‌شیم که ترجیح می‌دیم در هر بار اجرای تست‌ها اون‌ها رو فراخوانی نکنیم. در چنین مواقعی، از Test Doubleها استفاده می‌کنیم که انواع متفاوتی دارند و اغلب به اشتباه به همه‌ اون‌ها Mock می‌گیم. اینجا سه نوع رایج Test Double و تفاوت‌هاشون رو توضیح می‌دم.
-فیک Fake
-این نوع Test Double به عنوان یک جایگزین ساده‌تر، کم‌هزینه‌تر و قابل آزمایش‌تر برای دیپندنسی مورد نظر استفاده می‌شه. Fakeها از همون interfaceهای دیپندنسی اصلی استفاده می‌کنه و اون‌ها رو پیاده‌سازی می‌کنه. مثلاً، فرض کنید می‌خوایم یک شیء رو در دیتابیس بنویسیم و بخونیم. به جای راه‌اندازی یک دیتابیس واقعی برای اجرای هربارهٔ تست‌ها، از یک دیکشنری in memory استفاده می‌کنیم تا وظیفه خوندن و نوشتن داده‌ها رو برامون انجام بده. توی این حالت این دیکشنری وظیفهٔ Fake کردن دیتابیس اصلی رو بر عهده داره.">
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://aminrb.me/fa/posts/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "انواع روش‌های تست نرم‌افزار: Test Doubles",
-      "item": "https://aminrb.me/fa/%D8%B1%D9%88%D8%B4-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B3%D8%AA-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "انواع روش‌های تست نرم‌افزار: Test Doubles",
-  "name": "انواع روش‌های تست نرم‌افزار: Test Doubles",
-  "description": "در هنگام نوشتن Automation Test برای یک نرم‌افزار، با دیپندنسی‌ها و APIهایی مواجه می‌شیم که ترجیح می‌دیم در هر بار اجرای تست‌ها اون‌ها رو فراخوانی نکنیم. در چنین مواقعی، از Test Doubleها استفاده می‌کنیم که انواع متفاوتی دارند و اغلب به اشتباه به همه‌ اون‌ها Mock می‌گیم. اینجا سه نوع رایج Test Double و تفاوت‌هاشون رو توضیح می‌دم.\nفیک Fake این نوع Test Double به عنوان یک جایگزین ساده‌تر، کم‌هزینه‌تر و قابل آزمایش‌تر برای دیپندنسی مورد نظر استفاده می‌شه. Fakeها از همون interfaceهای دیپندنسی اصلی استفاده می‌کنه و اون‌ها رو پیاده‌سازی می‌کنه. مثلاً، فرض کنید می‌خوایم یک شیء رو در دیتابیس بنویسیم و بخونیم. به جای راه‌اندازی یک دیتابیس واقعی برای اجرای هربارهٔ تست‌ها، از یک دیکشنری in memory استفاده می‌کنیم تا وظیفه خوندن و نوشتن داده‌ها رو برامون انجام بده. توی این حالت این دیکشنری وظیفهٔ Fake کردن دیتابیس اصلی رو بر عهده داره.\n",
-  "keywords": [
-    "تست نرم افزار", "یونیت تست", "ماک تست", "اتومیت تست", "تست اتوماتیک", "تست خودکار"
-  ],
-  "articleBody": "در هنگام نوشتن Automation Test برای یک نرم‌افزار، با دیپندنسی‌ها و APIهایی مواجه می‌شیم که ترجیح می‌دیم در هر بار اجرای تست‌ها اون‌ها رو فراخوانی نکنیم. در چنین مواقعی، از Test Doubleها استفاده می‌کنیم که انواع متفاوتی دارند و اغلب به اشتباه به همه‌ اون‌ها Mock می‌گیم. اینجا سه نوع رایج Test Double و تفاوت‌هاشون رو توضیح می‌دم.\nفیک Fake این نوع Test Double به عنوان یک جایگزین ساده‌تر، کم‌هزینه‌تر و قابل آزمایش‌تر برای دیپندنسی مورد نظر استفاده می‌شه. Fakeها از همون interfaceهای دیپندنسی اصلی استفاده می‌کنه و اون‌ها رو پیاده‌سازی می‌کنه. مثلاً، فرض کنید می‌خوایم یک شیء رو در دیتابیس بنویسیم و بخونیم. به جای راه‌اندازی یک دیتابیس واقعی برای اجرای هربارهٔ تست‌ها، از یک دیکشنری in memory استفاده می‌کنیم تا وظیفه خوندن و نوشتن داده‌ها رو برامون انجام بده. توی این حالت این دیکشنری وظیفهٔ Fake کردن دیتابیس اصلی رو بر عهده داره.\nاستاب Stub بعضاً برای نوشتن یک تست به داده‌های خاصی نیاز داریم. مثلاً فرض کنید که کامپوننتی داریم که مجموع درآمد روزانه رو برای ما حساب می‌کنه. برای این کار به داده‌های درآمدی یک روز نیاز داریم اما می‌تونیم به جای استفاده از داده‌های واقعی، یک Stub داشته باشیم که داده‌هایی که شبیه به داده‌های واقعیه رو تولید کنه تا منطقمون رو بر روی این داده‌ها پیاده‌سازی کنیم. پس به Test Doubleای که وظیفهٔ تولید داده‌ها رو داره Stub می‌گیم.\nماک Mock گاهی اوقات می‌خوایم رفتار یک دیپندنسی رو بررسی کنیم و نه خروجی و یا پیاده‌سازی اون رو. به طور مثال، ممکنه در یک تست بخوایم تأیید کنیم که یک API خاص فقط یک بار فراخوانی می‌شه و نه بیشتر و نه کمتر. در این مواقع از Mock استفاده می‌کنیم.\nمثال عملی در نوشتهٔ Go Test Doubles by Example به تفصیل در مورد این روش‌ها و تفاوتشون در سطح کد نوشتم و به کمک زبان Golang هر کدوم از این موارد رو پیاده‌سازی کردم و پیشنهاد می‌کنم اون پست رو هم مطالعه کنید.\n",
-  "wordCount" : "319",
-  "inLanguage": "fa",
-  "image":"https://aminrb.me/posts/test-double.webp","datePublished": "2025-03-24T21:15:33+01:00",
-  "dateModified": "2025-03-24T21:15:33+01:00",
-  "author":{
-    "@type": "Person",
-    "name": "امین رشیدبیگی"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://aminrb.me/fa/%D8%B1%D9%88%D8%B4-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B3%D8%AA-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "امین رشیدبیگی",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://aminrb.me/favicon.ico"
-    }
-  }
-}
-</script>
 </head>
 
 <body class="" id="top">
@@ -185,7 +94,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://aminrb.me/fa/" accesskey="h" title="امین رشیدبیگی (Alt + H)">امین رشیدبیگی</a>
+            <a href="http://localhost:1313/fa/" accesskey="h" title="امین رشیدبیگی (Alt + H)">امین رشیدبیگی</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -209,7 +118,7 @@
                 </button>
                 <ul class="lang-switch"><li>|</li>
                     <li>
-                        <a href="https://aminrb.me/" title="English"
+                        <a href="http://localhost:1313/" title="English"
                             aria-label="English">English</a>
                     </li>
                 </ul>
@@ -217,12 +126,12 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="https://aminrb.me/fa/posts/" title="نوشته‌ها">
+                <a href="http://localhost:1313/fa/posts/" title="نوشته‌ها">
                     <span>نوشته‌ها</span>
                 </a>
             </li>
             <li>
-                <a href="https://aminrb.me/fa/about/" title="دربارهٔ من">
+                <a href="http://localhost:1313/fa/about/" title="دربارهٔ من">
                     <span>دربارهٔ من</span>
                 </a>
             </li>
@@ -238,7 +147,7 @@
                 </a>
             </li>
             <li>
-                <a href="https://aminrb.me/fa/ways-i-can-help/" title="درخواست جلسهٔ مشاوره">
+                <a href="http://localhost:1313/fa/ways-i-can-help/" title="درخواست جلسهٔ مشاوره">
                     <span>درخواست جلسهٔ مشاوره</span>
                 </a>
             </li>
@@ -258,10 +167,10 @@
 </div>
   </header> 
 <figure class="entry-cover">
-        <a href="https://aminrb.me/posts/test-double.webp" target="_blank" rel="noopener noreferrer">
-        <img loading="eager" src="https://aminrb.me/posts/test-double.webp" alt="تست دابل‌ها">
+        <a href="http://localhost:1313/posts/test-double.webp" target="_blank" rel="noopener noreferrer">
+        <img loading="eager" src="http://localhost:1313/posts/test-double.webp" alt="تست دابل‌ها">
         </a>
-        <figcaption>تصویر ساخته شده توسط <a href="https://x.com/i/grok" target="_blank" rel="nofollow noopener noreferrer">grok</a></figcaption>
+        <figcaption>تصویر ساخته شده توسط</figcaption>
 </figure><div class="toc">
     <details >
         <summary accesskey="c" title="(Alt + C)">
@@ -283,7 +192,7 @@
     </details>
 </div>
 
-  <div class="post-content"><p>در هنگام نوشتن Automation Test برای یک نرم‌افزار، با دیپندنسی‌ها و APIهایی مواجه می‌شیم که ترجیح می‌دیم در هر بار اجرای تست‌ها اون‌ها رو فراخوانی نکنیم. در چنین مواقعی، از <a href="https://en.wikipedia.org/wiki/Test_double" target="_blank" rel="nofollow noopener noreferrer">Test Double</a>ها استفاده می‌کنیم که انواع متفاوتی دارند و اغلب به اشتباه به همه‌ اون‌ها Mock می‌گیم. اینجا سه نوع رایج Test Double و تفاوت‌هاشون رو توضیح می‌دم.</p>
+  <div class="post-content"><p>در هنگام نوشتن Automation Test برای یک نرم‌افزار، با دیپندنسی‌ها و APIهایی مواجه می‌شیم که ترجیح می‌دیم در هر بار اجرای تست‌ها اون‌ها رو فراخوانی نکنیم. در چنین مواقعی، از ها استفاده می‌کنیم که انواع متفاوتی دارند و اغلب به اشتباه به همه‌ اون‌ها Mock می‌گیم. اینجا سه نوع رایج Test Double و تفاوت‌هاشون رو توضیح می‌دم.</p>
 <h2 id="فیک-fake">فیک Fake<a hidden class="anchor" aria-hidden="true" href="#فیک-fake">#</a></h2>
 <p>این نوع Test Double به عنوان یک جایگزین ساده‌تر، کم‌هزینه‌تر و قابل آزمایش‌تر برای دیپندنسی مورد نظر استفاده می‌شه. Fakeها از همون interfaceهای دیپندنسی اصلی استفاده می‌کنه و اون‌ها رو پیاده‌سازی می‌کنه. مثلاً، فرض کنید می‌خوایم یک شیء رو در دیتابیس بنویسیم و بخونیم. به جای راه‌اندازی یک دیتابیس واقعی برای اجرای هربارهٔ تست‌ها، از یک دیکشنری in memory استفاده می‌کنیم تا وظیفه خوندن و نوشتن داده‌ها رو برامون انجام بده. توی این حالت این دیکشنری وظیفهٔ Fake کردن دیتابیس اصلی رو بر عهده داره.</p>
 <h2 id="استاب-stub">استاب Stub<a hidden class="anchor" aria-hidden="true" href="#استاب-stub">#</a></h2>
@@ -291,7 +200,7 @@
 <h2 id="ماک-mock">ماک Mock<a hidden class="anchor" aria-hidden="true" href="#ماک-mock">#</a></h2>
 <p>گاهی اوقات می‌خوایم رفتار یک دیپندنسی رو بررسی کنیم و نه خروجی و یا پیاده‌سازی اون رو. به طور مثال، ممکنه در یک تست بخوایم تأیید کنیم که یک API خاص فقط یک بار فراخوانی می‌شه و نه بیشتر و نه کمتر. در این مواقع از Mock استفاده می‌کنیم.</p>
 <h2 id="مثال-عملی">مثال عملی<a hidden class="anchor" aria-hidden="true" href="#مثال-عملی">#</a></h2>
-<p>در نوشتهٔ <a href="https://aminrb.me/go-test-double/">Go Test Doubles by Example</a> به تفصیل در مورد این روش‌ها و تفاوتشون در سطح کد نوشتم و به کمک زبان Golang هر کدوم از این موارد رو پیاده‌سازی کردم و پیشنهاد می‌کنم اون پست رو هم مطالعه کنید.</p>
+<p>در نوشتهٔ  به تفصیل در مورد این روش‌ها و تفاوتشون در سطح کد نوشتم و به کمک زبان Golang هر کدوم از این موارد رو پیاده‌سازی کردم و پیشنهاد می‌کنم اون پست رو هم مطالعه کنید.</p>
 
 
 <hr>
@@ -304,20 +213,20 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://aminrb.me/fa/tags/%D8%AA%D8%B3%D8%AA-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/">تست نرم افزار</a></li>
-      <li><a href="https://aminrb.me/fa/tags/%DB%8C%D9%88%D9%86%DB%8C%D8%AA-%D8%AA%D8%B3%D8%AA/">یونیت تست</a></li>
-      <li><a href="https://aminrb.me/fa/tags/%D9%85%D8%A7%DA%A9-%D8%AA%D8%B3%D8%AA/">ماک تست</a></li>
-      <li><a href="https://aminrb.me/fa/tags/%D8%A7%D8%AA%D9%88%D9%85%DB%8C%D8%AA-%D8%AA%D8%B3%D8%AA/">اتومیت تست</a></li>
-      <li><a href="https://aminrb.me/fa/tags/%D8%AA%D8%B3%D8%AA-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA%DB%8C%DA%A9/">تست اتوماتیک</a></li>
-      <li><a href="https://aminrb.me/fa/tags/%D8%AA%D8%B3%D8%AA-%D8%AE%D9%88%D8%AF%DA%A9%D8%A7%D8%B1/">تست خودکار</a></li>
+      <li><a href="http://localhost:1313/fa/tags/%D8%AA%D8%B3%D8%AA-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/">تست نرم افزار</a></li>
+      <li><a href="http://localhost:1313/fa/tags/%DB%8C%D9%88%D9%86%DB%8C%D8%AA-%D8%AA%D8%B3%D8%AA/">یونیت تست</a></li>
+      <li><a href="http://localhost:1313/fa/tags/%D9%85%D8%A7%DA%A9-%D8%AA%D8%B3%D8%AA/">ماک تست</a></li>
+      <li><a href="http://localhost:1313/fa/tags/%D8%A7%D8%AA%D9%88%D9%85%DB%8C%D8%AA-%D8%AA%D8%B3%D8%AA/">اتومیت تست</a></li>
+      <li><a href="http://localhost:1313/fa/tags/%D8%AA%D8%B3%D8%AA-%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%AA%DB%8C%DA%A9/">تست اتوماتیک</a></li>
+      <li><a href="http://localhost:1313/fa/tags/%D8%AA%D8%B3%D8%AA-%D8%AE%D9%88%D8%AF%DA%A9%D8%A7%D8%B1/">تست خودکار</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="https://aminrb.me/fa/%D8%AC%D8%A7%DB%8C%DA%AF%D8%B2%DB%8C%D9%86%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3-%D9%87%D9%88%D8%B4-%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C/">
+  <a class="prev" href="http://localhost:1313/fa/%D8%AC%D8%A7%DB%8C%DA%AF%D8%B2%DB%8C%D9%86%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3-%D9%87%D9%88%D8%B4-%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C/">
     <span class="title">« صفحه قبلی</span>
     <br>
     <span>آیا هوش مصنوعی داره جایگزین برنامه‌نویس‌ها می‌شه؟</span>
   </a>
-  <a class="next" href="https://aminrb.me/fa/%D8%A7%D9%88%D9%84%DB%8C%D9%86-%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%DA%A9%D9%86%D9%86%D8%AF%D9%87-%D9%BE%D9%88%D9%84-%D8%B1%DB%8C%DA%A9%D9%88%D8%B3%D8%AA/">
+  <a class="next" href="http://localhost:1313/fa/%D8%A7%D9%88%D9%84%DB%8C%D9%86-%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%DA%A9%D9%86%D9%86%D8%AF%D9%87-%D9%BE%D9%88%D9%84-%D8%B1%DB%8C%DA%A9%D9%88%D8%B3%D8%AA/">
     <span class="title">صفحه بعدی »</span>
     <br>
     <span>من اولین کسی هستم که پول ریکوستم رو ریویو می‌کنم</span>
@@ -325,27 +234,11 @@
 </nav>
 
   </footer>
-<script src="https://giscus.app/client.js"
-    data-repo="aminrashidbeigi/aminrashidbeigi.github.io"
-    data-repo-id="MDEwOlJlcG9zaXRvcnkxNDI3NjI0ODk="
-    data-category="Announcements"
-    data-category-id="DIC_kwDOCIJh-c4CeNpD"
-    data-mapping="pathname"
-    data-strict="0"
-    data-reactions-enabled="1"
-    data-emit-metadata="0"
-    data-input-position="top"
-    data-theme="light_protanopia"
-    data-lang="en"
-    data-loading="lazy"
-    crossorigin="anonymous"
-    async>
-</script>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://aminrb.me/fa/">امین رشیدبیگی</a></span> · 
+        <span>&copy; 2026 <a href="http://localhost:1313/fa/">امین رشیدبیگی</a></span> · 
 
     <span>
         Powered by

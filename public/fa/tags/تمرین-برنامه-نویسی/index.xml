@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>تمرین برنامه نویسی on امین رشیدبیگی</title>
-    <link>https://aminrb.me/fa/tags/%D8%AA%D9%85%D8%B1%DB%8C%D9%86-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/</link>
+    <link>http://localhost:1313/fa/tags/%D8%AA%D9%85%D8%B1%DB%8C%D9%86-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/</link>
     <description>Recent content in تمرین برنامه نویسی on امین رشیدبیگی</description>
     <image>
       <title>امین رشیدبیگی</title>
-      <url>https://aminrb.me/papermod-cover.png</url>
-      <link>https://aminrb.me/papermod-cover.png</link>
+      <url>http://localhost:1313/papermod-cover.png</url>
+      <link>http://localhost:1313/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.148.2</generator>
     <language>fa</language>
     <lastBuildDate>Tue, 07 Mar 2023 10:58:12 +0330</lastBuildDate>
-    <atom:link href="https://aminrb.me/fa/tags/%D8%AA%D9%85%D8%B1%DB%8C%D9%86-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/fa/tags/%D8%AA%D9%85%D8%B1%DB%8C%D9%86-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>شروع برنامه‌نویسی: مراحل یادگیری</title>
-      <link>https://aminrb.me/fa/%D9%85%D8%B1%D8%A7%D8%AD%D9%84-%DB%8C%D8%A7%D8%AF%DA%AF%DB%8C%D8%B1%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/</link>
+      <link>http://localhost:1313/fa/%D9%85%D8%B1%D8%A7%D8%AD%D9%84-%DB%8C%D8%A7%D8%AF%DA%AF%DB%8C%D8%B1%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/</link>
       <pubDate>Tue, 07 Mar 2023 10:58:12 +0330</pubDate>
-      <guid>https://aminrb.me/fa/%D9%85%D8%B1%D8%A7%D8%AD%D9%84-%DB%8C%D8%A7%D8%AF%DA%AF%DB%8C%D8%B1%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/</guid>
-      <description>&lt;p&gt;این پست، دومین پست از مجموعهٔ &lt;a href=&#34;https://aminrb.me/fa/series/%D8%B4%D8%B1%D9%88%D8%B9-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/&#34;&gt;شروع برنامه‌نویسی&lt;/a&gt;ه. این مجموعه قراره که فضای برنامه‌نویسی و مسیرهایی که به کمک این ابزار می‌شه طی کرد رو ترسیم کنه. هدف این مجموعه اینه که این مسیر رو برای افرادی که هیچ تجربه‌ای در این حوزه ندارن و یا تجربهٔ خیلی کمی دارن شفاف‌تر کنه. در مطلب سعی‌ می‌کنم نقشه راه شروع برنامه‌نویسی تا حرفه‌ای شدن رو از نگاه خودم مجسم کنم.&lt;/p&gt;
-&lt;p&gt;همهٔ پست‌های این مجموعه رو می‌تونی در صفحه &lt;a href=&#34;https://aminrb.me/fa/series/%D8%B4%D8%B1%D9%88%D8%B9-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/&#34;&gt;شروع برنامه‌نویسی&lt;/a&gt; پیدا کنی. اگر پست &lt;a href=&#34;https://aminrb.me/fa/%d9%85%d9%82%d8%af%d9%85%d9%87-%d8%b4%d8%b1%d9%88%d8%b9-%d8%a8%d8%b1%d9%86%d8%a7%d9%85%d9%87-%d9%86%d9%88%db%8c%d8%b3%db%8c/&#34;&gt;مقدمه&lt;/a&gt; رو نخوندی، پیشنهاد می‌کنم ابتدا نگاهی بهش بندازی. اگر هم با برنامه‌نویسی خیلی آشنا نیستی، خوبه که اولین پست این مجموعه که در مورد &lt;a href=&#34;https://aminrb.me/fa/%d8%aa%d8%b9%d8%b1%db%8c%d9%81-%da%a9%d8%a7%d8%b1%d8%a8%d8%b1%d8%af-%d8%a8%d8%b1%d9%86%d8%a7%d9%85%d9%87-%d9%86%d9%88%db%8c%d8%b3%db%8c/&#34;&gt;تعریف برنامه‌نویسی و کاربردهای آن&lt;/a&gt; نوشتم رو بخونی.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/fa/%D9%85%D8%B1%D8%A7%D8%AD%D9%84-%DB%8C%D8%A7%D8%AF%DA%AF%DB%8C%D8%B1%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/</guid>
+      <description>&lt;p&gt;این پست، دومین پست از مجموعهٔ ه. این مجموعه قراره که فضای برنامه‌نویسی و مسیرهایی که به کمک این ابزار می‌شه طی کرد رو ترسیم کنه. هدف این مجموعه اینه که این مسیر رو برای افرادی که هیچ تجربه‌ای در این حوزه ندارن و یا تجربهٔ خیلی کمی دارن شفاف‌تر کنه. در مطلب سعی‌ می‌کنم نقشه راه شروع برنامه‌نویسی تا حرفه‌ای شدن رو از نگاه خودم مجسم کنم.&lt;/p&gt;
+&lt;p&gt;همهٔ پست‌های این مجموعه رو می‌تونی در صفحه  پیدا کنی. اگر پست  رو نخوندی، پیشنهاد می‌کنم ابتدا نگاهی بهش بندازی. اگر هم با برنامه‌نویسی خیلی آشنا نیستی، خوبه که اولین پست این مجموعه که در مورد  نوشتم رو بخونی.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

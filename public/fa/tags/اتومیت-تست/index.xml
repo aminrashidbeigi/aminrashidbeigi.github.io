@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>اتومیت تست on امین رشیدبیگی</title>
-    <link>https://aminrb.me/fa/tags/%D8%A7%D8%AA%D9%88%D9%85%DB%8C%D8%AA-%D8%AA%D8%B3%D8%AA/</link>
+    <link>http://localhost:1313/fa/tags/%D8%A7%D8%AA%D9%88%D9%85%DB%8C%D8%AA-%D8%AA%D8%B3%D8%AA/</link>
     <description>Recent content in اتومیت تست on امین رشیدبیگی</description>
     <image>
       <title>امین رشیدبیگی</title>
-      <url>https://aminrb.me/papermod-cover.png</url>
-      <link>https://aminrb.me/papermod-cover.png</link>
+      <url>http://localhost:1313/papermod-cover.png</url>
+      <link>http://localhost:1313/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.148.2</generator>
     <language>fa</language>
     <lastBuildDate>Mon, 24 Mar 2025 21:15:33 +0100</lastBuildDate>
-    <atom:link href="https://aminrb.me/fa/tags/%D8%A7%D8%AA%D9%88%D9%85%DB%8C%D8%AA-%D8%AA%D8%B3%D8%AA/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/fa/tags/%D8%A7%D8%AA%D9%88%D9%85%DB%8C%D8%AA-%D8%AA%D8%B3%D8%AA/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>انواع روش‌های تست نرم‌افزار: Test Doubles</title>
-      <link>https://aminrb.me/fa/%D8%B1%D9%88%D8%B4-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B3%D8%AA-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/</link>
+      <link>http://localhost:1313/fa/%D8%B1%D9%88%D8%B4-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B3%D8%AA-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/</link>
       <pubDate>Mon, 24 Mar 2025 21:15:33 +0100</pubDate>
-      <guid>https://aminrb.me/fa/%D8%B1%D9%88%D8%B4-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B3%D8%AA-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/</guid>
-      <description>&lt;p&gt;در هنگام نوشتن Automation Test برای یک نرم‌افزار، با دیپندنسی‌ها و APIهایی مواجه می‌شیم که ترجیح می‌دیم در هر بار اجرای تست‌ها اون‌ها رو فراخوانی نکنیم. در چنین مواقعی، از &lt;a href=&#34;https://en.wikipedia.org/wiki/Test_double&#34; target=&#34;_blank&#34; rel=&#34;nofollow noopener noreferrer&#34;&gt;Test Double&lt;/a&gt;ها استفاده می‌کنیم که انواع متفاوتی دارند و اغلب به اشتباه به همه‌ اون‌ها Mock می‌گیم. اینجا سه نوع رایج Test Double و تفاوت‌هاشون رو توضیح می‌دم.&lt;/p&gt;
+      <guid>http://localhost:1313/fa/%D8%B1%D9%88%D8%B4-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B3%D8%AA-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/</guid>
+      <description>&lt;p&gt;در هنگام نوشتن Automation Test برای یک نرم‌افزار، با دیپندنسی‌ها و APIهایی مواجه می‌شیم که ترجیح می‌دیم در هر بار اجرای تست‌ها اون‌ها رو فراخوانی نکنیم. در چنین مواقعی، از ها استفاده می‌کنیم که انواع متفاوتی دارند و اغلب به اشتباه به همه‌ اون‌ها Mock می‌گیم. اینجا سه نوع رایج Test Double و تفاوت‌هاشون رو توضیح می‌دم.&lt;/p&gt;
 &lt;h2 id=&#34;فیک-fake&#34;&gt;فیک Fake&lt;/h2&gt;
 &lt;p&gt;این نوع Test Double به عنوان یک جایگزین ساده‌تر، کم‌هزینه‌تر و قابل آزمایش‌تر برای دیپندنسی مورد نظر استفاده می‌شه. Fakeها از همون interfaceهای دیپندنسی اصلی استفاده می‌کنه و اون‌ها رو پیاده‌سازی می‌کنه. مثلاً، فرض کنید می‌خوایم یک شیء رو در دیتابیس بنویسیم و بخونیم. به جای راه‌اندازی یک دیتابیس واقعی برای اجرای هربارهٔ تست‌ها، از یک دیکشنری in memory استفاده می‌کنیم تا وظیفه خوندن و نوشتن داده‌ها رو برامون انجام بده. توی این حالت این دیکشنری وظیفهٔ Fake کردن دیتابیس اصلی رو بر عهده داره.&lt;/p&gt;</description>
     </item>
