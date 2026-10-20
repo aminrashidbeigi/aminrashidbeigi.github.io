@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ .Title }} · {{ site.Params.author }}</title>
+<meta name="description" content="{{ .Description }}">
+{{- /* Unlisted page: never index, follow, cache or snippet it. */}}
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<meta name="bingbot" content="noindex, nofollow">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta property="og:title" content="{{ .Title }} · {{ site.Params.author }}">
+<meta property="og:description" content="{{ .Description }}">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#12161D">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | relURL }}">
+<link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<script>
+  document.documentElement.classList.add("js");
+  try { var t = localStorage.getItem("pref-theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+<link rel="stylesheet" href="{{ "ai-portfolio/portfolio.css" | relURL }}">
+</head>
+<body>
+
+<!-- ───────────────────────── Hero ───────────────────────── -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-top">
+      <a class="mark" href="#top" aria-label="Amin Rashidbeigi"><span class="mark-box">AR</span><span class="mark-name">Amin Rashidbeigi</span></a>
+      <div class="hero-links">
+        <a href="https://aminrb.me">aminrb.me</a>
+        <a href="https://github.com/aminrashidbeigi">GitHub</a>
+        <a href="https://www.linkedin.com/in/amin-rashidbeigi">LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="hero-body">
+      <p class="eyebrow reveal">Portfolio · October 2026 · Berlin</p>
+      <h1 class="reveal">Amin Rashidbeigi</h1>
+      <p class="lede reveal">(Senior) AI engineering portfolio. About ten years of <strong>high-traffic backends</strong>, now building <strong>production LLM systems</strong>: agents with MCP, RAG with evaluation and monitoring, and LLM pipelines kept off the request path.</p>
+      <div class="cta reveal">
+        <a class="btn btn-primary" href="#overview">Explore the projects
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5" /></svg></a>
+        <a class="btn btn-ghost" href="https://ask-hr-assistant.vercel.app/">Try Ask HR live
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" /></svg></a>
+      </div>
+    </div>
+
+    <dl class="stats reveal">
+      <div class="stat"><dt>~10 yrs</dt><dd>software engineering, mostly high-traffic backends</dd></div>
+      <div class="stat"><dt>~80%</dt><dd>less investigation time with the support agent at Delivery Hero</dd></div>
+      <div class="stat"><dt>~70</dt><dd>country platforms reachable through my MCP server</dd></div>
+      <div class="stat"><dt>~20M</dt><dd>daily users on Divar, where I owned vector search</dd></div>
+    </dl>
+  </div>
+</header>
+
+<!-- ───────────────────────── Sticky nav ───────────────────────── -->
+<nav class="toc" aria-label="Sections">
+  <div class="wrap">
+    <a class="toc-name" href="#top">Amin Rashidbeigi</a>
+    <ol>
+      <li><a class="link" href="#about">About</a></li>
+      <li><a class="link" href="#overview">Overview</a></li>
+      <li><a class="link" href="#delivery-hero"><span class="n">01</span>Support agent</a></li>
+      <li><a class="link" href="#check24"><span class="n">02</span>Recommender</a></li>
+      <li><a class="link" href="#ask-hr"><span class="n">03</span>Ask HR</a></li>
+      <li><a class="link" href="#wortaso"><span class="n">04</span>Wortaso</a></li>
+      <li><a class="link" href="#divar"><span class="n">+</span>Divar</a></li>
+      <li><a class="link" href="#also">Also built</a></li>
+    </ol>
+    <button class="theme-btn" type="button" data-theme-toggle aria-label="Toggle dark mode">
+      <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg>
+      <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+  </div>
+  <span class="progress" aria-hidden="true"></span>
+</nav>
+
+<main>
+
+<!-- ───────────────────────── About ───────────────────────── -->
+<section class="section" id="about" data-spy>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">About me</p>
+      <h2>Highlights</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="card reveal">
+        <div class="card-row">
+          <h3>Experience</h3>
+          <span class="big-num">~10 years</span>
+        </div>
+        <ol class="timeline">
+          <li><span class="t-name">Delivery Hero</span><span class="t-when">2025–now</span></li>
+          <li><span class="t-name">CHECK24</span><span class="t-when">2024–2025</span></li>
+          <li><span class="t-name">Divar</span><span class="t-when">~5 years · tech lead in search</span></li>
+          <li><span class="t-name">SnappMarket &amp; other startups</span><span class="t-when">earlier</span></li>
+        </ol>
+      </div>
+
+      <div class="card reveal">
+        <h3>Education</h3>
+        <ul class="edu">
+          <li><span class="deg">M.Sc.</span> Artificial Intelligence</li>
+          <li><span class="deg">B.Sc.</span> Computer Engineering</li>
+        </ul>
+      </div>
+
+      <div class="card solid about-quote reveal">
+        <h3>Full stack</h3>
+        <p>Most of my work is backend, but I’ve shipped whole products on my own: backend services, web and mobile frontends, the databases and the servers they run on.</p>
+        <blockquote>LLMs changed how fast I build, not what I build.</blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── Overview ───────────────────────── -->
+<section class="section" id="overview" data-spy>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Projects at a glance</p>
+      <h2>From agents to apps: what each project covers</h2>
+    </div>
+
+    <div class="proj-grid">
+      <a class="proj-card reveal" href="#delivery-hero">
+        <span class="pc-num">01</span>
+        <h3>Support AI agent</h3>
+        <p class="pc-where">Delivery Hero · Internal</p>
+        <ul class="tags"><li>Agent integration</li><li>MCP</li><li>Proxies to 70 platforms</li></ul>
+        <span class="pc-arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="proj-card reveal" href="#check24">
+        <span class="pc-num">02</span>
+        <h3>Recommender + LLM labeling</h3>
+        <p class="pc-where">CHECK24 · check24.de</p>
+        <ul class="tags"><li>Backend</li><li>LLM pipeline</li><li>Data stores</li></ul>
+        <span class="pc-arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="proj-card reveal" href="#ask-hr">
+        <span class="pc-num">03</span>
+        <h3>Ask HR: policy assistant</h3>
+        <p class="pc-where">For this conversation · Demo &amp; code</p>
+        <ul class="tags"><li>UI</li><li>Full stack</li><li>DB</li><li>RAG agent</li><li>Evals</li></ul>
+        <span class="pc-arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="proj-card reveal" href="#wortaso">
+        <span class="pc-num">04</span>
+        <h3>Wortaso</h3>
+        <p class="pc-where">Side project · Google Play</p>
+        <ul class="tags"><li>Mobile UI</li><li>Database</li><li>LLM content pipeline</li></ul>
+        <span class="pc-arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="proj-card minor reveal" href="#divar">
+        <span class="pc-num">+</span>
+        <h3>Vector search</h3>
+        <p class="pc-where">Divar · divar.ir</p>
+        <ul class="tags"><li>Search backend</li><li>Vector DB</li><li>Similarity search</li></ul>
+        <span class="pc-arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="proj-card minor reveal" href="#also">
+        <span class="pc-num">+</span>
+        <h3>Also built</h3>
+        <p class="pc-where">Various</p>
+        <ul class="tags"><li>Hackathon RAG</li><li>Master’s ML projects</li><li>Full-stack side project</li></ul>
+        <span class="pc-arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── 01 · Delivery Hero ───────────────────────── -->
+<section class="section project" id="delivery-hero" data-spy>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker"><span class="num">01</span><span class="eyebrow">Delivery Hero · 2025–present</span></p>
+      <h2>A support AI agent for ~70 country platforms</h2>
+    </div>
+
+    <dl class="facts reveal">
+      <div class="fact"><dt>Impact</dt><dd>~80% less investigation time</dd></div>
+      <div class="fact"><dt>Scale</dt><dd>~70 platforms, thousands of rps</dd></div>
+      <div class="fact"><dt>Support load</dt><dd>Full-time → about one day a week</dd></div>
+    </dl>
+
+    <div class="grid-2">
+      <div class="card muted reveal">
+        <h3>The problem</h3>
+        <p>Our tier-1 services serve categories and products to platforms in ~70 countries at thousands of requests per second.</p>
+        <p>When a platform reports broken or missing products, the investigation crosses many services and teams. It took at least one engineer full time on support.</p>
+      </div>
+      <div class="card solid reveal">
+        <h3>The solution</h3>
+        <ul class="bullets">
+          <li>AI agent connected to Slack, repos, logs, traces, MCPs, and monitoring</li>
+          <li>MCP server + proxies to query all ~70 platforms</li>
+          <li>Safe by design: limited tools, rate limits, cost monitoring</li>
+          <li><strong>~80% less investigation time</strong>: support is now about one day a week</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid-2 tight">
+      <div class="card sm reveal">
+        <h4>Who uses it</h4>
+        <p>Platform teams who report an issue and engineers on support duty. Built so other teams can plug in their own MCPs.</p>
+      </div>
+      <div class="card sm reveal">
+        <h4>My role</h4>
+        <p>Designed and built the MCP server and proxies, made the rollout safe, and worked with staff and principal engineers to make it reusable for other teams.</p>
+      </div>
+    </div>
+
+    <div class="sub-head reveal"><h3>Architecture &amp; challenges</h3></div>
+    <figure class="figure reveal">
+      <button class="frame zoom" type="button" data-wide aria-label="Enlarge architecture diagram">
+        <img src="/ai-portfolio/mcp-architecture.png" width="3568" height="786" loading="lazy" alt="Architecture: an engineer on support asks the integrated AI agent, which uses Slack, repositories, logs, traces and monitoring, and calls the MCP server over MCP. The MCP server, with limited tools, rate limits and cost monitoring, routes through a proxy layer to about 70 country platforms. MCP server and proxy layer are mine.">
+      </button>
+      <figcaption><span><i class="swatch" aria-hidden="true"></i>Blue boxes are what I built</span><span class="zoom-hint">Enlarge ⤢</span></figcaption>
+    </figure>
+
+    <div class="grid-4">
+      <div class="card muted sm reveal"><h4>Rate limiting</h4><p>The agent must never add load to services handling thousands of rps.</p></div>
+      <div class="card muted sm reveal"><h4>Tool harness</h4><p>Limited, scoped tools: the agent can only do what we allow.</p></div>
+      <div class="card muted sm reveal"><h4>Cost monitoring</h4><p>Track LLM and tool-call spend per investigation.</p></div>
+      <div class="card muted sm reveal"><h4>Networking</h4><p>Proxies to reach ~70 isolated country platforms from one place.</p></div>
+    </div>
+
+    <div class="grid-2 tight">
+      <div class="card solid sm reveal"><h4>Evaluation</h4><p>Built into the workflow: if users can’t find what they need, they tag our team, or the agent tags us itself. Each tag is a miss to fix.</p></div>
+      <div class="card solid sm reveal"><h4>Next phase</h4><p>From investigating to acting: syncing data between sources on engineers’ behalf, with an engineer approving each action.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── 02 · CHECK24 ───────────────────────── -->
+<section class="section project" id="check24" data-spy>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker"><span class="num">02</span><span class="eyebrow">CHECK24 · 2024–2025</span></p>
+      <h2>Experience recommender with LLM labeling</h2>
+      <div class="chips">
+        <a class="chip" href="https://erlebnisse.check24.de/suche?page=1&amp;geoId=624224&amp;city=Berlin&amp;country=Deutschland&amp;p=a">Live: erlebnisse.check24.de · Empfehlung<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" /></svg></a>
+      </div>
+    </div>
+
+    <dl class="facts reveal">
+      <div class="fact"><dt>Used by</dt><dd>Every customer search on CHECK24 Erlebnisse</dd></div>
+      <div class="fact"><dt>LLM</dt><dd>Async labeling, never in the search path</dd></div>
+      <div class="fact"><dt>Resilience</dt><dd>Falls back to sorting by rating</dd></div>
+    </dl>
+
+    <div class="grid-2">
+      <div class="card muted reveal">
+        <h3>The problem</h3>
+        <p>Tours and activities come from different aggregators, with uneven quality and no consistent attributes.</p>
+        <p>Ranking decides what customers see and book, so plain sorting wasn’t enough.</p>
+      </div>
+      <div class="card solid reveal">
+        <h3>The solution</h3>
+        <ul class="bullets">
+          <li>Recommender ranks every search (“Empfehlung”)</li>
+          <li>LLM labels new and changed experiences every update</li>
+          <li>LLM runs async, never in the search path</li>
+          <li>Fallback ranking if the recommender is down</li>
+          <li>Planned: similarity search via vector DBs</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid-2 tight">
+      <div class="card sm reveal">
+        <h4>Who uses it</h4>
+        <p>Every customer search on CHECK24 Erlebnisse.</p>
+      </div>
+      <div class="card sm reveal">
+        <h4>My role</h4>
+        <p>Owned the backend and LLM infrastructure end to end: contracts, data flow, LLM labeling pipeline, rollout, monitoring. Partnered with the data scientist who owned the model.</p>
+      </div>
+    </div>
+
+    <div class="sub-head reveal"><h3>LLM off the request path, ranking on it</h3></div>
+    <figure class="figure reveal">
+      <button class="frame zoom" type="button" data-wide aria-label="Enlarge architecture diagram">
+        <img src="/ai-portfolio/recommender-architecture.png" width="3086" height="692" loading="lazy" alt="Architecture: aggregators feed the write service, which upserts experiences and labels into Elasticsearch, the single source of truth. The write service sends new and changed experiences to the recommender + LLM labeling cron, which calls OpenAI and sends labels back to the write service. User searches go to the read service, which gets results ranked by labels from Elasticsearch; the fallback is sorting by rating. Write service, read service and recommender are mine.">
+      </button>
+      <figcaption><span><i class="swatch" aria-hidden="true"></i>Blue boxes are what I owned</span><span class="zoom-hint">Enlarge ⤢</span></figcaption>
+    </figure>
+
+    <div class="grid-4">
+      <div class="card muted sm reveal"><h4>No LLM in real time</h4><p>Labeling runs async on new and changed items. Low-quality content is down-ranked, not rewritten live.</p></div>
+      <div class="card muted sm reveal"><h4>One source of truth</h4><p>Labels go back through the write service into Elasticsearch, so search ranks in a single query.</p></div>
+      <div class="card muted sm reveal"><h4>Cost &amp; resilience</h4><p>Re-label only changed items, and only when a changed field affects ranking. Monitor LLM cost; fall back to sorting by rating.</p></div>
+      <div class="card solid sm reveal"><h4>Evaluation</h4><p>For popular places the team knew the best experiences; we checked they ranked on top. Next: an automated eval harness.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── 03 · Ask HR ───────────────────────── -->
+<section class="section project feature" id="ask-hr" data-spy>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker"><span class="num">03</span><span class="eyebrow">Side project · built for this conversation</span></p>
+      <h2>Ask HR: a bilingual HR policy assistant</h2>
+      <div class="chips">
+        <a class="chip chip-strong" href="https://ask-hr-assistant.vercel.app/">Live demo<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" /></svg></a>
+        <a class="chip" href="https://ask-hr-assistant.vercel.app/admin">Admin dashboard<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" /></svg></a>
+        <a class="chip" href="https://github.com/aminrashidbeigi/ask-hr-assistant">Code on GitHub<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" /></svg></a>
+      </div>
+    </div>
+
+    <dl class="facts reveal">
+      <div class="fact"><dt>Languages</dt><dd>German + English, cross-lingual</dd></div>
+      <div class="fact"><dt>Grounding</dt><dd>Only official policies, always cited</dd></div>
+      <div class="fact"><dt>Evals</dt><dd>Nightly and on every change</dd></div>
+    </dl>
+
+    <div class="grid-2">
+      <div class="card muted reveal">
+        <h3>The problem</h3>
+        <p>A large manufacturing site: thousands of employees on shifts and in offices, many not native German speakers.</p>
+        <p>Policies live in long PDFs and works agreements. HR answers the same questions again and again.</p>
+      </div>
+      <div class="card solid reveal">
+        <h3>The solution</h3>
+        <ul class="bullets">
+          <li>Answers <strong>only from official policies</strong>, with citations</li>
+          <li>German and English, cross-lingual retrieval</li>
+          <li>Filtered by employee group (shift / office)</li>
+          <li>Says “I don’t know” and escalates to HR</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid-2 tight">
+      <div class="card sm reveal">
+        <h4>Who it’s for</h4>
+        <p>Employees and HR business partners. The demo runs on synthetic policies for a fictional company.</p>
+      </div>
+      <div class="card sm reveal">
+        <h4>My role</h4>
+        <p>Everything: framing, spec, agent and retrieval, evals, monitoring, deployment.</p>
+      </div>
+    </div>
+
+    <!-- Demo -->
+    <div class="sub-head reveal">
+      <h3>See it in action</h3>
+      <p>German question, cited answer, sources, group switch, refusal and escalation</p>
+    </div>
+    <div class="browser reveal">
+      <div class="browser-bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="url">ask-hr-assistant.vercel.app</span></div>
+      <img src="/ai-portfolio/ask-hr-demo.gif" width="1120" height="680" loading="lazy" alt="Animated demo of Ask HR: a German question gets a cited answer, the sources panel opens, the employee group switches from shift to office, and an unanswerable question is refused and escalated to HR">
+    </div>
+
+    <!-- Product -->
+    <div class="sub-head reveal"><h3>Every answer comes with its source</h3></div>
+    <div class="showcase">
+      <button class="browser zoom reveal" type="button" aria-label="Enlarge product screenshot">
+        <span class="browser-bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="url">ask-hr-assistant.vercel.app</span></span>
+        <img src="/ai-portfolio/ask-hr-answer.png" width="1280" height="800" loading="lazy" alt="Ask HR screenshot: a German answer about the night-shift allowance with citation chips; the sources panel slides over and lists six retrieved passages, two marked cited, each with section path, language tag and snippet">
+      </button>
+      <ol class="callouts reveal">
+        <li><b>01 · Cited answer</b>Every fact links to a numbered policy chunk.</li>
+        <li><b>02 · Sources panel</b>Section path, language and snippet for each source.</li>
+        <li><b>03 · Employee group</b>Shift vs office filters what can be retrieved.</li>
+        <li><b>04 · Feedback</b>Thumbs up / down feed the quality dashboard.</li>
+      </ol>
+    </div>
+
+    <!-- Admin -->
+    <div class="sub-head reveal"><h3>What HR and engineering see</h3></div>
+    <div class="showcase admin">
+      <button class="browser zoom reveal" type="button" aria-label="Enlarge admin dashboard screenshot">
+        <span class="browser-bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="url">ask-hr-assistant.vercel.app/admin</span></span>
+        <img src="/ai-portfolio/ask-hr-admin.png" width="1280" height="1240" loading="lazy" alt="Ask HR metrics dashboard: tiles for questions in 24 hours, refusal rate, escalation rate, thumbs-up ratio, p95 latency, time to first token, cost today and 7 days, and error rate; daily charts for questions, refusal rate and cost; tables for top unanswered questions, most retrieved documents and latest negative feedback">
+      </button>
+      <ol class="callouts reveal">
+        <li><b>01 · Quality &amp; SLOs</b>Refusal and escalation rate, feedback ratio, p95 latency, time to first token and error rate against their targets.</li>
+        <li><b>02 · Cost</b>Spend today and over 7 days, with a daily budget guard behind it.</li>
+        <li><b>03 · Content gaps for HR</b>Top unanswered questions show where policies are missing or unclear.</li>
+        <li><b>04 · Pseudonymous</b>No user identity stored; questions PII-redacted before logging.</li>
+      </ol>
+    </div>
+
+    <!-- Architecture -->
+    <div class="sub-head reveal"><h3>A tool-calling agent over hybrid retrieval</h3></div>
+    <figure class="figure reveal">
+      <button class="frame zoom" type="button" data-wide aria-label="Enlarge architecture diagram">
+        <img src="/ai-portfolio/ask-hr-architecture.png" width="3568" height="966" loading="lazy" alt="Architecture: the employee asks through the chat API with rate limit and budget guard, then PII redaction, then the agent built on the Vercel AI SDK. The agent calls searchPolicies for hybrid retrieval over a policy index in Postgres with pgvector, fed by ingestion; calls escalateToHR for hand-over; talks to the LLM; and sends traces, tokens and cost to Langfuse. Pseudonymous logs and feedback feed the admin dashboard for monitoring. An eval harness with a golden set and LLM-as-judge runs questions through the API nightly and on every change.">
+      </button>
+      <figcaption><span>Built end to end, from ingestion to evals</span><span class="zoom-hint">Enlarge ⤢</span></figcaption>
+    </figure>
+
+    <div class="grid-2 tight">
+      <div class="card muted sm reveal"><h4>Why hybrid retrieval</h4><p>HR text is full of exact terms like <i>Nachtzuschlag</i> or paragraph numbers that pure vector search misses. A relevance threshold makes it refuse instead of guessing.</p></div>
+      <div class="card muted sm reveal"><h4>Why an agent with tools</h4><p>Instead of a fixed pipeline, it can search again, combine two policies, or decide to escalate. The model is configurable, so it can run on an EU-hosted or self-hosted model.</p></div>
+    </div>
+
+    <ul class="stack reveal" aria-label="Stack">
+      <li>Next.js</li><li>TypeScript</li><li>Vercel AI SDK</li><li>Postgres + pgvector (Neon)</li><li>Langfuse</li><li>GitHub Actions</li><li>Vercel (Frankfurt)</li><li>Docker for self-hosting</li>
+    </ul>
+
+    <!-- Evaluation -->
+    <div class="sub-head reveal"><h3>Measured before tuned, built for EU policies</h3></div>
+    <div class="eval-grid">
+      <div class="card solid reveal">
+        <h3>Evaluation harness</h3>
+        <p>A golden set of questions in DE / EN: cross-lingual, group-specific, unanswerable and prompt-injection cases. Runs nightly and on every change; LLM-as-judge scores the answers.</p>
+        <p class="eyebrow on-solid">What it measures</p>
+        <ul class="bullets">
+          <li>Retrieval: recall@k and MRR</li>
+          <li>Answer correctness and faithfulness to sources</li>
+          <li>Citation validity</li>
+          <li>Refusal accuracy: no guessing, no false refusals</li>
+          <li>Prompt-injection resistance and PII handling</li>
+          <li>Latency and cost per query</li>
+        </ul>
+      </div>
+      <div class="eval-side">
+        <div class="card muted reveal">
+          <h3>In production</h3>
+          <ul class="bullets">
+            <li>Trace per request: retrieval, tokens, cost</li>
+            <li>Refusal rate, feedback, p95, daily cost</li>
+            <li>Top unanswered questions: a content-gap report for HR</li>
+            <li>Nightly eval to catch model drift</li>
+          </ul>
+        </div>
+        <div class="card reveal">
+          <h3>Built for EU policies</h3>
+          <p>Personal data is redacted before it reaches the LLM or the logs, and logs are kept only for a limited time. The assistant informs and never decides about people, and users always know they are talking to AI. Metrics are aggregated, with no tracking of individual employees.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── 04 · Wortaso ───────────────────────── -->
+<section class="section project" id="wortaso" data-spy>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker"><span class="num">04</span><span class="eyebrow">Side project · live on Google Play</span></p>
+      <h2>Wortaso: learn German vocabulary by example</h2>
+      <div class="chips">
+        <a class="chip" href="https://wortaso.app/">wortaso.app<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" /></svg></a>
+        <a class="chip" href="https://play.google.com/store/apps/details?id=com.wortaso.app&amp;hl=en">Google Play<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" /></svg></a>
+      </div>
+    </div>
+
+    <div class="wortaso-grid">
+      <div class="wortaso-main">
+        <dl class="facts reveal">
+          <div class="fact"><dt>Words</dt><dd>12,000+ with examples</dd></div>
+          <div class="fact"><dt>Learners</dt><dd>~1,000, beginner to B2</dd></div>
+          <div class="fact"><dt>Built</dt><dd>Solo, end to end</dd></div>
+        </dl>
+        <div class="grid-2">
+          <div class="card muted reveal">
+            <h3>The problem</h3>
+            <p>Word lists teach words without context, and every noun’s der / die / das has to be memorized too.</p>
+            <p>I had the same problem learning German.</p>
+          </div>
+          <div class="card solid reveal">
+            <h3>The solution</h3>
+            <ul class="bullets">
+              <li>12,000+ words, each with example sentences</li>
+              <li>Friendly UI where colors make der, die, das stick</li>
+              <li>Spaced repetition, exam lists, no ads</li>
+              <li>Examples + translations from a German model run via Ollama</li>
+            </ul>
+          </div>
+        </div>
+        <div class="grid-2 tight">
+          <div class="card sm reveal"><h4>Who uses it</h4><p>~1,000 German learners, beginner to B2.</p></div>
+          <div class="card sm reveal"><h4>My role</h4><p>A side project for my own German journey. Built it alone: app, database, content pipeline, release.</p></div>
+        </div>
+      </div>
+      <div class="phone reveal">
+        <img src="/ai-portfolio/wortaso-app.jpg" width="1080" height="2130" loading="lazy" alt="Wortaso app screenshot: the word card for die Frau, with die in pink, the translation woman, wife, Mrs., and a generated German example sentence">
+      </div>
+    </div>
+
+    <div class="sub-head reveal"><h3>Generate in batch, ship to the app</h3></div>
+    <figure class="figure reveal">
+      <button class="frame zoom" type="button" data-wide aria-label="Enlarge architecture diagram">
+        <img src="/ai-portfolio/wortaso-architecture.png" width="2696" height="1090" loading="lazy" alt="Two lanes. Content pipeline, offline: word list with noun, article and level goes to generation on a Colab GPU with a German model run via Ollama, producing example sentences and translations stored in a content database; a planned LLM-as-judge adds a quality score. App, live: the Flutter app on Google Play is used by about 1,000 learners who send feedback.">
+      </button>
+      <figcaption><span>Offline content pipeline and live app</span><span class="zoom-hint">Enlarge ⤢</span></figcaption>
+    </figure>
+
+    <div class="grid-3">
+      <div class="card muted sm reveal"><h4>Batch, not live</h4><p>Generated offline on Colab GPUs: no inference cost per user, fast app.</p></div>
+      <div class="card muted sm reveal"><h4>Model choice</h4><p>General models then couldn’t write good German examples, so I ran a German-specific model with Ollama. It was slow, so batching on GPUs mattered.</p></div>
+      <div class="card solid sm reveal"><h4>Evaluation</h4><p>User feedback today. Next phase: LLM-as-judge scoring article, grammar and level fit.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── Divar ───────────────────────── -->
+<section class="section project" id="divar" data-spy>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker"><span class="num">+</span><span class="eyebrow">Earlier · Divar · ~5 years</span></p>
+      <h2>Vector search for ~20M daily users</h2>
+      <div class="chips">
+        <a class="chip" href="https://divar.ir/s/tehran">Live: divar.ir search (Persian)<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" /></svg></a>
+        <a class="chip" href="https://aminrb.me/vector-search-introduction/">My post: Vector Search, an Introduction<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" /></svg></a>
+      </div>
+    </div>
+
+    <dl class="facts reveal">
+      <div class="fact"><dt>Users</dt><dd>~20M daily</dd></div>
+      <div class="fact"><dt>Throughput</dt><dd>~5k rps search service</dd></div>
+      <div class="fact"><dt>Signals</dt><dd>Text and image embeddings</dd></div>
+    </dl>
+
+    <div class="grid-2">
+      <div class="card muted reveal">
+        <h3>The problem</h3>
+        <p>Iran’s largest classifieds site, ~20M daily users. Many “dark queries” got no useful results from full-text search.</p>
+      </div>
+      <div class="card solid reveal">
+        <h3>The solution</h3>
+        <ul class="bullets">
+          <li>Vector search on text and images for dark queries</li>
+          <li>Inside a ~5k rps search service</li>
+          <li>Similar posts from embeddings when full text finds nothing</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid-2 tight">
+      <div class="card sm reveal"><h4>Who uses it</h4><p>Millions of Divar users searching every day.</p></div>
+      <div class="card sm reveal"><h4>My role</h4><p>Fully owned vector search, one of the business’s biggest bets: benchmarked vector databases, built the similarity search, and worked with data science and product.</p></div>
+    </div>
+
+    <div class="sub-head reveal"><h3>Semantic search next to full text</h3></div>
+    <figure class="figure reveal">
+      <button class="frame zoom" type="button" data-wide aria-label="Enlarge architecture diagram">
+        <img src="/ai-portfolio/divar-architecture.png" width="2926" height="632" loading="lazy" alt="Architecture: new posts go through the Go synchronizer into Elasticsearch and through text and image embedding models into a vector DB. User queries hit the search service at about 5k requests per second; dark queries are embedded and matched in the vector DB for similar posts.">
+      </button>
+      <figcaption><span><i class="swatch" aria-hidden="true"></i>Blue boxes are what I owned</span><span class="zoom-hint">Enlarge ⤢</span></figcaption>
+    </figure>
+
+    <div class="grid-3">
+      <div class="card muted sm reveal"><h4>Vague start</h4><p>New tech, unclear scope: several rounds of design and models before it worked.</p></div>
+      <div class="card muted sm reveal"><h4>Choosing the vector DB</h4><p>Latency at ~5k rps, scale, filtering and what the team could operate.</p></div>
+      <div class="card solid sm reveal"><h4>Evaluation</h4><p>Team metrics: fewer dark searches, higher CTR, fewer searches per user.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── Also built ───────────────────────── -->
+<section class="section" id="also" data-spy>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Also built</p>
+      <h2>Other projects, briefly</h2>
+    </div>
+    <div class="grid-3">
+      <div class="card reveal">
+        <h3>Hackathon RAG</h3>
+        <p>A chatbot for online food ordering: finds the food you’re craving from an Instagram photo or your mood, then orders it for you.</p>
+      </div>
+      <div class="card reveal">
+        <h3>Master’s ML projects</h3>
+        <p>Learning mixtures of Gaussians from streaming data (paper implementation).</p>
+        <a class="text-link" href="https://github.com/aminrashidbeigi/gaussians-streaming-data">github · gaussians-streaming-data ↗</a>
+        <p>Image segmentation and denoising with Markov random fields.</p>
+        <a class="text-link" href="https://github.com/aminrashidbeigi/mrf-segmentation-denoising">github · mrf-segmentation-denoising ↗</a>
+      </div>
+      <div class="card reveal">
+        <h3>Expedition Diaries</h3>
+        <p>Full-stack side project: Go backend, Vue frontend, infrastructure run myself.</p>
+        <a class="text-link" href="https://aminrb.me/expedition-diaries/">aminrb.me · expedition-diaries ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ───────────────────────── Closing ───────────────────────── -->
+<footer class="closing">
+  <div class="wrap">
+    <p class="eyebrow reveal">Portfolio</p>
+    <h2 class="reveal">Thank you</h2>
+    <p class="closing-lede reveal">Looking forward to the conversation.</p>
+    <div class="closing-row reveal">
+      <span class="closing-name">Amin Rashidbeigi</span>
+      <div class="closing-links">
+        <a href="mailto:a.rashidbeigi@gmail.com">a.rashidbeigi@gmail.com</a>
+        <a href="https://aminrb.me">aminrb.me</a>
+        <a href="https://github.com/aminrashidbeigi">github.com/aminrashidbeigi</a>
+        <a href="https://www.linkedin.com/in/amin-rashidbeigi">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<dialog class="lightbox" aria-label="Enlarged image">
+  <button class="lb-close" type="button" aria-label="Close">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+  </button>
+  <div class="lb-scroll"><img alt=""></div>
+</dialog>
+
+<script src="{{ "ai-portfolio/portfolio.js" | relURL }}" defer></script>
+</body>
+</html>
