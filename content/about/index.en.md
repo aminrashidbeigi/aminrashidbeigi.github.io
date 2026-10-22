@@ -6,7 +6,7 @@ comments: false
 ---
 
 <p align="center">
-  <img src="avatar.png" alt="Amin Rashidbeigi's avatar" />
+  <img src="/avatar.png" alt="Amin Rashidbeigi's avatar" />
 </p>
 
 Hi! I am Amin and I hold a B.S. in Computer Engineering and an M.S. in Artificial Intelligence.

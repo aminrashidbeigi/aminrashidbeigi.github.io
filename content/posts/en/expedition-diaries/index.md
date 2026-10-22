@@ -28,7 +28,7 @@ So, I went through my idea list to find a project that aligned with my goals. Iâ
 
 Thatâ€™s how the idea for *Expedition Diaries* was born. The goal was to categorize old travelogues, including travelers, timelines, and, most importantly, the countries they passed through. Eventually, I wanted to have a world map where you could click on a country and see the related travel accounts.
 
-I had so much fun working on this project. Every weekend, I excitedly moved it forward, and in the end, it became something ready to be shared publicly. You can check it out [here](https://expedition-diaries.com/)
+I had so much fun working on this project. Every weekend, I excitedly moved it forward, and in the end, it became something ready to be shared publicly. You can check it out [here](https://web.archive.org/web/20230811022538/https://expedition-diaries.com/) (archived on the Wayback Machine)
 
 ![Expedition Diaries' map](expedition_diaries_map.webp)
 

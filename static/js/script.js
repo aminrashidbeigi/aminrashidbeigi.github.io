@@ -1,4 +1,5 @@
 (function () {
+  if (!document.querySelector("#svg")) return;
   d3.xml("/worldmap.svg")
     .mimeType("image/svg+xml")
     .get(function (error, xml) {

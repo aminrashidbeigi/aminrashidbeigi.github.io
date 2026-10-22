@@ -6,7 +6,7 @@ comments: false
 ---
 
 <p align="center">
-  <img src="avatar.png" alt="Amin Rashidbeigi's avatar" />
+  <img src="/avatar.png" alt="Amin Rashidbeigi's avatar" />
 </p>
 
 فکر می‌کنی در موضوعی می‌تونم کمکت کنم؟ یه جلسهٔ گفت‌و‌گو باهام ثبت کن. اینجا لینک تقویمم رو پیدا می‌کنی: [درخواست جلسهٔ مشاوره](https://aminrb.me/fa/ways-i-can-help/)

@@ -60,7 +60,7 @@ Now everything is ready! you can use ollama command line tool by this command:
 ollama run llama3.2
 ```
 
-![ollama](ollama.png)
+![ollama](ollama.webp)
 
 You either can send requests to the locolhost with your desired tool! like curl, postman, or within a python script or any other tools.
 

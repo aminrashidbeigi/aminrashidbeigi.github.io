@@ -2,6 +2,7 @@
 title: "Improve Onboarding through the Magic of Storytelling"
 date: 2023-03-27T01:44:04+03:30
 draft: false
+description: "Tips for making onboarding faster and less overwhelming by using storytelling to explain how a system works, illustrated with a fraud detection team example."
 tags:
 - onboarding
 - storytelling
@@ -10,7 +11,7 @@ categories:
 cover:
     image: onboarding-storytelling/onboarding-storytelling.jpg
     caption: "Photo by charlesdeluvio on Unsplash"
-    alt: "Two people are in the metting"
+    alt: "Two people in a meeting"
 slug: "onboarding-storytelling"
 aliases:
 - /blog/onboarding-storytelling

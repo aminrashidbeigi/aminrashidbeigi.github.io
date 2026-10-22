@@ -2,6 +2,7 @@
 title: "How Engineering Managers Can Avoid Technical Decay"
 date: 2023-01-27T19:48:11+03:30
 draft: false
+description: "How engineering managers can keep their technical skills sharp through reading, redoing technical design reviews, and side projects."
 tags: [leadership,engineering-management]
 categories: [leadership]
 cover:

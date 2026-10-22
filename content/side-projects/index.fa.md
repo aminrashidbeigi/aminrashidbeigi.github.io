@@ -26,7 +26,7 @@ comments: false
 
 ### 🐦 پادکست MalPodcast
 
-* 🔗 [لینک وبسایت](ttps://web.archive.org/web/20221120011422/https://malpodcast.ir/)
+* 🔗 [لینک وبسایت](https://web.archive.org/web/20221120011422/https://malpodcast.ir/)
 * 🗓️ شروع: ۱۳۹۸
 * 🪦 وضعیت: آرشیو شده (۱۳۹۸)
 * 🔤 زبان: فارسی

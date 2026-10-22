@@ -10,7 +10,7 @@ cover:
   image: /first-pull-request-reviewer/pull_request_reviewer.webp
   caption: تصویر تولید شده توسط [DALL·E 3](https://openai.com/index/dall-e-3/)
   alt: یک فرد در حال کد نوشتن.
-category:
+categories:
 - مهندسی نرم‌افزار
 slug: اولین-بررسی-کننده-پول-ریکوست
 ---

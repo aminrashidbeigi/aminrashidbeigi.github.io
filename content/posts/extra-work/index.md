@@ -11,7 +11,7 @@ cover:
     image: extra-work/yellow-chair.jpg
     caption: "Photo by [Ries Bosch](https://unsplash.com/@ries_bosch) on [Unsplash](https://unsplash.com)"
     alt: "A yellow chair sitting on top of a cement wall"
-# description: "Take a closer look at different aspects of doing extra work in programming teams and putting it into practice."
+description: "Take a closer look at different aspects of doing extra work in programming teams and putting it into practice."
 slug: "extra-work"
 aliases:
 - /blog/extra-work

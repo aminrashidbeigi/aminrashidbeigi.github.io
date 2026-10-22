@@ -6,6 +6,8 @@ menu: main
 disable_followup: true
 comments: false
 slug: "ways-i-can-help"
+aliases:
+- /fa/ways-i-help/
 ---
 
 
