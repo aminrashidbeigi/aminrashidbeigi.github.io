@@ -1,2 +1,5 @@
 .DS_Store
 content/.obsidian
+public/
+resources/_gen/
+.hugo_build.lock
