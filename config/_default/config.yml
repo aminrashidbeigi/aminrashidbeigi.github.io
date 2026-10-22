@@ -43,7 +43,7 @@ params:
       I’m Amin, a software engineer navigating the joys and challenges of tech life. On this site, I share my thoughts on software engineering, team leadership, and everything in between.
 
 
-      Curious to know more about me? Head over to my [about page](/about/).
+      Curious to know more about me? Head over to my [about page](/about/), or check out the [side projects](/side-projects/) I’ve built along the way.
 
 
       If you’re a Persian reader, you can follow my [Telegram channel](https://t.me/aminrbg) for updates on new posts.
@@ -103,10 +103,6 @@ menu:
     #   name: Subscribe
     #   url: https://aminrbme.beehiiv.com/subscribe/
     #   weight: 2
-    - identifier: side-projects
-      name: Side Projects
-      url: /side-projects/
-      weight: 3
 
 languages:
   en:
@@ -139,7 +135,7 @@ languages:
       homeInfoParams:
         Title: سلام! 👋
         Content: >
-          من امین هستم، مهندس نرم‌افزارم و به مشاهده، تحلیل و حل مشکلات نرم‌افزاری و ارتباطات انسانی حول مسئله علاقه‌مندم! اگر کنجکاوی که بیشتر دربارهٔ من بدونی به صفحهٔ [درباره‌ٔ من](about/) سر بزن.
+          من امین هستم، مهندس نرم‌افزارم و به مشاهده، تحلیل و حل مشکلات نرم‌افزاری و ارتباطات انسانی حول مسئله علاقه‌مندم! اگر کنجکاوی که بیشتر دربارهٔ من بدونی به صفحهٔ [درباره‌ٔ من](about/) سر بزن یا [پروژه‌های جانبی](side-projects/) که در طول مسیر ساختم رو ببین.
 
 
           من در حال حاضر به صورت مرتب‌تر توی  [کانال تلگرامم](https://t.me/aminrbg) می‌نویسم و اگر به موضوعات اشاره‌شده علاقه‌مندی حتماً یه سر بهش بزن.
