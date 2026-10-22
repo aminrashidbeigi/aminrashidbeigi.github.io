@@ -7,6 +7,17 @@ comments: false
 
 Here, you can find some of my side projects, which I had a great time building. Even though most of them are no longer alive, they greatly impacted my career, and I am really proud of them.
 
+### 🇩🇪 Wortaso
+
+Wortaso is a German vocabulary app with 12,000+ nouns from A1 to C1, color-coded articles, and spaced repetition to schedule reviews. It also has ready-made lists for the Einbürgerungstest and Führerschein, with translations in English and Persian. No ads, no subscriptions.
+
+* 🔗 [URL](https://wortaso.app/) - [Google Play](https://play.google.com/store/apps/details?id=com.wortaso.app)
+* 🗓️ Born: 2026
+* 💚 Status: Alive
+* 🔤 Language: English, Persian, German
+
+---
+
 ### 🌎 Expedition Diaries
 
 I love traveling, particularly when it comes to learning about new cultures. Additionally, I have always been curious about the cultures of nations throughout history.

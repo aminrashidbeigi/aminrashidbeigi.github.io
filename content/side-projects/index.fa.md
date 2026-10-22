@@ -6,6 +6,15 @@ ShowToc: false
 comments: false
 ---
 
+### 🇩🇪 اپلیکیشن Wortaso
+
+* 🔗 [لینک وبسایت](https://wortaso.app/) - [گوگل پلی](https://play.google.com/store/apps/details?id=com.wortaso.app)
+* 🗓️ شروع: ۱۴۰۵
+* 💚 وضعیت: فعال
+* 🔤 زبان: انگلیسی، فارسی، آلمانی
+
+---
+
 ### 🌎 وبسایت Expedition Diaries
 
 * 🔗 [لینک وبسایت](https://web.archive.org/web/20230811022538/https://expedition-diaries.com/) - [گیتهاب](https://github.com/aminrashidbeigi/expedition-diaries)
