@@ -1,12 +1,11 @@
 ---
-title: درخواست جلسهٔ مشاوره
+title: منتورینگ
 date: 2025-03-22
 draft: false
-menu: main
 disable_followup: true
 comments: false
-slug: "ways-i-can-help"
 aliases:
+- /fa/ways-i-can-help/
 - /fa/ways-i-help/
 ---
 

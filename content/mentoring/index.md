@@ -1,11 +1,11 @@
 ---
-title: Ways I Can Help
+title: Mentoring
 date: 2025-03-22
 draft: false
-menu: main
 disable_followup: true
 comments: false
-slug: "ways-i-can-help"
+aliases:
+- /ways-i-can-help/
 ---
 I regularly hold **consultation sessions** (mentorship, one-on-one coaching, or whatever you prefer to call it) with individuals and companies in two main areas: **topic-focused consulting** and **career growth guidance**.
 

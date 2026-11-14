@@ -69,6 +69,7 @@ params:
     #   url: "https://aminrb.me/amin-rashidbeigi-cv-feb2023.pdf"
   assets:
     disableHLJS: true
+  mainSections: [posts]
 
 markup:
   highlight:
@@ -89,21 +90,6 @@ markup:
     renderer:
       unsafe: true
 
-menu:
-  main:
-    - identifier: posts
-      name: Posts
-      url: /posts/
-      weight: 1
-    - identifier: about
-      name: About
-      url: /about/
-      weight: 2
-    # - identifier: subscribe
-    #   name: Subscribe
-    #   url: https://aminrbme.beehiiv.com/subscribe/
-    #   weight: 2
-
 languages:
   en:
     languageName: "English"
@@ -112,6 +98,24 @@ languages:
       category: categories
       tag: tags
       series: series
+    menu:
+      main:
+        - identifier: posts
+          name: Writing
+          pageRef: /posts
+          weight: 1
+        - identifier: table-talks
+          name: Table Talks
+          pageRef: /table-talks
+          weight: 2
+        - identifier: mentoring
+          name: Mentoring
+          pageRef: /mentoring
+          weight: 3
+        - identifier: about
+          name: About
+          pageRef: /about
+          weight: 4
   fa:
     languageName: "فارسی"
     languagedirection: rtl
@@ -150,21 +154,17 @@ languages:
       main:
         - identifier: posts
           name: نوشته‌ها
-          url: /posts/
+          pageRef: /posts
           weight: 1
+        - identifier: table-talks
+          name: میزگرد
+          pageRef: /table-talks
+          weight: 2
+        - identifier: mentoring
+          name: منتورینگ
+          pageRef: /mentoring
+          weight: 3
         - identifier: about
           name: دربارهٔ من
-          url: /about/
-          weight: 2
-        # - identifier: ways-i-help
-        #   name: خدمات
-        #   url: /ways-i-help/
-        #   weight: 3
-        # - identifier: side-projects
-        #   name: پروژه‌ها
-        #   url: /side-projects/
-        #   weight: 3
-        - identifier: telegram
-          name: کانال تلگرام
-          url: https://t.me/aminrbg
-          weight: 3
+          pageRef: /about
+          weight: 4
