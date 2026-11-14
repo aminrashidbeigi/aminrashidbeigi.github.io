@@ -1,2 +1,5 @@
 - id: pinned
   translation: "سنجاق‌شده"
+
+- id: cal_fallback
+  translation: "باز کردن صفحهٔ رزرو در cal.com"

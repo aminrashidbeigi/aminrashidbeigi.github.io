@@ -1,2 +1,5 @@
 - id: pinned
   translation: "Pinned"
+
+- id: cal_fallback
+  translation: "Open the booking page on cal.com"

@@ -1,0 +1,19 @@
+{{- /* Inline cal.com booking embed. Usage: {{< cal "aminrb/intro" >}}
+       The embed script is inlined here, so it only loads on pages that use this shortcode. */ -}}
+{{- $path := .Get 0 | default (.Get "path") }}
+{{- if not $path }}{{ errorf "cal shortcode needs an event path, e.g. aminrb/intro: %s" .Position }}{{ end }}
+{{- $id := printf "cal-inline-%d" .Ordinal }}
+{{- $ns := replaceRE `[^a-zA-Z0-9]` "" (path.Base $path) }}
+<div class="cal-embed">
+  <div id="{{ $id }}" class="cal-inline"></div>
+  <p class="cal-fallback"><a href="https://cal.com/{{ $path }}">{{ i18n "cal_fallback" }}</a></p>
+</div>
+<script>
+  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+  (function () {
+    var ns = {{ $ns }}, theme = document.body.classList.contains("dark") ? "dark" : "light";
+    Cal("init", ns, { origin: "https://cal.com" });
+    Cal.ns[ns]("inline", { elementOrSelector: "#{{ $id }}", calLink: {{ $path }}, config: { layout: "month_view", theme: theme } });
+    Cal.ns[ns]("ui", { theme: theme, hideEventTypeDetails: false, layout: "month_view" });
+  })();
+</script>
