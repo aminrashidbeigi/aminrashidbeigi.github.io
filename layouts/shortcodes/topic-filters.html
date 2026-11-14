@@ -1,0 +1,14 @@
+{{- /* Topic filters for the posts list and the topic pages. Shows only topics that have
+       posts in the current language. */ -}}
+{{- $here := .Page.RelPermalink }}
+{{- $all := site.GetPage "/posts" }}
+<nav class="topic-filters" aria-label="{{ i18n "topics" }}">
+  <a href="{{ $all.RelPermalink }}"{{ if eq $here $all.RelPermalink }} aria-current="page"{{ end }}>{{ i18n "all_posts" }}</a>
+  {{- range slice "leadership" "engineering" "career" "year-in-review" }}
+  {{- with index site.Taxonomies.topics . }}
+  {{- with .Page }}
+  <a href="{{ .RelPermalink }}"{{ if eq $here .RelPermalink }} aria-current="page"{{ end }}>{{ .Title }}</a>
+  {{- end }}
+  {{- end }}
+  {{- end }}
+</nav>

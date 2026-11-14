@@ -103,6 +103,7 @@ languages:
       category: categories
       tag: tags
       series: series
+      topic: topics
     menu:
       main:
         - identifier: posts
@@ -159,6 +160,7 @@ languages:
       category: categories
       tag: tags
       series: series
+      topic: topics
     menu:
       main:
         - identifier: posts

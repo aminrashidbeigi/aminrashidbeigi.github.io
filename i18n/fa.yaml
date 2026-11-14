@@ -141,3 +141,9 @@
 
 - id: apply_error_duplicate
   translation: "قبلاً با همین آیدی یا ایمیل برای این جلسه درخواست دادی."
+
+- id: topics
+  translation: "موضوع‌ها"
+
+- id: all_posts
+  translation: "همه"

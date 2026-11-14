@@ -141,3 +141,9 @@
 
 - id: apply_error_duplicate
   translation: "You have already applied for this session with this contact."
+
+- id: topics
+  translation: "Topics"
+
+- id: all_posts
+  translation: "All"

@@ -245,3 +245,25 @@
     color: var(--primary);
     font-weight: 600;
 }
+
+.topic-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: var(--gap);
+}
+
+.post-content .topic-filters a {
+    padding: 4px 12px;
+    border: 1px solid var(--tertiary);
+    border-radius: 999px;
+    box-shadow: none;
+    color: var(--secondary);
+    font-size: 14px;
+}
+
+.post-content .topic-filters a[aria-current="page"] {
+    border-color: var(--primary);
+    background: var(--primary);
+    color: var(--theme);
+}

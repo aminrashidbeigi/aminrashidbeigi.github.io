@@ -10,6 +10,8 @@ tags:
 categories:
  - امنیت
 slug: "آسیب-پذیری-idor"
+topics:
+- engineering
 ---
 ## آسیب‌پذیری IDOR چیه؟
 

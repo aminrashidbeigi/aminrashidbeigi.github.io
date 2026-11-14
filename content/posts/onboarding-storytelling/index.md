@@ -15,6 +15,8 @@ cover:
 slug: "onboarding-storytelling"
 aliases:
 - /blog/onboarding-storytelling
+topics:
+- leadership
 ---
 
 When you join a new team, you are usually bombarded with a lot of information. You need to familiarize yourself with the company's culture, facilities, and colleagues. Initially, the onboarding process tends to be welcoming and hospitable. However, after a few days, you are expected to quickly learn about the products, services, and data in order to contribute effectively. It can be overwhelming to try to absorb and utilize all of this information, and eventually, the honeymoon phase ends, leaving you feeling stressed and concerned about your credibility.

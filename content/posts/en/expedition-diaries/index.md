@@ -10,6 +10,8 @@ cover:
     caption: "Expedition Diaries' First Page"
     alt: "The cover image of Expedition Diaries: A Project to Learn."
 slug: "expedition-diaries"
+topics:
+- engineering
 ---
 
 Some days ago, I received a final warning email about the expiry of the expedition-diaries.com domain.
