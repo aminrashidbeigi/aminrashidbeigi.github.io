@@ -22,7 +22,11 @@
       <div><dt>{{ i18n "talk_guest" }}</dt><dd>{{ . }}</dd></div>
       {{- end }}
     </dl>
-    <div class="post-meta">{{ partial "translation_list.html" . }}</div>
+    {{- with .Translations }}
+    <div class="post-meta">
+      {{- range . }}<a href="{{ .RelPermalink }}" hreflang="{{ .Lang }}">{{ .Language.LanguageName }}</a>{{ end -}}
+    </div>
+    {{- end }}
   </header>
 
   {{- if $done }}

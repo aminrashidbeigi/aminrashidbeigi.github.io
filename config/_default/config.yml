@@ -71,6 +71,10 @@ params:
   assets:
     disableHLJS: true
   mainSections: [posts]
+  # Cloudflare Worker that stores table talk applications (see worker/README.md).
+  applyEndpoint: "https://aminrb.me/api"
+  # Set to a Turnstile site key to add a Turnstile check to the application form.
+  turnstileSiteKey: ""
 
 markup:
   highlight:

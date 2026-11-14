@@ -186,3 +186,62 @@
 .talk-rules a {
     box-shadow: 0 1px 0 var(--primary);
 }
+
+.apply {
+    margin-top: var(--gap);
+    padding: var(--gap);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--entry);
+}
+
+.apply-form {
+    display: grid;
+    gap: 14px;
+}
+
+.apply-form label {
+    display: grid;
+    gap: 4px;
+    color: var(--primary);
+    font-size: 15px;
+}
+
+.apply-form input,
+.apply-form textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid var(--tertiary);
+    border-radius: var(--radius);
+    background: var(--theme);
+    color: var(--content);
+    font: inherit;
+}
+
+.apply-form input:focus,
+.apply-form textarea:focus {
+    outline: 2px solid var(--secondary);
+    outline-offset: 1px;
+}
+
+.apply-form button {
+    justify-self: start;
+    font: inherit;
+}
+
+.apply-privacy,
+.apply-note,
+.apply-error {
+    font-size: 14px;
+}
+
+.apply-privacy {
+    color: var(--secondary);
+}
+
+.apply-note,
+.apply-error {
+    margin-bottom: 14px;
+    color: var(--primary);
+    font-weight: 600;
+}

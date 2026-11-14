@@ -108,3 +108,36 @@
 
 - id: apply_waitlist_submit
   translation: "Join the waitlist"
+
+- id: apply_name
+  translation: "Name"
+
+- id: apply_role
+  translation: "Current role"
+
+- id: apply_years
+  translation: "Years of experience"
+
+- id: apply_country
+  translation: "Country where you work"
+
+- id: apply_contact
+  translation: "Email or Telegram ID"
+
+- id: apply_situation
+  translation: "What is your current situation with this topic?"
+
+- id: apply_privacy
+  translation: "Your answers are used only to choose participants and are deleted 90 days after the session."
+
+- id: talk_full
+  translation: "This session is full. Join the waitlist and you get the seat if someone cancels."
+
+- id: apply_error
+  translation: "Something in the form was missing or too long. Please check it and try again."
+
+- id: apply_error_closed
+  translation: "Applications for this session are closed."
+
+- id: apply_error_duplicate
+  translation: "You have already applied for this session with this contact."

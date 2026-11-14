@@ -1,0 +1,47 @@
+{{- /* Table talk application form. Context: the session page. Posts to the Worker. */ -}}
+{{- $full := eq .Params.status "full" }}
+<section class="apply" id="apply">
+  {{- if $full }}
+  <p class="apply-note">{{ i18n "talk_full" }}</p>
+  {{- end }}
+  <p class="apply-error" role="alert" hidden
+    data-invalid="{{ i18n "apply_error" }}" data-closed="{{ i18n "apply_error_closed" }}"
+    data-duplicate="{{ i18n "apply_error_duplicate" }}"></p>
+  <form action="{{ site.Params.applyEndpoint }}/apply" method="post" class="apply-form">
+    <input type="hidden" name="talk" value="{{ .File.ContentBaseName }}">
+    <input type="hidden" name="lang" value="{{ .Lang }}">
+    <label>{{ i18n "apply_name" }} <input name="name" maxlength="80" required></label>
+    <label>{{ i18n "apply_role" }} <input name="role" maxlength="80" required></label>
+    <label>{{ i18n "apply_years" }} <input name="years" type="number" min="0" max="40" required></label>
+    <label>{{ i18n "apply_country" }} <input name="country" maxlength="60" required></label>
+    <label>{{ i18n "apply_contact" }} <input name="contact" maxlength="120" required dir="auto"></label>
+    <label>{{ i18n "apply_situation" }} <textarea name="situation" rows="4" maxlength="1200" required></textarea></label>
+    <input name="website" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
+    {{- with site.Params.turnstileSiteKey }}
+    <div class="cf-turnstile" data-sitekey="{{ . }}"></div>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    {{- end }}
+    <p class="apply-privacy">{{ i18n "apply_privacy" }}</p>
+    <button type="submit" class="btn btn-primary">
+      {{- if $full }}{{ i18n "apply_waitlist_submit" }}{{ else }}{{ i18n "apply_submit" }}{{ end -}}
+    </button>
+  </form>
+</section>
+<script>
+  (function () {
+    var err = new URLSearchParams(location.search).get("error");
+    var box = document.querySelector(".apply-error");
+    if (err && box) {
+      box.textContent = box.dataset[err === "closed" || err === "duplicate" ? err : "invalid"];
+      box.hidden = false;
+    }
+    var seats = document.querySelector(".talk-seats-taken");
+    if (!seats || !window.fetch) return;
+    fetch(seats.dataset.endpoint).then(function (r) { return r.ok ? r.json() : Promise.reject(); }).then(function (d) {
+      if (typeof d.confirmed !== "number") return;
+      var num = function (n) { return seats.dataset.lang === "fa" ? n.toLocaleString("fa-IR") : String(n); };
+      seats.textContent = seats.dataset.template.replace("%n", num(d.confirmed)).replace("%s", num(Number(seats.dataset.seats)));
+      seats.hidden = false;
+    }).catch(function () {});
+  })();
+</script>

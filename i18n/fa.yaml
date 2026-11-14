@@ -108,3 +108,36 @@
 
 - id: apply_waitlist_submit
   translation: "ثبت‌نام در لیست انتظار"
+
+- id: apply_name
+  translation: "نام"
+
+- id: apply_role
+  translation: "نقش فعلی"
+
+- id: apply_years
+  translation: "سال‌های تجربه"
+
+- id: apply_country
+  translation: "کشور محل کار"
+
+- id: apply_contact
+  translation: "ایمیل یا آیدی تلگرام"
+
+- id: apply_situation
+  translation: "الان با این موضوع در چه وضعیتی هستی؟"
+
+- id: apply_privacy
+  translation: "پاسخ‌های تو فقط برای انتخاب شرکت‌کننده‌ها استفاده و ۹۰ روز بعد از جلسه حذف می‌شود."
+
+- id: talk_full
+  translation: "ظرفیت این جلسه تکمیل شده. در لیست انتظار ثبت‌نام کن تا اگر کسی انصراف داد، صندلی به تو برسد."
+
+- id: apply_error
+  translation: "یکی از فیلدها خالی یا بیش از حد طولانی بود. لطفاً بررسی کن و دوباره بفرست."
+
+- id: apply_error_closed
+  translation: "درخواست برای این جلسه بسته شده."
+
+- id: apply_error_duplicate
+  translation: "قبلاً با همین آیدی یا ایمیل برای این جلسه درخواست دادی."
