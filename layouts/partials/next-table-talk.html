@@ -1,0 +1,16 @@
+{{- /* Card for the next session that is not done, by eventstart. Deliberately ignores today's
+       date: the site is static and would go stale. */ -}}
+{{- $upcoming := where (partial "talk-sessions.html" .) "Params.status" "!=" "done" }}
+{{- range first 1 (sort $upcoming "Params.eventstart") }}
+<aside class="talk-card">
+  <span class="label">{{ i18n "next_table_talk" }}</span>
+  <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+  <p class="talk-meta">{{ partial "talk-when.html" . }}</p>
+  <p class="talk-meta">
+    {{- i18n (printf "talklang_%s" .Params.talklang) }} · {{ partial "fa-digits.html" (dict "s" (string .Params.seats) "lang" .Lang) }} {{ i18n "seats" }}
+  </p>
+  <a class="btn btn-primary" href="{{ .RelPermalink }}#apply">
+    {{- if eq .Params.status "full" }}{{ i18n "apply_waitlist_submit" }}{{ else }}{{ i18n "apply_submit" }}{{ end -}}
+  </a>
+</aside>
+{{- end }}

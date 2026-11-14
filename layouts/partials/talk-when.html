@@ -1,0 +1,10 @@
+{{- /* Session date and time in Berlin and Tehran. eventstart is written in Berlin time with its
+       offset; Tehran is UTC+03:30 with no daylight saving. */ -}}
+{{- $t := time.AsTime .Params.eventstart }}
+{{- $tehran := $t.UTC.Add (time.ParseDuration "3h30m") }}
+{{- $berlin := printf "%s · %s %s" (time.Format ":date_long" $t) ($t.Format "15:04") (i18n "berlin") }}
+{{- $teh := printf "%s %s" ($tehran.Format "15:04") (i18n "tehran") }}
+{{- if ne ($tehran.Format "2006-01-02") ($t.Format "2006-01-02") }}
+{{- $teh = printf "%s · %s" (time.Format ":date_long" $tehran) $teh }}
+{{- end }}
+{{- partial "fa-digits.html" (dict "s" (printf "%s / %s" $berlin $teh) "lang" .Lang) -}}

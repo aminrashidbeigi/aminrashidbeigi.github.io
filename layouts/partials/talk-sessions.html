@@ -1,0 +1,2 @@
+{{- /* All published table talk sessions in the current language (pages with an eventstart). */ -}}
+{{- return where (where site.RegularPages "Section" "table-talks") "Params.eventstart" "!=" nil }}

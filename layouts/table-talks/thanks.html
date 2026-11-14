@@ -1,0 +1,19 @@
+{{- define "main" }}
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">{{ .Title }}</h1>
+  </header>
+  <div class="post-content">
+    <p id="thanks-applied">{{ i18n "thanks_applied" }}</p>
+    <p id="thanks-waitlist" hidden>{{ i18n "thanks_waitlist" }}</p>
+    {{ .Content }}
+    <p><a href="{{ .CurrentSection.RelPermalink }}">{{ i18n "back_to_table_talks" }}</a></p>
+  </div>
+</article>
+<script>
+  if (/[?&]waitlist=1(&|$)/.test(location.search)) {
+    document.getElementById("thanks-applied").hidden = true;
+    document.getElementById("thanks-waitlist").hidden = false;
+  }
+</script>
+{{- end }}

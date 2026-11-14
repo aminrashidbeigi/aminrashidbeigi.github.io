@@ -1,0 +1,32 @@
+{{- define "main" }}
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{- with .Description }}
+  <div class="post-description">{{ . }}</div>
+  {{- end }}
+</header>
+
+{{- with .Content }}
+<div class="post-content">{{ . }}</div>
+{{- end }}
+
+{{- partial "next-table-talk.html" . }}
+
+{{- $sessions := partial "talk-sessions.html" . }}
+{{- $upcoming := sort (where $sessions "Params.status" "!=" "done") "Params.eventstart" }}
+{{- $next := first 1 $upcoming }}
+{{- $rest := (after 1 $upcoming) | append (sort (where $sessions "Params.status" "done") "Params.eventstart" "desc") }}
+{{- with $rest }}
+<h2 class="talk-archive-title">{{ i18n "talk_archive" }}</h2>
+{{- range . }}
+<article class="post-entry">
+  <header class="entry-header">
+    <span class="label">{{ i18n (printf "talk_status_%s" .Params.status) }}</span>
+    <h2>{{ .Title }}</h2>
+  </header>
+  <footer class="entry-footer">{{ partial "talk-when.html" . }}</footer>
+  <a class="entry-link" aria-label="{{ .Title | plainify }}" href="{{ .RelPermalink }}"></a>
+</article>
+{{- end }}
+{{- end }}
+{{- end }}

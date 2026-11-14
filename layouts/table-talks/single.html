@@ -1,0 +1,44 @@
+{{- define "main" }}
+{{- $done := eq .Params.status "done" }}
+<article class="post-single talk">
+  <header class="post-header">
+    <span class="label">{{ i18n (printf "track_%s" .Params.track) }}</span>
+    <h1 class="post-title">{{ .Title }}</h1>
+    <dl class="talk-facts">
+      <div><dt>{{ i18n "talk_when" }}</dt><dd>{{ partial "talk-when.html" . }}</dd></div>
+      <div><dt>{{ i18n "talk_language" }}</dt><dd>{{ i18n (printf "talklang_%s" .Params.talklang) }}</dd></div>
+      <div>
+        <dt>{{ i18n "talk_seats" }}</dt>
+        <dd>
+          {{ partial "fa-digits.html" (dict "s" (string .Params.seats) "lang" .Lang) }} {{ i18n "seats" }}
+          {{- if and (not $done) site.Params.applyEndpoint }}
+          <span class="talk-seats-taken" hidden
+            data-endpoint="{{ site.Params.applyEndpoint }}/seats?talk={{ .File.ContentBaseName }}"
+            data-seats="{{ .Params.seats }}" data-template="{{ i18n "seats_taken" }}" data-lang="{{ .Lang }}"></span>
+          {{- end }}
+        </dd>
+      </div>
+      {{- with .Params.guest }}
+      <div><dt>{{ i18n "talk_guest" }}</dt><dd>{{ . }}</dd></div>
+      {{- end }}
+    </dl>
+    <div class="post-meta">{{ partial "translation_list.html" . }}</div>
+  </header>
+
+  {{- if $done }}
+  <h2>{{ i18n "talk_summary" }}</h2>
+  {{- end }}
+  {{- with .Content }}
+  <div class="post-content">{{ . }}</div>
+  {{- end }}
+
+  {{- if not $done }}
+  <p class="talk-rules">
+    <a href="{{ .CurrentSection.RelPermalink }}#{{ i18n "house_rules_anchor" }}">{{ i18n "house_rules" }}</a>
+  </p>
+  {{- if templates.Exists "partials/apply-form.html" }}
+  {{- partial "apply-form.html" . }}
+  {{- end }}
+  {{- end }}
+</article>
+{{- end }}

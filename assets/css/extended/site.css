@@ -122,3 +122,67 @@
     color: var(--secondary);
     font-size: 14px;
 }
+
+.talk-card {
+    margin-bottom: var(--gap);
+    padding: var(--gap);
+    border: 1px solid var(--tertiary);
+    border-radius: var(--radius);
+    background: var(--entry);
+}
+
+.talk-card h2 {
+    margin: 4px 0 10px;
+    font-size: 22px;
+    line-height: 1.35;
+}
+
+.talk-meta {
+    margin-bottom: 4px;
+    color: var(--secondary);
+    font-size: 14px;
+}
+
+.talk-card .btn {
+    margin-top: 12px;
+}
+
+.talk-archive-title {
+    margin: calc(var(--gap) * 1.5) 0 var(--gap);
+    font-size: 24px;
+}
+
+.talk-facts {
+    display: grid;
+    gap: 6px;
+    margin: 14px 0 10px;
+    font-size: 15px;
+}
+
+.talk-facts div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 10px;
+}
+
+.talk-facts dt {
+    min-width: 80px;
+    color: var(--secondary);
+}
+
+.talk-seats-taken {
+    color: var(--secondary);
+}
+
+.talk-seats-taken::before {
+    content: "· ";
+}
+
+.talk-rules {
+    margin: var(--content-gap) 0;
+    font-size: 15px;
+}
+
+.talk-rules a {
+    box-shadow: 0 1px 0 var(--primary);
+}

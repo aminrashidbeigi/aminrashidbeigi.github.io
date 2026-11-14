@@ -27,3 +27,84 @@
 
 - id: translated
   translation: "ترجمه‌شده"
+
+- id: next_table_talk
+  translation: "میزگرد بعدی"
+
+- id: seats
+  translation: "صندلی"
+
+- id: seats_taken
+  translation: "%n از %s صندلی پر شده"
+
+- id: berlin
+  translation: "برلین"
+
+- id: tehran
+  translation: "تهران"
+
+- id: talklang_fa
+  translation: "به فارسی"
+
+- id: talklang_en
+  translation: "به انگلیسی"
+
+- id: track_technical
+  translation: "فنی"
+
+- id: track_managerial
+  translation: "مدیریتی"
+
+- id: track_career
+  translation: "مسیر شغلی"
+
+- id: track_abroad
+  translation: "کار در خارج از ایران"
+
+- id: talk_when
+  translation: "زمان"
+
+- id: talk_language
+  translation: "زبان"
+
+- id: talk_seats
+  translation: "ظرفیت"
+
+- id: talk_guest
+  translation: "مهمان"
+
+- id: talk_summary
+  translation: "خلاصه"
+
+- id: talk_archive
+  translation: "همهٔ جلسه‌ها"
+
+- id: talk_status_open
+  translation: "باز"
+
+- id: talk_status_full
+  translation: "تکمیل"
+
+- id: talk_status_done
+  translation: "برگزار شده"
+
+- id: house_rules
+  translation: "قوانین میزگرد"
+
+- id: house_rules_anchor
+  translation: "قوانین-میزگرد"
+
+- id: back_to_table_talks
+  translation: "بازگشت به میزگردها"
+
+- id: thanks_applied
+  translation: "ممنون. دست‌کم پنج روز قبل از جلسه خبرت می‌کنم."
+
+- id: thanks_waitlist
+  translation: "در لیست انتظار هستی. اگر صندلی خالی شد خبرت می‌کنم و برای جلسهٔ بعدی با موضوع مشابه در اولویت هستی."
+
+- id: apply_submit
+  translation: "درخواست صندلی"
+
+- id: apply_waitlist_submit
+  translation: "ثبت‌نام در لیست انتظار"

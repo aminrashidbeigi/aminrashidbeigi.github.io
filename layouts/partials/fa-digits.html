@@ -1,0 +1,8 @@
+{{- /* Returns the string with Persian digits when the current language is fa. */ -}}
+{{- $s := .s }}
+{{- if eq .lang "fa" }}
+{{- range $i, $d := slice "۰" "۱" "۲" "۳" "۴" "۵" "۶" "۷" "۸" "۹" }}
+{{- $s = replace $s (string $i) $d }}
+{{- end }}
+{{- end }}
+{{- return $s }}

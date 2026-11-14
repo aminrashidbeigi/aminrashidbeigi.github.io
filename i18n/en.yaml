@@ -27,3 +27,84 @@
 
 - id: translated
   translation: "translated"
+
+- id: next_table_talk
+  translation: "Next table talk"
+
+- id: seats
+  translation: "seats"
+
+- id: seats_taken
+  translation: "%n of %s seats taken"
+
+- id: berlin
+  translation: "Berlin"
+
+- id: tehran
+  translation: "Tehran"
+
+- id: talklang_fa
+  translation: "In Persian"
+
+- id: talklang_en
+  translation: "In English"
+
+- id: track_technical
+  translation: "Technical"
+
+- id: track_managerial
+  translation: "Managerial"
+
+- id: track_career
+  translation: "Career"
+
+- id: track_abroad
+  translation: "Working abroad"
+
+- id: talk_when
+  translation: "When"
+
+- id: talk_language
+  translation: "Language"
+
+- id: talk_seats
+  translation: "Seats"
+
+- id: talk_guest
+  translation: "Guest"
+
+- id: talk_summary
+  translation: "Summary"
+
+- id: talk_archive
+  translation: "All sessions"
+
+- id: talk_status_open
+  translation: "Open"
+
+- id: talk_status_full
+  translation: "Full"
+
+- id: talk_status_done
+  translation: "Done"
+
+- id: house_rules
+  translation: "House rules"
+
+- id: house_rules_anchor
+  translation: "house-rules"
+
+- id: back_to_table_talks
+  translation: "Back to table talks"
+
+- id: thanks_applied
+  translation: "Thanks. You will hear from me at least five days before the session."
+
+- id: thanks_waitlist
+  translation: "You are on the waitlist. If a seat opens I will contact you, and you get first refusal on the next session on a similar topic."
+
+- id: apply_submit
+  translation: "Apply for a seat"
+
+- id: apply_waitlist_submit
+  translation: "Join the waitlist"

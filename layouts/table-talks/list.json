@@ -1,0 +1,14 @@
+{{- /* Every published session in every language, for the application Worker. */ -}}
+{{- $talks := slice }}
+{{- range .AllTranslations }}
+{{- range where .RegularPages "Params.eventstart" "!=" nil }}
+{{- $talks = $talks | append (dict
+  "slug" .File.ContentBaseName
+  "lang" .Lang
+  "seats" .Params.seats
+  "status" .Params.status
+  "eventstart" ((time.AsTime .Params.eventstart).Format "2006-01-02T15:04:05Z07:00")
+) }}
+{{- end }}
+{{- end }}
+{{- $talks | jsonify -}}
