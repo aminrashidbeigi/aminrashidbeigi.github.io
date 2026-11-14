@@ -147,3 +147,6 @@
 
 - id: all_posts
   translation: "All"
+
+- id: footer_links
+  translation: "Site links"

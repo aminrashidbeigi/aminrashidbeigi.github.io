@@ -267,3 +267,23 @@
     background: var(--primary);
     color: var(--theme);
 }
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px 16px;
+    max-width: calc(var(--main-width) + var(--gap) * 2);
+    margin: calc(var(--gap) * -0.5) auto 0;
+    padding: 0 var(--gap) var(--gap);
+    font-size: 12px;
+}
+
+.footer-links a {
+    color: var(--secondary);
+    border-bottom: 1px solid var(--tertiary);
+}
+
+.footer-links a:hover {
+    color: var(--primary);
+}
