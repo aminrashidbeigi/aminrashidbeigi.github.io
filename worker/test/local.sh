@@ -1,0 +1,70 @@
+#!/bin/sh
+# End-to-end check against `wrangler dev` with a local D1 database.
+# Serves test/fixtures as the site (one open, one full and one finished session)
+# and posts the application form to the Worker in each scenario.
+set -eu
+cd "$(dirname "$0")/.."
+
+SITE_PORT=8799
+WORKER_PORT=8798
+WORKER="http://localhost:$WORKER_PORT/api"
+STATE=$(mktemp -d)
+
+cleanup() { kill "$SITE_PID" "$WORKER_PID" 2>/dev/null || true; rm -rf "$STATE"; }
+trap cleanup EXIT
+
+python3 -m http.server "$SITE_PORT" -d test/fixtures >/dev/null 2>&1 & SITE_PID=$!
+npx wrangler d1 execute DB --local --persist-to "$STATE" --file schema.sql >/dev/null
+npx wrangler dev --port "$WORKER_PORT" --persist-to "$STATE" \
+  --var "SITE_ORIGIN:http://localhost:$SITE_PORT" --test-scheduled >"$STATE/dev.log" 2>&1 & WORKER_PID=$!
+until curl -s -o /dev/null "http://localhost:$WORKER_PORT/"; do sleep 0.5; done
+
+failures=0
+apply() { # expected-location-suffix, form fields...
+  expected=$1; shift
+  location=$(curl -s -o /dev/null -w '%{http_code} %{redirect_url}' "$@" "$WORKER/apply")
+  case "$location" in
+    "303 http://localhost:$SITE_PORT$expected") echo "ok    $expected" ;;
+    *) echo "FAIL  expected 303 $expected, got $location"; failures=$((failures + 1)) ;;
+  esac
+}
+valid() { # talk, contact, lang, [years]
+  echo -d talk="$1" -d lang="$3" -d name=Sara -d role=Engineer -d years="${4:-6}" -d country=Germany \
+    -d contact="$2" -d situation=Curious
+}
+sql() { npx wrangler d1 execute DB --local --persist-to "$STATE" --json --command "$1" | python3 -c 'import json,sys; print(json.load(sys.stdin)[0]["results"])'; }
+
+echo "valid submit";            apply "/fa/table-talks/thanks/"                                $(valid open-talk @sara fa)
+echo "full session";            apply "/table-talks/thanks/?waitlist=1"                        $(valid full-talk @omid en)
+echo "trap field";              apply "/fa/table-talks/thanks/"                                $(valid open-talk @bot fa) -d website=http://spam.example
+echo "unknown talk";            apply "/fa/table-talks/?error=closed"                          $(valid no-such-talk @sara fa)
+echo "finished talk";           apply "/fa/table-talks/done-talk/?error=closed#apply"          $(valid done-talk @sara fa)
+echo "duplicate (case differs)"; apply "/fa/table-talks/open-talk/?error=duplicate#apply"      $(valid open-talk @SARA fa)
+echo "invalid years";           apply "/fa/table-talks/open-talk/?error=1#apply"               $(valid open-talk @neda fa 99)
+echo "open but seats confirmed"
+sql "INSERT INTO applications (talk, lang, name, role, years, country, contact, situation, state) SELECT 'open-talk', 'fa', 'p' || value, 'r', 1, 'c', 'p' || value, 's', 'confirmed' FROM json_each('[1,2,3,4,5,6,7,8]')" >/dev/null
+apply "/table-talks/thanks/?waitlist=1" $(valid open-talk @late en)
+
+echo
+echo "stored rows:"
+sql "SELECT talk, contact, state FROM applications WHERE contact LIKE '@%' ORDER BY id"
+rows=$(sql "SELECT COUNT(*) AS n FROM applications WHERE contact = '@bot'")
+[ "$rows" = "[{'n': 0}]" ] && echo "ok    trap submission not stored" || { echo "FAIL  trap submission stored"; failures=$((failures + 1)); }
+
+seats=$(curl -s -D "$STATE/h" "$WORKER/seats?talk=open-talk")
+[ "$seats" = '{"confirmed":8}' ] && echo "ok    /seats -> $seats" || { echo "FAIL  /seats -> $seats"; failures=$((failures + 1)); }
+grep -qi "access-control-allow-origin: http://localhost:$SITE_PORT" "$STATE/h" && echo "ok    CORS header" || { echo "FAIL  CORS header"; failures=$((failures + 1)); }
+code=$(curl -s -o /dev/null -w '%{http_code}' "$WORKER/other")
+[ "$code" = 404 ] && echo "ok    other paths -> 404" || { echo "FAIL  other paths -> $code"; failures=$((failures + 1)); }
+
+echo "retention cleanup"
+sql "INSERT INTO applications (talk, lang, name, role, years, country, contact, situation, created_at) VALUES
+  ('old-talk', 'en', 'x', 'r', 1, 'c', 'old', 's', datetime('now', '-200 days')),
+  ('gone-talk', 'en', 'x', 'r', 1, 'c', 'orphan', 's', datetime('now', '-200 days')),
+  ('gone-talk', 'en', 'x', 'r', 1, 'c', 'recent-orphan', 's', datetime('now', '-10 days'))" >/dev/null
+curl -s -o /dev/null "http://localhost:$WORKER_PORT/__scheduled?cron=17+3+*+*+*"
+left=$(sql "SELECT contact FROM applications WHERE contact IN ('old', 'orphan', 'recent-orphan', '@sara') ORDER BY contact")
+[ "$left" = "[{'contact': '@sara'}, {'contact': 'recent-orphan'}]" ] && echo "ok    cleanup kept recent rows, deleted expired ones" || { echo "FAIL  cleanup left $left"; failures=$((failures + 1)); }
+
+echo
+[ "$failures" -eq 0 ] && echo "all local checks passed" || { echo "$failures local check(s) failed"; exit 1; }

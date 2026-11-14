@@ -3,3 +3,6 @@ content/.obsidian
 public/
 resources/_gen/
 .hugo_build.lock
+worker/node_modules/
+worker/.wrangler/
+worker/.dev.vars

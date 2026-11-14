@@ -1,0 +1,28 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "aminrb-table-talks",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-11-01",
+
+  // aminrb.me's DNS is on Cloudflare (proxied), so the Worker serves aminrb.me/api/*.
+  "routes": [{ "pattern": "aminrb.me/api/*", "zone_name": "aminrb.me" }],
+  "workers_dev": false,
+
+  "vars": {
+    "SITE_ORIGIN": "https://aminrb.me"
+  },
+  // Secrets, set with `wrangler secret put`: TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID,
+  // and optionally TURNSTILE_SECRET.
+
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "aminrb-table-talks",
+      // TODO(amin): paste the id printed by `wrangler d1 create aminrb-table-talks`
+      "database_id": "00000000-0000-0000-0000-000000000000"
+    }
+  ],
+
+  // Daily retention cleanup (Cron Triggers are included in the Workers free plan).
+  "triggers": { "crons": ["17 3 * * *"] }
+}
