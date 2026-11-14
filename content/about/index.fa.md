@@ -4,6 +4,7 @@ date: 2023-01-27T10:52:53+03:30
 lastmod: 2026-11-14
 draft: false
 comments: false
+ShowToc: false
 ---
 
 <!-- TODO(amin): review wording -->
@@ -37,7 +38,7 @@ comments: false
 
 ## سخنرانی و میزبانی
 
-- **۲۰۲۶**: میزبان یک میزگرد در LeadDev Berlin با موضوع «How do you build a testing culture where everyone feels responsible for quality?» (چطور فرهنگ تستی بسازیم که همه خودشون رو مسئول کیفیت بدونن؟)
+- **۲۰۲۶**: میزبان یک میزگرد در LeadDev Berlin با موضوع «<bdi>How do you build a testing culture where everyone feels responsible for quality?</bdi>» (چطور فرهنگ تستی بسازیم که همه خودشون رو مسئول کیفیت بدونن؟)
 - **۲۰ نوامبر ۲۰۲۵ (۲۹ آبان ۱۴۰۴)**: ارائهٔ آنلاین یک‌ساعته برای کانال تلگرام با عنوان «تغییرات هوش مصنوعی و آیندهٔ بازار کار مهندسی نرم‌افزار» ([اعلان در کانال](https://t.me/aminrbg/113)).
 
 ## الان چی می‌سازم
