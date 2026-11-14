@@ -3,3 +3,27 @@
 
 - id: cal_fallback
   translation: "باز کردن صفحهٔ رزرو در cal.com"
+
+- id: price_on_request
+  translation: "قیمت با هماهنگی"
+
+- id: offer_adplist
+  translation: "رزرو در ADPList"
+
+- id: offer_book
+  translation: "رزرو"
+
+- id: offer_ask
+  translation: "در جلسهٔ آشنایی بپرس"
+
+- id: testimonials
+  translation: "نظر دیگران"
+
+- id: adplist_stats
+  translation: "{{ .Sessions }} جلسه، {{ .Minutes }} دقیقه منتورینگ"
+
+- id: total_people
+  translation: "در مجموع {{ .Count }} نفر"
+
+- id: translated
+  translation: "ترجمه‌شده"

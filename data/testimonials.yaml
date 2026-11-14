@@ -1,0 +1,14 @@
+# Rendered by the `testimonials` shortcode. The whole block is hidden while items is empty.
+adplist_url: https://adplist.org/mentors/amin-rashidbeigi
+stats:
+  adplist_sessions: 15        # as of 14 Nov 2026; TODO(amin): update before launch
+  adplist_minutes: 450
+  adplist_badge: "Top 100 in Back-end, Jul to Sep 2026"
+  total_people: null          # TODO(amin): everyone mentored, including outside ADPList; hide while null
+items: []
+# - name: ""          # shown only with the person's permission
+#   role: ""
+#   source: adplist   # adplist | direct
+#   original_lang: fa # if shown in the other language, add the "translated" label
+#   en: ""
+#   fa: ""

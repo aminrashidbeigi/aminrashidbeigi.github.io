@@ -1,0 +1,24 @@
+{{- /* Mentoring offers from data/offers.yaml, in the page's language. */ -}}
+{{- $data := site.Data.offers }}
+{{- $lang := .Page.Lang }}
+<div class="offers">
+  {{- range $data.offers }}
+  {{- $t := index . $lang }}
+  <div class="offer">
+    <h3 class="offer-name">{{ $t.name }}</h3>
+    <p class="offer-price">
+      {{- if and $data.draft_prices (not .free) }}{{ i18n "price_on_request" }}{{ else }}{{ $t.price }}{{ end -}}
+    </p>
+    <p class="offer-detail">{{ $t.detail }}</p>
+    {{- if .url }}
+    <a class="btn" href="{{ .url }}">{{ i18n "offer_adplist" }}</a>
+    {{- else if eq .id "intro" }}
+    <a class="btn btn-primary" href="#book">{{ i18n "offer_book" }}</a>
+    {{- else if .cal }}
+    <a class="btn" href="https://cal.com/{{ .cal }}">{{ i18n "offer_book" }}</a>
+    {{- else }}
+    <a class="btn" href="#book">{{ i18n "offer_ask" }}</a>
+    {{- end }}
+  </div>
+  {{- end }}
+</div>

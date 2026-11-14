@@ -1,6 +1,13 @@
-{{- /* Inline cal.com booking embed. Usage: {{< cal "aminrb/intro" >}}
+{{- /* Inline cal.com booking embed. Usage: {{< cal "aminrb/intro" >}}, or {{< cal offer="intro" >}}
+       to take the event path from data/offers.yaml.
        The embed script is inlined here, so it only loads on pages that use this shortcode. */ -}}
-{{- $path := .Get 0 | default (.Get "path") }}
+{{- $path := "" }}
+{{- with .Get "offer" }}
+{{- $id := . }}
+{{- range where site.Data.offers.offers "id" $id }}{{ $path = .cal }}{{ end }}
+{{- else }}
+{{- $path = .Get 0 | default (.Get "path") }}
+{{- end }}
 {{- if not $path }}{{ errorf "cal shortcode needs an event path, e.g. aminrb/intro: %s" .Position }}{{ end }}
 {{- $id := printf "cal-inline-%d" .Ordinal }}
 {{- $ns := replaceRE `[^a-zA-Z0-9]` "" (path.Base $path) }}

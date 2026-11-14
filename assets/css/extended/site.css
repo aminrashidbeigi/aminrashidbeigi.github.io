@@ -67,3 +67,58 @@
     font-size: 14px;
     color: var(--secondary);
 }
+
+.offers {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 14px;
+    margin: var(--content-gap) 0;
+}
+
+.offer {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--entry);
+}
+
+.post-content .offer h3.offer-name {
+    margin: 0 0 4px;
+    font-size: 18px;
+}
+
+.post-content .offer p {
+    margin: 0 0 10px;
+    font-size: 15px;
+}
+
+.post-content .offer .offer-price {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.post-content .offer .offer-detail {
+    flex-grow: 1;
+    color: var(--secondary);
+}
+
+.post-content a.btn {
+    box-shadow: none;
+    align-self: flex-start;
+}
+
+.post-content a.btn-primary {
+    color: var(--theme);
+}
+
+.testimonial blockquote {
+    margin: 0;
+}
+
+.testimonial figcaption,
+.testimonial-stats {
+    color: var(--secondary);
+    font-size: 14px;
+}

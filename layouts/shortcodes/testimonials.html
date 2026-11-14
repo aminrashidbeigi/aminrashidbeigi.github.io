@@ -1,0 +1,27 @@
+{{- /* Testimonials from data/testimonials.yaml. Renders nothing while items is empty. */ -}}
+{{- $data := site.Data.testimonials }}
+{{- $lang := .Page.Lang }}
+{{- with $data.items }}
+<section class="testimonials">
+  <h2>{{ i18n "testimonials" }}</h2>
+  {{- with $data.stats }}
+  <p class="testimonial-stats">
+    <a href="{{ $data.adplist_url }}">ADPList</a>:
+    {{ i18n "adplist_stats" (dict "Sessions" .adplist_sessions "Minutes" .adplist_minutes) }}
+    {{- with .adplist_badge }} · {{ . }}{{ end }}
+    {{- with .total_people }} · {{ i18n "total_people" (dict "Count" .) }}{{ end }}
+  </p>
+  {{- end }}
+  {{- range . }}
+  {{- $text := index . $lang | default (index . .original_lang) }}
+  <figure class="testimonial">
+    <blockquote>{{ $text }}</blockquote>
+    <figcaption>
+      {{- with .name }}{{ . }}{{ end }}{{ with .role }}, {{ . }}{{ end }}
+      {{- if eq .source "adplist" }} · ADPList{{ end }}
+      {{- if and .original_lang (ne .original_lang $lang) }} · {{ i18n "translated" }}{{ end }}
+    </figcaption>
+  </figure>
+  {{- end }}
+</section>
+{{- end }}

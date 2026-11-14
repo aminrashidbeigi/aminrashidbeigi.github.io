@@ -1,0 +1,24 @@
+# Mentoring offers, rendered by the `offers` shortcode in both languages.
+# While draft_prices is true, paid offers show "price on request" instead of the number.
+draft_prices: true # TODO(amin): confirm prices, then set to false
+offers:
+  - id: adplist
+    free: true
+    url: https://adplist.org/mentors/amin-rashidbeigi
+    en: { name: "Free session on ADPList", price: "Free", detail: "30 minutes, one question. Limited slots each month." }
+    fa: { name: "جلسهٔ رایگان در ADPList", price: "رایگان", detail: "۳۰ دقیقه، یک سؤال. ظرفیت ماهانه محدود است." }
+  - id: intro
+    free: true
+    cal: "aminrb/intro"            # TODO(amin): confirm cal.com event slug
+    en: { name: "Intro call", price: "Free", detail: "20 minutes to check fit and agree a plan." }
+    fa: { name: "جلسهٔ آشنایی", price: "رایگان", detail: "۲۰ دقیقه برای بررسی تناسب و توافق روی برنامه." }
+  - id: single
+    cal: "aminrb/mentoring"        # TODO(amin): confirm slug
+    en: { name: "Single session", price: "€80", detail: "60 minutes plus written next steps." }
+    fa: { name: "تک‌جلسه", price: "۸۰ یورو", detail: "۶۰ دقیقه به‌همراه جمع‌بندی مکتوب قدم‌های بعدی." }
+  - id: interview-pack
+    en: { name: "Interview prep pack", price: "€210", detail: "3 mock interviews (recruiter, system design, behavioural) with written feedback." }
+    fa: { name: "بستهٔ آمادگی مصاحبه", price: "۲۱۰ یورو", detail: "۳ مصاحبهٔ آزمایشی (ریکروتر، طراحی سیستم، رفتاری) با بازخورد مکتوب." }
+  - id: monthly
+    en: { name: "Monthly mentoring", price: "€140 / month", detail: "2 sessions of 45 minutes plus questions by chat. Cancel any month." }
+    fa: { name: "منتورینگ ماهانه", price: "۱۴۰ یورو در ماه", detail: "۲ جلسهٔ ۴۵ دقیقه‌ای به‌همراه پرسش‌وپاسخ متنی. هر ماه قابل لغو است." }

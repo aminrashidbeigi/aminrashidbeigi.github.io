@@ -3,3 +3,27 @@
 
 - id: cal_fallback
   translation: "Open the booking page on cal.com"
+
+- id: price_on_request
+  translation: "Price on request"
+
+- id: offer_adplist
+  translation: "Book on ADPList"
+
+- id: offer_book
+  translation: "Book"
+
+- id: offer_ask
+  translation: "Ask in the intro call"
+
+- id: testimonials
+  translation: "What people say"
+
+- id: adplist_stats
+  translation: "{{ .Sessions }} sessions, {{ .Minutes }} minutes of mentoring"
+
+- id: total_people
+  translation: "{{ .Count }} people mentored in total"
+
+- id: translated
+  translation: "translated"

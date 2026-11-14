@@ -1,41 +1,61 @@
 ---
 title: Mentoring
+description: "One-to-one mentoring for software engineers: interviews at European companies, relocation, and the step into tech lead and manager roles. Start with a free intro call."
 date: 2025-03-22
+lastmod: 2026-11-14
 draft: false
 disable_followup: true
 comments: false
+ShowToc: false
 aliases:
 - /ways-i-can-help/
 ---
-I regularly hold **consultation sessions** (mentorship, one-on-one coaching, or whatever you prefer to call it) with individuals and companies in two main areas: **topic-focused consulting** and **career growth guidance**.
 
-**Topic-focused consulting** covers areas that I’m currently focused on and actively studying. You can check the list of these topics [here](#topic-focused-consulting).
+I mentor software engineers one to one, in Persian or English. I have hired and interviewed engineers, led a team as tech lead and Engineering Manager at Divar, moved to Germany and went back to hands-on engineering. Sessions draw on all of that.
 
-Apart from that, if you need guidance on topics not listed, we can schedule **career growth** sessions instead.
+## Who it is for
 
-### How It Works
+- **Persian-speaking engineers aiming at European companies.** Resume and portfolio review, choosing where to apply, and mock interviews: recruiter, technical, system design and behavioural.
+- **Senior engineers stepping into tech lead or manager roles.** What changes in the first months, how to lead without losing your technical edge, and whether the move is right for you.
+- **Engineers already abroad who feel stuck.** Growth in a culture that is not your own, promotions, and deciding when to stay and when to move on.
 
-You can book a **free 15-minute initial session** to discuss your needs and challenges. If I can provide value and guidance in your case, we’ll discuss the next steps, including the structure, number of sessions, scheduling, and potential costs.
+## Offers
 
-To request a free initial session, click the button below. Please include details about yourself, your background, and your goal for this session.
+{{< offers >}}
 
+## How it works
 
-<div style="text-align: center; margin: 2em 0;"> <a href="https://calendar.app.google/ptdKyDee1FZfkBds5" style="background: #007acc; color: #fff; padding: 0.75em 1.5em; text-decoration: none; border-radius: 4px; font-weight: bold;">Book a Consultation Session</a> </div>
+1. **A free conversation.** Book a 20-minute intro call below and tell me where you are and where you want to go.
+2. **Agree a plan.** If I can help, we agree what to work on and which offer fits. If I can't, I will say so.
+3. **Book.** You book the sessions on cal.com at times that suit you.
 
----
-## **Topic-Focused Consulting**
+{{< testimonials >}}
 
-I’m currently focusing on consultations related to the topics below. If your concern doesn’t fall under these categories, feel free to email me at **a.rashidbeigi [at] gmail.com**.
+## Questions and answers
 
-### **Job Interviews & Hiring**
+### Which language are sessions in?
 
-Over the years, I’ve worked with various companies and have experience in candidate selection, conducting interviews, and making hiring decisions for **junior, mid-level, and senior software engineers**.
+Persian or English, whichever you prefer.
 
-If you’re looking to get hired by companies, you can book a session with me.
+### How do I pay?
 
-More specifically, I can help with:
-- **Improving your chances of landing interviews** – Resume and cover letter feedback, choosing the right target companies.
-- **Mock interviews with feedback** – Recruiter screenings, technical interviews, system design, and behavioral (soft skills) interviews.
-- **Hiring for software teams and companies** – Guidance on finding and selecting the right candidates.
+<!-- TODO(amin): answer -->
+We settle this in the intro call.
 
+### Do you offer pro bono sessions?
 
+<!-- TODO(amin): answer -->
+Ask me in the intro call.
+
+### What if I need to cancel?
+
+<!-- TODO(amin): answer -->
+Let me know as early as you can.
+
+## Book a free intro call {#book}
+
+{{< cal offer="intro" >}}
+
+## Hiring support for companies
+
+Over the years I have screened, interviewed and hired junior, mid-level and senior software engineers. If your team is hiring engineers and wants help with the hiring process or with interviews, [email me](mailto:a.rashidbeigi@gmail.com).
