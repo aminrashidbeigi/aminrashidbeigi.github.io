@@ -1,6 +1,9 @@
 ---
 title: Mentoring
 description: "One-to-one mentoring for software engineers: interviews at European companies, relocation, and the step into tech lead and manager roles. Start with a free intro call."
+cover:
+  image: /og/mentoring.png
+  hidden: true
 date: 2025-03-22
 lastmod: 2026-11-14
 draft: false

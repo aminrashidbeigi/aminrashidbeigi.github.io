@@ -1,6 +1,9 @@
 ---
 title: "میزگرد"
 description: "میزگردهای آنلاین و رایگان برای مهندس‌ها: یک سؤال، هشت نفر، شصت دقیقه. برای جلسهٔ بعدی درخواست صندلی بده."
+cover:
+  image: /og/table-talks-fa.png
+  hidden: true
 outputs: [html, rss, json]
 ---
 

@@ -2,6 +2,9 @@
 title: "چطور فرهنگ تستی بسازیم که همه خودشون رو مسئول کیفیت بدونن؟"
 # TODO(amin): review Persian title
 description: "میزگرد آنلاین و رایگان به زبان فارسی: هشت مهندس، شصت دقیقه، یک سؤال دربارهٔ فرهنگ تست و مسئولیت مشترک برای کیفیت."
+cover:
+  image: /og/testing-culture-fa.png
+  hidden: true
 date: 2026-11-20                         # publish date
 eventstart: 2026-12-03T18:30:00+01:00    # TODO(amin): real date, in Berlin time with its offset
 talklang: fa                             # fa | en
