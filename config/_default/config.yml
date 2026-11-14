@@ -38,18 +38,19 @@ params:
       - name: CSV
         url: amin-rashidbeigi-cv-feb2023.pdf
   homeInfoParams:
-    Title: "Hi there! 👋"
+    Title: "Amin Rashidbeigi"
     Content: >
-      I’m Amin, a software engineer navigating the joys and challenges of tech life. On this site, I share my thoughts on software engineering, team leadership, and everything in between.
-
-
-      Curious to know more about me? Head over to my [about page](/about/), or check out the [side projects](/side-projects/) I’ve built along the way.
-
-
-      If you’re a Persian reader, you can follow my [Telegram channel](https://t.me/aminrbg) for updates on new posts.
-
-
-      And hey, I’d love to hear from you! Feel free to connect with me on [X](https://x.com/AminRashidbeigi) or [LinkedIn](https://www.linkedin.com/in/amin-rashidbeigi)—whether you have questions, ideas to share, or just want to say hi :)
+      Software engineer and former engineering manager in Berlin, on the
+      [engineer/manager pendulum](https://charity.wtf/p/the-engineer-manager-pendulum).
+      I write about building software and leading the teams that build it,
+      and I mentor engineers through interviews, relocation and the step into leadership.
+    Meta: "About ten years in engineering · SnappMarket, Divar, CHECK24, Delivery Hero"
+    Buttons:
+      - name: Join the next table talk
+        url: table-talks/
+        primary: true
+      - name: Book a free intro call
+        url: mentoring/#book
   socialIcons:
     - name: x
       url: "https://x.com/AminRashidbeigi"
@@ -137,15 +138,19 @@ languages:
           - name: رزومه
             url: amin-rashidbeigi-cv-feb2023.pdf
       homeInfoParams:
-        Title: سلام! 👋
+        Title: امین رشیدبیگی
         Content: >
-          من امین هستم، مهندس نرم‌افزارم و به مشاهده، تحلیل و حل مشکلات نرم‌افزاری و ارتباطات انسانی حول مسئله علاقه‌مندم! اگر کنجکاوی که بیشتر دربارهٔ من بدونی به صفحهٔ [درباره‌ٔ من](about/) سر بزن یا [پروژه‌های جانبی](side-projects/) که در طول مسیر ساختم رو ببین.
-
-
-          من در حال حاضر به صورت مرتب‌تر توی  [کانال تلگرامم](https://t.me/aminrbg) می‌نویسم و اگر به موضوعات اشاره‌شده علاقه‌مندی حتماً یه سر بهش بزن.
-
-
-          اگر هم می‌خوای در مورد موضوعی گپ بزنیم، ایده‌ای رو باهام به اشتراک بذاری یا صرفاً با هم بیشتر آشنا شیم، [اینجا](ways-i-can-help/) لینک تقویم و زمان‌های خالیم رو پیدا می‌کنی و می‌تونیم با هم گفت‌و‌گو کنیم، یا این که بهم ایمیل بزن.
+          مهندس نرم‌افزار و مدیر مهندسی سابق، ساکن برلین. دربارهٔ ساختن نرم‌افزار و رهبری تیم‌های مهندسی
+          می‌نویسم و به مهندس‌ها در مصاحبه، مهاجرت کاری و رسیدن به نقش‌های لیدرشیپ کمک می‌کنم.
+        Meta: "حدود ده سال تجربهٔ مهندسی · اسنپ‌مارکت، دیوار، CHECK24، Delivery Hero"
+        Buttons:
+          - name: شرکت در میزگرد بعدی
+            url: table-talks/
+            primary: true
+          - name: رزرو جلسهٔ آشنایی رایگان
+            url: mentoring/#book
+          - name: کانال تلگرام
+            url: https://t.me/aminrbg
     taxonomies:
       category: categories
       tag: tags

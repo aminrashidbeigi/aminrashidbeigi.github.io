@@ -1,0 +1,55 @@
+/* Site additions on top of PaperMod. Colours come from the theme variables
+   so everything follows light and dark mode. */
+
+.home-info .entry-content p.home-meta {
+    color: var(--secondary);
+    font-size: 14px;
+}
+
+.cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 4px 0 18px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid var(--tertiary);
+    border-radius: var(--radius);
+    background: var(--entry);
+    color: var(--primary);
+    font-size: 15px;
+    line-height: 1.4;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border-color: var(--secondary);
+}
+
+.btn-primary {
+    border-color: var(--primary);
+    background: var(--primary);
+    color: var(--theme);
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+.label {
+    display: inline-block;
+    margin-bottom: 6px;
+    padding: 1px 8px;
+    border: 1px solid var(--tertiary);
+    border-radius: 999px;
+    color: var(--secondary);
+    font-size: 12px;
+}
+
+.home-info.first-entry {
+    min-height: 0;
+}
