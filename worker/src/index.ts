@@ -5,6 +5,7 @@
 //
 // Routed at aminrb.me/api/*, so a leading /api is stripped from the path.
 
+import { card } from "../../telegram-sync/src/applications";
 import { isSlug, parseLang, validate, type Application, type Lang } from "./validate";
 
 export interface Env {
@@ -98,14 +99,14 @@ async function apply(request: Request, env: Env, ctx: ExecutionContext): Promise
   const confirmed = await confirmedCount(env, app.talk);
   const state: State = copies.some((t) => t.status === "full") || confirmed >= seatCount ? "waitlist" : "applied";
 
-  await env.DB.prepare(
+  const row = await env.DB.prepare(
     `INSERT INTO applications (talk, lang, email, name, role, workplace, experience, state)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?) RETURNING id`,
   )
     .bind(app.talk, app.lang, app.email, app.name, app.role, app.workplace, app.experience, state)
-    .run();
+    .first<{ id: number }>();
 
-  ctx.waitUntil(notify(env, app, state).catch(() => {}));
+  if (row) ctx.waitUntil(notify(env, app, row.id, state).catch(() => {}));
 
   return redirect(thanksPath(env, app.lang, state));
 }
@@ -146,20 +147,16 @@ async function loadTalks(env: Env): Promise<Talk[]> {
   return (await response.json()) as Talk[];
 }
 
-// One private message to Amin. The bot never contacts applicants or posts in the channel.
-async function notify(env: Env, app: Application, state: State): Promise<void> {
+// One private message to Amin, with buttons to confirm, waitlist or decline. The buttons are
+// handled by the telegram-sync Worker, which receives the bot's updates. The bot never contacts
+// applicants or posts in the channel.
+async function notify(env: Env, app: Application, id: number, state: State): Promise<void> {
   if (!env.TELEGRAM_BOT_TOKEN || !env.TELEGRAM_CHAT_ID) return;
-  const text = [
-    `Table talk application: ${app.talk} (${state})`,
-    `Name: ${app.name || "-"}`,
-    `Role: ${app.role || "-"}`,
-    `Works at: ${app.workplace || "-"}`,
-    `Experience: ${app.experience ? `${app.experience} years` : "-"}`,
-  ].join("\n");
+  const message = card({ ...app, id, state });
   await fetch(`https://api.telegram.org/bot${env.TELEGRAM_BOT_TOKEN}/sendMessage`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ chat_id: env.TELEGRAM_CHAT_ID, text }),
+    body: JSON.stringify({ chat_id: env.TELEGRAM_CHAT_ID, ...message }),
   });
 }
 

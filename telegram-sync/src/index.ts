@@ -6,12 +6,15 @@
 // Old post forwarded    -> queued; the bot asks about the oldest queued post, one at a time
 // Edit of a published post -> the bot asks whether to update the blog copy
 // Publish               -> page bundle committed to GitHub, the Pages workflow deploys it
+// /apps, application buttons -> table talk applications (see applications.ts)
 
 import { commitFiles, type FileChange } from "./github";
+import * as applications from "./applications";
 import { buildPost, TOPICS, type Entity, type Part } from "./post";
 
 export interface Env {
   DB: D1Database;
+  TALKS_DB: D1Database; // table talk applications, written by worker/
   CHANNEL: string; // channel username, without @
   SITE_ORIGIN: string;
   GITHUB_REPO: string;
@@ -102,6 +105,8 @@ async function handle(update: Update, env: Env, ctx: ExecutionContext): Promise<
     await edited(env, update.edited_channel_post);
   } else if (update.message && isOwner(update.message.from?.id, env) && update.message.chat.type === "private") {
     await ownerMessage(env, ctx, update.message);
+  } else if (update.callback_query && applications.isApplicationCallback(update.callback_query.data)) {
+    await applicationButton(env, update.callback_query);
   } else if (update.callback_query) {
     await callback(env, ctx, update.callback_query);
   }
@@ -113,6 +118,9 @@ async function ownerMessage(env: Env, ctx: ExecutionContext, msg: Message): Prom
     await ingest(env, ctx, msg, origin.message_id, origin.date, true);
   } else if (origin) {
     // Anything else forwarded, such as a channel repost of another channel's post: ignore.
+  } else if (msg.text?.startsWith("/apps")) {
+    const reply = await applications.command(env.TALKS_DB, msg.text, env.SITE_ORIGIN);
+    await tg(env, "sendMessage", { chat_id: env.OWNER_ID, link_preview_options: { is_disabled: true }, ...reply });
   } else if (msg.text?.startsWith("/status")) {
     await status(env);
   } else {
@@ -121,7 +129,8 @@ async function ownerMessage(env: Env, ctx: ExecutionContext, msg: Message): Prom
       `New posts in @${env.CHANNEL} come here as questions.\n\n` +
         `To import old posts, forward them from the channel to me (many at once is fine). ` +
         `I'll ask about them one at a time, oldest first, and keep their original dates.\n\n` +
-        `/status shows what is waiting.`,
+        `/status shows what is waiting.\n` +
+        `/apps shows table talk applications.`,
     );
   }
 }
@@ -290,6 +299,21 @@ async function callback(env: Env, ctx: ExecutionContext, query: CallbackQuery): 
   } else if (action === "k") {
     await env.DB.prepare("UPDATE posts SET update_asked = 0 WHERE key = ?").bind(key).run();
     if (questionId) await edit(env, questionId, `Kept the blog copy of ${await linkFor(env, key)} as it was.`);
+  }
+  await tg(env, "answerCallbackQuery", { callback_query_id: query.id, text: note });
+}
+
+async function applicationButton(env: Env, query: CallbackQuery): Promise<void> {
+  let note = "";
+  if (isOwner(query.from.id, env)) {
+    note = await applications.press(
+      env.TALKS_DB,
+      (method, body) => tg(env, method, body),
+      env.OWNER_ID,
+      query.message?.message_id,
+      query.data,
+      env.SITE_ORIGIN,
+    );
   }
   await tg(env, "answerCallbackQuery", { callback_query_id: query.id, text: note });
 }

@@ -103,6 +103,19 @@ The bot asks about them one by one, oldest first, and says how many are left.
 Posts it already knows (published or skipped) are ignored, so forwarding a range
 twice is harmless.
 
+## Table talk applications
+
+The same bot handles table talk applications from the site (see `worker/`):
+
+- `/apps` shows how many applications each session has, by state.
+- `/apps <slug>`, for example `/apps testing-culture`, lists one session: name, role, workplace,
+  experience and email, with **✅ / ⏳ / ❌** buttons per person. Tapping one updates the
+  applicant and redraws the list.
+- The alert for each new application has the same buttons.
+
+This Worker reads and updates the `aminrb-table-talks` database through the `TALKS_DB` binding;
+the code is in `src/applications.ts`.
+
 ## Limits worth knowing
 
 - **Deletions are not synced.** Telegram does not tell bots when a channel post is
