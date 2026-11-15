@@ -1,6 +1,6 @@
 ---
 title: "How do you build a testing culture where everyone feels responsible for quality?"
-description: "A free online table talk in Persian: eight engineers, sixty minutes, one question: whose job is quality?"
+description: "A free online table talk in Persian: eight people, sixty minutes, one question: whose job is quality?"
 cover:
   image: /og/testing-culture.png
   hidden: true

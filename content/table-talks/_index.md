@@ -1,6 +1,6 @@
 ---
 title: "Table Talks"
-description: "Free online table talks for engineers: one question, eight people, sixty minutes. Apply for a seat at the next session."
+description: "Free online table talks for people who work in tech: one question, eight people, sixty minutes. Apply for a seat at the next session."
 cover:
   image: /og/table-talks.png
   hidden: true
