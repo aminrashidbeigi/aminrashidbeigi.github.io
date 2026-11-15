@@ -108,6 +108,22 @@
     font-weight: 600;
 }
 
+.post-content .offer .offer-price s {
+    color: var(--secondary);
+    font-weight: 400;
+}
+
+.offer-discount {
+    display: inline-block;
+    padding: 0 8px;
+    border-radius: 999px;
+    background: var(--primary);
+    color: var(--theme);
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
 .post-content .offer .offer-detail {
     flex-grow: 1;
     color: var(--secondary);
