@@ -131,34 +131,19 @@
   translation: "Site links"
 
 - id: apply_email
-  translation: "Email"
+  translation: "What is your email?"
 
 - id: apply_name
-  translation: "Name"
+  translation: "What is your name?"
 
 - id: apply_role
-  translation: "Current role"
+  translation: "What is your current role?"
 
-- id: apply_role_engineer
-  translation: "Software engineer"
-
-- id: apply_role_senior
-  translation: "Senior or staff engineer"
-
-- id: apply_role_lead
-  translation: "Tech lead"
-
-- id: apply_role_manager
-  translation: "Engineering manager"
-
-- id: apply_role_qa
-  translation: "QA or test engineer"
-
-- id: apply_role_other
-  translation: "Something else"
+- id: apply_workplace
+  translation: "Where do you work? (company / country)"
 
 - id: apply_experience
-  translation: "Experience"
+  translation: "How many years of experience do you have?"
 
 - id: apply_experience_0-2
   translation: "0–2 years"
@@ -171,21 +156,6 @@
 
 - id: apply_experience_10plus
   translation: "More than 10 years"
-
-- id: apply_region
-  translation: "Where you work"
-
-- id: apply_region_iran
-  translation: "Iran"
-
-- id: apply_region_europe
-  translation: "Europe"
-
-- id: apply_region_other
-  translation: "Somewhere else"
-
-- id: apply_note
-  translation: "Anything you want to share about this topic?"
 
 - id: apply_choose
   translation: "Choose…"

@@ -4,13 +4,12 @@
 export const LIMITS = {
   email: 120,
   name: 80,
-  note: 500,
+  role: 80,
+  workplace: 100,
 } as const;
 
 export const CHOICES = {
-  role: ["engineer", "senior", "lead", "manager", "qa", "other"],
   experience: ["0-2", "3-5", "6-10", "10+"],
-  region: ["iran", "europe", "other"],
 } as const;
 
 const SLUG = /^[a-z0-9][a-z0-9-]{0,99}$/;
@@ -25,9 +24,8 @@ export interface Application {
   // Optional fields are "" when left empty.
   name: string;
   role: string;
+  workplace: string;
   experience: string;
-  region: string;
-  note: string;
 }
 
 export type Validation =
@@ -68,10 +66,9 @@ export function validate(form: FormLike): Validation {
   const email = text(form, "email");
   const fields = {
     name: text(form, "name"),
-    role: choice(form, "role"),
+    role: text(form, "role"),
+    workplace: text(form, "workplace"),
     experience: choice(form, "experience"),
-    region: choice(form, "region"),
-    note: text(form, "note"),
   };
 
   if (!isSlug(talk)) return { ok: false, lang };
@@ -87,9 +84,8 @@ export function validate(form: FormLike): Validation {
       email,
       name: fields.name!,
       role: fields.role!,
+      workplace: fields.workplace!,
       experience: fields.experience!,
-      region: fields.region!,
-      note: fields.note!,
     },
   };
 }

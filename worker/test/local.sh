@@ -28,8 +28,8 @@ apply() { # expected-location-suffix, form fields...
     *) echo "FAIL  expected 303 $expected, got $location"; failures=$((failures + 1)) ;;
   esac
 }
-valid() { # talk, email, lang, [role]
-  echo -d talk="$1" -d lang="$3" -d email="$2" -d role="${4:-engineer}"
+valid() { # talk, email, lang, [experience]
+  echo -d talk="$1" -d lang="$3" -d email="$2" -d role=Engineer -d workplace=Startup/Germany -d experience="${4:-3-5}"
 }
 sql() { npx wrangler d1 execute DB --local --persist-to "$STATE" --json --command "$1" | python3 -c 'import json,sys; print(json.load(sys.stdin)[0]["results"])'; }
 
@@ -39,7 +39,7 @@ echo "trap field";              apply "/fa/table-talks/thanks/"                 
 echo "unknown talk";            apply "/fa/table-talks/?error=closed"                          $(valid no-such-talk sara@example.com fa)
 echo "finished talk";           apply "/fa/table-talks/done-talk/?error=closed#apply"          $(valid done-talk sara@example.com fa)
 echo "duplicate (case differs)"; apply "/fa/table-talks/open-talk/?error=duplicate#apply"      $(valid open-talk SARA@example.com fa)
-echo "invalid choice";          apply "/fa/table-talks/open-talk/?error=1#apply"               $(valid open-talk neda@example.com fa ceo)
+echo "invalid choice";          apply "/fa/table-talks/open-talk/?error=1#apply"               $(valid open-talk neda@example.com fa 40)
 echo "email only";              apply "/fa/table-talks/thanks/"                                -d talk=open-talk -d lang=fa -d email=mina@example.com
 echo "open but seats confirmed"
 sql "INSERT INTO applications (talk, lang, email, state) SELECT 'open-talk', 'fa', 'p' || value || '@example.com', 'confirmed' FROM json_each('[1,2,3,4,5,6,7,8]')" >/dev/null
@@ -47,7 +47,7 @@ apply "/table-talks/thanks/?waitlist=1" $(valid open-talk late@example.com en)
 
 echo
 echo "stored rows:"
-sql "SELECT talk, email, role, state FROM applications WHERE email NOT LIKE 'p_@example.com' ORDER BY id"
+sql "SELECT talk, email, workplace, state FROM applications WHERE email NOT LIKE 'p_@example.com' ORDER BY id"
 rows=$(sql "SELECT COUNT(*) AS n FROM applications WHERE email = 'bot@example.com'")
 [ "$rows" = "[{'n': 0}]" ] && echo "ok    trap submission not stored" || { echo "FAIL  trap submission stored"; failures=$((failures + 1)); }
 

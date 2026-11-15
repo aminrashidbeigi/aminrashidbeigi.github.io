@@ -1,8 +1,8 @@
 # Table talk applications Worker
 
 A Cloudflare Worker (free plan) that receives the application form on the
-table talk pages (email required; name, role, experience, where they work and a
-note optional), stores applications in D1 and sends Amin a private Telegram
+table talk pages (email required; name, role, where they work and years of experience
+optional), stores applications in D1 and sends Amin a private Telegram
 message for each one. It never emails or messages applicants and stores no
 IP addresses. Amin confirms people himself.
 
@@ -59,7 +59,7 @@ and set `params.turnstileSiteKey` in the site config to the widget's site key.
 
    ```sh
    npx wrangler d1 execute DB --remote --command \
-     "SELECT id, email, name, role, experience, region, note, state FROM applications WHERE talk = '<slug>' ORDER BY created_at"
+     "SELECT id, email, name, role, workplace, experience, state FROM applications WHERE talk = '<slug>' ORDER BY created_at"
    ```
 
 2. Confirm eight, waitlist the rest, and email the confirmed people yourself:

@@ -7,10 +7,9 @@ function form(overrides: Record<string, string | undefined> = {}) {
     lang: "fa",
     email: "sara@example.com",
     name: "Sara",
-    role: "engineer",
+    role: "Backend engineer",
+    workplace: "Delivery startup / Germany",
     experience: "3-5",
-    region: "europe",
-    note: "Our QA team owns all testing and it is slowing us down.",
     ...overrides,
   };
   const data = new FormData();
@@ -27,10 +26,9 @@ describe("validate", () => {
         lang: "fa",
         email: "sara@example.com",
         name: "Sara",
-        role: "engineer",
+        role: "Backend engineer",
+        workplace: "Delivery startup / Germany",
         experience: "3-5",
-        region: "europe",
-        note: "Our QA team owns all testing and it is slowing us down.",
       },
     });
   });
@@ -42,12 +40,12 @@ describe("validate", () => {
     data.append("email", "sara@example.com");
     expect(validate(data)).toEqual({
       ok: true,
-      value: { talk: "testing-culture", lang: "en", email: "sara@example.com", name: "", role: "", experience: "", region: "", note: "" },
+      value: { talk: "testing-culture", lang: "en", email: "sara@example.com", name: "", role: "", workplace: "", experience: "" },
     });
   });
 
   it("accepts optional fields left empty", () => {
-    expect(validate(form({ name: "", role: "", experience: "", region: "", note: "   " })).ok).toBe(true);
+    expect(validate(form({ name: "", role: "  ", workplace: "", experience: "" })).ok).toBe(true);
   });
 
   it.each([undefined, "", "   ", "sara", "sara@", "@example.com", "sara@example", "sa ra@example.com"])(
@@ -64,7 +62,7 @@ describe("validate", () => {
   });
 
   it("counts Persian text by characters, like the form's maxlength", () => {
-    expect(validate(form({ name: "س".repeat(LIMITS.name) })).ok).toBe(true);
+    expect(validate(form({ workplace: "س".repeat(LIMITS.workplace) })).ok).toBe(true);
   });
 
   it.each(Object.entries(CHOICES).flatMap(([field, values]) => values.map((v) => [field, v])))(
@@ -75,9 +73,8 @@ describe("validate", () => {
   );
 
   it.each([
-    ["role", "ceo"],
     ["experience", "40"],
-    ["region", "germany"],
+    ["experience", "3 to 5"],
   ])("rejects %s %j that is not one of the choices", (field, value) => {
     expect(validate(form({ [field]: value })).ok).toBe(false);
   });

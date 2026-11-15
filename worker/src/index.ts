@@ -99,10 +99,10 @@ async function apply(request: Request, env: Env, ctx: ExecutionContext): Promise
   const state: State = copies.some((t) => t.status === "full") || confirmed >= seatCount ? "waitlist" : "applied";
 
   await env.DB.prepare(
-    `INSERT INTO applications (talk, lang, email, name, role, experience, region, note, state)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+    `INSERT INTO applications (talk, lang, email, name, role, workplace, experience, state)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
   )
-    .bind(app.talk, app.lang, app.email, app.name, app.role, app.experience, app.region, app.note, state)
+    .bind(app.talk, app.lang, app.email, app.name, app.role, app.workplace, app.experience, state)
     .run();
 
   ctx.waitUntil(notify(env, app, state).catch(() => {}));
@@ -153,8 +153,8 @@ async function notify(env: Env, app: Application, state: State): Promise<void> {
     `Table talk application: ${app.talk} (${state})`,
     `Name: ${app.name || "-"}`,
     `Role: ${app.role || "-"}`,
+    `Works at: ${app.workplace || "-"}`,
     `Experience: ${app.experience ? `${app.experience} years` : "-"}`,
-    `Works in: ${app.region || "-"}`,
   ].join("\n");
   await fetch(`https://api.telegram.org/bot${env.TELEGRAM_BOT_TOKEN}/sendMessage`, {
     method: "POST",

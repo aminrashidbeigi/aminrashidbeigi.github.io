@@ -104,7 +104,7 @@
   translation: "در لیست انتظار هستی. اگر صندلی خالی شد خبرت می‌کنم و برای جلسهٔ بعدی با موضوع مشابه در اولویت هستی."
 
 - id: apply_submit
-  translation: "درخواست صندلی"
+  translation: "رزرو صندلی"
 
 - id: apply_waitlist_submit
   translation: "ثبت‌نام در لیست انتظار"
@@ -131,34 +131,19 @@
   translation: "پیوندهای سایت"
 
 - id: apply_email
-  translation: "ایمیل"
+  translation: "ایمیلت چیه؟"
 
 - id: apply_name
-  translation: "نام"
+  translation: "اسمت چیه؟"
 
 - id: apply_role
-  translation: "نقش فعلی"
+  translation: "نقش فعلیت چیه؟"
 
-- id: apply_role_engineer
-  translation: "مهندس نرم‌افزار"
-
-- id: apply_role_senior
-  translation: "مهندس سینیور یا استف"
-
-- id: apply_role_lead
-  translation: "لید فنی"
-
-- id: apply_role_manager
-  translation: "مدیر مهندسی"
-
-- id: apply_role_qa
-  translation: "QA یا مهندس تست"
-
-- id: apply_role_other
-  translation: "سایر"
+- id: apply_workplace
+  translation: "کجا کار می‌کنی؟ (شرکت / کشور)"
 
 - id: apply_experience
-  translation: "سابقهٔ کار"
+  translation: "چند سال سابقهٔ کار داری؟"
 
 - id: apply_experience_0-2
   translation: "۰ تا ۲ سال"
@@ -171,21 +156,6 @@
 
 - id: apply_experience_10plus
   translation: "بیشتر از ۱۰ سال"
-
-- id: apply_region
-  translation: "محل کار"
-
-- id: apply_region_iran
-  translation: "ایران"
-
-- id: apply_region_europe
-  translation: "اروپا"
-
-- id: apply_region_other
-  translation: "جای دیگه"
-
-- id: apply_note
-  translation: "چیزی دربارهٔ این موضوع هست که بخوای بگی؟"
 
 - id: apply_choose
   translation: "انتخاب کن…"
