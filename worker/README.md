@@ -28,8 +28,10 @@ npx wrangler login
 npx wrangler d1 create aminrb-table-talks
 npx wrangler d1 execute DB --remote --file schema.sql
 
-# 2. Telegram: create a bot with @BotFather, send it any message, then read your
-#    chat id from https://api.telegram.org/bot<TOKEN>/getUpdates
+# 2. Telegram: this reuses the telegram-sync bot. Its webhook is unaffected, since this
+#    Worker only calls sendMessage, and a reply to an alert just gets the sync bot's help text.
+#    TELEGRAM_BOT_TOKEN = the same token as telegram-sync's BOT_TOKEN (@BotFather > /mybots > API Token)
+#    TELEGRAM_CHAT_ID   = the same value as telegram-sync's OWNER_ID (your Telegram user id)
 npx wrangler secret put TELEGRAM_BOT_TOKEN
 npx wrangler secret put TELEGRAM_CHAT_ID
 
