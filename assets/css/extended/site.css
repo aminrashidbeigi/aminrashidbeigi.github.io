@@ -54,8 +54,17 @@
     min-height: 0;
 }
 
-.cal-embed {
+.cal-booking {
     margin: var(--content-gap) 0;
+}
+
+/* On wide screens let the booking calendar use more than the text column, so cal.com shows
+   the calendar and the time slots side by side instead of one long column. */
+@media (min-width: 1100px) {
+    .cal-booking {
+        width: 1000px;
+        margin-inline: calc((100% - 1000px) / 2);
+    }
 }
 
 .cal-inline {

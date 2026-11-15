@@ -11,7 +11,7 @@
 {{- if not $path }}{{ errorf "cal shortcode needs an event path, e.g. aminrb/intro: %s" .Position }}{{ end }}
 {{- $id := printf "cal-inline-%d" .Ordinal }}
 {{- $ns := replaceRE `[^a-zA-Z0-9]` "" (path.Base $path) }}
-<div class="cal-embed">
+<div class="cal-booking">
   <div id="{{ $id }}" class="cal-inline"></div>
   {{- if ne (.Get "fallback") "false" }}
   <p class="cal-fallback"><a href="https://cal.com/{{ $path }}">{{ i18n "cal_fallback" }}</a></p>
