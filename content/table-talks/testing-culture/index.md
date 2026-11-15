@@ -4,7 +4,7 @@ description: "A free online table talk in Persian: eight people, sixty minutes, 
 cover:
   image: /og/testing-culture.png
   hidden: true
-date: 2026-11-20                         # publish date
+date: 2026-11-15                         # publish date
 eventstart: 2026-12-02T18:30:00+01:00    # Wednesday, Berlin time with its offset
 talklang: fa                             # fa | en
 seats: 8
