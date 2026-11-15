@@ -42,13 +42,16 @@ metaAuthorOnly: true
 
 اگر ساکن ایران هستی، نگران نحوهٔ پرداخت و هزینهٔ جلسه نباش؛ در جلسهٔ آشنایی درباره‌اش صحبت می‌کنیم.
 
+<!--
 ## برای چه کسانی نیست؟
 
 - یادگیری برنامه‌نویسی از صفر.
 - این‌که کسی رزومه‌ت رو به جات بنویسه.
+-->
 
 هنوز برای جلسهٔ یک‌به‌یک آماده نیستی؟ [توی یک میزگرد شرکت کن](/fa/table-talks/).
 
+<!--
 ## پرسش‌وپاسخ
 
 ### جلسه‌ها به چه زبانی هستن؟
@@ -57,10 +60,11 @@ metaAuthorOnly: true
 
 ### جلسه‌ها به وقت کجا هستن؟
 
-<!-- TODO(amin): answer -->
+TODO(amin): answer
 من در برلین هستم. cal.com زمان‌های خالی رو به وقت محلی خودت نشون می‌ده.
 
-<!-- TODO(amin): add back once answered: where we meet (Google Meet?), payment (with the Iran note), rescheduling and cancellation -->
+TODO(amin): add back once answered: where we meet (Google Meet?), payment (with the Iran note), rescheduling and cancellation
+-->
 
 ## رزرو جلسهٔ آشنایی رایگان {#book}
 

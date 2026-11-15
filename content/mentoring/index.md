@@ -39,13 +39,16 @@ About ten years in engineering · SnappMarket, Divar (Engineering Manager), CHEC
 
 {{< offers >}}
 
+<!--
 ## Who it isn't for
 
 - Learning to code from scratch.
 - Having someone write your CV for you.
+-->
 
 Not ready for one-to-one? [Join a table talk](/table-talks/).
 
+<!--
 ## Questions and answers
 
 ### Which language are sessions in?
@@ -54,10 +57,11 @@ Persian or English, whichever you prefer.
 
 ### What time zone are sessions in?
 
-<!-- TODO(amin): answer -->
+TODO(amin): answer
 I am in Berlin. cal.com shows the available times in your own time zone.
 
-<!-- TODO(amin): add back once answered: where we meet (Google Meet?), payment, rescheduling and cancellation -->
+TODO(amin): add back once answered: where we meet (Google Meet?), payment, rescheduling and cancellation
+-->
 
 ## Book a free intro call {#book}
 
