@@ -59,7 +59,7 @@ TODO(amin): answer
 TODO(amin): add back once answered: where we meet (Google Meet?), payment (with the Iran note), rescheduling and cancellation
 -->
 
-## رزرو جلسهٔ برنامه‌ریزی رایگان {#book}
+## رزرو جلسهٔ برنامه‌ریزی (رایگان) {#book}
 
 {{< cal offer="intro" fallback="false" >}}
 

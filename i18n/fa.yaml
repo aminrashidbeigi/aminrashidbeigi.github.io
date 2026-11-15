@@ -161,7 +161,7 @@
   translation: "{{ .Sessions }} جلسه در ADPList"
 
 - id: book_intro
-  translation: "رزرو جلسهٔ برنامه‌ریزی رایگان"
+  translation: "رزرو جلسهٔ برنامه‌ریزی (رایگان)"
 
 - id: book_intro_cal
   translation: "باز کردن صفحهٔ رزرو"
