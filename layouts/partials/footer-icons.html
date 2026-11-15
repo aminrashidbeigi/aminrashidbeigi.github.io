@@ -1,0 +1,9 @@
+{{- /* Social icons from params.socialIcons plus RSS, shown at the top of the footer. */ -}}
+<div class="footer-icons">
+  {{- range site.Params.socialIcons }}
+  <a href="{{ trim .url " " | safeURL }}" target="_blank" rel="noopener noreferrer me" title="{{ (.title | default .name) | title }}" aria-label="{{ (.title | default .name) | title }}">
+    {{- partial "svg.html" . -}}
+  </a>
+  {{- end }}
+  <a href="{{ "index.xml" | relLangURL }}" title="RSS" aria-label="RSS">{{ partial "svg.html" (dict "name" "rss") }}</a>
+</div>

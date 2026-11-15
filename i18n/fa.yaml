@@ -118,9 +118,6 @@
 - id: all_posts
   translation: "همه"
 
-- id: footer_links
-  translation: "پیوندهای سایت"
-
 - id: apply_email
   translation: "ایمیلت چیه؟"
 
