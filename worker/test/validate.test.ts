@@ -1,16 +1,16 @@
 import { describe, expect, it } from "vitest";
-import { LIMITS, validate } from "../src/validate";
+import { CHOICES, LIMITS, validate } from "../src/validate";
 
 function form(overrides: Record<string, string | undefined> = {}) {
   const fields: Record<string, string | undefined> = {
     talk: "testing-culture",
     lang: "fa",
+    email: "sara@example.com",
     name: "Sara",
-    role: "Backend engineer",
-    years: "6",
-    country: "Germany",
-    contact: "@sara",
-    situation: "Our QA team owns all testing and it is slowing us down.",
+    role: "engineer",
+    experience: "3-5",
+    region: "europe",
+    note: "Our QA team owns all testing and it is slowing us down.",
     ...overrides,
   };
   const data = new FormData();
@@ -19,46 +19,67 @@ function form(overrides: Record<string, string | undefined> = {}) {
 }
 
 describe("validate", () => {
-  it("accepts a complete application and trims fields", () => {
-    const result = validate(form({ name: "  Sara  " }));
-    expect(result).toEqual({
+  it("accepts a complete application and trims text", () => {
+    expect(validate(form({ name: "  Sara  ", email: " sara@example.com " }))).toEqual({
       ok: true,
       value: {
         talk: "testing-culture",
         lang: "fa",
+        email: "sara@example.com",
         name: "Sara",
-        role: "Backend engineer",
-        years: 6,
-        country: "Germany",
-        contact: "@sara",
-        situation: "Our QA team owns all testing and it is slowing us down.",
+        role: "engineer",
+        experience: "3-5",
+        region: "europe",
+        note: "Our QA team owns all testing and it is slowing us down.",
       },
     });
   });
 
-  it.each(["name", "role", "years", "country", "contact", "situation"])("rejects a missing %s", (field) => {
-    expect(validate(form({ [field]: undefined })).ok).toBe(false);
+  it("accepts an email on its own", () => {
+    const data = new FormData();
+    data.append("talk", "testing-culture");
+    data.append("lang", "en");
+    data.append("email", "sara@example.com");
+    expect(validate(data)).toEqual({
+      ok: true,
+      value: { talk: "testing-culture", lang: "en", email: "sara@example.com", name: "", role: "", experience: "", region: "", note: "" },
+    });
   });
 
-  it("rejects whitespace-only text", () => {
-    expect(validate(form({ name: "   " })).ok).toBe(false);
+  it("accepts optional fields left empty", () => {
+    expect(validate(form({ name: "", role: "", experience: "", region: "", note: "   " })).ok).toBe(true);
   });
+
+  it.each([undefined, "", "   ", "sara", "sara@", "@example.com", "sara@example", "sa ra@example.com"])(
+    "rejects email %j",
+    (email) => {
+      expect(validate(form({ email })).ok).toBe(false);
+    },
+  );
 
   it.each(Object.entries(LIMITS))("enforces the %s limit of %i characters", (field, limit) => {
-    expect(validate(form({ [field]: "x".repeat(limit) })).ok).toBe(true);
-    expect(validate(form({ [field]: "x".repeat(limit + 1) })).ok).toBe(false);
+    const at = field === "email" ? "x".repeat(limit - "@example.com".length) + "@example.com" : "x".repeat(limit);
+    expect(validate(form({ [field]: at })).ok).toBe(true);
+    expect(validate(form({ [field]: "x" + at })).ok).toBe(false);
   });
 
   it("counts Persian text by characters, like the form's maxlength", () => {
     expect(validate(form({ name: "س".repeat(LIMITS.name) })).ok).toBe(true);
   });
 
-  it.each(["0", "40"])("accepts %s years", (years) => {
-    expect(validate(form({ years })).ok).toBe(true);
-  });
+  it.each(Object.entries(CHOICES).flatMap(([field, values]) => values.map((v) => [field, v])))(
+    "accepts %s %j",
+    (field, value) => {
+      expect(validate(form({ [field]: value })).ok).toBe(true);
+    },
+  );
 
-  it.each(["-1", "41", "3.5", "abc", "", "1e1"])("rejects %j years", (years) => {
-    expect(validate(form({ years })).ok).toBe(false);
+  it.each([
+    ["role", "ceo"],
+    ["experience", "40"],
+    ["region", "germany"],
+  ])("rejects %s %j that is not one of the choices", (field, value) => {
+    expect(validate(form({ [field]: value })).ok).toBe(false);
   });
 
   it("rejects a talk slug that is not a slug", () => {
@@ -71,6 +92,6 @@ describe("validate", () => {
   });
 
   it("keeps talk and lang on other failures", () => {
-    expect(validate(form({ name: "" }))).toEqual({ ok: false, talk: "testing-culture", lang: "fa" });
+    expect(validate(form({ email: "" }))).toEqual({ ok: false, talk: "testing-culture", lang: "fa" });
   });
 });

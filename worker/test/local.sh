@@ -28,27 +28,27 @@ apply() { # expected-location-suffix, form fields...
     *) echo "FAIL  expected 303 $expected, got $location"; failures=$((failures + 1)) ;;
   esac
 }
-valid() { # talk, contact, lang, [years]
-  echo -d talk="$1" -d lang="$3" -d name=Sara -d role=Engineer -d years="${4:-6}" -d country=Germany \
-    -d contact="$2" -d situation=Curious
+valid() { # talk, email, lang, [role]
+  echo -d talk="$1" -d lang="$3" -d email="$2" -d role="${4:-engineer}"
 }
 sql() { npx wrangler d1 execute DB --local --persist-to "$STATE" --json --command "$1" | python3 -c 'import json,sys; print(json.load(sys.stdin)[0]["results"])'; }
 
-echo "valid submit";            apply "/fa/table-talks/thanks/"                                $(valid open-talk @sara fa)
-echo "full session";            apply "/table-talks/thanks/?waitlist=1"                        $(valid full-talk @omid en)
-echo "trap field";              apply "/fa/table-talks/thanks/"                                $(valid open-talk @bot fa) -d website=http://spam.example
-echo "unknown talk";            apply "/fa/table-talks/?error=closed"                          $(valid no-such-talk @sara fa)
-echo "finished talk";           apply "/fa/table-talks/done-talk/?error=closed#apply"          $(valid done-talk @sara fa)
-echo "duplicate (case differs)"; apply "/fa/table-talks/open-talk/?error=duplicate#apply"      $(valid open-talk @SARA fa)
-echo "invalid years";           apply "/fa/table-talks/open-talk/?error=1#apply"               $(valid open-talk @neda fa 99)
+echo "valid submit";            apply "/fa/table-talks/thanks/"                                $(valid open-talk sara@example.com fa)
+echo "full session";            apply "/table-talks/thanks/?waitlist=1"                        $(valid full-talk omid@example.com en)
+echo "trap field";              apply "/fa/table-talks/thanks/"                                $(valid open-talk bot@example.com fa) -d website=http://spam.example
+echo "unknown talk";            apply "/fa/table-talks/?error=closed"                          $(valid no-such-talk sara@example.com fa)
+echo "finished talk";           apply "/fa/table-talks/done-talk/?error=closed#apply"          $(valid done-talk sara@example.com fa)
+echo "duplicate (case differs)"; apply "/fa/table-talks/open-talk/?error=duplicate#apply"      $(valid open-talk SARA@example.com fa)
+echo "invalid choice";          apply "/fa/table-talks/open-talk/?error=1#apply"               $(valid open-talk neda@example.com fa ceo)
+echo "email only";              apply "/fa/table-talks/thanks/"                                -d talk=open-talk -d lang=fa -d email=mina@example.com
 echo "open but seats confirmed"
-sql "INSERT INTO applications (talk, lang, name, role, years, country, contact, situation, state) SELECT 'open-talk', 'fa', 'p' || value, 'r', 1, 'c', 'p' || value, 's', 'confirmed' FROM json_each('[1,2,3,4,5,6,7,8]')" >/dev/null
-apply "/table-talks/thanks/?waitlist=1" $(valid open-talk @late en)
+sql "INSERT INTO applications (talk, lang, email, state) SELECT 'open-talk', 'fa', 'p' || value || '@example.com', 'confirmed' FROM json_each('[1,2,3,4,5,6,7,8]')" >/dev/null
+apply "/table-talks/thanks/?waitlist=1" $(valid open-talk late@example.com en)
 
 echo
 echo "stored rows:"
-sql "SELECT talk, contact, state FROM applications WHERE contact LIKE '@%' ORDER BY id"
-rows=$(sql "SELECT COUNT(*) AS n FROM applications WHERE contact = '@bot'")
+sql "SELECT talk, email, role, state FROM applications WHERE email NOT LIKE 'p_@example.com' ORDER BY id"
+rows=$(sql "SELECT COUNT(*) AS n FROM applications WHERE email = 'bot@example.com'")
 [ "$rows" = "[{'n': 0}]" ] && echo "ok    trap submission not stored" || { echo "FAIL  trap submission stored"; failures=$((failures + 1)); }
 
 seats=$(curl -s -D "$STATE/h" "$WORKER/seats?talk=open-talk")
@@ -58,13 +58,13 @@ code=$(curl -s -o /dev/null -w '%{http_code}' "$WORKER/other")
 [ "$code" = 404 ] && echo "ok    other paths -> 404" || { echo "FAIL  other paths -> $code"; failures=$((failures + 1)); }
 
 echo "retention cleanup"
-sql "INSERT INTO applications (talk, lang, name, role, years, country, contact, situation, created_at) VALUES
-  ('old-talk', 'en', 'x', 'r', 1, 'c', 'old', 's', datetime('now', '-200 days')),
-  ('gone-talk', 'en', 'x', 'r', 1, 'c', 'orphan', 's', datetime('now', '-200 days')),
-  ('gone-talk', 'en', 'x', 'r', 1, 'c', 'recent-orphan', 's', datetime('now', '-10 days'))" >/dev/null
+sql "INSERT INTO applications (talk, lang, email, created_at) VALUES
+  ('old-talk', 'en', 'old', datetime('now', '-200 days')),
+  ('gone-talk', 'en', 'orphan', datetime('now', '-200 days')),
+  ('gone-talk', 'en', 'recent-orphan', datetime('now', '-10 days'))" >/dev/null
 curl -s -o /dev/null "http://localhost:$WORKER_PORT/__scheduled?cron=17+3+*+*+*"
-left=$(sql "SELECT contact FROM applications WHERE contact IN ('old', 'orphan', 'recent-orphan', '@sara') ORDER BY contact")
-[ "$left" = "[{'contact': '@sara'}, {'contact': 'recent-orphan'}]" ] && echo "ok    cleanup kept recent rows, deleted expired ones" || { echo "FAIL  cleanup left $left"; failures=$((failures + 1)); }
+left=$(sql "SELECT email FROM applications WHERE email IN ('old', 'orphan', 'recent-orphan', 'sara@example.com') ORDER BY email")
+[ "$left" = "[{'email': 'recent-orphan'}, {'email': 'sara@example.com'}]" ] && echo "ok    cleanup kept recent rows, deleted expired ones" || { echo "FAIL  cleanup left $left"; failures=$((failures + 1)); }
 
 echo
 [ "$failures" -eq 0 ] && echo "all local checks passed" || { echo "$failures local check(s) failed"; exit 1; }

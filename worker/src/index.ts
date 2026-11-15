@@ -86,9 +86,9 @@ async function apply(request: Request, env: Env, ctx: ExecutionContext): Promise
   }
 
   const duplicate = await env.DB.prepare(
-    "SELECT 1 FROM applications WHERE talk = ? AND lower(contact) = lower(?) LIMIT 1",
+    "SELECT 1 FROM applications WHERE talk = ? AND lower(email) = lower(?) LIMIT 1",
   )
-    .bind(app.talk, app.contact)
+    .bind(app.talk, app.email)
     .first();
   if (duplicate) {
     return redirect(talkPath(env, app.lang, app.talk, "duplicate"));
@@ -99,10 +99,10 @@ async function apply(request: Request, env: Env, ctx: ExecutionContext): Promise
   const state: State = copies.some((t) => t.status === "full") || confirmed >= seatCount ? "waitlist" : "applied";
 
   await env.DB.prepare(
-    `INSERT INTO applications (talk, lang, name, role, years, country, contact, situation, state)
+    `INSERT INTO applications (talk, lang, email, name, role, experience, region, note, state)
      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
   )
-    .bind(app.talk, app.lang, app.name, app.role, app.years, app.country, app.contact, app.situation, state)
+    .bind(app.talk, app.lang, app.email, app.name, app.role, app.experience, app.region, app.note, state)
     .run();
 
   ctx.waitUntil(notify(env, app, state).catch(() => {}));
@@ -151,10 +151,10 @@ async function notify(env: Env, app: Application, state: State): Promise<void> {
   if (!env.TELEGRAM_BOT_TOKEN || !env.TELEGRAM_CHAT_ID) return;
   const text = [
     `Table talk application: ${app.talk} (${state})`,
-    `Name: ${app.name}`,
-    `Role: ${app.role}`,
-    `Years: ${app.years}`,
-    `Country: ${app.country}`,
+    `Name: ${app.name || "-"}`,
+    `Role: ${app.role || "-"}`,
+    `Experience: ${app.experience ? `${app.experience} years` : "-"}`,
+    `Works in: ${app.region || "-"}`,
   ].join("\n");
   await fetch(`https://api.telegram.org/bot${env.TELEGRAM_BOT_TOKEN}/sendMessage`, {
     method: "POST",

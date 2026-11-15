@@ -1,29 +1,33 @@
-// Validation for table talk applications. Limits match the form in
-// layouts/partials/apply-form.html.
+// Validation for table talk applications. Fields and limits match the form in
+// layouts/partials/apply-form.html: email is required, everything else is optional.
 
 export const LIMITS = {
+  email: 120,
   name: 80,
-  role: 80,
-  country: 60,
-  contact: 120,
-  situation: 1200,
+  note: 500,
 } as const;
 
-export const MAX_YEARS = 40;
+export const CHOICES = {
+  role: ["engineer", "senior", "lead", "manager", "qa", "other"],
+  experience: ["0-2", "3-5", "6-10", "10+"],
+  region: ["iran", "europe", "other"],
+} as const;
 
 const SLUG = /^[a-z0-9][a-z0-9-]{0,99}$/;
+const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export type Lang = "en" | "fa";
 
 export interface Application {
   talk: string;
   lang: Lang;
+  email: string;
+  // Optional fields are "" when left empty.
   name: string;
   role: string;
-  years: number;
-  country: string;
-  contact: string;
-  situation: string;
+  experience: string;
+  region: string;
+  note: string;
 }
 
 export type Validation =
@@ -43,36 +47,36 @@ export function parseLang(value: unknown): Lang {
   return value === "fa" ? "fa" : "en";
 }
 
+// "" for a missing or blank field, null when the field is too long.
 function text(form: FormLike, field: keyof typeof LIMITS): string | null {
   const raw = form.get(field);
-  if (typeof raw !== "string") return null;
-  const value = raw.trim();
-  if (value.length === 0 || value.length > LIMITS[field]) return null;
-  return value;
+  const value = typeof raw === "string" ? raw.trim() : "";
+  return value.length > LIMITS[field] ? null : value;
 }
 
-function years(form: FormLike): number | null {
-  const raw = form.get("years");
-  if (typeof raw !== "string" || !/^\d{1,2}$/.test(raw.trim())) return null;
-  const value = Number(raw.trim());
-  return value <= MAX_YEARS ? value : null;
+// "" for a missing field, null for a value that is not one of the choices.
+function choice(form: FormLike, field: keyof typeof CHOICES): string | null {
+  const raw = form.get(field);
+  const value = typeof raw === "string" ? raw : "";
+  return value === "" || (CHOICES[field] as readonly string[]).includes(value) ? value : null;
 }
 
 export function validate(form: FormLike): Validation {
   const talk = form.get("talk");
   const rawLang = form.get("lang");
   const lang = parseLang(rawLang);
+  const email = text(form, "email");
   const fields = {
     name: text(form, "name"),
-    role: text(form, "role"),
-    years: years(form),
-    country: text(form, "country"),
-    contact: text(form, "contact"),
-    situation: text(form, "situation"),
+    role: choice(form, "role"),
+    experience: choice(form, "experience"),
+    region: choice(form, "region"),
+    note: text(form, "note"),
   };
 
   if (!isSlug(talk)) return { ok: false, lang };
   if (rawLang !== "en" && rawLang !== "fa") return { ok: false, talk, lang };
+  if (!email || !EMAIL.test(email)) return { ok: false, talk, lang };
   if (Object.values(fields).some((v) => v === null)) return { ok: false, talk, lang };
 
   return {
@@ -80,12 +84,12 @@ export function validate(form: FormLike): Validation {
     value: {
       talk,
       lang,
+      email,
       name: fields.name!,
       role: fields.role!,
-      years: fields.years!,
-      country: fields.country!,
-      contact: fields.contact!,
-      situation: fields.situation!,
+      experience: fields.experience!,
+      region: fields.region!,
+      note: fields.note!,
     },
   };
 }

@@ -1,13 +1,14 @@
 # Table talk applications Worker
 
 A Cloudflare Worker (free plan) that receives the application form on the
-table talk pages, stores applications in D1 and sends Amin a private Telegram
+table talk pages (email required; name, role, experience, where they work and a
+note optional), stores applications in D1 and sends Amin a private Telegram
 message for each one. It never emails or messages applicants and stores no
 IP addresses. Amin confirms people himself.
 
 | Route | What it does |
 | --- | --- |
-| `POST /api/apply` | Validates the form, stores the row, notifies Amin, redirects `303` to the thank-you page |
+| `POST /api/apply` | Validates the form, rejects a second application with the same email, stores the row, notifies Amin, redirects `303` to the thank-you page |
 | `GET /api/seats?talk=<slug>` | `{ "confirmed": n }`, used for "n of 8 seats taken" |
 | anything else | `404` |
 
@@ -58,10 +59,10 @@ and set `params.turnstileSiteKey` in the site config to the widget's site key.
 
    ```sh
    npx wrangler d1 execute DB --remote --command \
-     "SELECT id, name, role, years, country, contact, state FROM applications WHERE talk = '<slug>' ORDER BY created_at"
+     "SELECT id, email, name, role, experience, region, note, state FROM applications WHERE talk = '<slug>' ORDER BY created_at"
    ```
 
-2. Confirm eight, waitlist the rest, and message the confirmed people yourself:
+2. Confirm eight, waitlist the rest, and email the confirmed people yourself:
 
    ```sh
    npx wrangler d1 execute DB --remote --command \
@@ -89,7 +90,7 @@ and set `params.turnstileSiteKey` in the site config to the widget's site key.
 
    ```sh
    npx wrangler d1 execute DB --remote --command \
-     "SELECT name, contact FROM applications WHERE talk = '<slug>' AND state = 'waitlist' ORDER BY created_at"
+     "SELECT name, email FROM applications WHERE talk = '<slug>' AND state = 'waitlist' ORDER BY created_at"
    npx wrangler d1 execute DB --remote --command \
      "UPDATE applications SET state = 'no_show' WHERE id IN (...)"
    ```
@@ -113,8 +114,8 @@ npx wrangler d1 execute DB --remote --command \
 ```sh
 npm test               # unit tests for validation
 npm run typecheck
-npm run test:local     # wrangler dev + local D1: valid, full, trap, unknown, finished,
-                       # duplicate, invalid and over-capacity submits, /seats, cleanup
+npm run test:local     # wrangler dev + local D1: valid, email-only, full, trap, unknown,
+                       # finished, duplicate, invalid and over-capacity submits, /seats, cleanup
 ```
 
 `test/local.sh` serves `test/fixtures` as the site, so it does not need Hugo.
