@@ -4,6 +4,12 @@
   {{- with .Description }}
   <div class="post-description">{{ . }}</div>
   {{- end }}
+  {{- if .IsTranslated }}
+  <div class="post-meta">
+    {{- partial "author.html" . }}
+    {{- partial "translation_list.html" . -}}
+  </div>
+  {{- end }}
 </header>
 
 {{- with .Content }}

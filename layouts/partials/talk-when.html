@@ -1,10 +1,14 @@
-{{- /* Session date and time in Berlin and Tehran. eventstart is written in Berlin time with its
-       offset; Tehran is UTC+03:30 with no daylight saving. */ -}}
+{{- /* Session date and time in Berlin and Tehran, with the Shamsi date. eventstart is written in
+       Berlin time with its offset; Tehran is UTC+03:30 with no daylight saving. */ -}}
 {{- $t := time.AsTime .Params.eventstart }}
 {{- $tehran := $t.UTC.Add (time.ParseDuration "3h30m") }}
-{{- $berlin := printf "%s · %s %s" (time.Format ":date_long" $t) ($t.Format "15:04") (i18n "berlin") }}
+{{- $fa := eq .Lang "fa" }}
+{{- $shamsi := partial "shamsi-date.html" (dict "t" $tehran "lang" .Lang) }}
+{{- $gregorian := time.Format (cond $fa "2 January 2006" "January 2, 2006") $t }}
+{{- $day := time.Format "Monday" $t }}
+{{- $date := cond $fa (printf "%s %s (%s)" $day $shamsi $gregorian) (printf "%s, %s (%s)" $day $gregorian $shamsi) }}
 {{- $teh := printf "%s %s" ($tehran.Format "15:04") (i18n "tehran") }}
 {{- if ne ($tehran.Format "2006-01-02") ($t.Format "2006-01-02") }}
-{{- $teh = printf "%s · %s" (time.Format ":date_long" $tehran) $teh }}
+{{- $teh = printf "%s, %s" $teh (cond $fa $shamsi (time.Format "January 2" $tehran)) }}
 {{- end }}
-{{- partial "fa-digits.html" (dict "s" (printf "%s / %s" $berlin $teh) "lang" .Lang) -}}
+{{- partial "fa-digits.html" (dict "s" (printf "%s · %s %s / %s" $date ($t.Format "15:04") (i18n "berlin") $teh) "lang" .Lang) -}}

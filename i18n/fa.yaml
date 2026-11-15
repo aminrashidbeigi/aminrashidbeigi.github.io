@@ -109,24 +109,6 @@
 - id: apply_waitlist_submit
   translation: "ثبت‌نام در لیست انتظار"
 
-- id: apply_name
-  translation: "نام"
-
-- id: apply_role
-  translation: "نقش فعلی"
-
-- id: apply_years
-  translation: "سال‌های تجربه"
-
-- id: apply_country
-  translation: "کشور محل کار"
-
-- id: apply_contact
-  translation: "ایمیل یا آیدی تلگرام"
-
-- id: apply_situation
-  translation: "الان با این موضوع در چه وضعیتی هستی؟"
-
 - id: apply_privacy
   translation: "پاسخ‌های تو فقط برای انتخاب شرکت‌کننده‌ها استفاده و ۹۰ روز بعد از جلسه حذف می‌شود."
 
@@ -139,9 +121,6 @@
 - id: apply_error_closed
   translation: "درخواست برای این جلسه بسته شده."
 
-- id: apply_error_duplicate
-  translation: "قبلاً با همین آیدی یا ایمیل برای این جلسه درخواست دادی."
-
 - id: topics
   translation: "موضوع‌ها"
 
@@ -150,3 +129,69 @@
 
 - id: footer_links
   translation: "پیوندهای سایت"
+
+- id: apply_email
+  translation: "ایمیل"
+
+- id: apply_name
+  translation: "نام"
+
+- id: apply_role
+  translation: "نقش فعلی"
+
+- id: apply_role_engineer
+  translation: "مهندس نرم‌افزار"
+
+- id: apply_role_senior
+  translation: "مهندس سینیور یا استف"
+
+- id: apply_role_lead
+  translation: "لید فنی"
+
+- id: apply_role_manager
+  translation: "مدیر مهندسی"
+
+- id: apply_role_qa
+  translation: "QA یا مهندس تست"
+
+- id: apply_role_other
+  translation: "سایر"
+
+- id: apply_experience
+  translation: "سابقهٔ کار"
+
+- id: apply_experience_0-2
+  translation: "۰ تا ۲ سال"
+
+- id: apply_experience_3-5
+  translation: "۳ تا ۵ سال"
+
+- id: apply_experience_6-10
+  translation: "۶ تا ۱۰ سال"
+
+- id: apply_experience_10plus
+  translation: "بیشتر از ۱۰ سال"
+
+- id: apply_region
+  translation: "محل کار"
+
+- id: apply_region_iran
+  translation: "ایران"
+
+- id: apply_region_europe
+  translation: "اروپا"
+
+- id: apply_region_other
+  translation: "جای دیگه"
+
+- id: apply_note
+  translation: "چیزی دربارهٔ این موضوع هست که بخوای بگی؟"
+
+- id: apply_choose
+  translation: "انتخاب کن…"
+
+- id: optional
+  translation: "(اختیاری)"
+
+- id: apply_error_duplicate
+  translation: "قبلاً با همین ایمیل برای این جلسه درخواست دادی."

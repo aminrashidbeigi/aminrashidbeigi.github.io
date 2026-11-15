@@ -208,6 +208,7 @@
 }
 
 .apply-form input,
+.apply-form select,
 .apply-form textarea {
     width: 100%;
     padding: 8px 10px;
@@ -219,9 +220,15 @@
 }
 
 .apply-form input:focus,
+.apply-form select:focus,
 .apply-form textarea:focus {
     outline: 2px solid var(--secondary);
     outline-offset: 1px;
+}
+
+.apply-form .optional {
+    color: var(--secondary);
+    font-size: 13px;
 }
 
 .apply-form button {

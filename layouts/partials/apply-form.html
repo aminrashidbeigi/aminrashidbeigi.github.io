@@ -10,12 +10,23 @@
   <form action="{{ site.Params.applyEndpoint }}/apply" method="post" class="apply-form">
     <input type="hidden" name="talk" value="{{ .File.ContentBaseName }}">
     <input type="hidden" name="lang" value="{{ .Lang }}">
-    <label>{{ i18n "apply_name" }} <input name="name" maxlength="80" required></label>
-    <label>{{ i18n "apply_role" }} <input name="role" maxlength="80" required></label>
-    <label>{{ i18n "apply_years" }} <input name="years" type="number" min="0" max="40" required></label>
-    <label>{{ i18n "apply_country" }} <input name="country" maxlength="60" required></label>
-    <label>{{ i18n "apply_contact" }} <input name="contact" maxlength="120" required dir="auto"></label>
-    <label>{{ i18n "apply_situation" }} <textarea name="situation" rows="4" maxlength="1200" required></textarea></label>
+    <label><span>{{ i18n "apply_email" }}</span> <input name="email" type="email" maxlength="120" required dir="ltr" autocomplete="email"></label>
+    <label><span>{{ i18n "apply_name" }} <span class="optional">{{ i18n "optional" }}</span></span> <input name="name" maxlength="80" autocomplete="name"></label>
+    {{- range slice
+      (dict "name" "role" "options" (slice "engineer" "senior" "lead" "manager" "qa" "other"))
+      (dict "name" "experience" "options" (slice "0-2" "3-5" "6-10" "10+"))
+      (dict "name" "region" "options" (slice "iran" "europe" "other")) }}
+    <label><span>{{ i18n (printf "apply_%s" .name) }} <span class="optional">{{ i18n "optional" }}</span></span>
+      <select name="{{ .name }}">
+        <option value="">{{ i18n "apply_choose" }}</option>
+        {{- $field := .name }}
+        {{- range .options }}
+        <option value="{{ . }}">{{ i18n (printf "apply_%s_%s" $field (replace . "+" "plus")) }}</option>
+        {{- end }}
+      </select>
+    </label>
+    {{- end }}
+    <label><span>{{ i18n "apply_note" }} <span class="optional">{{ i18n "optional" }}</span></span> <textarea name="note" rows="3" maxlength="500"></textarea></label>
     <input name="website" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
     {{- with site.Params.turnstileSiteKey }}
     <div class="cf-turnstile" data-sitekey="{{ . }}"></div>

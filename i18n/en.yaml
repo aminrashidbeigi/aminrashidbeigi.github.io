@@ -109,24 +109,6 @@
 - id: apply_waitlist_submit
   translation: "Join the waitlist"
 
-- id: apply_name
-  translation: "Name"
-
-- id: apply_role
-  translation: "Current role"
-
-- id: apply_years
-  translation: "Years of experience"
-
-- id: apply_country
-  translation: "Country where you work"
-
-- id: apply_contact
-  translation: "Email or Telegram ID"
-
-- id: apply_situation
-  translation: "What is your current situation with this topic?"
-
 - id: apply_privacy
   translation: "Your answers are used only to choose participants and are deleted 90 days after the session."
 
@@ -139,9 +121,6 @@
 - id: apply_error_closed
   translation: "Applications for this session are closed."
 
-- id: apply_error_duplicate
-  translation: "You have already applied for this session with this contact."
-
 - id: topics
   translation: "Topics"
 
@@ -150,3 +129,69 @@
 
 - id: footer_links
   translation: "Site links"
+
+- id: apply_email
+  translation: "Email"
+
+- id: apply_name
+  translation: "Name"
+
+- id: apply_role
+  translation: "Current role"
+
+- id: apply_role_engineer
+  translation: "Software engineer"
+
+- id: apply_role_senior
+  translation: "Senior or staff engineer"
+
+- id: apply_role_lead
+  translation: "Tech lead"
+
+- id: apply_role_manager
+  translation: "Engineering manager"
+
+- id: apply_role_qa
+  translation: "QA or test engineer"
+
+- id: apply_role_other
+  translation: "Something else"
+
+- id: apply_experience
+  translation: "Experience"
+
+- id: apply_experience_0-2
+  translation: "0–2 years"
+
+- id: apply_experience_3-5
+  translation: "3–5 years"
+
+- id: apply_experience_6-10
+  translation: "6–10 years"
+
+- id: apply_experience_10plus
+  translation: "More than 10 years"
+
+- id: apply_region
+  translation: "Where you work"
+
+- id: apply_region_iran
+  translation: "Iran"
+
+- id: apply_region_europe
+  translation: "Europe"
+
+- id: apply_region_other
+  translation: "Somewhere else"
+
+- id: apply_note
+  translation: "Anything you want to share about this topic?"
+
+- id: apply_choose
+  translation: "Choose…"
+
+- id: optional
+  translation: "(optional)"
+
+- id: apply_error_duplicate
+  translation: "You have already applied for this session with this email."

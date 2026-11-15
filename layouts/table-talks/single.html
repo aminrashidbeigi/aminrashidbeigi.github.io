@@ -4,6 +4,10 @@
   <header class="post-header">
     <span class="label">{{ i18n (printf "track_%s" .Params.track) }}</span>
     <h1 class="post-title">{{ .Title }}</h1>
+    <div class="post-meta">
+      {{- partial "author.html" . }}
+      {{- partial "translation_list.html" . -}}
+    </div>
     <dl class="talk-facts">
       <div><dt>{{ i18n "talk_when" }}</dt><dd>{{ partial "talk-when.html" . }}</dd></div>
       <div><dt>{{ i18n "talk_language" }}</dt><dd>{{ i18n (printf "talklang_%s" .Params.talklang) }}</dd></div>
@@ -22,11 +26,6 @@
       <div><dt>{{ i18n "talk_guest" }}</dt><dd>{{ . }}</dd></div>
       {{- end }}
     </dl>
-    {{- with .Translations }}
-    <div class="post-meta">
-      {{- range . }}<a href="{{ .RelPermalink }}" hreflang="{{ .Lang }}">{{ .Language.LanguageName }}</a>{{ end -}}
-    </div>
-    {{- end }}
   </header>
 
   {{- if $done }}

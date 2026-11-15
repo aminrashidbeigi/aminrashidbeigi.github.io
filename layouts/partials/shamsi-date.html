@@ -1,0 +1,6 @@
+{{- /* "11 Azar 1405" or "۱۱ آذر ۱۴۰۵" for a time.Time. */ -}}
+{{- $j := partial "jalali.html" .t }}
+{{- $months := cond (eq .lang "fa")
+  (slice "فروردین" "اردیبهشت" "خرداد" "تیر" "مرداد" "شهریور" "مهر" "آبان" "آذر" "دی" "بهمن" "اسفند")
+  (slice "Farvardin" "Ordibehesht" "Khordad" "Tir" "Mordad" "Shahrivar" "Mehr" "Aban" "Azar" "Dey" "Bahman" "Esfand") }}
+{{- return printf "%d %s %d" $j.d (index $months (sub $j.m 1)) $j.y }}
