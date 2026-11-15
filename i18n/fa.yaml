@@ -11,7 +11,7 @@
   translation: "رزرو"
 
 - id: offer_ask
-  translation: "در جلسهٔ آشنایی بپرس"
+  translation: "در جلسهٔ برنامه‌ریزی بپرس"
 
 - id: total_people
   translation: "در مجموع {{ .Count }} نفر"
@@ -161,10 +161,7 @@
   translation: "{{ .Sessions }} جلسه در ADPList"
 
 - id: book_intro
-  translation: "رزرو جلسهٔ آشنایی رایگان"
-
-- id: book_intro_note
-  translation: "۲۰ دقیقه، یک بار برای هر نفر، برای توافق روی برنامه. جلسهٔ منتورینگ نیست."
+  translation: "رزرو جلسهٔ برنامه‌ریزی رایگان"
 
 - id: book_intro_cal
   translation: "باز کردن صفحهٔ رزرو"

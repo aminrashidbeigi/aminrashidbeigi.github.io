@@ -1,6 +1,8 @@
 {{- /* "Book a free intro call" button with the intro-call note.
        {{< book-button >}} jumps to #book; {{< book-button to="cal" >}} opens the cal.com page. */ -}}
 {{- $href := "#book" }}
+{{- $note := "" }}
+{{- range where site.Data.offers.offers "id" "intro" }}{{ with index . $.Page.Lang }}{{ $note = .note }}{{ end }}{{ end }}
 {{- $label := i18n "book_intro" }}
 {{- if eq (.Get "to") "cal" }}
 {{- range where site.Data.offers.offers "id" "intro" }}{{ $href = printf "https://cal.com/%s" .cal }}{{ end }}
@@ -8,5 +10,7 @@
 {{- end }}
 <div class="book-button">
   <a class="btn btn-primary" href="{{ $href }}">{{ $label }}</a>
-  <p class="book-note">{{ i18n "book_intro_note" }}</p>
+  {{- with $note }}
+  <p class="book-note">{{ . }}</p>
+  {{- end }}
 </div>

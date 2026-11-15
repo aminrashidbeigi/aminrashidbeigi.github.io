@@ -25,15 +25,10 @@ About ten years in engineering · SnappMarket, Divar (Engineering Manager), CHEC
 
 - **You want to grow and take on more responsibility**, and you want a clear plan for getting there.
 - **Working with your manager has become hard**, and you want to find a way to make it better.
-- **You are thinking about becoming a manager**, or you already are one and want to grow your team.
+- **You are thinking about becoming a manager**, and want to find out whether it is right for you.
+- **You lead a team** and want to grow it, deliver results, and handle the pressure that comes with it.
 - **You work in another country, or want to**, and want to talk to someone who has made that move.
 - **You are preparing for interviews**: resume review, choosing where to apply, and mock interviews (recruiter, technical, system design and behavioural).
-
-## How it works
-
-1. **A free intro call.** 20 minutes, once per person, to tell me where you are and where you want to go. It is not a mentoring session.
-2. **Agree a plan.** If I can help, we agree what to work on and which offer fits. If I can't, I will say so.
-3. **Book sessions.** You book them on cal.com at times that suit you.
 
 ## Offers
 

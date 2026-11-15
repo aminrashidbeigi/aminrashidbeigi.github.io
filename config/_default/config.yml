@@ -152,7 +152,7 @@ languages:
           - name: شرکت در میزگرد بعدی
             url: table-talks/
             primary: true
-          - name: رزرو جلسهٔ آشنایی رایگان
+          - name: رزرو جلسهٔ برنامه‌ریزی رایگان
             url: mentoring/#book
           - name: کانال تلگرام
             url: https://t.me/aminrbg

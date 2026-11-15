@@ -163,8 +163,5 @@
 - id: book_intro
   translation: "Book a free intro call"
 
-- id: book_intro_note
-  translation: "20 minutes, once per person, to agree a plan. Not a mentoring session."
-
 - id: book_intro_cal
   translation: "Open the booking page"
