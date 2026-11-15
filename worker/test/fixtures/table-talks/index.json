@@ -1,9 +1,9 @@
 [
-  {"slug":"open-talk","lang":"en","seats":8,"status":"open","eventstart":"2026-12-03T18:30:00+01:00"},
-  {"slug":"open-talk","lang":"fa","seats":8,"status":"open","eventstart":"2026-12-03T18:30:00+01:00"},
-  {"slug":"full-talk","lang":"en","seats":8,"status":"full","eventstart":"2026-12-10T18:30:00+01:00"},
-  {"slug":"full-talk","lang":"fa","seats":8,"status":"full","eventstart":"2026-12-10T18:30:00+01:00"},
-  {"slug":"done-talk","lang":"en","seats":8,"status":"done","eventstart":"2026-10-01T18:30:00+02:00"},
-  {"slug":"done-talk","lang":"fa","seats":8,"status":"done","eventstart":"2026-10-01T18:30:00+02:00"},
-  {"slug":"old-talk","lang":"en","seats":8,"status":"done","eventstart":"2025-06-01T18:30:00+02:00"}
+  {"slug":"open-talk","lang":"en","seats":7,"status":"open","eventstart":"2026-12-03T18:30:00+01:00"},
+  {"slug":"open-talk","lang":"fa","seats":7,"status":"open","eventstart":"2026-12-03T18:30:00+01:00"},
+  {"slug":"full-talk","lang":"en","seats":7,"status":"full","eventstart":"2026-12-10T18:30:00+01:00"},
+  {"slug":"full-talk","lang":"fa","seats":7,"status":"full","eventstart":"2026-12-10T18:30:00+01:00"},
+  {"slug":"done-talk","lang":"en","seats":7,"status":"done","eventstart":"2026-10-01T18:30:00+02:00"},
+  {"slug":"done-talk","lang":"fa","seats":7,"status":"done","eventstart":"2026-10-01T18:30:00+02:00"},
+  {"slug":"old-talk","lang":"en","seats":7,"status":"done","eventstart":"2025-06-01T18:30:00+02:00"}
 ]

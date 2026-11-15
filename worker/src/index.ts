@@ -1,6 +1,7 @@
 // Table talk applications for aminrb.me.
 //
-// POST /apply   stores an application in D1 and notifies Amin on Telegram
+// POST /apply   stores an application in D1 and notifies Amin on Telegram. Applicants are
+//               confirmed until the session's seats are taken, then waitlisted.
 // GET  /seats   returns { confirmed } for one session
 //
 // Routed at aminrb.me/api/*, so a leading /api is stripped from the path.
@@ -25,7 +26,7 @@ interface Talk {
   eventstart: string;
 }
 
-type State = "applied" | "waitlist";
+type State = "confirmed" | "waitlist";
 
 const TALKS_CACHE_SECONDS = 300;
 const RETENTION_DAYS = 90;
@@ -56,7 +57,7 @@ async function apply(request: Request, env: Env, ctx: ExecutionContext): Promise
   // Honeypot: look like a success, store nothing.
   const trap = form.get("website");
   if (typeof trap === "string" && trap !== "") {
-    return redirect(thanksPath(env, parseLang(form.get("lang")), "applied"));
+    return redirect(thanksPath(env, parseLang(form.get("lang")), "confirmed"));
   }
 
   const result = validate(form);
@@ -96,19 +97,24 @@ async function apply(request: Request, env: Env, ctx: ExecutionContext): Promise
   }
 
   const seatCount = Math.min(...copies.map((t) => t.seats));
-  const confirmed = await confirmedCount(env, app.talk);
-  const state: State = copies.some((t) => t.status === "full") || confirmed >= seatCount ? "waitlist" : "applied";
+  const full = copies.some((t) => t.status === "full");
 
+  // Counting and inserting in one statement, so two applicants at the same moment cannot
+  // both take the last seat.
   const row = await env.DB.prepare(
     `INSERT INTO applications (talk, lang, email, name, role, workplace, experience, state)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?) RETURNING id`,
+     VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, CASE
+       WHEN ?8 OR (SELECT COUNT(*) FROM applications WHERE talk = ?1 AND state = 'confirmed') >= ?9 THEN 'waitlist'
+       ELSE 'confirmed' END)
+     RETURNING id, state`,
   )
-    .bind(app.talk, app.lang, app.email, app.name, app.role, app.workplace, app.experience, state)
-    .first<{ id: number }>();
+    .bind(app.talk, app.lang, app.email, app.name, app.role, app.workplace, app.experience, full ? 1 : 0, seatCount)
+    .first<{ id: number; state: State }>();
+  if (!row) return redirect(talkPath(env, app.lang, app.talk, "1"));
 
-  if (row) ctx.waitUntil(notify(env, app, row.id, state).catch(() => {}));
+  ctx.waitUntil(notify(env, app, row.id, row.state).catch(() => {}));
 
-  return redirect(thanksPath(env, app.lang, state));
+  return redirect(thanksPath(env, app.lang, row.state));
 }
 
 async function seats(url: URL, env: Env): Promise<Response> {

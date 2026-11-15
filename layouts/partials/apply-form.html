@@ -1,9 +1,7 @@
 {{- /* Table talk application form. Context: the session page. Posts to the Worker. */ -}}
 {{- $full := eq .Params.status "full" }}
 <section class="apply" id="apply">
-  {{- if $full }}
-  <p class="apply-note">{{ i18n "talk_full" }}</p>
-  {{- end }}
+  <p class="apply-note"{{ if not $full }} hidden{{ end }}>{{ i18n "talk_full" }}</p>
   <p class="apply-error" role="alert" hidden
     data-invalid="{{ i18n "apply_error" }}" data-closed="{{ i18n "apply_error_closed" }}"
     data-duplicate="{{ i18n "apply_error_duplicate" }}"></p>
@@ -28,7 +26,7 @@
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     {{- end }}
     <p class="apply-privacy">{{ i18n "apply_privacy" }}</p>
-    <button type="submit" class="btn btn-primary">
+    <button type="submit" class="btn btn-primary" data-waitlist="{{ i18n "apply_waitlist_submit" }}">
       {{- if $full }}{{ i18n "apply_waitlist_submit" }}{{ else }}{{ i18n "apply_submit" }}{{ end -}}
     </button>
   </form>
@@ -48,6 +46,12 @@
       var num = function (n) { return seats.dataset.lang === "fa" ? n.toLocaleString("fa-IR") : String(n); };
       seats.textContent = seats.dataset.template.replace("%n", num(d.confirmed)).replace("%s", num(Number(seats.dataset.seats)));
       seats.hidden = false;
+      // Every seat confirmed: new applicants go to the waitlist, so say so before they submit.
+      if (d.confirmed >= Number(seats.dataset.seats)) {
+        var button = document.querySelector(".apply-form button[type=submit]");
+        document.querySelector(".apply-note").hidden = false;
+        if (button) button.textContent = button.dataset.waitlist;
+      }
     }).catch(function () {});
   })();
 </script>

@@ -41,9 +41,11 @@ echo "finished talk";           apply "/fa/table-talks/done-talk/?error=closed#a
 echo "duplicate (case differs)"; apply "/fa/table-talks/open-talk/?error=duplicate#apply"      $(valid open-talk SARA@example.com fa)
 echo "invalid choice";          apply "/fa/table-talks/open-talk/?error=1#apply"               $(valid open-talk neda@example.com fa 40)
 echo "email only";              apply "/fa/table-talks/thanks/"                                -d talk=open-talk -d lang=fa -d email=mina@example.com
-echo "open but seats confirmed"
-sql "INSERT INTO applications (talk, lang, email, state) SELECT 'open-talk', 'fa', 'p' || value || '@example.com', 'confirmed' FROM json_each('[1,2,3,4,5,6,7,8]')" >/dev/null
-apply "/table-talks/thanks/?waitlist=1" $(valid open-talk late@example.com en)
+confirmed=$(sql "SELECT email FROM applications WHERE talk = 'open-talk' AND state = 'confirmed' ORDER BY id")
+[ "$confirmed" = "[{'email': 'sara@example.com'}, {'email': 'mina@example.com'}]" ] && echo "ok    open session confirms applicants" || { echo "FAIL  confirmed $confirmed"; failures=$((failures + 1)); }
+echo "last seat";               apply "/table-talks/thanks/"                                   $(valid open-talk last@example.com en)
+sql "INSERT INTO applications (talk, lang, email, state) SELECT 'open-talk', 'fa', 'p' || value || '@example.com', 'confirmed' FROM json_each('[1,2,3,4]')" >/dev/null
+echo "open but seats confirmed"; apply "/table-talks/thanks/?waitlist=1"                       $(valid open-talk late@example.com en)
 
 echo
 echo "stored rows:"
@@ -52,7 +54,7 @@ rows=$(sql "SELECT COUNT(*) AS n FROM applications WHERE email = 'bot@example.co
 [ "$rows" = "[{'n': 0}]" ] && echo "ok    trap submission not stored" || { echo "FAIL  trap submission stored"; failures=$((failures + 1)); }
 
 seats=$(curl -s -D "$STATE/h" "$WORKER/seats?talk=open-talk")
-[ "$seats" = '{"confirmed":8}' ] && echo "ok    /seats -> $seats" || { echo "FAIL  /seats -> $seats"; failures=$((failures + 1)); }
+[ "$seats" = '{"confirmed":7}' ] && echo "ok    /seats -> $seats" || { echo "FAIL  /seats -> $seats"; failures=$((failures + 1)); }
 grep -qi "access-control-allow-origin: http://localhost:$SITE_PORT" "$STATE/h" && echo "ok    CORS header" || { echo "FAIL  CORS header"; failures=$((failures + 1)); }
 code=$(curl -s -o /dev/null -w '%{http_code}' "$WORKER/other")
 [ "$code" = 404 ] && echo "ok    other paths -> 404" || { echo "FAIL  other paths -> $code"; failures=$((failures + 1)); }

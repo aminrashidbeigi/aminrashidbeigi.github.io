@@ -8,7 +8,7 @@ cover:
 date: 2026-11-20                         # publish date
 eventstart: 2026-12-03T18:30:00+01:00    # TODO(amin): real date, in Berlin time with its offset
 talklang: fa                             # fa | en
-seats: 8
+seats: 7
 track: career
 status: open                             # open | full | done
 guest: ""                                # optional named guest

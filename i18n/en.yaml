@@ -89,19 +89,19 @@
   translation: "Back to table talks"
 
 - id: thanks_applied
-  translation: "Thanks. You will hear from me at least five days before the session."
+  translation: "Thanks, your seat is confirmed. You will hear from me at least five days before the session."
 
 - id: thanks_waitlist
   translation: "You are on the waitlist. If a seat opens I will contact you, and you get first refusal on the next session on a similar topic."
 
 - id: apply_submit
-  translation: "Apply for a seat"
+  translation: "Reserve a seat"
 
 - id: apply_waitlist_submit
   translation: "Join the waitlist"
 
 - id: apply_privacy
-  translation: "I use your answers only to put each table together, and I delete them 90 days after the session."
+  translation: "I use your answers only to put each table together. They are deleted automatically 90 days after the session."
 
 - id: talk_full
   translation: "This session is full. Join the waitlist and you get the seat if someone cancels."

@@ -3,19 +3,22 @@
 A Cloudflare Worker (free plan) that receives the application form on the
 table talk pages (email required; name, role, where they work and years of experience
 optional), stores applications in D1 and sends Amin a private Telegram
-message for each one. It never emails or messages applicants and stores no
-IP addresses. Amin confirms people himself.
+message for each one. Applicants are confirmed automatically until the
+session's `seats` are taken (7, plus Amin makes eight), and everyone after
+that goes to the waitlist. It never emails or messages applicants and stores
+no IP addresses.
 
 | Route | What it does |
 | --- | --- |
-| `POST /api/apply` | Validates the form, rejects a second application with the same email, stores the row, notifies Amin, redirects `303` to the thank-you page |
-| `GET /api/seats?talk=<slug>` | `{ "confirmed": n }`, used for "n of 8 seats taken" |
+| `POST /api/apply` | Validates the form, rejects a second application with the same email, stores the row as `confirmed` or `waitlist`, notifies Amin, redirects `303` to the thank-you page |
+| `GET /api/seats?talk=<slug>` | `{ "confirmed": n }`, used for "n of 7 seats taken"; at 7 the form switches to "Join the waitlist" |
 | anything else | `404` |
 
 The Worker reads `https://aminrb.me/table-talks/index.json` (cached for five
 minutes) to check that a session exists and is `open` or `full`. A session
 that is `full`, or whose confirmed count has reached `seats`, gets new rows as
-`waitlist`.
+`waitlist`; otherwise they are `confirmed`. Counting and inserting is one SQL
+statement, so two people submitting at once cannot both take the last seat.
 
 ## Setup (once)
 
@@ -59,7 +62,8 @@ and set `params.turnstileSiteKey` in the site config to the widget's site key.
 
 Everything below works from Telegram:
 
-- Each new application arrives as a message with **✅ Confirm · ⏳ Waitlist · ❌ Decline**.
+- Each new application arrives already confirmed or waitlisted, as a message with buttons to
+  change that (**⏳ Waitlist · ❌ Decline**, or **✅ Confirm** for someone on the waitlist).
 - `/apps` shows the counts per session; `/apps <slug>` lists one session with the same buttons
   for each person, and the list redraws itself when you tap one.
 
@@ -74,18 +78,16 @@ from a terminal.
      "SELECT id, email, name, role, workplace, experience, state FROM applications WHERE talk = '<slug>' ORDER BY created_at"
    ```
 
-2. Confirm eight, waitlist the rest, and email the confirmed people yourself:
+2. The first seven are confirmed automatically; email them yourself. To move someone by hand:
 
    ```sh
-   npx wrangler d1 execute DB --remote --command \
-     "UPDATE applications SET state = 'confirmed' WHERE id IN (...)"
    npx wrangler d1 execute DB --remote --command \
      "UPDATE applications SET state = 'waitlist' WHERE id IN (...)"
    ```
 
-3. When eight are confirmed, set `status: full` in the session's front matter
-   (both `index.md` and `index.fa.md`) and deploy the site. From then on the
-   form reads "Join the waitlist" and new rows arrive as `waitlist`.
+3. Nothing to do when the seats are taken: new rows arrive as `waitlist` and the form reads
+   "Join the waitlist". `status: full` in the front matter (both `index.md` and `index.fa.md`)
+   is still there to close the seats early.
 
 4. Someone cancelled: free the seat, then promote the first person on the waitlist:
 

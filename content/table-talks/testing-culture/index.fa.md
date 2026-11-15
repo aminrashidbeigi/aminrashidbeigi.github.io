@@ -8,7 +8,7 @@ cover:
 date: 2026-11-15                         # publish date
 eventstart: 2026-12-02T18:30:00+01:00    # Wednesday, Berlin time with its offset
 talklang: fa                             # fa | en
-seats: 8
+seats: 7
 track: technical
 status: open                             # open | full | done
 guest: ""                                # optional named guest
