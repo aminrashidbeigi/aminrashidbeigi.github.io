@@ -1,6 +1,7 @@
 # Mentoring offers, rendered by the `offers` shortcode in both languages.
-# While draft_prices is true, paid offers show "price on request" instead of the number.
-draft_prices: true # TODO(amin): confirm prices, then set to false
+# While draft_prices is true, paid offers show "price on request" instead of the number,
+# except offers marked price_confirmed: true.
+draft_prices: true # TODO(amin): confirm the remaining prices, then set to false
 offers:
   - id: intro
     free: true
@@ -8,9 +9,10 @@ offers:
     en: { name: "Intro call", price: "Free", detail: "20 minutes, once per person, to agree a plan. Not a mentoring session." }
     fa: { name: "جلسهٔ آشنایی", price: "رایگان", detail: "۲۰ دقیقه، یک بار برای هر نفر، برای توافق روی برنامه. جلسهٔ منتورینگ نیست." }
   - id: single
-    cal: "aminrb/mentoring"        # TODO(amin): confirm slug
-    en: { name: "Single session", price: "€80", detail: "60 minutes plus written next steps. For a one-off question, a CV review, or a hard conversation with your manager." }
-    fa: { name: "تک‌جلسه", price: "۸۰ یورو", detail: "۶۰ دقیقه به‌همراه جمع‌بندی مکتوب قدم‌های بعدی. برای یک سؤال مشخص، بررسی رزومه یا یک گفت‌وگوی سخت با مدیرت." }
+    cal: "aminrb/mentoring"
+    price_confirmed: true          # €49.90 on cal.com
+    en: { name: "Single session", price: "€49.90", detail: "60 minutes plus written next steps. For a one-off question, a CV review, or a hard conversation with your manager." }
+    fa: { name: "تک‌جلسه", price: "۴۹٫۹۰ یورو", detail: "۶۰ دقیقه به‌همراه جمع‌بندی مکتوب قدم‌های بعدی. برای یک سؤال مشخص، بررسی رزومه یا یک گفت‌وگوی سخت با مدیرت." }
   - id: interview-prep
     en: { name: "Interview prep", price: "€210", detail: "One session on your CV and where to apply, then two mock interviews of your choice: recruiter, technical, system design or behavioural." }
     fa: { name: "آمادگی مصاحبه", price: "۲۱۰ یورو", detail: "یک جلسه برای رزومه و انتخاب شرکت‌ها، بعد دو مصاحبهٔ آزمایشی به انتخاب خودت: ریکروتر، فنی، طراحی سیستم یا رفتاری." }

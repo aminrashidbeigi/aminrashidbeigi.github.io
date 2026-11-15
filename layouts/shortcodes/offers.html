@@ -7,7 +7,7 @@
   <div class="offer">
     <h3 class="offer-name">{{ $t.name }}</h3>
     <p class="offer-price">
-      {{- if and $data.draft_prices (not .free) }}{{ i18n "price_on_request" }}{{ else }}{{ $t.price }}{{ end -}}
+      {{- if and $data.draft_prices (not .free) (not .price_confirmed) }}{{ i18n "price_on_request" }}{{ else }}{{ $t.price }}{{ end -}}
     </p>
     <p class="offer-detail">{{ $t.detail }}</p>
     {{- if eq .id "intro" }}
