@@ -15,8 +15,8 @@ offers:
     fa: { name: "تک‌جلسه", price: "۴۹٫۹۰ یورو", detail: "۶۰ دقیقه به‌همراه جمع‌بندی مکتوب قدم‌های بعدی. برای یک سؤال مشخص، بررسی رزومه یا یک گفت‌وگوی سخت با مدیرت." }
   - id: interview-prep
     price_confirmed: true
-    en: { name: "Interview prep", was: "€49.90", price: "€39.90 per session", discount: "20% off", detail: "At least 3 sessions: one on your CV and where to apply, then mock interviews of your choice (recruiter, technical, system design or behavioural)." }
-    fa: { name: "آمادگی مصاحبه", was: "۴۹٫۹۰ یورو", price: "۳۹٫۹۰ یورو برای هر جلسه", discount: "۲۰٪ تخفیف", detail: "دست‌کم ۳ جلسه: یک جلسه برای رزومه و انتخاب شرکت‌ها، بعد مصاحبه‌های آزمایشی به انتخاب خودت (ریکروتر، فنی، طراحی سیستم یا رفتاری)." }
+    en: { name: "Interview prep", was: "€49.90", price: "€39.90 per session", discount: "20% off", detail: "A package of three mock interviews: a recruiter screen, a technical or system design interview, and a behavioural interview, each with written feedback." }
+    fa: { name: "آمادگی مصاحبه", was: "۴۹٫۹۰ یورو", price: "۳۹٫۹۰ یورو برای هر جلسه", discount: "۲۰٪ تخفیف", detail: "بستهٔ سه جلسه‌ای از مصاحبه‌های آزمایشی: مصاحبه با ریکروتر، مصاحبهٔ فنی یا طراحی سیستم، و مصاحبهٔ رفتاری، هر کدوم با بازخورد مکتوب." }
   - id: ongoing
     price_confirmed: true
     en: { name: "Ongoing mentoring", was: "€49.90", price: "€29.90 per session", discount: "40% off", detail: "At least 4 sessions, usually one every three weeks; we set the pace around your goal. For growing in your role, working with your manager, moving into management or working abroad." }
