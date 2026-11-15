@@ -11,4 +11,10 @@
   {{- end }}
   {{- end }}
   {{- end }}
+  {{- /* Posts copied from the Telegram channel (telegram-sync/) */ -}}
+  {{- with index site.Taxonomies.categories "کانال تلگرام" }}
+  {{- with .Page }}
+  <a href="{{ .RelPermalink }}"{{ if eq $here .RelPermalink }} aria-current="page"{{ end }}>{{ .Title }}</a>
+  {{- end }}
+  {{- end }}
 </nav>

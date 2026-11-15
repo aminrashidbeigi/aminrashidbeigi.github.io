@@ -1,0 +1,25 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "aminrb-telegram-sync",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-11-01",
+
+  // Telegram calls the Worker on its workers.dev address; nothing on aminrb.me changes.
+  "workers_dev": true,
+
+  "vars": {
+    "CHANNEL": "aminrbg",
+    "SITE_ORIGIN": "https://aminrb.me",
+    "GITHUB_REPO": "aminrashidbeigi/aminrashidbeigi.github.io",
+    "GITHUB_BRANCH": "master"
+  },
+  // Secrets, set with `wrangler secret put`: BOT_TOKEN, WEBHOOK_SECRET, OWNER_ID, GITHUB_TOKEN.
+
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "aminrb-telegram-sync",
+      "database_id": "bbe780be-82a2-46b6-b400-da0af03c5163"
+    }
+  ]
+}
