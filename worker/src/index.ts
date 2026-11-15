@@ -2,7 +2,7 @@
 //
 // POST /apply   stores an application in D1 and notifies Amin on Telegram. Applicants are
 //               confirmed until the session's seats are taken, then waitlisted.
-// GET  /seats   returns { confirmed } for one session
+// GET  /seats   returns { confirmed, waitlist } for one session
 //
 // Routed at aminrb.me/api/*, so a leading /api is stripped from the path.
 
@@ -127,7 +127,16 @@ async function seats(url: URL, env: Env): Promise<Response> {
   if (!isSlug(talk)) {
     return new Response(JSON.stringify({ error: "unknown talk" }), { status: 400, headers });
   }
-  return new Response(JSON.stringify({ confirmed: await confirmedCount(env, talk) }), { headers });
+  const counts = await env.DB.prepare(
+    `SELECT COUNT(*) FILTER (WHERE state = 'confirmed') AS confirmed,
+            COUNT(*) FILTER (WHERE state = 'waitlist') AS waitlist
+     FROM applications WHERE talk = ?`,
+  )
+    .bind(talk)
+    .first<{ confirmed: number; waitlist: number }>();
+  return new Response(JSON.stringify({ confirmed: counts?.confirmed ?? 0, waitlist: counts?.waitlist ?? 0 }), {
+    headers,
+  });
 }
 
 async function confirmedCount(env: Env, talk: string): Promise<number> {

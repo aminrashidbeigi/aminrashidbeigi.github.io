@@ -28,6 +28,9 @@
 - id: seats_taken
   translation: "%n از %s صندلی پر شده"
 
+- id: seats_waitlist
+  translation: "%n نفر در لیست انتظار"
+
 - id: berlin
   translation: "برلین"
 

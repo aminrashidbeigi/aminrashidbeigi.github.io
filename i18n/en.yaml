@@ -28,6 +28,9 @@
 - id: seats_taken
   translation: "%n of %s seats taken"
 
+- id: seats_waitlist
+  translation: "%n on the waitlist"
+
 - id: berlin
   translation: "Berlin"
 

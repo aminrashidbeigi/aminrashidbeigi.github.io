@@ -11,7 +11,7 @@ no IP addresses.
 | Route | What it does |
 | --- | --- |
 | `POST /api/apply` | Validates the form, rejects a second application with the same email, stores the row as `confirmed` or `waitlist`, notifies Amin, redirects `303` to the thank-you page |
-| `GET /api/seats?talk=<slug>` | `{ "confirmed": n }`, used for "n of 7 seats taken"; at 7 the form switches to "Join the waitlist" |
+| `GET /api/seats?talk=<slug>` | `{ "confirmed": n, "waitlist": w }`, used for "n of 7 seats taken · w on the waitlist"; at 7 the form switches to "Join the waitlist" |
 | anything else | `404` |
 
 The Worker reads `https://aminrb.me/table-talks/index.json` (cached for five

@@ -13,11 +13,12 @@
       <div>
         <dt>{{ i18n "talk_seats" }}</dt>
         <dd>
-          {{ partial "fa-digits.html" (dict "s" (string .Params.seats) "lang" .Lang) }} {{ i18n "seats" }}
+          <span class="talk-seats-total">{{ partial "fa-digits.html" (dict "s" (string .Params.seats) "lang" .Lang) }} {{ i18n "seats" }}</span>
           {{- if and (not $done) site.Params.applyEndpoint }}
           <span class="talk-seats-taken" hidden
             data-endpoint="{{ site.Params.applyEndpoint }}/seats?talk={{ .File.ContentBaseName }}"
-            data-seats="{{ .Params.seats }}" data-template="{{ i18n "seats_taken" }}" data-lang="{{ .Lang }}"></span>
+            data-seats="{{ .Params.seats }}" data-template="{{ i18n "seats_taken" }}"
+            data-waitlist="{{ i18n "seats_waitlist" }}" data-lang="{{ .Lang }}"></span>
           {{- end }}
         </dd>
       </div>

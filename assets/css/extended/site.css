@@ -195,12 +195,12 @@
     color: var(--secondary);
 }
 
-.talk-seats-taken {
+.talk-seats-waitlist {
     color: var(--secondary);
 }
 
-.talk-seats-taken::before {
-    content: "· ";
+.talk-seats-waitlist::before {
+    content: " · ";
 }
 
 .talk-rules {

@@ -44,7 +44,15 @@
     fetch(seats.dataset.endpoint).then(function (r) { return r.ok ? r.json() : Promise.reject(); }).then(function (d) {
       if (typeof d.confirmed !== "number") return;
       var num = function (n) { return seats.dataset.lang === "fa" ? n.toLocaleString("fa-IR") : String(n); };
+      // "7 of 7 seats taken · 2 on the waitlist" replaces the static "7 seats".
       seats.textContent = seats.dataset.template.replace("%n", num(d.confirmed)).replace("%s", num(Number(seats.dataset.seats)));
+      if (d.waitlist > 0) {
+        var waiting = document.createElement("span");
+        waiting.className = "talk-seats-waitlist";
+        waiting.textContent = seats.dataset.waitlist.replace("%n", num(d.waitlist));
+        seats.appendChild(waiting);
+      }
+      document.querySelector(".talk-seats-total").hidden = true;
       seats.hidden = false;
       // Every seat confirmed: new applicants go to the waitlist, so say so before they submit.
       if (d.confirmed >= Number(seats.dataset.seats)) {

@@ -54,7 +54,7 @@ rows=$(sql "SELECT COUNT(*) AS n FROM applications WHERE email = 'bot@example.co
 [ "$rows" = "[{'n': 0}]" ] && echo "ok    trap submission not stored" || { echo "FAIL  trap submission stored"; failures=$((failures + 1)); }
 
 seats=$(curl -s -D "$STATE/h" "$WORKER/seats?talk=open-talk")
-[ "$seats" = '{"confirmed":7}' ] && echo "ok    /seats -> $seats" || { echo "FAIL  /seats -> $seats"; failures=$((failures + 1)); }
+[ "$seats" = '{"confirmed":7,"waitlist":1}' ] && echo "ok    /seats -> $seats" || { echo "FAIL  /seats -> $seats"; failures=$((failures + 1)); }
 grep -qi "access-control-allow-origin: http://localhost:$SITE_PORT" "$STATE/h" && echo "ok    CORS header" || { echo "FAIL  CORS header"; failures=$((failures + 1)); }
 code=$(curl -s -o /dev/null -w '%{http_code}' "$WORKER/other")
 [ "$code" = 404 ] && echo "ok    other paths -> 404" || { echo "FAIL  other paths -> $code"; failures=$((failures + 1)); }
