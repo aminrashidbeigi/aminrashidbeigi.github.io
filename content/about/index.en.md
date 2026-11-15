@@ -1,7 +1,7 @@
 ---
 title: "About"
 date: 2023-01-27T10:52:53+03:30
-lastmod: 2026-11-14
+lastmod: 2026-11-15
 draft: false
 comments: false
 ShowToc: false
@@ -21,28 +21,24 @@ I have liked building things for as long as I can remember. When I found compute
 
 Later I studied computer engineering at Amirkabir University, where almost everyone knew more than I did. Seeing how far a laptop could take you, I studied, worked, failed and tried again with more motivation than before.
 
-## From engineer to engineering manager
+## From engineer to leader
 
-In Iran I worked at SnappMarket and other startups, then joined Divar. There I became tech lead in search, and later Engineering Manager.
-<!-- TODO(amin): years for the Engineering Manager role, if they should be shown -->
+In Iran I worked at [SnappMarket](https://snapp.market) and other startups, then joined [Divar](https://divar.ir). I started there as a software engineer and later moved into leadership, working in teams such as review, search, and trust and safety.
 
 ## Germany, and the swing back to hands-on work
 
-When I moved to Germany, I chose to go back to hands-on engineering, first at CHECK24 and now at Delivery Hero. Charity Majors calls this the [engineer/manager pendulum](https://charity.wtf/p/the-engineer-manager-pendulum): moving between building and leading instead of treating management as a one-way promotion. What I learned leading teams shapes how I work as an engineer today, and I write about both.
+When I moved to Germany, I chose to go back to hands-on engineering, first at [CHECK24](https://www.check24.de) and now at [Delivery Hero](https://www.deliveryhero.com). Charity Majors calls this the [engineer/manager pendulum](https://charity.wtf/p/the-engineer-manager-pendulum): moving between building and leading instead of treating management as a one-way promotion. What I learned leading teams shapes how I work as an engineer today, and I write about both.
 
-## What I do for the community
+## What I do on the side
 
 - **Writing**, here and in my Persian [Telegram channel](https://t.me/aminrbg).
 - **[Table talks](/table-talks/)**: free online conversations where eight people discuss one question for an hour.
 - **[Mentoring](/mentoring/)** for people who want to grow in their careers, from taking on more responsibility to leading a team.
+- **Building [Wortaso](https://wortaso.app)**, a German vocabulary app. More of what I have built over the years is on the [Side Projects](/side-projects/) page.
 
 ## Speaking and hosting
 
-- **2026**: Hosted a table talk at LeadDev Berlin on "How do you build a testing culture where everyone feels responsible for quality?"
-- **20 November 2025**: One-hour online talk for my Telegram channel, "AI changes and the future of the software engineering job market" ([announcement](https://t.me/aminrbg/113)).
+- **November 2026**: Hosted a table talk at LeadDev Berlin on "How do you build a testing culture where everyone feels responsible for quality?"
+- **November 2025**: Online talk for my Telegram channel, "AI changes and the future of the software engineering job market" ([announcement](https://t.me/aminrbg/113)).
 
-## Now building
-
-[Wortaso](https://wortaso.app), a German vocabulary app. More of what I have built over the years is on the [Side Projects](/side-projects/) page.
-
-You can reach me by email at a.rashidbeigi at gmail.com.
+You can email me at [a.rashidbeigi@gmail.com](mailto:a.rashidbeigi@gmail.com).
