@@ -40,10 +40,10 @@ interface Db {
 const ICON: Record<State, string> = { confirmed: "✅", applied: "📝", waitlist: "⏳", declined: "❌", no_show: "🚫" };
 const ORDER: State[] = ["confirmed", "applied", "waitlist", "declined", "no_show"];
 const ACTIONS: { state: State; label: string }[] = [
-  { state: "confirmed", label: "✅ Confirm" },
-  { state: "waitlist", label: "⏳ Move to waitlist" },
-  { state: "declined", label: "❌ Decline" },
-  { state: "no_show", label: "🚫 No-show" },
+  { state: "confirmed", label: "Confirm" },
+  { state: "waitlist", label: "Move to waitlist" },
+  { state: "declined", label: "Decline" },
+  { state: "no_show", label: "No-show" },
 ];
 // One list message holds at most this many applicants: Telegram allows 100 buttons and
 // 4096 characters per message.
@@ -105,14 +105,14 @@ export function card(app: Application, view: "c" | "l" = "c"): Reply {
       inline_keyboard: [
         actions.slice(0, 2),
         actions.slice(2),
-        listButton(app.talk, view === "l" ? "« Back to the list" : `📋 Everyone in ${app.talk}`),
+        listButton(app.talk, view === "l" ? "« Back to the list" : `Everyone in ${app.talk}`),
       ].filter((row) => row.length),
     },
   };
 }
 
 export function list(talk: string, apps: Application[], seats?: number): Reply {
-  const back = [{ text: "« All sessions", callback_data: "as|" }, ...listButton(talk, "🔄 Refresh")];
+  const back = [{ text: "« All sessions", callback_data: "as|" }, ...listButton(talk, "Refresh")];
   if (!apps.length) return { text: `No applications for ${talk} yet.`, reply_markup: { inline_keyboard: [back] } };
   const sorted = [...apps].sort((a, b) => ORDER.indexOf(a.state) - ORDER.indexOf(b.state) || a.id - b.id);
   const count = (s: State) => apps.filter((a) => a.state === s).length;
@@ -131,7 +131,7 @@ export function list(talk: string, apps: Application[], seats?: number): Reply {
     text: `📋 ${talk}\n${totals.join(" · ")}\n\n${lines.join("\n")}${more}\n\nTap a person to confirm, waitlist, decline or mark a no-show.`,
     reply_markup: {
       inline_keyboard: [
-        ...shown.map((a) => [{ text: `${ICON[a.state]} ${a.name || a.email}`, callback_data: `ao|${a.id}` }]),
+        ...shown.map((a) => [{ text: a.name || a.email, callback_data: `ao|${a.id}` }]),
         back,
       ],
     },
@@ -150,7 +150,7 @@ export function summary(rows: { talk: string; state: State; n: number }[]): Repl
   });
   return {
     text: `📋 Table talk applications\n\n${lines.join("\n")}\n\nTap a session to see who applied.`,
-    reply_markup: { inline_keyboard: talks.map((talk) => listButton(talk, `📋 ${talk}`)).filter((row) => row.length) },
+    reply_markup: { inline_keyboard: talks.map((talk) => listButton(talk, talk)).filter((row) => row.length) },
   };
 }
 

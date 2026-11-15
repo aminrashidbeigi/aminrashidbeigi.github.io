@@ -77,7 +77,7 @@ const NOT_POSTS = ["poll", "sticker", "dice", "location", "venue", "contact", "g
 
 // The keyboard under the chat, so nothing has to be remembered, and the same commands in
 // Telegram's "/" menu.
-const KEYS = { apps: "📋 Table talks", status: "📰 Blog posts", help: "❓ Help" };
+const KEYS = { apps: "Table talks", status: "Blog posts", help: "Help" };
 const KEYBOARD = {
   keyboard: [[{ text: KEYS.apps }, { text: KEYS.status }, { text: KEYS.help }]],
   resize_keyboard: true,

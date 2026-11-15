@@ -77,7 +77,7 @@ describe("card", () => {
     const reply = card({ ...sara, state: "confirmed", name: "", experience: "" });
     expect(reply.text).toContain("Name: -");
     expect(buttons(reply).map((b) => b.text)).toEqual([
-      "⏳ Move to waitlist", "❌ Decline", "🚫 No-show", "📋 Everyone in testing-culture",
+      "Move to waitlist", "Decline", "No-show", "Everyone in testing-culture",
     ]);
   });
   it("opened from a list, its buttons lead back to the list", () => {
@@ -93,11 +93,11 @@ describe("list", () => {
     expect(reply.text).toContain("✅ 1 of 7 seats confirmed · 📝 1 applied · ⏳ 0 waitlist");
     expect(reply.text.indexOf("Omid")).toBeLessThan(reply.text.indexOf("Sara"));
     expect(buttons(reply).map((b) => [b.text, b.callback_data])).toEqual([
-      ["✅ Omid", "ao|4"], ["📝 Sara", "ao|3"], ["« All sessions", "as|"], ["🔄 Refresh", "al|testing-culture"],
+      ["Omid", "ao|4"], ["Sara", "ao|3"], ["« All sessions", "as|"], ["Refresh", "al|testing-culture"],
     ]);
   });
   it("names people without a name by their email", () => {
-    expect(buttons(list("testing-culture", [{ ...sara, name: "" }]))[0].text).toBe("📝 sara@example.com");
+    expect(buttons(list("testing-culture", [{ ...sara, name: "" }]))[0].text).toBe("sara@example.com");
   });
   it("stays within Telegram's limits", () => {
     const many = Array.from({ length: 45 }, (_, i) => ({ ...sara, id: i + 1, email: `p${i}@example.com` }));
@@ -121,7 +121,7 @@ describe("summary", () => {
       { talk: "testing-culture", state: "confirmed", n: 2 },
     ]);
     expect(reply.text).toContain("testing-culture: ✅ 2 confirmed · 📝 3 applied");
-    expect(buttons(reply)).toEqual([{ text: "📋 testing-culture", callback_data: "al|testing-culture" }]);
+    expect(buttons(reply)).toEqual([{ text: "testing-culture", callback_data: "al|testing-culture" }]);
   });
   it("handles no applications", () => {
     expect(summary([])).toEqual({ text: "No table talk applications yet." });

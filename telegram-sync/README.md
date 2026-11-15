@@ -12,8 +12,8 @@ in `../worker`.
 | New post in the channel | Bot sends a preview with topic buttons, "Publish, no topic" and "Skip" |
 | Old post forwarded to the bot | Queued. The bot asks about the oldest queued post, then the next one after each answer |
 | Published post edited in the channel | Bot asks "Update the blog copy?" |
-| `/status` or **📰 Blog posts** in the bot chat | Counts of waiting, queued, published and skipped posts (and re-asks anything stuck) |
-| `/help`, `/start` or anything else | What the bot does, and the keyboard under the chat: **📋 Table talks · 📰 Blog posts · ❓ Help** |
+| `/status` or **Blog posts** in the bot chat | Counts of waiting, queued, published and skipped posts (and re-asks anything stuck) |
+| `/help`, `/start` or anything else | What the bot does, and the keyboard under the chat: **Table talks · Blog posts · Help** |
 
 ## What a published post looks like
 
@@ -108,14 +108,14 @@ twice is harmless.
 
 The same bot handles table talk applications from the site (see `worker/`):
 
-Everything is a tap, starting from **📋 Table talks** (or `/apps`), and redraws the same message:
+Everything is a tap, starting from **Table talks** (or `/apps`), and redraws the same message:
 
 - **Sessions**: counts per session by state, one button per session.
 - **A session**: everyone with name, role, workplace, experience and email, one button per person,
-  plus « All sessions and 🔄 Refresh. `/apps <slug>` jumps straight here.
-- **A person**: their card with ✅ Confirm · ⏳ Move to waitlist · ❌ Decline · 🚫 No-show and
+  plus « All sessions and Refresh. `/apps <slug>` jumps straight here.
+- **A person**: their card with Confirm · Move to waitlist · Decline · No-show and
   « Back to the list. Changing the state goes back to the list.
-- The alert for each new application is the same card, with 📋 Everyone in <session>.
+- The alert for each new application is the same card, with Everyone in <session>.
 
 The `/` menu (apps, status, help) is set for Amin's chat whenever the help message is sent.
 

@@ -63,8 +63,8 @@ and set `params.turnstileSiteKey` in the site config to the widget's site key.
 Everything below works from Telegram:
 
 - Each new application arrives already confirmed or waitlisted, as a card with buttons to
-  change that (**✅ Confirm · ⏳ Move to waitlist · ❌ Decline · 🚫 No-show**).
-- **📋 Table talks** (or `/apps`) in the bot chat shows the sessions; tap one to see everyone,
+  change that (**Confirm · Move to waitlist · Decline · No-show**).
+- **Table talks** (or `/apps`) in the bot chat shows the sessions; tap one to see everyone,
   then tap a person for the same buttons.
 
 The buttons and `/apps` are handled by the telegram-sync Worker, which receives the bot's
