@@ -75,6 +75,20 @@ interface PostRow {
 const LINKED_MEDIA = ["video", "animation", "document", "audio", "voice", "video_note"];
 const NOT_POSTS = ["poll", "sticker", "dice", "location", "venue", "contact", "game"];
 
+// The keyboard under the chat, so nothing has to be remembered, and the same commands in
+// Telegram's "/" menu.
+const KEYS = { apps: "📋 Table talks", status: "📰 Blog posts", help: "❓ Help" };
+const KEYBOARD = {
+  keyboard: [[{ text: KEYS.apps }, { text: KEYS.status }, { text: KEYS.help }]],
+  resize_keyboard: true,
+  is_persistent: true,
+};
+const COMMANDS = [
+  { command: "apps", description: "Table talk applications" },
+  { command: "status", description: "Blog posts waiting, queued, published" },
+  { command: "help", description: "What this bot does and how to use it" },
+];
+
 // Albums arrive as one update per photo, and a batch of forwards as one update
 // per message. Wait this long before asking so the rest has arrived.
 const SETTLE_MS = 3000;
@@ -118,21 +132,37 @@ async function ownerMessage(env: Env, ctx: ExecutionContext, msg: Message): Prom
     await ingest(env, ctx, msg, origin.message_id, origin.date, true);
   } else if (origin) {
     // Anything else forwarded, such as a channel repost of another channel's post: ignore.
-  } else if (msg.text?.startsWith("/apps")) {
-    const reply = await applications.command(env.TALKS_DB, msg.text, env.SITE_ORIGIN);
+  } else if (msg.text === KEYS.apps || msg.text?.startsWith("/apps")) {
+    const reply = await applications.command(env.TALKS_DB, msg.text === KEYS.apps ? "/apps" : msg.text, env.SITE_ORIGIN);
     await tg(env, "sendMessage", { chat_id: env.OWNER_ID, link_preview_options: { is_disabled: true }, ...reply });
-  } else if (msg.text?.startsWith("/status")) {
+  } else if (msg.text === KEYS.status || msg.text?.startsWith("/status")) {
     await status(env);
   } else {
-    await say(
-      env,
-      `New posts in @${env.CHANNEL} come here as questions.\n\n` +
-        `To import old posts, forward them from the channel to me (many at once is fine). ` +
-        `I'll ask about them one at a time, oldest first, and keep their original dates.\n\n` +
-        `/status shows what is waiting.\n` +
-        `/apps shows table talk applications.`,
-    );
+    await help(env);
   }
+}
+
+// Also the answer to /start and to anything the bot does not understand. It brings back the
+// keyboard and refreshes the "/" menu.
+async function help(env: Env): Promise<void> {
+  await tg(env, "setMyCommands", { commands: COMMANDS, scope: { type: "chat", chat_id: Number(env.OWNER_ID) } });
+  await tg(env, "sendMessage", {
+    chat_id: env.OWNER_ID,
+    link_preview_options: { is_disabled: true },
+    reply_markup: KEYBOARD,
+    text:
+      `Use the keys below; everything else is a button on a message.\n\n` +
+      `${KEYS.apps}\n` +
+      `Applications per session. Tap a session to see everyone, tap a person to confirm, ` +
+      `move to the waitlist, decline or mark a no-show. The first seats fill automatically, ` +
+      `later applicants go to the waitlist.\n\n` +
+      `${KEYS.status}\n` +
+      `New posts in @${env.CHANNEL} come here as questions: pick a topic to publish on the blog, or skip. ` +
+      `This shows what is waiting and re-asks anything stuck.\n\n` +
+      `Importing old posts\n` +
+      `Forward them from the channel to me, many at once is fine. I ask about them one at a time, ` +
+      `oldest first, and keep their original dates.`,
+  });
 }
 
 // Stores one channel message and, for a new post, asks about it.

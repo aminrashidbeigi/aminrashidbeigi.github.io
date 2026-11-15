@@ -62,10 +62,10 @@ and set `params.turnstileSiteKey` in the site config to the widget's site key.
 
 Everything below works from Telegram:
 
-- Each new application arrives already confirmed or waitlisted, as a message with buttons to
-  change that (**⏳ Waitlist · ❌ Decline**, or **✅ Confirm** for someone on the waitlist).
-- `/apps` shows the counts per session; `/apps <slug>` lists one session with the same buttons
-  for each person, and the list redraws itself when you tap one.
+- Each new application arrives already confirmed or waitlisted, as a card with buttons to
+  change that (**✅ Confirm · ⏳ Move to waitlist · ❌ Decline · 🚫 No-show**).
+- **📋 Table talks** (or `/apps`) in the bot chat shows the sessions; tap one to see everyone,
+  then tap a person for the same buttons.
 
 The buttons and `/apps` are handled by the telegram-sync Worker, which receives the bot's
 updates and has this database bound as `TALKS_DB`. The `wrangler` commands below do the same
