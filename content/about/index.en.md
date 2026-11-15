@@ -34,7 +34,7 @@ When I moved to Germany, I chose to go back to hands-on engineering, first at CH
 
 - **Writing**, here and in my Persian [Telegram channel](https://t.me/aminrbg).
 - **[Table talks](/table-talks/)**: free online conversations where eight people discuss one question for an hour.
-- **[Mentoring](/mentoring/)** for engineers working on interviews, relocation and the step into leadership.
+- **[Mentoring](/mentoring/)** for people who want to grow in their careers, from taking on more responsibility to leading a team.
 
 ## Speaking and hosting
 

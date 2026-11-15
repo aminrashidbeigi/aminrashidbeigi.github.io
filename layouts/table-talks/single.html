@@ -2,7 +2,6 @@
 {{- $done := eq .Params.status "done" }}
 <article class="post-single talk">
   <header class="post-header">
-    <span class="label">{{ i18n (printf "track_%s" .Params.track) }}</span>
     <h1 class="post-title">{{ .Title }}</h1>
     <div class="post-meta">
       {{- partial "author.html" . }}

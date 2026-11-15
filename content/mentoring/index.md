@@ -1,6 +1,6 @@
 ---
 title: Mentoring
-description: "One-to-one mentoring for software engineers: interviews at European companies, relocation, and the step into tech lead and manager roles. Start with a free intro call."
+description: "One-to-one mentoring for career growth: taking on more responsibility, working with your manager, moving into management, working abroad and preparing for interviews. Start with a free intro call."
 cover:
   image: /og/mentoring.png
   hidden: true
@@ -14,13 +14,15 @@ aliases:
 - /ways-i-can-help/
 ---
 
-I mentor software engineers one to one, in Persian or English. I have hired and interviewed engineers, led a team as tech lead and Engineering Manager at Divar, moved to Germany and went back to hands-on engineering. Sessions draw on all of that.
+Mentoring, for me, is about career growth. Over the years I have been an engineer, a tech lead and an Engineering Manager, interviewed and hired people, and worked in Iran and Germany. In our sessions I draw on all of that to help you work out your next step. Sessions are one to one, in Persian or English.
 
 ## Who it is for
 
-- **Persian-speaking engineers aiming at European companies.** Resume and portfolio review, choosing where to apply, and mock interviews: recruiter, technical, system design and behavioural.
-- **Senior engineers stepping into tech lead or manager roles.** What changes in the first months, how to lead without losing your technical edge, and whether the move is right for you.
-- **Engineers already abroad who feel stuck.** Growth in a culture that is not your own, promotions, and deciding when to stay and when to move on.
+- **You want to grow and take on more responsibility**, and you want a clear plan for getting there.
+- **Working with your manager has become hard**, and you want to find a way to make it better.
+- **You are thinking about becoming a manager**, or you already are one and want to grow your team.
+- **You work in another country, or want to**, and want to talk to someone who has made that move.
+- **You are preparing for interviews**: resume review, choosing where to apply, and mock interviews (recruiter, technical, system design and behavioural).
 
 ## Offers
 
