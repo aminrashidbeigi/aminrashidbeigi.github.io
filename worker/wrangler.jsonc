@@ -18,8 +18,7 @@
     {
       "binding": "DB",
       "database_name": "aminrb-table-talks",
-      // TODO(amin): paste the id printed by `wrangler d1 create aminrb-table-talks`
-      "database_id": "00000000-0000-0000-0000-000000000000"
+      "database_id": "9327f2e7-b60c-41bf-8a30-1f9f524f466e"
     }
   ],
 
