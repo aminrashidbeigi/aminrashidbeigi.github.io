@@ -46,8 +46,6 @@ About ten years in engineering · SnappMarket, Divar (Engineering Manager), CHEC
 - Having someone write your CV for you.
 -->
 
-Not ready for one-to-one? [Join a table talk](/table-talks/).
-
 <!--
 ## Questions and answers
 
