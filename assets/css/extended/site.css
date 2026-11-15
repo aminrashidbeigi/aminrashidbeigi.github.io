@@ -320,6 +320,28 @@
     color: var(--primary);
 }
 
+.footer-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px 14px;
+    padding: 0 var(--gap) var(--gap);
+}
+
+.footer-icons a {
+    display: inline-flex;
+    color: var(--secondary);
+}
+
+.footer-icons a:hover {
+    color: var(--primary);
+}
+
+.footer-icons svg {
+    width: 20px;
+    height: 20px;
+}
+
 .book-button {
     margin: var(--content-gap) 0;
 }

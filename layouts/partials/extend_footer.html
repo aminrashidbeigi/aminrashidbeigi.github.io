@@ -1,11 +1,14 @@
-{{- /* Footer links. Impressum and Privacy only show once those pages are published. */ -}}
+{{- /* Footer links and social icons. Impressum and Privacy only show once those pages are published. */ -}}
 <nav class="footer-links" aria-label="{{ i18n "footer_links" }}">
   {{- with site.GetPage "/impressum" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
   {{- with site.GetPage "/privacy" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
   {{- with site.GetPage "/side-projects" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
-  <a href="{{ "index.xml" | relLangURL }}">RSS</a>
-  <a href="https://t.me/aminrbg" rel="noopener">Telegram</a>
-  <a href="https://www.linkedin.com/in/amin-rashidbeigi" rel="noopener me">LinkedIn</a>
-  <a href="https://x.com/AminRashidbeigi" rel="noopener me">X</a>
-  <a href="https://github.com/aminrashidbeigi" rel="noopener me">GitHub</a>
 </nav>
+<div class="footer-icons">
+  {{- range site.Params.socialIcons }}
+  <a href="{{ trim .url " " | safeURL }}" target="_blank" rel="noopener noreferrer me" title="{{ (.title | default .name) | title }}" aria-label="{{ (.title | default .name) | title }}">
+    {{- partial "svg.html" . -}}
+  </a>
+  {{- end }}
+  <a href="{{ "index.xml" | relLangURL }}" title="RSS" aria-label="RSS">{{ partial "svg.html" (dict "name" "rss") }}</a>
+</div>
