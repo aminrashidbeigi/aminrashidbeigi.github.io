@@ -23,11 +23,11 @@ ShowToc: false
 
 ## از مهندسی تا رهبری تیم
 
-در ایران توی [اسنپ‌مارکت](https://snapp.market) و چند استارتاپ دیگه کار کردم و بعد به [دیوار](https://divar.ir) رفتم. اونجا اول مهندس نرم‌افزار بودم و بعد نقش رهبری تیم رو گرفتم و در تیم‌هایی مثل ریویو، جست‌وجو و Trust & Safety کار کردم.
+در ایران توی [اسنپ‌مارکت](https://www.linkedin.com/company/snappmarket) و چند استارتاپ دیگه کار کردم و بعد به [دیوار](https://www.linkedin.com/company/divarofficial) رفتم. اونجا اول مهندس نرم‌افزار بودم و بعد نقش رهبری تیم رو گرفتم و در تیم‌هایی مثل ریویو، جست‌وجو و Trust & Safety کار کردم.
 
 ## مهاجرت به آلمان و برگشت به کار فنی
 
-بعد از مهاجرت به آلمان تصمیم گرفتم دوباره به کار فنی و دست‌به‌کد برگردم، اول در [CHECK24](https://www.check24.de) و حالا در [Delivery Hero](https://www.deliveryhero.com). Charity Majors اسم این مسیر رو [آونگ مهندس/مدیر](https://charity.wtf/p/the-engineer-manager-pendulum) (engineer/manager pendulum) گذاشته: این‌که بین ساختن و رهبری کردن رفت‌وبرگشت کنیم، به جای این‌که مدیریت رو یک ارتقای یک‌طرفه ببینیم. چیزهایی که از رهبری تیم یاد گرفتم امروز روی کارم به عنوان مهندس اثر می‌ذاره و دربارهٔ هر دو می‌نویسم.
+بعد از مهاجرت به آلمان تصمیم گرفتم دوباره به کار فنی و دست‌به‌کد برگردم، اول در [CHECK24](https://www.linkedin.com/company/check24-vergleichsportal-gmbh) و حالا در [Delivery Hero](https://www.linkedin.com/company/delivery-hero-se). Charity Majors اسم این مسیر رو [آونگ مهندس/مدیر](https://charity.wtf/p/the-engineer-manager-pendulum) (engineer/manager pendulum) گذاشته: این‌که بین ساختن و رهبری کردن رفت‌وبرگشت کنیم، به جای این‌که مدیریت رو یک ارتقای یک‌طرفه ببینیم. چیزهایی که از رهبری تیم یاد گرفتم امروز روی کارم به عنوان مهندس اثر می‌ذاره و دربارهٔ هر دو می‌نویسم.
 
 ## الان چه کارهای جانبی می‌کنم
 

@@ -23,11 +23,11 @@ Later I studied computer engineering at Amirkabir University, where almost every
 
 ## From engineer to leader
 
-In Iran I worked at [SnappMarket](https://snapp.market) and other startups, then joined [Divar](https://divar.ir). I started there as a software engineer and later moved into leadership, working in teams such as review, search, and trust and safety.
+In Iran I worked at [SnappMarket](https://www.linkedin.com/company/snappmarket) and other startups, then joined [Divar](https://www.linkedin.com/company/divarofficial). I started there as a software engineer and later moved into leadership, working in teams such as review, search, and trust and safety.
 
 ## Germany, and the swing back to hands-on work
 
-When I moved to Germany, I chose to go back to hands-on engineering, first at [CHECK24](https://www.check24.de) and now at [Delivery Hero](https://www.deliveryhero.com). Charity Majors calls this the [engineer/manager pendulum](https://charity.wtf/p/the-engineer-manager-pendulum): moving between building and leading instead of treating management as a one-way promotion. What I learned leading teams shapes how I work as an engineer today, and I write about both.
+When I moved to Germany, I chose to go back to hands-on engineering, first at [CHECK24](https://www.linkedin.com/company/check24-vergleichsportal-gmbh) and now at [Delivery Hero](https://www.linkedin.com/company/delivery-hero-se). Charity Majors calls this the [engineer/manager pendulum](https://charity.wtf/p/the-engineer-manager-pendulum): moving between building and leading instead of treating management as a one-way promotion. What I learned leading teams shapes how I work as an engineer today, and I write about both.
 
 ## What I do on the side
 
