@@ -1,5 +1,5 @@
 {{- /* Inline cal.com booking embed. Usage: {{< cal "aminrb/intro" >}}, or {{< cal offer="intro" >}}
-       to take the event path from data/offers.yaml.
+       to take the event path from data/offers.yaml. fallback="false" drops the plain link below it.
        The embed script is inlined here, so it only loads on pages that use this shortcode. */ -}}
 {{- $path := "" }}
 {{- with .Get "offer" }}
@@ -13,7 +13,9 @@
 {{- $ns := replaceRE `[^a-zA-Z0-9]` "" (path.Base $path) }}
 <div class="cal-embed">
   <div id="{{ $id }}" class="cal-inline"></div>
+  {{- if ne (.Get "fallback") "false" }}
   <p class="cal-fallback"><a href="https://cal.com/{{ $path }}">{{ i18n "cal_fallback" }}</a></p>
+  {{- end }}
 </div>
 <script>
   (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");

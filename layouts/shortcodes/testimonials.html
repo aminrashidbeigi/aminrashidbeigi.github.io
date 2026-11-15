@@ -1,18 +1,19 @@
-{{- /* Testimonials from data/testimonials.yaml. Renders nothing while items is empty. */ -}}
+{{- /* ADPList proof line and testimonials from data/testimonials.yaml.
+       Renders nothing when there are no testimonials and no ADPList sessions. */ -}}
 {{- $data := site.Data.testimonials }}
 {{- $lang := .Page.Lang }}
-{{- with $data.items }}
+{{- if or $data.items $data.stats.adplist_sessions }}
 <section class="testimonials">
-  <h2>{{ i18n "testimonials" }}</h2>
   {{- with $data.stats }}
-  <p class="testimonial-stats">
-    <a href="{{ $data.adplist_url }}">ADPList</a>:
-    {{ i18n "adplist_stats" (dict "Sessions" .adplist_sessions "Minutes" .adplist_minutes) }}
-    {{- with .adplist_badge }} · {{ . }}{{ end }}
-    {{- with .total_people }} · {{ i18n "total_people" (dict "Count" .) }}{{ end }}
-  </p>
+  {{- $parts := slice }}
+  {{- with .adplist_sessions }}
+  {{- $parts = $parts | append (printf `<a href="%s">%s</a>` $data.adplist_url (i18n "adplist_sessions" (dict "Sessions" .))) }}
   {{- end }}
-  {{- range . }}
+  {{- with .adplist_badge }}{{ $parts = $parts | append (index . $lang) }}{{ end }}
+  {{- with .total_people }}{{ $parts = $parts | append (i18n "total_people" (dict "Count" .)) }}{{ end }}
+  <p class="testimonial-stats">{{ partial "fa-digits.html" (dict "s" (delimit $parts " · ") "lang" $lang) | safeHTML }}</p>
+  {{- end }}
+  {{- range $data.items }}
   {{- $text := index . $lang | default (index . .original_lang) }}
   <figure class="testimonial">
     <blockquote>{{ $text }}</blockquote>

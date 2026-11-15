@@ -1,0 +1,12 @@
+{{- /* "Book a free intro call" button with the intro-call note.
+       {{< book-button >}} jumps to #book; {{< book-button to="cal" >}} opens the cal.com page. */ -}}
+{{- $href := "#book" }}
+{{- $label := i18n "book_intro" }}
+{{- if eq (.Get "to") "cal" }}
+{{- range where site.Data.offers.offers "id" "intro" }}{{ $href = printf "https://cal.com/%s" .cal }}{{ end }}
+{{- $label = i18n "book_intro_cal" }}
+{{- end }}
+<div class="book-button">
+  <a class="btn btn-primary" href="{{ $href }}">{{ $label }}</a>
+  <p class="book-note">{{ i18n "book_intro_note" }}</p>
+</div>

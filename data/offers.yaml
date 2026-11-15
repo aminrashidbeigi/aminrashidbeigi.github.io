@@ -2,23 +2,18 @@
 # While draft_prices is true, paid offers show "price on request" instead of the number.
 draft_prices: true # TODO(amin): confirm prices, then set to false
 offers:
-  - id: adplist
-    free: true
-    url: https://adplist.org/mentors/amin-rashidbeigi
-    en: { name: "Free session on ADPList", price: "Free", detail: "30 minutes, one question. Limited slots each month." }
-    fa: { name: "جلسهٔ رایگان در ADPList", price: "رایگان", detail: "۳۰ دقیقه، یک سؤال. ظرفیت ماهانه محدود است." }
   - id: intro
     free: true
     cal: "aminrb/intro"            # TODO(amin): confirm cal.com event slug
-    en: { name: "Intro call", price: "Free", detail: "20 minutes to check fit and agree a plan." }
-    fa: { name: "جلسهٔ آشنایی", price: "رایگان", detail: "۲۰ دقیقه برای بررسی تناسب و توافق روی برنامه." }
+    en: { name: "Intro call", price: "Free", detail: "20 minutes, once per person, to agree a plan. Not a mentoring session." }
+    fa: { name: "جلسهٔ آشنایی", price: "رایگان", detail: "۲۰ دقیقه، یک بار برای هر نفر، برای توافق روی برنامه. جلسهٔ منتورینگ نیست." }
   - id: single
     cal: "aminrb/mentoring"        # TODO(amin): confirm slug
-    en: { name: "Single session", price: "€80", detail: "60 minutes plus written next steps." }
-    fa: { name: "تک‌جلسه", price: "۸۰ یورو", detail: "۶۰ دقیقه به‌همراه جمع‌بندی مکتوب قدم‌های بعدی." }
-  - id: interview-pack
-    en: { name: "Interview prep pack", price: "€210", detail: "3 mock interviews (recruiter, system design, behavioural) with written feedback." }
-    fa: { name: "بستهٔ آمادگی مصاحبه", price: "۲۱۰ یورو", detail: "۳ مصاحبهٔ آزمایشی (ریکروتر، طراحی سیستم، رفتاری) با بازخورد مکتوب." }
+    en: { name: "Single session", price: "€80", detail: "60 minutes plus written next steps. For a one-off question, a CV review, or a hard conversation with your manager." }
+    fa: { name: "تک‌جلسه", price: "۸۰ یورو", detail: "۶۰ دقیقه به‌همراه جمع‌بندی مکتوب قدم‌های بعدی. برای یک سؤال مشخص، بررسی رزومه یا یک گفت‌وگوی سخت با مدیرت." }
+  - id: interview-prep
+    en: { name: "Interview prep", price: "€210", detail: "One session on your CV and where to apply, then two mock interviews of your choice: recruiter, technical, system design or behavioural." }
+    fa: { name: "آمادگی مصاحبه", price: "۲۱۰ یورو", detail: "یک جلسه برای رزومه و انتخاب شرکت‌ها، بعد دو مصاحبهٔ آزمایشی به انتخاب خودت: ریکروتر، فنی، طراحی سیستم یا رفتاری." }
   - id: monthly
-    en: { name: "Monthly mentoring", price: "€140 / month", detail: "2 sessions of 45 minutes plus questions by chat. Cancel any month." }
-    fa: { name: "منتورینگ ماهانه", price: "۱۴۰ یورو در ماه", detail: "۲ جلسهٔ ۴۵ دقیقه‌ای به‌همراه پرسش‌وپاسخ متنی. هر ماه قابل لغو است." }
+    en: { name: "Monthly mentoring", price: "€140 / month", detail: "Two 45-minute sessions plus chat. For growing in your role, working with your manager, moving into management or working abroad." }
+    fa: { name: "منتورینگ ماهانه", price: "۱۴۰ یورو در ماه", detail: "دو جلسهٔ ۴۵ دقیقه‌ای به‌همراه پرسش‌وپاسخ متنی. برای رشد در نقشت، کار با مدیرت، رفتن به سمت مدیریت یا کار در کشور دیگه." }

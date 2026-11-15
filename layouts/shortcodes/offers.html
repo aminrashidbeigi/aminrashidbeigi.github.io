@@ -10,9 +10,7 @@
       {{- if and $data.draft_prices (not .free) }}{{ i18n "price_on_request" }}{{ else }}{{ $t.price }}{{ end -}}
     </p>
     <p class="offer-detail">{{ $t.detail }}</p>
-    {{- if .url }}
-    <a class="btn" href="{{ .url }}">{{ i18n "offer_adplist" }}</a>
-    {{- else if eq .id "intro" }}
+    {{- if eq .id "intro" }}
     <a class="btn btn-primary" href="#book">{{ i18n "offer_book" }}</a>
     {{- else if .cal }}
     <a class="btn" href="https://cal.com/{{ .cal }}">{{ i18n "offer_book" }}</a>

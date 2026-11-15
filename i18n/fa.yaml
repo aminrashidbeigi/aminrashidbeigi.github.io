@@ -7,20 +7,11 @@
 - id: price_on_request
   translation: "قیمت با هماهنگی"
 
-- id: offer_adplist
-  translation: "رزرو در ADPList"
-
 - id: offer_book
   translation: "رزرو"
 
 - id: offer_ask
   translation: "در جلسهٔ آشنایی بپرس"
-
-- id: testimonials
-  translation: "نظر دیگران"
-
-- id: adplist_stats
-  translation: "{{ .Sessions }} جلسه، {{ .Minutes }} دقیقه منتورینگ"
 
 - id: total_people
   translation: "در مجموع {{ .Count }} نفر"
@@ -165,3 +156,15 @@
 
 - id: apply_error_duplicate
   translation: "قبلاً با همین ایمیل برای این جلسه درخواست دادی."
+
+- id: adplist_sessions
+  translation: "{{ .Sessions }} جلسه در ADPList"
+
+- id: book_intro
+  translation: "رزرو جلسهٔ آشنایی رایگان"
+
+- id: book_intro_note
+  translation: "۲۰ دقیقه، یک بار برای هر نفر، برای توافق روی برنامه. جلسهٔ منتورینگ نیست."
+
+- id: book_intro_cal
+  translation: "باز کردن صفحهٔ رزرو"

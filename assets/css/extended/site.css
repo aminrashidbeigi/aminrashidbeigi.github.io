@@ -70,7 +70,7 @@
 
 .offers {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 14px;
     margin: var(--content-gap) 0;
 }
@@ -293,4 +293,14 @@
 
 .footer-links a:hover {
     color: var(--primary);
+}
+
+.book-button {
+    margin: var(--content-gap) 0;
+}
+
+.post-content .book-button .book-note {
+    margin: 8px 0 0;
+    color: var(--secondary);
+    font-size: 14px;
 }

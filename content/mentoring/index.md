@@ -4,17 +4,22 @@ description: "One-to-one mentoring for career growth: taking on more responsibil
 cover:
   image: /og/mentoring.png
   hidden: true
-date: 2025-03-22
-lastmod: 2026-11-14
+date: 2026-11-15
+lastmod: 2026-11-15
 draft: false
 disable_followup: true
 comments: false
 ShowToc: false
 aliases:
 - /ways-i-can-help/
+metaAuthorOnly: true
 ---
 
 Mentoring, for me, is about career growth. Over the years I have been an engineer, a tech lead and an Engineering Manager, interviewed and hired people, and worked in Iran and Germany. In our sessions I draw on all of that to help you work out your next step. Sessions are one to one, in Persian or English.
+
+About ten years in engineering · SnappMarket, Divar (Engineering Manager), CHECK24, Delivery Hero
+
+{{< book-button >}}
 
 ## Who it is for
 
@@ -24,17 +29,28 @@ Mentoring, for me, is about career growth. Over the years I have been an enginee
 - **You work in another country, or want to**, and want to talk to someone who has made that move.
 - **You are preparing for interviews**: resume review, choosing where to apply, and mock interviews (recruiter, technical, system design and behavioural).
 
+## Between us
+
+What we talk about stays between us.
+
+## How it works
+
+1. **A free intro call.** 20 minutes, once per person, to tell me where you are and where you want to go. It is not a mentoring session.
+2. **Agree a plan.** If I can help, we agree what to work on and which offer fits. If I can't, I will say so.
+3. **Book sessions.** You book them on cal.com at times that suit you.
+
 ## Offers
 
 {{< offers >}}
 
-## How it works
-
-1. **A free conversation.** Book a 20-minute intro call below and tell me where you are and where you want to go.
-2. **Agree a plan.** If I can help, we agree what to work on and which offer fits. If I can't, I will say so.
-3. **Book.** You book the sessions on cal.com at times that suit you.
-
 {{< testimonials >}}
+
+## Who it isn't for
+
+- Learning to code from scratch.
+- Having someone write your CV for you.
+
+Not ready for one-to-one? [Join a table talk](/table-talks/).
 
 ## Questions and answers
 
@@ -42,24 +58,31 @@ Mentoring, for me, is about career growth. Over the years I have been an enginee
 
 Persian or English, whichever you prefer.
 
+### What time zone are sessions in?
+
+<!-- TODO(amin): answer -->
+I am in Berlin. cal.com shows the available times in your own time zone.
+
+### Where do we meet?
+
+<!-- TODO(amin): answer -->
+On Google Meet. The link is in your booking confirmation.
+
 ### How do I pay?
 
 <!-- TODO(amin): answer -->
-We settle this in the intro call.
+By card.
 
-### Do you offer pro bono sessions?
-
-<!-- TODO(amin): answer -->
-Ask me in the intro call.
-
-### What if I need to cancel?
+### Can I reschedule or cancel?
 
 <!-- TODO(amin): answer -->
-Let me know as early as you can.
+Yes, from the link in your booking email.
 
 ## Book a free intro call {#book}
 
-{{< cal offer="intro" >}}
+{{< cal offer="intro" fallback="false" >}}
+
+{{< book-button to="cal" >}}
 
 ## Hiring support for companies
 
