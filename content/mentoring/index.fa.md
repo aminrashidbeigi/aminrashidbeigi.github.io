@@ -1,6 +1,6 @@
 ---
 title: منتورینگ
-description: "منتورینگ یک‌به‌یک برای رشد شغلی: گرفتن مسئولیت بیشتر، کار با مدیرت، رفتن به سمت مدیریت، کار در کشورهای دیگه و آمادگی برای مصاحبه. با یک جلسهٔ برنامه‌ریزی رایگان شروع کن."
+description: "منتورینگ یک‌به‌یک برای رشد شغلی: گرفتن مسئولیت بیشتر، کار با مدیرت، رفتن به سمت مدیریت، کار در کشورهای دیگه و آمادگی برای مصاحبه. با یک جلسهٔ اولیه رایگان شروع کن."
 cover:
   image: /og/mentoring-fa.png
   hidden: true
@@ -59,7 +59,7 @@ TODO(amin): answer
 TODO(amin): add back once answered: where we meet (Google Meet?), payment (with the Iran note), rescheduling and cancellation
 -->
 
-## رزرو جلسهٔ برنامه‌ریزی (رایگان) {#book}
+## رزرو جلسهٔ اولیه (رایگان) {#book}
 
 {{< cal offer="intro" fallback="false" >}}
 

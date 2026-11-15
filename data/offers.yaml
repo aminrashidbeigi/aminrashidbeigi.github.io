@@ -7,7 +7,7 @@ offers:
     free: true
     cal: "aminrb/intro"            # TODO(amin): confirm cal.com event slug
     en: { name: "Intro call", price: "Free", detail: "20 minutes, once per person, to agree a plan. Not a mentoring session.", note: "20 minutes, once per person, to agree a plan. Not a mentoring session." }
-    fa: { name: "جلسهٔ برنامه‌ریزی", price: "رایگان", detail: "۲۰ دقیقه برای این‌که با هم برنامهٔ کار رو بچینیم." }
+    fa: { name: "جلسهٔ اولیه", price: "رایگان", detail: "۲۰ دقیقه برای این‌که با هم برنامهٔ کار رو بچینیم." }
   - id: single
     cal: "aminrb/mentoring"
     price_confirmed: true          # €49.90 on cal.com

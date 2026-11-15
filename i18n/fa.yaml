@@ -11,7 +11,7 @@
   translation: "رزرو"
 
 - id: offer_ask
-  translation: "در جلسهٔ برنامه‌ریزی بپرس"
+  translation: "در جلسهٔ اولیه بپرس"
 
 - id: total_people
   translation: "در مجموع {{ .Count }} نفر"
@@ -161,7 +161,7 @@
   translation: "{{ .Sessions }} جلسه در ADPList"
 
 - id: book_intro
-  translation: "رزرو جلسهٔ برنامه‌ریزی (رایگان)"
+  translation: "رزرو جلسهٔ اولیه (رایگان)"
 
 - id: book_intro_cal
   translation: "باز کردن صفحهٔ رزرو"
