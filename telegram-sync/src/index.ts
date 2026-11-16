@@ -93,6 +93,12 @@ const COMMANDS = [
 // per message. Wait this long before asking so the rest has arrived.
 const SETTLE_MS = 3000;
 const PREVIEW_CHARS = 600;
+// A publish runs after the button is answered, and Cloudflare stops that work 30 seconds later
+// without running any catch. A post still publishing this long after the tap was cut off, and
+// its buttons work again.
+const CUT_OFF = "state = 'publishing' AND COALESCE(decided_at, '') < datetime('now', '-2 minutes')";
+// Every outside call gets this long, so a slow one fails with a message instead of being cut off.
+const FETCH_TIMEOUT_MS = 10_000;
 
 export default {
   async fetch(request, env, ctx): Promise<Response> {
@@ -291,7 +297,8 @@ async function callback(env: Env, ctx: ExecutionContext, query: CallbackQuery): 
 
   if (action === "p") {
     const claimed = await env.DB.prepare(
-      "UPDATE posts SET state = 'publishing', topic = ? WHERE key = ? AND state = 'asked'",
+      `UPDATE posts SET state = 'publishing', topic = ?, decided_at = datetime('now')
+       WHERE key = ? AND (state = 'asked' OR (${CUT_OFF} AND slug IS NULL))`,
     )
       .bind(topic || null, key)
       .run();
@@ -303,7 +310,8 @@ async function callback(env: Env, ctx: ExecutionContext, query: CallbackQuery): 
     }
   } else if (action === "s") {
     const post = await env.DB.prepare(
-      "UPDATE posts SET state = 'skipped', decided_at = datetime('now') WHERE key = ? AND state = 'asked' RETURNING backlog",
+      `UPDATE posts SET state = 'skipped', decided_at = datetime('now')
+       WHERE key = ? AND (state = 'asked' OR (${CUT_OFF} AND slug IS NULL)) RETURNING backlog`,
     )
       .bind(key)
       .first<{ backlog: number }>();
@@ -316,7 +324,8 @@ async function callback(env: Env, ctx: ExecutionContext, query: CallbackQuery): 
     }
   } else if (action === "u") {
     const claimed = await env.DB.prepare(
-      "UPDATE posts SET state = 'publishing', update_asked = 0 WHERE key = ? AND state = 'published' AND update_asked = 1",
+      `UPDATE posts SET state = 'publishing', update_asked = 0, decided_at = datetime('now')
+       WHERE key = ? AND ((state = 'published' AND update_asked = 1) OR (${CUT_OFF} AND slug IS NOT NULL))`,
     )
       .bind(key)
       .run();
@@ -376,9 +385,7 @@ async function publish(env: Env, key: string, isUpdate: boolean, questionId?: nu
       files,
     );
 
-    await env.DB.prepare(
-      "UPDATE posts SET state = 'published', slug = ?, decided_at = datetime('now') WHERE key = ?",
-    )
+    await env.DB.prepare("UPDATE posts SET state = 'published', slug = ? WHERE key = ?")
       .bind(built.slug, key)
       .run();
     const page = `${env.SITE_ORIGIN}/fa/${encodeURIComponent(built.slug)}/`;
@@ -404,7 +411,10 @@ async function publish(env: Env, key: string, isUpdate: boolean, questionId?: nu
 async function slugTaken(env: Env, slug: string, key: string): Promise<boolean> {
   const row = await env.DB.prepare("SELECT 1 FROM posts WHERE slug = ? AND key <> ?").bind(slug, key).first();
   if (row) return true;
-  const page = await fetch(`${env.SITE_ORIGIN}/fa/${encodeURIComponent(slug)}/`, { method: "HEAD" });
+  const page = await fetch(`${env.SITE_ORIGIN}/fa/${encodeURIComponent(slug)}/`, {
+    method: "HEAD",
+    signal: AbortSignal.timeout(FETCH_TIMEOUT_MS),
+  });
   return page.ok;
 }
 
@@ -444,6 +454,13 @@ async function status(env: Env): Promise<void> {
     key: string;
   }>();
   for (const { key } of stuck.results) await ask(env, key);
+  // Posts whose publish was cut off go back to how they were before the tap, and new ones are
+  // asked about again. A cut-off update keeps its old "Update the blog" buttons.
+  const cut = await env.DB.prepare(
+    `UPDATE posts SET state = IIF(slug IS NULL, 'asked', 'published'), update_asked = IIF(slug IS NULL, 0, 1)
+     WHERE ${CUT_OFF} RETURNING key, slug`,
+  ).all<{ key: string; slug: string | null }>();
+  for (const { key, slug } of cut.results) if (!slug) await sendQuestion(env, key);
   await askNext(env);
 
   const counts = await env.DB.prepare(
@@ -489,7 +506,9 @@ function postLink(env: Env, parts: Part[]): string {
 
 async function download(env: Env, fileId: string): Promise<Uint8Array> {
   const file = await tg<{ file_path: string }>(env, "getFile", { file_id: fileId });
-  const response = await fetch(`https://api.telegram.org/file/bot${env.BOT_TOKEN}/${file.file_path}`);
+  const response = await fetch(`https://api.telegram.org/file/bot${env.BOT_TOKEN}/${file.file_path}`, {
+    signal: AbortSignal.timeout(FETCH_TIMEOUT_MS),
+  });
   if (!response.ok) throw new Error(`Telegram file download: ${response.status}`);
   return new Uint8Array(await response.arrayBuffer());
 }
@@ -513,6 +532,7 @@ async function tg<T = unknown>(env: Env, method: string, body: unknown): Promise
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(body),
+      signal: AbortSignal.timeout(FETCH_TIMEOUT_MS),
     });
     const data = (await response.json()) as {
       ok: boolean;

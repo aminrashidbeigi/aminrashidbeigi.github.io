@@ -52,6 +52,8 @@ async function gh<T>(cfg: GitHubConfig, method: string, path: string, body?: unk
       ...(body ? { "Content-Type": "application/json" } : {}),
     },
     body: body ? JSON.stringify(body) : undefined,
+    // Stay well inside the 30 seconds a publish gets, so a slow GitHub fails with a message.
+    signal: AbortSignal.timeout(10_000),
   });
   if (!response.ok) throw new Error(`GitHub ${method} ${path}: ${response.status} ${await response.text()}`);
   return (await response.json()) as T;

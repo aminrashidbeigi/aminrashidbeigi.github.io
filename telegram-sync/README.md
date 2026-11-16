@@ -134,6 +134,9 @@ the code is in `src/applications.ts`.
   album ever fails with a CPU limit error in `wrangler tail`, publish it again or
   add it by hand.
 - A failed publish leaves the buttons in place and tells you why; tap again to retry.
+- A publish Cloudflare cuts off (it stops the work 30 seconds after the tap, before the bot can
+  say anything) leaves the post waiting. Two minutes after the tap its buttons work again, and
+  **Blog posts** asks about it again, so the old posts queued behind it are not stuck.
 
 ## Development
 
